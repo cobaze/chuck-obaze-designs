@@ -37,6 +37,14 @@ $white-font: #ffffff;
 	width: 100%;
 }
 
+%h2-values{
+	text-align: center;
+	margin-bottom:2%;
+	color: $font-color;
+	font-size: 3em;
+	margin:5% 0 5% 0;
+}
+
 /* =Remember Order Of Styling Links
 -----------------------------------------------------------------------------*/
 
@@ -54,7 +62,8 @@ html{
 body{
 	font-size: $body-font-size;
 	height: 4000px;
-	font-family: $helvetica;
+	/*font-family: $helvetica;*/
+	font-family: 'Exo 2', sans-serif;
 	width: 100%;
 	margin: 0 auto;
 
@@ -102,7 +111,7 @@ nav.main-nav{
 			a{
 				text-decoration: none;
 				color: $font-color;
-				font-size: 1.4em;
+				font-size: 1.7em;
 				font-weight: bold;
 
 				&:visited{
@@ -121,10 +130,12 @@ li.contact-nav{
 	margin-right: 0em !important;
 }
 
-/* START STYLING SECTION HOME
+/* START STYLING SECTION HOME AND FIRST-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
-section#home{
+
+section.first-container{
+	@extend %container-style;
 	background-image: url(../imgs/new-splash-bg.jpg);
 	background-position: center center;
 	background-size: cover;
@@ -132,55 +143,51 @@ section#home{
 	clear: both;
 	width: 100%;
 
+}
+
+div#home{
+	@extend %section-values;
+	border: $border green;
+
 	h1{
 		width: 100%;
-		max-width:50em;
-		margin: 0 auto;
+		max-width:25em;
 		color: #ffffff;
-		text-align: center;
-		font-family: $lucida;
+		font-family: 'Londrina Outline';
 		font-weight: bold;
 		border: $border red;
-		position: relative;
-		top: 15em;
 		font-size: 3em;
+		float: right;
 
+	}
+
+
+	img{
+		width: 100%;
+		max-width: 40em;
+		border: $border red;
+		float: left
 	}
 }
 
-div.welcome-msg{
-	border: $border red;
-}
 
-/* END SECTION HOME STYLES
+/* END SECTION HOME AND FIRST-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
 
-/* START SECTION PROJECTS AND FIRST-CONTAINER STYLES
+/* START SECTION PROJECTS AND SECOND-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
-section.first-container{
+section.second-container{
 	@extend %container-style;
 
 }
 
 div#projects{
-	/*margin: 0 auto;
-	max-width: 105em;
-	width: 100%;
-	height: $section-height;
-	clear: both;
-	padding-top: 7%;
-	box-sizing: border-box;*/
-
 	@extend %section-values;
 
 	h2{
-		text-align: center;
-		margin-bottom:2%;
-		color: $font-color;
-		font-size: 3em;
-		margin:5% 0 5% 0;
+		@extend %h2-values;
 	}
 
 }
@@ -206,47 +213,27 @@ div.port-item-last{
 	margin-bottom: 2%;
 }
 
-/* END SECTION PROJECTS AND FIRST-CONTAINER STYLES
+/* END SECTION PROJECTS AND SECOND-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
 
-/* START SECTION ABOUT AND SECOND-CONTAINER STYLES
+/* START SECTION ABOUT AND THIRD-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
-section.second-container{
+section.third-container{
 	@extend %container-style;
 	background-color: $alt-gray-color;
 
 }
 
 div#about{
-	/*background-image: url(../imgs/about-chuck-bg.jpg);
-	background-repeat: no-repeat;
-	background-position: center top;
-	background-size: contain;
-	background-color: $alt-gray-color;
-	height: $section-height - 10;
-	padding: 7% 2% 0% 2%;
-	box-sizing: border-box;
-
-	margin: 0 auto;
-	max-width: 105em;
-	width: 100%;
-	height: $section-height - 26;
-	clear: both;
-	padding-top: 7%;
-	box-sizing: border-box;*/
-
 	@extend %section-values;
 	border: $border red;
+	height: 90em;
 
 
 	h2{
-		text-align: center;
-		margin-bottom:2%;
-		color: $alt-font-color;
-		font-size: 3em;
-		margin:5% 0 5% 0;
+		@extend %h2-values;
 	}
 
 	p{
@@ -256,103 +243,62 @@ div#about{
 		color: $white-font;
 		font-weight: 300;
 		width: 100%;
-		max-width: 64em;
+		max-width: 26em;
 		height: 100%;
-		max-height: 26em;
+		max-height: 17.7em;
 		margin-right: 3%;
-		border: $border red;
+		border: $border green;
 
 		a{
 			text-decoration: none;
 			font-size: 1em;
 			color: $white-font;
 			color: $alt-font-color;
-			font-weight: 300;
-
-			/*&:visited{
-					border-bottom: $white-font;
-				}*/
-
-				&:hover, &:focus, &:active{
-					font-weight: bold;
-				}
+			font-weight: bold;
 		}
 	}
 
 	img{
-		width: 2em;
+		width: 100%;
+		max-width: 36.4em;
 
 	}
 
-
 }
 
-div#who{
-	width: 100%;
-	max-width: 64em;
-	height: 100%;
-	max-height: 26em;
-	margin-right: 3%;
-	float: left;
-
-	p{
-		float: left;
-		font-size: 2em;
-		line-height: 1.6em;
-		color: $white-font;
-		font-weight: 300;
-
-		a{
-			text-decoration: none;
-			font-size: 1em;
-			color: $white-font;
-			color: $alt-font-color;
-			font-weight: 300;
-
-			/*&:visited{
-					border-bottom: $white-font;
-				}*/
-
-				&:hover, &:focus, &:active{
-					font-weight: bold;
-				}
-		}
-	}
-
-}
-
-div#what{
-	float: right;
-	width: 100%;
-	max-width: 37em;
-
-	h3{
-		font-size: 2em;
-		text-align: center;
-		color: $alt-font-color;
-		margin-bottom: 1em;
-	}
-
-	img{
-		width: 8em;
-		padding: 1.4%
-	}
-}
-
-img.sass{
-	position: relative;
-	bottom: 2.5em;
-}
-
-img.jquery{
-	position: relative;
-	bottom: 3.5em;
-}
-
-/* START SECTION CONTACT AND THIRD-CONTAINER STYLES
+/* END SECTION CONTACT AND THIRD-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
-section#third-container{
+
+/* START SECTION CONTACT AND FOURTH-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+
+
+section.fourth-container{
+	@extend %container-style;
+	background-color: $alt-gray-color;
+
+}
+
+div#resume{
+	@extend %section-values;
+	border: $border red;
+	height: 90em;
+
+	h2{
+		@extend %h2-values;
+	}
+}
+
+
+/* END SECTION CONTACT AND FOURTH-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+
+
+/* START SECTION CONTACT AND FIFTH-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+
+section#fifth-container{
 	@extend %container-style;
 
 }
@@ -381,11 +327,8 @@ section#alt-about{
 	}
 }
 
-
-
-/* END SECTION CONTACT AND THIRD-CONTAINER STYLES
+/* END SECTION CONTACT AND FIFTH-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
-
 
 
 /* =iPhone 6 Media Query

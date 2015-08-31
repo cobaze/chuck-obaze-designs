@@ -1,7 +1,7 @@
 $(document).ready(function(){
-	//$(this).scrollTop(0);
+	$('.main-body').hide().fadeIn(2000);
 	$('#main-container').hide().fadeIn(2000);
-	//$('#home').hide().fadeIn(2000);
+	$('#home').hide().fadeIn(2000);
 
     $('.home-nav').click(function(e){
 		e.preventDefault();
@@ -31,10 +31,17 @@ $(document).ready(function(){
 				}, 2000);
 	});
 
+	$('.resume-nav').click(function(e){
+		e.preventDefault();
+		$('html, body').animate({
+			scrollTop: $("#resume").offset().top
+				}, 2000);
+	});
+
 	$('.contact-nav').click(function(e){
 		e.preventDefault();
 		$('html, body').animate({
-			scrollTop: $("#contact").offset().top
+			scrollTop: $("#contact-me").offset().top
 				}, 2000);
 	});
 

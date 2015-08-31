@@ -13,7 +13,7 @@ website:   http://cobadesign.com
 /* =SASS Variables
 -----------------------------------------------------------------------------*/
 /* line 25, ../sass/coba.scss */
-div#projects, div#about, div#contact-me {
+div#home, div#projects, div#about, div#resume, div#contact-me {
   margin: 0 auto;
   max-width: 105em;
   width: 100%;
@@ -24,40 +24,50 @@ div#projects, div#about, div#contact-me {
 }
 
 /* line 35, ../sass/coba.scss */
-section.first-container, section.second-container, section#third-container {
+section.first-container, section.second-container, section.third-container, section.fourth-container, section#fifth-container {
   border: solid 1px red;
   width: 100%;
 }
 
+/* line 40, ../sass/coba.scss */
+div#projects h2, div#about h2, div#resume h2 {
+  text-align: center;
+  margin-bottom: 2%;
+  color: gray;
+  font-size: 3em;
+  margin: 5% 0 5% 0;
+}
+
 /* =Remember Order Of Styling Links
 -----------------------------------------------------------------------------*/
-/* line 45, ../sass/coba.scss */
+/* line 53, ../sass/coba.scss */
 a:link, a:visited, a:hover, a:focus, a:active
 html {
   font-size: 10px;
 }
 
-/* line 49, ../sass/coba.scss */
+/* line 57, ../sass/coba.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 54, ../sass/coba.scss */
+/* line 62, ../sass/coba.scss */
 body {
   font-size: 10px;
   height: 4000px;
-  font-family: "helvetica neue", arial, helvetica, freesans, "liberation sans", "numbus sans l", sans-serif;
+  /*font-family: $helvetica;*/
+  font-family: 'Exo 2', sans-serif;
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 63, ../sass/coba.scss */
+/* line 72, ../sass/coba.scss */
 #main-container {
   width: 100%;
 }
 
-/* line 67, ../sass/coba.scss */
+/* line 76, ../sass/coba.scss */
 header.main-header {
   position: fixed;
   z-index: 2;
@@ -66,59 +76,59 @@ header.main-header {
   padding: 2em 0 2em 0;
   border-bottom: 1px solid gray;
 }
-/* line 75, ../sass/coba.scss */
+/* line 84, ../sass/coba.scss */
 header.main-header img {
   float: left;
   width: 20em;
   padding-left: 2%;
 }
 
-/* line 83, ../sass/coba.scss */
+/* line 92, ../sass/coba.scss */
 nav.main-nav {
   float: right;
   padding-right: 2%;
   position: relative;
   top: 4.5em;
 }
-/* line 89, ../sass/coba.scss */
+/* line 98, ../sass/coba.scss */
 nav.main-nav ul {
   clear: both;
   height: 2em;
   padding: 0;
   margin: 0;
 }
-/* line 96, ../sass/coba.scss */
+/* line 105, ../sass/coba.scss */
 nav.main-nav ul li {
   list-style: none;
   float: left;
   margin-right: 2em;
   display: inline;
 }
-/* line 102, ../sass/coba.scss */
+/* line 111, ../sass/coba.scss */
 nav.main-nav ul li a {
   text-decoration: none;
   color: gray;
-  font-size: 1.4em;
+  font-size: 1.7em;
   font-weight: bold;
 }
-/* line 108, ../sass/coba.scss */
+/* line 117, ../sass/coba.scss */
 nav.main-nav ul li a:visited {
   border-bottom: solid #ed1c24 0.3em;
 }
-/* line 112, ../sass/coba.scss */
+/* line 121, ../sass/coba.scss */
 nav.main-nav ul li a:hover, nav.main-nav ul li a:focus, nav.main-nav ul li a:active {
   border-bottom: solid #ed1c24 0.3em;
 }
 
-/* line 120, ../sass/coba.scss */
+/* line 129, ../sass/coba.scss */
 li.contact-nav {
   margin-right: 0em !important;
 }
 
-/* START STYLING SECTION HOME
+/* START STYLING SECTION HOME AND FIRST-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
-/* line 127, ../sass/coba.scss */
-section#home {
+/* line 137, ../sass/coba.scss */
+section.first-container {
   background-image: url(../imgs/new-splash-bg.jpg);
   background-position: center center;
   background-size: cover;
@@ -126,50 +136,35 @@ section#home {
   clear: both;
   width: 100%;
 }
-/* line 135, ../sass/coba.scss */
-section#home h1 {
+
+/* line 148, ../sass/coba.scss */
+div#home {
+  border: solid 1px green;
+}
+/* line 152, ../sass/coba.scss */
+div#home h1 {
   width: 100%;
-  max-width: 50em;
-  margin: 0 auto;
+  max-width: 25em;
   color: #ffffff;
-  text-align: center;
-  font-family: "lucida grande", "lucida sans unicode", "lucida sans", lucida, sans-serif;
+  font-family: 'Londrina Outline';
   font-weight: bold;
   border: solid 1px red;
-  position: relative;
-  top: 15em;
   font-size: 3em;
+  float: right;
 }
-
-/* line 151, ../sass/coba.scss */
-div.welcome-msg {
-  border: solid 1px red;
-}
-
-/* END SECTION HOME STYLES
------------------------------------------------------------------------------*/
-/* START SECTION PROJECTS AND FIRST-CONTAINER STYLES
------------------------------------------------------------------------------*/
-/* line 167, ../sass/coba.scss */
-div#projects {
-  /*margin: 0 auto;
-  max-width: 105em;
+/* line 165, ../sass/coba.scss */
+div#home img {
   width: 100%;
-  height: $section-height;
-  clear: both;
-  padding-top: 7%;
-  box-sizing: border-box;*/
-}
-/* line 178, ../sass/coba.scss */
-div#projects h2 {
-  text-align: center;
-  margin-bottom: 2%;
-  color: gray;
-  font-size: 3em;
-  margin: 5% 0 5% 0;
+  max-width: 40em;
+  border: solid 1px red;
+  float: left;
 }
 
-/* line 188, ../sass/coba.scss */
+/* END SECTION HOME AND FIRST-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+/* START SECTION PROJECTS AND SECOND-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+/* line 195, ../sass/coba.scss */
 div.port-item {
   border: solid 1px red;
   width: 100%;
@@ -180,7 +175,7 @@ div.port-item {
   margin-bottom: 2%;
 }
 
-/* line 200, ../sass/coba.scss */
+/* line 207, ../sass/coba.scss */
 div.port-item-last {
   margin-right: 0% !important;
   border: solid 1px red;
@@ -190,44 +185,21 @@ div.port-item-last {
   margin-bottom: 2%;
 }
 
-/* END SECTION PROJECTS AND FIRST-CONTAINER STYLES
+/* END SECTION PROJECTS AND SECOND-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
-/* START SECTION ABOUT AND SECOND-CONTAINER STYLES
+/* START SECTION ABOUT AND THIRD-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
-/* line 216, ../sass/coba.scss */
-section.second-container {
+/* line 223, ../sass/coba.scss */
+section.third-container {
   background-color: #acacac;
 }
 
-/* line 222, ../sass/coba.scss */
+/* line 229, ../sass/coba.scss */
 div#about {
-  	/*background-image: url(../imgs/about-chuck-bg.jpg);
-  	background-repeat: no-repeat;
-  	background-position: center top;
-  	background-size: contain;
-  	background-color: $alt-gray-color;
-  	height: $section-height - 10;
-  	padding: 7% 2% 0% 2%;
-  	box-sizing: border-box;
-  
-  	margin: 0 auto;
-  	max-width: 105em;
-  	width: 100%;
-  	height: $section-height - 26;
-  	clear: both;
-  	padding-top: 7%;
-  	box-sizing: border-box;*/
   border: solid 1px red;
+  height: 90em;
 }
-/* line 244, ../sass/coba.scss */
-div#about h2 {
-  text-align: center;
-  margin-bottom: 2%;
-  color: #414042;
-  font-size: 3em;
-  margin: 5% 0 5% 0;
-}
-/* line 252, ../sass/coba.scss */
+/* line 239, ../sass/coba.scss */
 div#about p {
   float: left;
   font-size: 2.5em;
@@ -235,99 +207,46 @@ div#about p {
   color: white;
   font-weight: 300;
   width: 100%;
-  max-width: 64em;
+  max-width: 26em;
   height: 100%;
-  max-height: 26em;
+  max-height: 17.7em;
   margin-right: 3%;
-  border: solid 1px red;
+  border: solid 1px green;
 }
-/* line 265, ../sass/coba.scss */
+/* line 252, ../sass/coba.scss */
 div#about p a {
   text-decoration: none;
   font-size: 1em;
   color: white;
   color: #414042;
-  font-weight: 300;
-  /*&:visited{
-  		border-bottom: $white-font;
-  	}*/
-}
-/* line 276, ../sass/coba.scss */
-div#about p a:hover, div#about p a:focus, div#about p a:active {
   font-weight: bold;
 }
-/* line 282, ../sass/coba.scss */
+/* line 261, ../sass/coba.scss */
 div#about img {
-  width: 2em;
-}
-
-/* line 290, ../sass/coba.scss */
-div#who {
   width: 100%;
-  max-width: 64em;
-  height: 100%;
-  max-height: 26em;
-  margin-right: 3%;
-  float: left;
-}
-/* line 298, ../sass/coba.scss */
-div#who p {
-  float: left;
-  font-size: 2em;
-  line-height: 1.6em;
-  color: white;
-  font-weight: 300;
-}
-/* line 305, ../sass/coba.scss */
-div#who p a {
-  text-decoration: none;
-  font-size: 1em;
-  color: white;
-  color: #414042;
-  font-weight: 300;
-  /*&:visited{
-  		border-bottom: $white-font;
-  	}*/
-}
-/* line 316, ../sass/coba.scss */
-div#who p a:hover, div#who p a:focus, div#who p a:active {
-  font-weight: bold;
+  max-width: 36.4em;
 }
 
-/* line 324, ../sass/coba.scss */
-div#what {
-  float: right;
-  width: 100%;
-  max-width: 37em;
-}
-/* line 329, ../sass/coba.scss */
-div#what h3 {
-  font-size: 2em;
-  text-align: center;
-  color: #414042;
-  margin-bottom: 1em;
-}
-/* line 336, ../sass/coba.scss */
-div#what img {
-  width: 8em;
-  padding: 1.4%;
-}
-
-/* line 342, ../sass/coba.scss */
-img.sass {
-  position: relative;
-  bottom: 2.5em;
-}
-
-/* line 347, ../sass/coba.scss */
-img.jquery {
-  position: relative;
-  bottom: 3.5em;
-}
-
-/* START SECTION CONTACT AND THIRD-CONTAINER STYLES
+/* END SECTION CONTACT AND THIRD-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
-/* line 363, ../sass/coba.scss */
+/* START SECTION CONTACT AND FOURTH-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+/* line 277, ../sass/coba.scss */
+section.fourth-container {
+  background-color: #acacac;
+}
+
+/* line 283, ../sass/coba.scss */
+div#resume {
+  border: solid 1px red;
+  height: 90em;
+}
+
+/* END SECTION CONTACT AND FOURTH-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+/* START SECTION CONTACT AND FIFTH-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+/* line 309, ../sass/coba.scss */
 div#contact-me h2 {
   text-align: center;
   margin-bottom: 2%;
@@ -336,36 +255,36 @@ div#contact-me h2 {
   margin: 2% 0 2% 0;
 }
 
-/* line 372, ../sass/coba.scss */
+/* line 318, ../sass/coba.scss */
 #form-holder {
   border: solid 1px red;
 }
 
-/* line 376, ../sass/coba.scss */
+/* line 322, ../sass/coba.scss */
 section#alt-about {
   display: none;
 }
-/* line 379, ../sass/coba.scss */
+/* line 325, ../sass/coba.scss */
 section#alt-about img {
   display: none;
 }
 
-/* END SECTION CONTACT AND THIRD-CONTAINER STYLES
+/* END SECTION CONTACT AND FIFTH-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 /* =iPhone 6 Media Query
 -----------------------------------------------------------------------------*/
 @media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: portrait) {
-  /* line 399, ../sass/coba.scss */
+  /* line 342, ../sass/coba.scss */
   section#home {
     width: 100%;
   }
 
-  /* line 403, ../sass/coba.scss */
+  /* line 346, ../sass/coba.scss */
   header.main-header {
     width: 100%;
     height: 17em;
   }
-  /* line 407, ../sass/coba.scss */
+  /* line 350, ../sass/coba.scss */
   header.main-header img {
     margin: 0 auto !important;
     display: block;
@@ -373,19 +292,19 @@ section#alt-about img {
     float: none;
   }
 
-  /* line 415, ../sass/coba.scss */
+  /* line 358, ../sass/coba.scss */
   nav.main-nav {
     float: none;
     padding: 0 2em 0 2em;
   }
-  /* line 419, ../sass/coba.scss */
+  /* line 362, ../sass/coba.scss */
   nav.main-nav ul {
     margin: 0 auto;
     width: 100%;
     max-width: 30em;
   }
 
-  /* line 426, ../sass/coba.scss */
+  /* line 369, ../sass/coba.scss */
   div#projects {
     margin: 0 auto;
     border: solid 1px pink;
@@ -395,7 +314,7 @@ section#alt-about img {
     padding: 7% 2% 0% 2%;
     box-sizing: border-box;
   }
-  /* line 435, ../sass/coba.scss */
+  /* line 378, ../sass/coba.scss */
   div#projects h2 {
     text-align: center;
     margin-bottom: 2%;
@@ -404,7 +323,7 @@ section#alt-about img {
     margin: 2% 0 2% 0;
   }
 
-  /* line 445, ../sass/coba.scss */
+  /* line 388, ../sass/coba.scss */
   div.port-item {
     border: solid 1px red;
     width: 48.4%;
@@ -414,7 +333,7 @@ section#alt-about img {
     margin-bottom: 2%;
   }
 
-  /* line 456, ../sass/coba.scss */
+  /* line 399, ../sass/coba.scss */
   div.port-item-last {
     margin-right: 0% !important;
     border: solid 1px red;
@@ -424,12 +343,12 @@ section#alt-about img {
     margin-bottom: 2%;
   }
 
-  /* line 465, ../sass/coba.scss */
+  /* line 408, ../sass/coba.scss */
   div#margin-out {
     margin-right: 0;
   }
 
-  /* line 469, ../sass/coba.scss */
+  /* line 412, ../sass/coba.scss */
   div#margin-outter {
     margin-right: 0;
   }
