@@ -1,7 +1,11 @@
 $(document).ready(function(){
-	$('.main-body').hide().fadeIn(2000);
+	/*$('.main-body').hide().fadeIn(2000);
 	$('#main-container').hide().fadeIn(2000);
 	$('#home').hide().fadeIn(2000);
+	//$('#home h2').delay(1000).show('slow').typed({
+        //strings: ["Hi, i am Chuck! Thanks for visiting my website. I am a Designer that believes in Using Design for the Good of Humanity :)"],
+        //typeSpeed: 40
+       //});
 
     $('.home-nav').click(function(e){
 		e.preventDefault();

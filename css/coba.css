@@ -10,10 +10,36 @@ website:   http://cobadesign.com
 -----------------------------------------------------------------------------*/
 /* START FONT FAMILY*/
 /* END FONT FAMILY*/
+/* =Fonts
+-----------------------------------------------------------------------------*/
+@font-face {
+  font-family: 'cabinsketchbold';
+  src: url("../fonts/cabinsketch-bold-webfont.eot");
+  src: url("../fonts/cabinsketch-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/cabinsketch-bold-webfont.woff2") format("woff2"), url("../fonts/cabinsketch-bold-webfont.woff") format("woff"), url("../fonts/cabinsketch-bold-webfont.ttf") format("truetype"), url("../fonts/cabinsketch-bold-webfont.svg#cabinsketchbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cabinsketchregular';
+  src: url("../fonts/cabinsketch-regular-webfont.eot");
+  src: url("../fonts/cabinsketch-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/cabinsketch-regular-webfont.woff2") format("woff2"), url("../fonts/cabinsketch-regular-webfont.woff") format("woff"), url("../fonts/cabinsketch-regular-webfont.ttf") format("truetype"), url("../fonts/cabinsketch-regular-webfont.svg#cabinsketchregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'intro_rust_gbase_2_line';
+  src: url("../fonts/rust/introrustg-base2line-webfont.eot");
+  src: url("../fonts/rust/introrustg-base2line-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/rust/introrustg-base2line-webfont.woff2") format("woff2"), url("../fonts/rust/introrustg-base2line-webfont.woff") format("woff"), url("../fonts/rust/introrustg-base2line-webfont.ttf") format("truetype"), url("../fonts/rust/introrustg-base2line-webfont.svg#intro_rust_gbase_2_line") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* =SASS Variables
 -----------------------------------------------------------------------------*/
-/* line 25, ../sass/coba.scss */
-div#home, div#projects, div#about, div#resume, div#contact-me {
+/* line 68, ../sass/coba.scss */
+div#home, div.letter-holder, div#projects, div#about, div#resume, div#contact-me {
   margin: 0 auto;
   max-width: 105em;
   width: 100%;
@@ -23,13 +49,13 @@ div#home, div#projects, div#about, div#resume, div#contact-me {
   box-sizing: border-box;
 }
 
-/* line 35, ../sass/coba.scss */
-section.first-container, section.second-container, section.third-container, section.fourth-container, section#fifth-container {
+/* line 78, ../sass/coba.scss */
+section.first-container, section.second-container, section.third-container, section#fourth-container, section#fifth-container {
   border: solid 1px red;
   width: 100%;
 }
 
-/* line 40, ../sass/coba.scss */
+/* line 83, ../sass/coba.scss */
 div#projects h2, div#about h2, div#resume h2 {
   text-align: center;
   margin-bottom: 2%;
@@ -40,19 +66,19 @@ div#projects h2, div#about h2, div#resume h2 {
 
 /* =Remember Order Of Styling Links
 -----------------------------------------------------------------------------*/
-/* line 53, ../sass/coba.scss */
+/* line 110, ../sass/coba.scss */
 a:link, a:visited, a:hover, a:focus, a:active
 html {
   font-size: 10px;
 }
 
-/* line 57, ../sass/coba.scss */
+/* line 114, ../sass/coba.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 62, ../sass/coba.scss */
+/* line 119, ../sass/coba.scss */
 body {
   font-size: 10px;
   height: 4000px;
@@ -62,12 +88,12 @@ body {
   margin: 0 auto;
 }
 
-/* line 72, ../sass/coba.scss */
+/* line 129, ../sass/coba.scss */
 #main-container {
   width: 100%;
 }
 
-/* line 76, ../sass/coba.scss */
+/* line 133, ../sass/coba.scss */
 header.main-header {
   position: fixed;
   z-index: 2;
@@ -76,58 +102,58 @@ header.main-header {
   padding: 2em 0 2em 0;
   border-bottom: 1px solid gray;
 }
-/* line 84, ../sass/coba.scss */
+/* line 141, ../sass/coba.scss */
 header.main-header img {
   float: left;
   width: 20em;
   padding-left: 2%;
 }
 
-/* line 92, ../sass/coba.scss */
+/* line 149, ../sass/coba.scss */
 nav.main-nav {
   float: right;
   padding-right: 2%;
   position: relative;
   top: 4.5em;
 }
-/* line 98, ../sass/coba.scss */
+/* line 155, ../sass/coba.scss */
 nav.main-nav ul {
   clear: both;
   height: 2em;
   padding: 0;
   margin: 0;
 }
-/* line 105, ../sass/coba.scss */
+/* line 162, ../sass/coba.scss */
 nav.main-nav ul li {
   list-style: none;
   float: left;
   margin-right: 2em;
   display: inline;
 }
-/* line 111, ../sass/coba.scss */
+/* line 168, ../sass/coba.scss */
 nav.main-nav ul li a {
   text-decoration: none;
   color: gray;
   font-size: 1.7em;
   font-weight: bold;
 }
-/* line 117, ../sass/coba.scss */
+/* line 174, ../sass/coba.scss */
 nav.main-nav ul li a:visited {
   border-bottom: solid #ed1c24 0.3em;
 }
-/* line 121, ../sass/coba.scss */
+/* line 178, ../sass/coba.scss */
 nav.main-nav ul li a:hover, nav.main-nav ul li a:focus, nav.main-nav ul li a:active {
   border-bottom: solid #ed1c24 0.3em;
 }
 
-/* line 129, ../sass/coba.scss */
+/* line 186, ../sass/coba.scss */
 li.contact-nav {
   margin-right: 0em !important;
 }
 
 /* START STYLING SECTION HOME AND FIRST-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
-/* line 137, ../sass/coba.scss */
+/* line 194, ../sass/coba.scss */
 section.first-container {
   background-image: url(../imgs/new-splash-bg.jpg);
   background-position: center center;
@@ -137,34 +163,162 @@ section.first-container {
   width: 100%;
 }
 
-/* line 148, ../sass/coba.scss */
+/* line 205, ../sass/coba.scss */
 div#home {
+  max-width: 135em;
   border: solid 1px green;
 }
-/* line 152, ../sass/coba.scss */
+/* line 210, ../sass/coba.scss */
 div#home h1 {
   width: 100%;
-  max-width: 25em;
+  max-width: 5em;
   color: #ffffff;
-  font-family: 'Londrina Outline';
+  font-family: 'Londrina Shadow', cursive;
   font-weight: bold;
-  border: solid 1px red;
-  font-size: 3em;
+  font-size: 10em;
   float: right;
+  text-align: center;
+  margin: 18% 12% 3% 0;
+  border: solid 1px green;
 }
-/* line 165, ../sass/coba.scss */
+/* line 224, ../sass/coba.scss */
+div#home h2 {
+  width: 100%;
+  max-width: 19em;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 4em;
+  float: right;
+  text-align: center;
+  border: solid 1px green;
+}
+/* line 236, ../sass/coba.scss */
 div#home img {
   width: 100%;
-  max-width: 40em;
-  border: solid 1px red;
+  max-width: 45em;
   float: left;
+  margin-top: 7.5%;
+}
+
+/* line 244, ../sass/coba.scss */
+div.letter-holder {
+  height: 40em;
+  width: 100%;
+  max-width: 80em;
+  border: solid 1px red;
+}
+
+/* line 252, ../sass/coba.scss */
+div.letter {
+  width: 100%;
+  max-width: 0.6em;
+  color: #ffffff;
+  font-family: 'Londrina Shadow', cursive;
+  font-weight: bold;
+  font-size: 18em;
+  text-align: center;
+  display: inline-block;
+  transition: all 500ms cubic-bezier(0.865, -0.15, 0.085, 1.21);
+  transition-timing-function: cubic-bezier(0.865, -0.15, 0.085, 1.21);
+}
+
+/* line 266, ../sass/coba.scss */
+div#w {
+  transform: translateX(-1px) translateY(68px) rotate(-17deg);
+  -moz-transform: translateX(-1px) translateY(68px) rotate(-17deg);
+  -ms-transform: translateX(-1px) translateY(68px) rotate(-17deg);
+  -webkit-transform: translateX(-1px) translateY(68px) rotate(-17deg);
+  transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transform: translateX(-1px) translateY(68px) rotate(-17deg);
+  -moz-transform: translateX(-1px) translateY(68px) rotate(-17deg);
+  -ms-transform: translateX(-1px) translateY(68px) rotate(-17deg);
+  -webkit-transform: translateX(-1px) translateY(68px) rotate(-17deg);
+  transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+}
+
+/* line 279, ../sass/coba.scss */
+div#e {
+  transform: translateX(-3px) translateY(39px) rotate(-13deg);
+  -moz-transform: translateX(-3px) translateY(39px) rotate(-13deg);
+  -ms-transform: translateX(-3px) translateY(39px) rotate(-13deg);
+  -webkit-transform: translateX(-3px) translateY(39px) rotate(-13deg);
+  transition-delay: 0.04s;
+  -webkit-transition-delay: 0.04s;
+  -moz-transition-delay: 0.04s;
+  -ms-transition-delay: 0.04s;
+}
+
+/* line 284, ../sass/coba.scss */
+div#l {
+  transform: translateX(-3px) translateY(21px) rotate(-9deg);
+  -moz-transform: translateX(-3px) translateY(21px) rotate(-9deg);
+  -ms-transform: translateX(-3px) translateY(21px) rotate(-9deg);
+  -webkit-transform: translateX(-3px) translateY(21px) rotate(-9deg);
+  transition-delay: 0.08s;
+  -webkit-transition-delay: 0.08s;
+  -moz-transition-delay: 0.08s;
+  -ms-transition-delay: 0.08s;
+}
+
+/* line 289, ../sass/coba.scss */
+div#c {
+  transform: translateX(0px) translateY(10px) rotate(0deg);
+  -moz-transform: translateX(0px) translateY(10px) rotate(0deg);
+  -ms-transform: translateX(0px) translateY(10px) rotate(0deg);
+  -webkit-transform: translateX(0px) translateY(10px) rotate(0deg);
+  transition-delay: 0.02s;
+  -webkit-transition-delay: 0.02s;
+  -moz-transition-delay: 0.02s;
+  -ms-transition-delay: 0.02s;
+}
+
+/* line 294, ../sass/coba.scss */
+div#o {
+  transform: translateX(3px) translateY(21px) rotate(9deg);
+  -moz-transform: translateX(3px) translateY(21px) rotate(9deg);
+  -ms-transform: translateX(3px) translateY(21px) rotate(9deg);
+  -webkit-transform: translateX(3px) translateY(21px) rotate(9deg);
+  transition-delay: 0.32s;
+  -webkit-transition-delay: 0.32s;
+  -moz-transition-delay: 0.32s;
+  -ms-transition-delay: 0.32s;
+}
+
+/* line 299, ../sass/coba.scss */
+div#m {
+  transform: translateX(3px) translateY(39px) rotate(13deg);
+  -moz-transform: translateX(3px) translateY(39px) rotate(13deg);
+  -ms-transform: translateX(3px) translateY(39px) rotate(13deg);
+  -webkit-transform: translateX(3px) translateY(39px) rotate(13deg);
+  transition-delay: 0.32s;
+  -webkit-transition-delay: 0.32s;
+  -moz-transition-delay: 0.32s;
+  -ms-transition-delay: 0.32s;
+}
+
+/* line 304, ../sass/coba.scss */
+div#ee {
+  transform: translateX(1px) translateY(68px) rotate(17deg);
+  -moz-transform: translateX(1px) translateY(68px) rotate(17deg);
+  -ms-transform: translateX(1px) translateY(68px) rotate(17deg);
+  -webkit-transform: translateX(1px) translateY(68px) rotate(17deg);
+  transition-delay: 0.04s;
+  -webkit-transition-delay: 0.04s;
+  -moz-transition-delay: 0.04s;
+  -ms-transition-delay: 0.04s;
 }
 
 /* END SECTION HOME AND FIRST-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 /* START SECTION PROJECTS AND SECOND-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
-/* line 195, ../sass/coba.scss */
+/* line 331, ../sass/coba.scss */
 div.port-item {
   border: solid 1px red;
   width: 100%;
@@ -175,7 +329,7 @@ div.port-item {
   margin-bottom: 2%;
 }
 
-/* line 207, ../sass/coba.scss */
+/* line 343, ../sass/coba.scss */
 div.port-item-last {
   margin-right: 0% !important;
   border: solid 1px red;
@@ -189,17 +343,18 @@ div.port-item-last {
 -----------------------------------------------------------------------------*/
 /* START SECTION ABOUT AND THIRD-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
-/* line 223, ../sass/coba.scss */
+/* line 359, ../sass/coba.scss */
 section.third-container {
   background-color: #acacac;
+  height: 106em;
 }
 
-/* line 229, ../sass/coba.scss */
+/* line 366, ../sass/coba.scss */
 div#about {
   border: solid 1px red;
   height: 90em;
 }
-/* line 239, ../sass/coba.scss */
+/* line 376, ../sass/coba.scss */
 div#about p {
   float: left;
   font-size: 2.5em;
@@ -213,7 +368,7 @@ div#about p {
   margin-right: 3%;
   border: solid 1px green;
 }
-/* line 252, ../sass/coba.scss */
+/* line 389, ../sass/coba.scss */
 div#about p a {
   text-decoration: none;
   font-size: 1em;
@@ -221,7 +376,7 @@ div#about p a {
   color: #414042;
   font-weight: bold;
 }
-/* line 261, ../sass/coba.scss */
+/* line 398, ../sass/coba.scss */
 div#about img {
   width: 100%;
   max-width: 36.4em;
@@ -231,12 +386,12 @@ div#about img {
 -----------------------------------------------------------------------------*/
 /* START SECTION CONTACT AND FOURTH-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
-/* line 277, ../sass/coba.scss */
-section.fourth-container {
-  background-color: #acacac;
+/* line 414, ../sass/coba.scss */
+section#fourth-container {
+  height: 106em;
 }
 
-/* line 283, ../sass/coba.scss */
+/* line 420, ../sass/coba.scss */
 div#resume {
   border: solid 1px red;
   height: 90em;
@@ -246,7 +401,7 @@ div#resume {
 -----------------------------------------------------------------------------*/
 /* START SECTION CONTACT AND FIFTH-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
-/* line 309, ../sass/coba.scss */
+/* line 446, ../sass/coba.scss */
 div#contact-me h2 {
   text-align: center;
   margin-bottom: 2%;
@@ -255,16 +410,16 @@ div#contact-me h2 {
   margin: 2% 0 2% 0;
 }
 
-/* line 318, ../sass/coba.scss */
+/* line 455, ../sass/coba.scss */
 #form-holder {
   border: solid 1px red;
 }
 
-/* line 322, ../sass/coba.scss */
+/* line 459, ../sass/coba.scss */
 section#alt-about {
   display: none;
 }
-/* line 325, ../sass/coba.scss */
+/* line 462, ../sass/coba.scss */
 section#alt-about img {
   display: none;
 }
@@ -274,17 +429,17 @@ section#alt-about img {
 /* =iPhone 6 Media Query
 -----------------------------------------------------------------------------*/
 @media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: portrait) {
-  /* line 342, ../sass/coba.scss */
+  /* line 479, ../sass/coba.scss */
   section#home {
     width: 100%;
   }
 
-  /* line 346, ../sass/coba.scss */
+  /* line 483, ../sass/coba.scss */
   header.main-header {
     width: 100%;
     height: 17em;
   }
-  /* line 350, ../sass/coba.scss */
+  /* line 487, ../sass/coba.scss */
   header.main-header img {
     margin: 0 auto !important;
     display: block;
@@ -292,19 +447,19 @@ section#alt-about img {
     float: none;
   }
 
-  /* line 358, ../sass/coba.scss */
+  /* line 495, ../sass/coba.scss */
   nav.main-nav {
     float: none;
     padding: 0 2em 0 2em;
   }
-  /* line 362, ../sass/coba.scss */
+  /* line 499, ../sass/coba.scss */
   nav.main-nav ul {
     margin: 0 auto;
     width: 100%;
     max-width: 30em;
   }
 
-  /* line 369, ../sass/coba.scss */
+  /* line 506, ../sass/coba.scss */
   div#projects {
     margin: 0 auto;
     border: solid 1px pink;
@@ -314,7 +469,7 @@ section#alt-about img {
     padding: 7% 2% 0% 2%;
     box-sizing: border-box;
   }
-  /* line 378, ../sass/coba.scss */
+  /* line 515, ../sass/coba.scss */
   div#projects h2 {
     text-align: center;
     margin-bottom: 2%;
@@ -323,7 +478,7 @@ section#alt-about img {
     margin: 2% 0 2% 0;
   }
 
-  /* line 388, ../sass/coba.scss */
+  /* line 525, ../sass/coba.scss */
   div.port-item {
     border: solid 1px red;
     width: 48.4%;
@@ -333,7 +488,7 @@ section#alt-about img {
     margin-bottom: 2%;
   }
 
-  /* line 399, ../sass/coba.scss */
+  /* line 536, ../sass/coba.scss */
   div.port-item-last {
     margin-right: 0% !important;
     border: solid 1px red;
@@ -343,12 +498,12 @@ section#alt-about img {
     margin-bottom: 2%;
   }
 
-  /* line 408, ../sass/coba.scss */
+  /* line 545, ../sass/coba.scss */
   div#margin-out {
     margin-right: 0;
   }
 
-  /* line 412, ../sass/coba.scss */
+  /* line 549, ../sass/coba.scss */
   div#margin-outter {
     margin-right: 0;
   }

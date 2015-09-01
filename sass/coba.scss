@@ -14,6 +14,49 @@ website:   http://cobadesign.com
 
 @import 'colors';
 
+
+/* =Fonts
+-----------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'cabinsketchbold';
+    src: url('../fonts/cabinsketch-bold-webfont.eot');
+    src: url('../fonts/cabinsketch-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cabinsketch-bold-webfont.woff2') format('woff2'),
+         url('../fonts/cabinsketch-bold-webfont.woff') format('woff'),
+         url('../fonts/cabinsketch-bold-webfont.ttf') format('truetype'),
+         url('../fonts/cabinsketch-bold-webfont.svg#cabinsketchbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cabinsketchregular';
+    src: url('../fonts/cabinsketch-regular-webfont.eot');
+    src: url('../fonts/cabinsketch-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cabinsketch-regular-webfont.woff2') format('woff2'),
+         url('../fonts/cabinsketch-regular-webfont.woff') format('woff'),
+         url('../fonts/cabinsketch-regular-webfont.ttf') format('truetype'),
+         url('../fonts/cabinsketch-regular-webfont.svg#cabinsketchregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'intro_rust_gbase_2_line';
+    src: url('../fonts/rust/introrustg-base2line-webfont.eot');
+    src: url('../fonts/rust/introrustg-base2line-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rust/introrustg-base2line-webfont.woff2') format('woff2'),
+         url('../fonts/rust/introrustg-base2line-webfont.woff') format('woff'),
+         url('../fonts/rust/introrustg-base2line-webfont.ttf') format('truetype'),
+         url('../fonts/rust/introrustg-base2line-webfont.svg#intro_rust_gbase_2_line') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /* =SASS Variables
 -----------------------------------------------------------------------------*/
 
@@ -43,6 +86,20 @@ $white-font: #ffffff;
 	color: $font-color;
 	font-size: 3em;
 	margin:5% 0 5% 0;
+}
+
+@mixin transform($radius){
+	transform: $radius;
+	-moz-transform: $radius;
+	-ms-transform: $radius;
+	-webkit-transform:$radius;
+}
+
+@mixin transition($radius){
+		transition-delay:$radius;
+		-webkit-transition-delay: $radius;
+		-moz-transition-delay: $radius;
+		-ms-transition-delay: $radius;
 }
 
 /* =Remember Order Of Styling Links
@@ -147,27 +204,106 @@ section.first-container{
 
 div#home{
 	@extend %section-values;
+	max-width: 135em;
 	border: $border green;
 
 	h1{
 		width: 100%;
-		max-width:25em;
+		max-width:5em;
 		color: #ffffff;
-		font-family: 'Londrina Outline';
+		font-family: 'Londrina Shadow', cursive;
 		font-weight: bold;
-		border: $border red;
-		font-size: 3em;
+		font-size: 10em;
 		float: right;
+		text-align: center;
+		margin: 18% 12% 3% 0;
+		border: $border green;
 
+	}
+
+	h2{
+		width: 100%;
+		max-width:19em;
+		color: #ffffff;
+		font-weight: bold;
+		font-size: 4em;
+		float: right;
+		text-align: center;
+		border: $border green;
 	}
 
 
 	img{
 		width: 100%;
-		max-width: 40em;
-		border: $border red;
-		float: left
+		max-width: 45em;
+		float: left;
+		margin-top: 7.5%;
 	}
+}
+
+div.letter-holder{
+	@extend %section-values;
+	height: 40em;
+	width: 100%;
+	max-width: 80em;
+	border: $border red;
+}
+
+div.letter{
+		width: 100%;
+		max-width:0.6em;
+		color: #ffffff;
+		font-family: 'Londrina Shadow', cursive;
+		font-weight: bold;
+		font-size: 18em;
+		text-align: center;
+		display: inline-block;
+		transition: all 500ms cubic-bezier(0.865,-0.15,0.085,1.21);
+		transition-timing-function: cubic-bezier(0.865,-0.15,0.085,1.21);
+
+}
+
+div#w{
+		@include transform(translateX(-1px) translateY(68px) rotate(-17deg));
+		@include transition( 0s);
+		transform: translateX(-1px) translateY(68px) rotate(-17deg);
+		-moz-transform: translateX(-1px) translateY(68px) rotate(-17deg);
+		-ms-transform: translateX(-1px) translateY(68px) rotate(-17deg);
+		-webkit-transform: translateX(-1px) translateY(68px) rotate(-17deg);
+		transition-delay: 0s;
+		-webkit-transition-delay: 0s;
+		-moz-transition-delay: 0s;
+		-ms-transition-delay: 0s;
+}
+
+div#e{
+		@include transform(translateX(-3px) translateY(39px) rotate(-13deg));
+		@include transition(.04s);
+
+}
+div#l{
+		 @include transform(translateX(-3px) translateY(21px) rotate(-9deg));
+		 @include transition(.08s);
+}
+
+div#c{
+		 @include transform(translateX(0px) translateY(10px) rotate(0deg));
+		 @include transition(.02s);
+}
+
+div#o{
+		 @include transform(translateX(3px) translateY(21px) rotate(9deg));
+		 @include transition(.32s);
+}
+
+div#m{
+		 @include transform(translateX(3px) translateY(39px) rotate(13deg));
+		 @include transition(.32s);
+}
+
+div#ee{
+		 @include transform(translateX(1px) translateY(68px) rotate(17deg));
+		 @include transition(.04s);
 }
 
 
@@ -223,6 +359,7 @@ div.port-item-last{
 section.third-container{
 	@extend %container-style;
 	background-color: $alt-gray-color;
+	height: $section-height + 10;
 
 }
 
@@ -274,9 +411,9 @@ div#about{
 -----------------------------------------------------------------------------*/
 
 
-section.fourth-container{
+section#fourth-container{
 	@extend %container-style;
-	background-color: $alt-gray-color;
+	height: $section-height + 10;
 
 }
 
