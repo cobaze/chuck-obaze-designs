@@ -1,11 +1,7 @@
 $(document).ready(function(){
-	/*$('.main-body').hide().fadeIn(2000);
+	$('.main-body').hide().fadeIn(2000);
 	$('#main-container').hide().fadeIn(2000);
 	$('#home').hide().fadeIn(2000);
-	//$('#home h2').delay(1000).show('slow').typed({
-        //strings: ["Hi, i am Chuck! Thanks for visiting my website. I am a Designer that believes in Using Design for the Good of Humanity :)"],
-        //typeSpeed: 40
-       //});
 
     $('.home-nav').click(function(e){
 		e.preventDefault();
@@ -22,6 +18,13 @@ $(document).ready(function(){
 	});
 
 	$('.projects-nav').click(function(e){
+		e.preventDefault();
+		$('html, body').animate({
+			scrollTop: $("#projects").offset().top
+				}, 2000);
+	});
+
+	$('.dwn-btn').click(function(e){
 		e.preventDefault();
 		$('html, body').animate({
 			scrollTop: $("#projects").offset().top
@@ -47,6 +50,22 @@ $(document).ready(function(){
 		$('html, body').animate({
 			scrollTop: $("#contact-me").offset().top
 				}, 2000);
+	});
+
+	$(window).scroll(function(){
+
+		if ($(window).scrollTop() > 800) {
+			$('.main-header').fadeIn(200);
+		} else {
+			$('.main-header').fadeOut(200);
+		}
+
+		if ($(window).scrollTop() > 800){
+		$('.active-link-two').addClass('jquery-style');
+		} else {
+			$('.active-link-two').removeClass('jquery-style');
+		}
+
 	});
 
 });
