@@ -3,6 +3,7 @@ $(document).ready(function(){
 	$('#main-container').hide().fadeIn(2000);
 	$('#home').hide().fadeIn(2000);
 
+
     $('.home-nav').click(function(e){
 		e.preventDefault();
 		$('html, body').animate({
@@ -51,6 +52,8 @@ $(document).ready(function(){
 			scrollTop: $("#contact-me").offset().top
 				}, 2000);
 	});
+
+	$('.main-header').hide();
 
 	$(window).scroll(function(){
 
