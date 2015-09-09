@@ -45,7 +45,7 @@ $white-font: #ffffff;
 %h2-values{
 	text-align: center;
 	margin-bottom:2%;
-	color: $font-color;
+	color: $alt-font-color;
 	font-size: 3em;
 	margin:5% 0 5% 0;
 }
@@ -134,7 +134,7 @@ header.main-header{
 }
 
 .jquery-style{
-	border-bottom: solid #ed1c24 0.3em;
+	border-bottom: solid $red-color 0.3em;
 
 }
 
@@ -434,32 +434,127 @@ a.social-three{
 	}
 }
 
-/* END SECTION CONTACT AND THIRD-CONTAINER STYLES
+/* END SECTION ABOUT AND THIRD-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
 
-/* START SECTION CONTACT AND FOURTH-CONTAINER STYLES
+/* START SECTION RESUME AND FOURTH-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
 
 section#fourth-container{
 	@extend %container-style;
-	height: $section-height + 10;
+	height: $section-height + 150;
 
 }
 
 div#resume{
 	@extend %section-values;
 	border: $border red;
-	height: 90em;
+	height: 197em;
 
 	h2{
 		@extend %h2-values;
 	}
 }
 
+div.dwn-pdf{
+	border: solid red 1px;
+	float: left;
+	width: 100%;
+	max-width: 30em;
+	box-sizing: border-box;
+	margin-right: 2em;
+	margin-bottom: 4em;
 
-/* END SECTION CONTACT AND FOURTH-CONTAINER STYLES
+	a{
+		text-decoration: none;
+		padding: 1.9em 0 0 1em;
+		border: $red-color;
+		font-size: 2em;
+		font-weight: 600;
+		text-align: left;
+		color: #ffffff;
+		background-color: $red-color;
+		margin: 0 auto;
+		box-sizing: border-box;
+		display: block;
+		background-image: url(../imgs/pdf-btn-white.png);
+		background-repeat: no-repeat;
+		background-size: 2em;
+		background-position: 12em 1.1em;
+		height: 5em;
+
+		&:hover, &:focus{
+			color: $red-color;
+			background-color: #ffffff;
+			border: solid $red-color .125em;
+			background-image: url(../imgs/pdf-btn-red.png);
+		}
+
+	}
+}
+
+div.skill-info{
+	border: solid red 1px;
+	float: left;
+	width: 100%;
+	max-width: 30em;
+	box-sizing: border-box;
+	margin-right: 2em;
+	height: 155em;
+
+}
+
+div.resume-info{
+	float: right;
+	border: red solid 1px;
+	max-width:70em;
+	width: 100%;
+}
+
+div.education{
+	color: $alt-font-color;
+
+	h3{
+		font-size:2.5em;
+		color: $red-color;
+		margin-bottom: 1em;
+	}
+
+	h4{
+		font-size: 2em;
+		margin-bottom: .5em;
+
+		span{
+			font-weight: 300;
+		}
+	}
+
+	p{
+		font-size: 1.7em;
+		line-height: 1.5em;
+		margin-bottom: 2em;
+	}
+
+	ul{
+		margin-bottom: 2em;
+
+		li{
+			background-image: url(../imgs/bullet.png);
+			background-repeat: no-repeat;
+			list-style: none;
+			background-position: center left;
+			background-size: 0.9em;
+			font-size: 1.7em;
+			line-height: 1.5em;
+			padding-left: 1.5em;
+		}
+	}
+}
+
+
+/* END SECTION RESUME AND FOURTH-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
 
@@ -527,6 +622,7 @@ button{
 	&:hover, &:focus{
 		color: $red-color;
 		background-color: #ffffff;
+		border: solid $red-color .15em;
 	}
 }
 
@@ -543,6 +639,16 @@ footer.main-footer{
 
 /* END SECTION CONTACT AND FIFTH-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
+
+
+
+
+
+/* START MEDIA QUERIES
+-----------------------------------------------------------------------------*/
+
+
+
 
 
 /* =iPhone 6 Media Query
