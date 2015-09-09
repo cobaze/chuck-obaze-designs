@@ -38,7 +38,6 @@ $white-font: #ffffff;
 }
 
 %container-style {
-	border: $border red;
 	width: 100%;
 }
 
@@ -60,6 +59,32 @@ $white-font: #ffffff;
 	background-repeat: no-repeat;
 	float: left;
 	padding: 3%
+
+}
+
+%left-resume{
+	float: left;
+	width: 100%;
+	max-width: 33em;
+	box-sizing: border-box;
+	margin-right: 1em;
+}
+
+%buttons{
+	color: $red-color;
+	background-color: #ffffff;
+	border: solid $red-color .125em;
+}
+
+%listing-style{
+	background-image: url(../imgs/bullet.png);
+	background-repeat: no-repeat;
+	list-style: none;
+	background-position: center left;
+	background-size: 0.9em;
+	font-size: 1.7em;
+	line-height: 1.5em;
+	padding-left: 1.5em;
 
 }
 
@@ -444,13 +469,12 @@ a.social-three{
 
 section#fourth-container{
 	@extend %container-style;
-	height: $section-height + 150;
+	height: $section-height + 112;
 
 }
 
 div#resume{
 	@extend %section-values;
-	border: $border red;
 	height: 197em;
 
 	h2{
@@ -459,18 +483,12 @@ div#resume{
 }
 
 div.dwn-pdf{
-	border: solid red 1px;
-	float: left;
-	width: 100%;
-	max-width: 30em;
-	box-sizing: border-box;
-	margin-right: 2em;
+	@extend %left-resume;
 	margin-bottom: 4em;
 
 	a{
 		text-decoration: none;
-		padding: 1.9em 0 0 1em;
-		border: $red-color;
+		padding: 1.9em 0 0 1.5em;
 		font-size: 2em;
 		font-weight: 600;
 		text-align: left;
@@ -482,13 +500,11 @@ div.dwn-pdf{
 		background-image: url(../imgs/pdf-btn-white.png);
 		background-repeat: no-repeat;
 		background-size: 2em;
-		background-position: 12em 1.1em;
+		background-position: 13em 1.1em;
 		height: 5em;
 
 		&:hover, &:focus{
-			color: $red-color;
-			background-color: #ffffff;
-			border: solid $red-color .125em;
+			@extend %buttons;
 			background-image: url(../imgs/pdf-btn-red.png);
 		}
 
@@ -496,20 +512,44 @@ div.dwn-pdf{
 }
 
 div.skill-info{
-	border: solid red 1px;
-	float: left;
-	width: 100%;
-	max-width: 30em;
-	box-sizing: border-box;
-	margin-right: 2em;
+	@extend %left-resume;
 	height: 155em;
+	background-color: $resume-gray;
+	padding: 6em 3.5em 0 3.5em;
+
+	h3{
+		font-size:2.5em;
+		color: $red-color;
+		margin-bottom: 3em;
+		text-align: center;
+	}
+
+	h4{
+		font-size: 2em;
+	}
+
+	hr{
+		display: block;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+		margin-right: 1em;
+		border: solid 0.2em $red-color;
+		width:5.5em;
+	}
+
+	ul{
+		margin-bottom: 4em;
+
+		li{
+			@extend %listing-style;
+		}
+	}
 
 }
 
 div.resume-info{
 	float: right;
-	border: red solid 1px;
-	max-width:70em;
+	max-width:68.2em;
 	width: 100%;
 }
 
@@ -541,14 +581,7 @@ div.education{
 		margin-bottom: 2em;
 
 		li{
-			background-image: url(../imgs/bullet.png);
-			background-repeat: no-repeat;
-			list-style: none;
-			background-position: center left;
-			background-size: 0.9em;
-			font-size: 1.7em;
-			line-height: 1.5em;
-			padding-left: 1.5em;
+			@extend %listing-style;
 		}
 	}
 }
@@ -563,7 +596,11 @@ div.education{
 
 section#fifth-container{
 	@extend %container-style;
-	background-color: $alt-gray-color;
+	/*background-color: $alt-gray-color;*/
+	background-image: url(../imgs/contact-us-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
 
 }
 
@@ -620,9 +657,7 @@ button{
 	display: block;
 
 	&:hover, &:focus{
-		color: $red-color;
-		background-color: #ffffff;
-		border: solid $red-color .15em;
+		@extend %buttons;
 	}
 }
 
