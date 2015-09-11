@@ -29,7 +29,7 @@ $white-font: #ffffff;
 
 %section-values {
 	margin: 0 auto;
-	max-width: 105em;
+	max-width: 135em;
 	width: 100%;
 	height: $section-height;
 	clear: both;
@@ -50,15 +50,15 @@ $white-font: #ffffff;
 }
 
 %social-values{
-	width: 6em;
-	height: 6em;
+	width: 4em;
+	height: 4em;
 	max-height: 100%;
 	max-width: 100%;
 	display: block;
 	background-size: 6em;
 	background-repeat: no-repeat;
 	float: left;
-	padding: 3%
+	box-sizing: border-box;
 
 }
 
@@ -158,9 +158,8 @@ header.main-header{
 	}
 }
 
-.jquery-style{
+.active-link-style{
 	border-bottom: solid $red-color 0.3em;
-
 }
 
 nav.main-nav{
@@ -204,11 +203,13 @@ li.contact-nav{
 	margin-right: 0em !important;
 }
 
-/* START STYLING SECTION HOME AND FIRST-CONTAINER STYLES
+/* START STYLING INDEX PAGE
 -----------------------------------------------------------------------------*/
 
+/* START STYLING SECTION HOME AND FIRST-INDEX-PAGE-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
 
-section.first-container{
+section.first-index-page-container{
 	@extend %container-style;
 	background-image: url(../imgs/bg.jpg);
 	background-position: center center;
@@ -272,71 +273,21 @@ div.letters-holder{
 }
 
 
-/*div.letters{
-		width: 100%;
-		max-width:0.6em;
-		color: #ffffff;
-		font-family: 'Londrina Shadow', cursive;
-		text-shadow: 8px 8px rgba(255, 103, 103, 0.3);
-		font-weight: bold;
-		font-size: 24em;
-		text-align: center;
-		display: inline-block;
-		@include transition(all 500ms cubic-bezier(0.865,-0.15,0.085,1.21));
-		@include transition-timing(cubic-bezier(0.865,-0.15,0.085,1.21));
-
-}
-
-div#w{
-		@include transform(translateX(-1px) translateY(68px) rotate(-17deg));
-		@include transition( 0s);
-}
-
-div#e{
-		@include transform(translateX(-3px) translateY(39px) rotate(-13deg));
-		@include transition(.04s);
-
-}
-div#l{
-		 @include transform(translateX(-3px) translateY(21px) rotate(-9deg));
-		 @include transition(.08s);
-}
-
-div#c{
-		 @include transform(translateX(0px) translateY(10px) rotate(0deg));
-		 @include transition(.02s);
-}
-
-div#o{
-		 @include transform(translateX(3px) translateY(21px) rotate(9deg));
-		 @include transition(.32s);
-}
-
-div#m{
-		 @include transform(translateX(3px) translateY(39px) rotate(13deg));
-		 @include transition(.32s);
-}
-
-div#ee{
-		 @include transform(translateX(1px) translateY(68px) rotate(17deg));
-		 @include transition(.04s);
-}*/
-
-
-/* END SECTION HOME AND FIRST-CONTAINER STYLES
+/* END SECTION HOME AND FIRST-INDEX-PAGE-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
 
-/* START SECTION PROJECTS AND SECOND-CONTAINER STYLES
+/* START SECTION PROJECTS AND SECOND-INDEX-PAGE-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
-section.second-container{
+section.second-index-page-container{
 	@extend %container-style;
 
 }
 
 div#projects{
 	@extend %section-values;
+	border: solid red 1px;
 
 	h2{
 		@extend %h2-values;
@@ -347,32 +298,42 @@ div#projects{
 div.port-item{
 	border: $border red;
 	width: 100%;
-	max-width: 24.4em;
-	margin-right: 2%;
-	height: 20em;
+	max-width: 33.5em;
+	height: 25em;
 	float: right;
-	margin-bottom: 2%;
+	overflow: hidden;
 
 
 }
 
-div.port-item-last{
-	margin-right: 0% !important;
-	border: $border red;
-	width: 23.3%;
-	height: 20em;
-	float: right;
-	margin-bottom: 2%;
+div#nipost{
+
+	a{
+		img{
+			width: 100%;
+			max-width: 34em;
+		}
+	}
 }
 
-/* END SECTION PROJECTS AND SECOND-CONTAINER STYLES
+/* END SECTION PROJECTS AND SECOND-INDEX-PAGE-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+
+/* END STYLING INDEX PAGE
 -----------------------------------------------------------------------------*/
 
 
-/* START SECTION ABOUT AND THIRD-CONTAINER STYLES
+
+/*-----------------------------------------------------------------------------*/
+
+
+
+/* START STYLING ABOUT PAGE
+-----------------------------------------------------------------------------*/
+/* START ABOUT CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
-section.third-container{
+section.about-container{
 	@extend %container-style;
 	background-color: $alt-gray-color;
 	height: $section-height;
@@ -382,6 +343,7 @@ section.third-container{
 div#about{
 	@extend %section-values;
 	height: 80em;
+	border: $border red;
 
 
 	h2{
@@ -390,16 +352,15 @@ div#about{
 	}
 
 	p{
-		float: left;
 		font-size: 2.5em;
 		line-height: 1.6em;
 		color: $white-font;
 		font-weight: 300;
 		width: 100%;
-		max-width: 26.1em;
-		height: 100%;
-		max-height: 17.7em;
-		margin-right: 3%;
+		max-width: 28.1em;
+		margin-left: 11%;
+		border: $border red;
+		float: left;
 
 
 		a{
@@ -416,24 +377,36 @@ div#about{
 	}
 }
 
-img.about-chuck{
+div.img-holder{
+	width: auto;
+	border: $border red;
+	display: block;
+	float: right;
+	margin-right: 11%;
+
+	&>img{
 	width: 100%;
-	max-width: 36.4em;
+	max-width: 28.2em;
+	clear: both;
+	margin-bottom: 5%;
+
+	}
+
 }
 
 div.social{
-	float: right;
-	margin-right: 6.5%;
-	margin-top: 1%;
 	width: 100%;
-	max-width: 22em;
+	max-width: 12em;
+	border: $border red;
 	height: 100%;
-	max-height: 6em;
+	max-height: 4em;
+	margin: 0 auto;
 }
 
 a.social-one{
 	@extend %social-values;
 	background-image: url(../imgs/in.png);
+	background-size: 4em;
 
 	&:hover, &:focus{
 		background-image: url(../imgs/in-white.png);
@@ -443,6 +416,7 @@ a.social-one{
 a.social-two{
 	@extend %social-values;
 	background-image: url(../imgs/pin.png);
+	background-size: 3.7em;
 
 	&:hover, &:focus{
 		background-image: url(../imgs/pin-white.png);
@@ -452,6 +426,7 @@ a.social-two{
 a.social-three{
 	@extend %social-values;
 	background-image: url(../imgs/rss.png);
+	background-size: 3.7em;
 
 
 	&:hover, &:focus{
@@ -470,12 +445,14 @@ a.social-three{
 section#fourth-container{
 	@extend %container-style;
 	height: $section-height + 112;
+	clear: both;
+
 
 }
 
 div#resume{
 	@extend %section-values;
-	height: 197em;
+	height: 195em;
 
 	h2{
 		@extend %h2-values;
@@ -513,7 +490,7 @@ div.dwn-pdf{
 
 div.skill-info{
 	@extend %left-resume;
-	height: 155em;
+	height: 153em;
 	background-color: $resume-gray;
 	padding: 6em 3.5em 0 3.5em;
 
@@ -675,7 +652,122 @@ footer.main-footer{
 /* END SECTION CONTACT AND FIFTH-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
+/* START NIPOST PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
 
+header.nipost-header{
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	background-color: #ffffff;
+	padding: 2em 0 2em 0;
+	border-bottom: 1px solid $font-color;
+
+	img{
+		float: left;
+		width: 20em;
+		padding-left: 2%;
+	}
+}
+
+nav.main-nav{
+	float: right;
+	padding-right: 2%;
+	position: relative;
+	top: 4.5em;
+
+	ul{
+		clear: both;
+		height: 2em;
+		padding: 0;
+		margin: 0;
+
+
+		li{
+			list-style: none;
+			float: left;
+			margin-right: 2em;
+			display: inline;
+
+			a{
+				text-decoration: none;
+				color: $font-color;
+				font-size: 1.7em;
+				font-weight: bold;
+
+				&:visited{
+					border-bottom: solid $red-color .3em;
+				}
+
+				&:hover, &:focus, &:active{
+					border-bottom: solid $red-color .3em;
+				}
+			}
+		}
+	}
+}
+
+li.contact-nav{
+	margin-right: 0em !important;
+}
+
+section.nipost-first-container{
+	@extend %section-values;
+	height: 6000px;
+	border: solid red 1px;
+	padding-top: 7%;
+
+	h2{
+		@extend %h2-values;
+		margin-bottom: 0.5em;
+	}
+
+	&>img{
+		width: 100%;
+		max-width: 100em;
+		display: block;
+		margin: 0 auto;
+		margin-bottom:0;
+	}
+
+	&>p{
+		font-size: 1.9em;
+		line-height: 1.4em;
+		color: $font-color;
+		font-weight: 300;
+		width: 100%;
+		max-width: 45em;
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 3em;
+	}
+
+	h3{
+		@extend %h2-values;
+		margin-bottom: 1em;
+	}
+}
+
+div.sketches{
+	height: 100%;
+	max-height: 70em;
+	margin-bottom: 5em;
+
+	&>p{
+		font-size: 2.5em;
+		color: $font-color;
+		font-weight: 300;
+		text-align: center;
+		margin-bottom: 3%;
+	}
+
+	&>img{
+		width: 100%;
+	    max-width: 100em;
+	    margin: 0 auto;
+	    display: block;
+	}
+}
 
 
 
@@ -686,12 +778,12 @@ footer.main-footer{
 
 
 
-/* =iPhone 6 Media Query
+/* =Cell Phone Media Query Portrait
 -----------------------------------------------------------------------------*/
 
 @media only screen
-  and (min-width: 375px)
-  and (max-width: 667px)
+  and (min-width: 320px)
+  and (max-width: 740px)
   and (orientation: portrait) {
 
 	section#home{
