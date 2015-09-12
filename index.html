@@ -20,18 +20,11 @@
 				<a class="logo-link" href="#home"><img src="imgs/chuckobaze.png" alt="Chuck Obaze Graphic and Web Design Logo"></a>
 				<nav class="main-nav">
 					<ul class="active-nav">
-					<li class="projects-nav">
-					<a class="active-link" href="#projects">PROJECTS</a>
-					</li>
-					<li class="about-nav">
-					<a href="about.html">ABOUT</a>
-					</li>
-					<li class="resume-nav">
-					<a href="resume.html">RESUME</a>
-					</li>
-					<li class="contact-nav">
-					<a href="contact.html">CONTACT</a>
-					</li>
+						<li class="home-nav"><a href="#home">HOME</a></li>
+						<li class="projects-nav"><a class="active-link" href="#projects">PROJECTS</a></li>
+						<li class="about-nav"><a href="about.html">ABOUT</a></li>
+						<li class="resume-nav"><a href="resume.html">RESUME</a></li>
+						<li class="contact-nav"><a href="contact.html">CONTACT</a></li>
 					</ul>
 				</nav>
 			</header> <!-- End Main Header -->
@@ -74,6 +67,13 @@
 
 				$('.main-header').hide();
 
+				$('.home-nav').click(function(e){
+					e.preventDefault();
+					$('html, body').animate({
+						scrollTop: $("#home").offset().top
+							}, 2000);
+				});
+
 				$('.logo-link').click(function(e){
 					e.preventDefault();
 					$('html, body').animate({
@@ -97,13 +97,13 @@
 
 				$(window).scroll(function(){
 
-					if ($(window).scrollTop() > 800) {
+					if ($(window).scrollTop() > 650) {
 						$('.main-header').fadeIn(200);
 					} else {
 						$('.main-header').fadeOut(200);
 					}
 
-					if ($(window).scrollTop() > 800){
+					if ($(window).scrollTop() > 650){
 					$('.active-link').addClass('active-link-style');
 					} else {
 						$('.active-link').removeClass('active-link-style');

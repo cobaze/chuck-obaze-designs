@@ -46,7 +46,6 @@ $white-font: #ffffff;
 	margin-bottom:2%;
 	color: $alt-font-color;
 	font-size: 3em;
-	margin:5% 0 5% 0;
 }
 
 %social-values{
@@ -153,7 +152,8 @@ header.main-header{
 
 	img{
 		float: left;
-		width: 20em;
+		max-width: 15em;
+		width: 100%;
 		padding-left: 2%;
 	}
 }
@@ -217,7 +217,6 @@ section.first-index-page-container{
 	height: $section-height;
 	clear: both;
 	width: 100%;
-
 }
 
 div#home{
@@ -638,6 +637,12 @@ button{
 	}
 }
 
+/* END SECTION CONTACT AND FIFTH-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+
+/* START FOOTER STYLE
+-----------------------------------------------------------------------------*/
+
 footer.main-footer{
 	padding: 4em 4em;
 
@@ -649,7 +654,7 @@ footer.main-footer{
 	}
 }
 
-/* END SECTION CONTACT AND FIFTH-CONTAINER STYLES
+/*END FOOTER STYLE
 -----------------------------------------------------------------------------*/
 
 /* START NIPOST PROJECT PAGE STYLES
@@ -898,5 +903,279 @@ div.sketches{
   and (min-device-width: 1200px)
   and (max-device-width: 1600px)
   and (-webkit-min-device-pixel-ratio: 1) {
+
+/* START STYLING LAPTOP SIZE INDEX PAGE
+-----------------------------------------------------------------------------*/
+
+/* START STYLING LAPTOP SIZE SECTION HOME AND FIRST-INDEX-PAGE-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+
+section.first-index-page-container{
+	@extend %container-style;
+	background-image: url(../imgs/bg.jpg);
+	background-position: center center;
+	background-size: cover;
+	height: $section-height;
+	clear: both;
+	width: 100%;
+	height: 68em;
+}
+
+div#home{
+	@extend %section-values;
+	max-width: 135em;
+	padding-top: 1em;
+	height: 68em;
+}
+
+div.letters-holder{
+	height: 64.5em;
+	width: 100%;
+	max-width: 103em;
+	margin: 0 auto;
+	margin-top: 1%;
+
+	h1{
+		width: 100%;
+		max-width:22em;
+		color: #ffffff;
+		font-size: 2.5em;
+		text-align: center;
+		margin: 0 auto;
+		font-weight: 200;
+		line-height: 1.5em;
+
+	}
+
+	img{
+		margin: 0 auto;
+		display: block;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		width: 100%;
+		max-width: 70em;
+
+	}
+
+	a{
+		max-width: 4em;
+		height: 4em;
+		max-height: 100%;
+		width: 100%;
+		display: block;
+		position: relative;
+		top: 5%;
+		margin: 0 auto;
+		background-image: url(../imgs/dwn-btn-white.png);
+		background-size: 4em;
+		background-repeat: no-repeat;
+
+		&:hover, &:focus{
+			background-image: url(../imgs/dwn-btn.png);
+		}
+	}
+
+}
+
+
+/* END LAPTOP SIZE SECTION HOME AND FIRST-INDEX-PAGE-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+
+
+/* START LAPTOP SIZE SECTION PROJECTS AND SECOND-INDEX-PAGE-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+
+section.second-index-page-container{
+	@extend %container-style;
+
+}
+
+div#projects{
+	@extend %section-values;
+	border: solid red 1px;
+	height: $section-height - 28.2;
+
+	h2{
+		@extend %h2-values;
+		margin: 3% 0 1.3% 0;
+	}
+
+}
+
+div.port-item{
+	border: $border red;
+	width: 100%;
+	max-width: 31.7em;
+	height: 24.6em;
+	float: right;
+	overflow: hidden;
+
+
+}
+
+div#nipost{
+
+	a{
+		img{
+			width: 100%;
+			max-width: 34em;
+		}
+	}
+}
+
+/* END LAPTOP SIZE SECTION PROJECTS AND SECOND-INDEX-PAGE-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+
+/* END LAPTOP SIZE STYLING INDEX PAGE
+-----------------------------------------------------------------------------*/
+
+/* START LAPTOP SECTION RESUME AND FOURTH-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+
+
+section#fourth-container{
+	@extend %container-style;
+	max-height: $section-height + 84;
+	clear: both;
+	border: $border red;
+}
+
+div#resume{
+	@extend %section-values;
+	max-width: 112.5em;
+	padding-top: 10%;
+	max-height: $section-height + 84;
+
+}
+
+div.dwn-pdf{
+	@extend %left-resume;
+	margin-bottom: 4em;
+
+	a{
+		text-decoration: none;
+		padding: 1.9em 0 0 1.5em;
+		font-size: 2em;
+		font-weight: 600;
+		text-align: left;
+		color: #ffffff;
+		background-color: $red-color;
+		margin: 0 auto;
+		box-sizing: border-box;
+		display: block;
+		background-image: url(../imgs/pdf-btn-white.png);
+		background-repeat: no-repeat;
+		background-size: 2em;
+		background-position: 13em 1.1em;
+		height: 5em;
+
+		&:hover, &:focus{
+			@extend %buttons;
+			background-image: url(../imgs/pdf-btn-red.png);
+		}
+
+	}
+}
+
+div.skill-info{
+	@extend %left-resume;
+	height: 153em;
+	background-color: $resume-gray;
+	padding: 6em 3.5em 0 3.5em;
+
+	h3{
+		font-size:2.5em;
+		color: $red-color;
+		margin-bottom: 3em;
+		text-align: center;
+	}
+
+	h4{
+		font-size: 2em;
+	}
+
+	hr{
+		display: block;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+		margin-right: 1em;
+		border: solid 0.2em $red-color;
+		width:5.5em;
+	}
+
+	ul{
+		margin-bottom: 4em;
+
+		li{
+			@extend %listing-style;
+		}
+	}
+
+}
+
+div.resume-info{
+	float: right;
+	max-width:76em;
+	width: 100%;
+}
+
+div.education{
+	color: $alt-font-color;
+	background-color: $resume-gray;
+	padding: 5%;
+	margin-bottom: 5%;
+	width: 100%;
+	max-width: 69em;
+
+	h3{
+		font-size:2.5em;
+		color: $red-color;
+		margin-bottom: 1em;
+	}
+
+	h4{
+		font-size: 2em;
+		margin-bottom: .5em;
+
+		span{
+			font-weight: 300;
+		}
+	}
+
+	p{
+		font-size: 1.7em;
+		line-height: 1.5em;
+		margin-bottom: 2em;
+	}
+
+	ul{
+		margin-bottom: 2em;
+
+		li{
+			@extend %listing-style;
+		}
+	}
+}
+
+
+/* END LAPTOP SECTION RESUME AND FOURTH-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+
+/* START LAPTOP FOOTER STYLE
+-----------------------------------------------------------------------------*/
+
+footer.main-footer{
+	padding: 2em 2em;
+
+	p{
+		text-align: center;
+		font-size: 1.5em;
+		font-weight: 700;
+		color: $alt-font-color;
+	}
+}
+
+/*END LAPTOP FOOTER STYLE
+-----------------------------------------------------------------------------*/
 
 }
