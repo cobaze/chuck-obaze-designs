@@ -639,7 +639,7 @@ li.contact-nav {
 
 /* line 731, ../sass/coba.scss */
 section.nipost-first-container {
-  height: 6000px;
+  height: 2000em;
   border: solid red 1px;
   padding-top: 7%;
 }
@@ -653,7 +653,7 @@ section.nipost-first-container > img {
   max-width: 100em;
   display: block;
   margin: 0 auto;
-  margin-bottom: 0;
+  margin-bottom: 2em;
 }
 /* line 750, ../sass/coba.scss */
 section.nipost-first-container > p {
