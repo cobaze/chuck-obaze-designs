@@ -217,19 +217,23 @@ section.first-index-page-container{
 	height: $section-height;
 	clear: both;
 	width: 100%;
+	border: $border red;
 }
 
 div#home{
 	@extend %section-values;
 	max-width: 135em;
+	border: $border red;
+	padding-top: 0;
 }
 
 div.letters-holder{
-	height: 80em;
+	height: 72em;
 	width: 100%;
 	max-width: 103em;
 	margin: 0 auto;
 	margin-top: 1%;
+	border: $border red;
 
 	h1{
 		width: 100%;
@@ -240,6 +244,7 @@ div.letters-holder{
 		margin: 0 auto;
 		font-weight: 200;
 		line-height: 1.5em;
+		border: $border red;
 
 	}
 
@@ -248,6 +253,7 @@ div.letters-holder{
 		display: block;
 		margin-top: 5%;
 		margin-bottom: 5%;
+		border: $border red;
 
 	}
 
@@ -263,6 +269,7 @@ div.letters-holder{
 		background-image: url(../imgs/dwn-btn-white.png);
 		background-size: 6em;
 		background-repeat: no-repeat;
+		border: $border red;
 
 		&:hover, &:focus{
 			background-image: url(../imgs/dwn-btn.png);
@@ -281,12 +288,15 @@ div.letters-holder{
 
 section.second-index-page-container{
 	@extend %container-style;
+	height: $section-height;
 
 }
 
 div#projects{
 	@extend %section-values;
 	border: solid red 1px;
+	height: 70.1em;
+	margin-top: 7em;
 
 	h2{
 		@extend %h2-values;
@@ -644,7 +654,9 @@ button{
 -----------------------------------------------------------------------------*/
 
 footer.main-footer{
-	padding: 4em 4em;
+	padding-top:2em;
+	margin-bottom: 2em;
+	border-top: 1px solid $font-color;
 
 	p{
 		text-align: center;
