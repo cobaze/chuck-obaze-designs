@@ -26,12 +26,12 @@ div#home, div#projects, div#about, div#resume, div#contact-me, section.nipost-fi
 }
 
 /* line 40, ../sass/coba.scss */
-section.first-index-page-container, section.second-index-page-container, section.about-container, section#fourth-container, section#fifth-container {
+section.first-index-page-container, section.second-index-page-container, section.about-container, section#resume-fourth-container, section#fifth-container {
   width: 100%;
 }
 
 /* line 44, ../sass/coba.scss */
-div#projects h2, div#about h2, div#resume h2, section.nipost-first-container h2, section.nipost-first-container h3 {
+div#projects h2, div#about h2, div.interests h2, section.nipost-first-container h2, section.nipost-first-container h3 {
   text-align: center;
   margin-bottom: 2%;
   color: #414042;
@@ -39,7 +39,7 @@ div#projects h2, div#about h2, div#resume h2, section.nipost-first-container h2,
 }
 
 /* line 51, ../sass/coba.scss */
-a.social-one, a.social-two, a.social-three {
+a.social-one {
   width: 4em;
   height: 4em;
   max-height: 100%;
@@ -183,26 +183,23 @@ section.first-index-page-container {
   height: 96em;
   clear: both;
   width: 100%;
-  border: solid 1px red;
 }
 
-/* line 223, ../sass/coba.scss */
+/* line 222, ../sass/coba.scss */
 div#home {
   max-width: 135em;
-  border: solid 1px red;
-  padding-top: 0;
+  padding-top: 7%;
 }
 
-/* line 230, ../sass/coba.scss */
+/* line 228, ../sass/coba.scss */
 div.letters-holder {
-  height: 72em;
+  height: 81em;
   width: 100%;
   max-width: 103em;
   margin: 0 auto;
   margin-top: 1%;
-  border: solid 1px red;
 }
-/* line 238, ../sass/coba.scss */
+/* line 235, ../sass/coba.scss */
 div.letters-holder h1 {
   width: 100%;
   max-width: 22em;
@@ -212,17 +209,15 @@ div.letters-holder h1 {
   margin: 0 auto;
   font-weight: 200;
   line-height: 1.5em;
-  border: solid 1px red;
 }
-/* line 251, ../sass/coba.scss */
+/* line 247, ../sass/coba.scss */
 div.letters-holder img {
   margin: 0 auto;
   display: block;
   margin-top: 5%;
   margin-bottom: 5%;
-  border: solid 1px red;
 }
-/* line 260, ../sass/coba.scss */
+/* line 255, ../sass/coba.scss */
 div.letters-holder a {
   max-width: 6em;
   height: 6em;
@@ -230,14 +225,13 @@ div.letters-holder a {
   width: 100%;
   display: block;
   position: relative;
-  top: 11%;
+  top: 17%;
   margin: 0 auto;
   background-image: url(../imgs/dwn-btn-white.png);
   background-size: 6em;
   background-repeat: no-repeat;
-  border: solid 1px red;
 }
-/* line 274, ../sass/coba.scss */
+/* line 268, ../sass/coba.scss */
 div.letters-holder a:hover, div.letters-holder a:focus {
   background-image: url(../imgs/dwn-btn.png);
 }
@@ -246,19 +240,20 @@ div.letters-holder a:hover, div.letters-holder a:focus {
 -----------------------------------------------------------------------------*/
 /* START SECTION PROJECTS AND SECOND-INDEX-PAGE-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
-/* line 289, ../sass/coba.scss */
+/* line 283, ../sass/coba.scss */
 section.second-index-page-container {
-  height: 96em;
+  height: 70em;
 }
 
-/* line 295, ../sass/coba.scss */
+/* line 289, ../sass/coba.scss */
 div#projects {
   border: solid red 1px;
-  height: 70.1em;
-  margin-top: 7em;
+  height: 56.9em;
+  margin-top: 9em;
+  padding-top: 0;
 }
 
-/* line 307, ../sass/coba.scss */
+/* line 302, ../sass/coba.scss */
 div.port-item {
   border: solid 1px red;
   width: 100%;
@@ -268,7 +263,7 @@ div.port-item {
   overflow: hidden;
 }
 
-/* line 321, ../sass/coba.scss */
+/* line 316, ../sass/coba.scss */
 div#nipost a img {
   width: 100%;
   max-width: 34em;
@@ -283,34 +278,35 @@ div#nipost a img {
 -----------------------------------------------------------------------------*/
 /* START ABOUT CONTAINER STYLES
 -----------------------------------------------------------------------------*/
-/* line 345, ../sass/coba.scss */
+/* line 340, ../sass/coba.scss */
 section.about-container {
-  background-color: #acacac;
   height: 96em;
 }
 
-/* line 352, ../sass/coba.scss */
+/* line 346, ../sass/coba.scss */
 div#about {
   height: 80em;
   border: solid 1px red;
+  padding-top: 10%;
 }
-/* line 358, ../sass/coba.scss */
+/* line 353, ../sass/coba.scss */
 div#about h2 {
   color: #414042;
 }
-/* line 363, ../sass/coba.scss */
+/* line 358, ../sass/coba.scss */
 div#about p {
   font-size: 2.5em;
   line-height: 1.6em;
-  color: white;
+  color: gray;
   font-weight: 300;
   width: 100%;
   max-width: 28.1em;
   margin-left: 11%;
   border: solid 1px red;
   float: left;
+  margin-bottom: 5%;
 }
-/* line 375, ../sass/coba.scss */
+/* line 371, ../sass/coba.scss */
 div#about p a {
   text-decoration: none;
   font-size: 1em;
@@ -318,12 +314,29 @@ div#about p a {
   color: #414042;
   font-weight: bold;
 }
-/* line 382, ../sass/coba.scss */
+/* line 378, ../sass/coba.scss */
 div#about p a:hover, div#about p a:focus {
-  color: #ffffff;
+  color: gray;
 }
 
-/* line 389, ../sass/coba.scss */
+/* line 385, ../sass/coba.scss */
+div.interests {
+  float: left;
+  border: solid 1px red;
+  margin-left: 19%;
+  width: 48em;
+}
+/* line 391, ../sass/coba.scss */
+div.interests h2 {
+  color: #414042;
+}
+/* line 396, ../sass/coba.scss */
+div.interests > img {
+  width: 7em;
+  margin: 5%;
+}
+
+/* line 402, ../sass/coba.scss */
 div.img-holder {
   width: auto;
   border: solid 1px red;
@@ -331,74 +344,54 @@ div.img-holder {
   float: right;
   margin-right: 11%;
 }
-/* line 396, ../sass/coba.scss */
+/* line 409, ../sass/coba.scss */
 div.img-holder > img {
   width: 100%;
   max-width: 28.2em;
-  clear: both;
   margin-bottom: 5%;
 }
 
-/* line 406, ../sass/coba.scss */
+/* line 418, ../sass/coba.scss */
 div.social {
   width: 100%;
-  max-width: 12em;
+  max-width: 4em;
   border: solid 1px red;
-  height: 100%;
-  max-height: 4em;
+  height: 4em;
   margin: 0 auto;
 }
 
-/* line 415, ../sass/coba.scss */
+/* line 426, ../sass/coba.scss */
 a.social-one {
   background-image: url(../imgs/in.png);
   background-size: 4em;
 }
-/* line 420, ../sass/coba.scss */
+/* line 431, ../sass/coba.scss */
 a.social-one:hover, a.social-one:focus {
   background-image: url(../imgs/in-white.png);
 }
 
-/* line 425, ../sass/coba.scss */
-a.social-two {
-  background-image: url(../imgs/pin.png);
-  background-size: 3.7em;
-}
-/* line 430, ../sass/coba.scss */
-a.social-two:hover, a.social-two:focus {
-  background-image: url(../imgs/pin-white.png);
-}
-
-/* line 435, ../sass/coba.scss */
-a.social-three {
-  background-image: url(../imgs/rss.png);
-  background-size: 3.7em;
-}
-/* line 441, ../sass/coba.scss */
-a.social-three:hover, a.social-three:focus {
-  background-image: url(../imgs/rss-white.png);
-}
-
 /* END SECTION ABOUT AND THIRD-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
-/* START SECTION RESUME AND FOURTH-CONTAINER STYLES
+/* START SECTION RESUME AND RESUME-FOURTH-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
-/* line 454, ../sass/coba.scss */
-section#fourth-container {
-  height: 208em;
+/* line 444, ../sass/coba.scss */
+section#resume-fourth-container {
   clear: both;
+  height: 233em;
 }
 
-/* line 462, ../sass/coba.scss */
+/* line 450, ../sass/coba.scss */
 div#resume {
-  height: 195em;
+  max-width: 112.5em;
+  padding-top: 10%;
+  height: 233em;
 }
 
-/* line 471, ../sass/coba.scss */
+/* line 457, ../sass/coba.scss */
 div.dwn-pdf {
   margin-bottom: 4em;
 }
-/* line 475, ../sass/coba.scss */
+/* line 461, ../sass/coba.scss */
 div.dwn-pdf a {
   text-decoration: none;
   padding: 1.9em 0 0 1.5em;
@@ -416,29 +409,29 @@ div.dwn-pdf a {
   background-position: 13em 1.1em;
   height: 5em;
 }
-/* line 492, ../sass/coba.scss */
+/* line 478, ../sass/coba.scss */
 div.dwn-pdf a:hover, div.dwn-pdf a:focus {
   background-image: url(../imgs/pdf-btn-red.png);
 }
 
-/* line 500, ../sass/coba.scss */
+/* line 486, ../sass/coba.scss */
 div.skill-info {
   height: 153em;
   background-color: #efefef;
   padding: 6em 3.5em 0 3.5em;
 }
-/* line 506, ../sass/coba.scss */
+/* line 492, ../sass/coba.scss */
 div.skill-info h3 {
   font-size: 2.5em;
   color: #f0555a;
   margin-bottom: 3em;
   text-align: center;
 }
-/* line 513, ../sass/coba.scss */
+/* line 499, ../sass/coba.scss */
 div.skill-info h4 {
   font-size: 2em;
 }
-/* line 517, ../sass/coba.scss */
+/* line 503, ../sass/coba.scss */
 div.skill-info hr {
   display: block;
   margin-top: 0.5em;
@@ -447,44 +440,49 @@ div.skill-info hr {
   border: solid 0.2em #f0555a;
   width: 5.5em;
 }
-/* line 526, ../sass/coba.scss */
+/* line 512, ../sass/coba.scss */
 div.skill-info ul {
   margin-bottom: 4em;
 }
 
-/* line 536, ../sass/coba.scss */
+/* line 522, ../sass/coba.scss */
 div.resume-info {
   float: right;
-  max-width: 68.2em;
+  max-width: 76em;
   width: 100%;
 }
 
-/* line 542, ../sass/coba.scss */
+/* line 528, ../sass/coba.scss */
 div.education {
   color: #414042;
+  background-color: #efefef;
+  padding: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+  max-width: 69em;
 }
-/* line 545, ../sass/coba.scss */
+/* line 536, ../sass/coba.scss */
 div.education h3 {
   font-size: 2.5em;
   color: #f0555a;
   margin-bottom: 1em;
 }
-/* line 551, ../sass/coba.scss */
+/* line 542, ../sass/coba.scss */
 div.education h4 {
   font-size: 2em;
   margin-bottom: .5em;
 }
-/* line 555, ../sass/coba.scss */
+/* line 546, ../sass/coba.scss */
 div.education h4 span {
   font-weight: 300;
 }
-/* line 560, ../sass/coba.scss */
+/* line 551, ../sass/coba.scss */
 div.education p {
   font-size: 1.7em;
   line-height: 1.5em;
   margin-bottom: 2em;
 }
-/* line 566, ../sass/coba.scss */
+/* line 557, ../sass/coba.scss */
 div.education ul {
   margin-bottom: 2em;
 }
@@ -493,7 +491,7 @@ div.education ul {
 -----------------------------------------------------------------------------*/
 /* START SECTION CONTACT AND FIFTH-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
-/* line 583, ../sass/coba.scss */
+/* line 574, ../sass/coba.scss */
 section#fifth-container {
   /*background-color: $alt-gray-color;*/
   background-image: url(../imgs/contact-us-bg.jpg);
@@ -502,12 +500,12 @@ section#fifth-container {
   background-position: center center;
 }
 
-/* line 593, ../sass/coba.scss */
+/* line 584, ../sass/coba.scss */
 div#contact-me {
   height: 85em;
   padding-top: 7%;
 }
-/* line 598, ../sass/coba.scss */
+/* line 589, ../sass/coba.scss */
 div#contact-me h2 {
   text-align: center;
   margin-bottom: 2%;
@@ -516,14 +514,14 @@ div#contact-me h2 {
   margin: 2% 0 2% 0;
 }
 
-/* line 610, ../sass/coba.scss */
+/* line 601, ../sass/coba.scss */
 form#get-in-touch {
   margin: 0 auto;
   width: 100%;
   max-width: 85em;
 }
 
-/* line 616, ../sass/coba.scss */
+/* line 607, ../sass/coba.scss */
 input, textarea {
   margin-bottom: 1.5em;
   display: block;
@@ -543,7 +541,7 @@ input, textarea {
   box-sizing: border-box;
 }
 
-/* line 633, ../sass/coba.scss */
+/* line 624, ../sass/coba.scss */
 button {
   padding: 1em 1em;
   border: #f0555a;
@@ -561,13 +559,13 @@ button {
 -----------------------------------------------------------------------------*/
 /* START FOOTER STYLE
 -----------------------------------------------------------------------------*/
-/* line 656, ../sass/coba.scss */
+/* line 647, ../sass/coba.scss */
 footer.main-footer {
   padding-top: 2em;
   margin-bottom: 2em;
   border-top: 1px solid gray;
 }
-/* line 661, ../sass/coba.scss */
+/* line 652, ../sass/coba.scss */
 footer.main-footer p {
   text-align: center;
   font-size: 1.5em;
@@ -579,7 +577,7 @@ footer.main-footer p {
 -----------------------------------------------------------------------------*/
 /* START NIPOST PROJECT PAGE STYLES
 -----------------------------------------------------------------------------*/
-/* line 675, ../sass/coba.scss */
+/* line 666, ../sass/coba.scss */
 header.nipost-header {
   position: fixed;
   z-index: 2;
@@ -588,66 +586,66 @@ header.nipost-header {
   padding: 2em 0 2em 0;
   border-bottom: 1px solid gray;
 }
-/* line 683, ../sass/coba.scss */
+/* line 674, ../sass/coba.scss */
 header.nipost-header img {
   float: left;
   width: 20em;
   padding-left: 2%;
 }
 
-/* line 690, ../sass/coba.scss */
+/* line 681, ../sass/coba.scss */
 nav.main-nav {
   float: right;
   padding-right: 2%;
   position: relative;
   top: 4.5em;
 }
-/* line 696, ../sass/coba.scss */
+/* line 687, ../sass/coba.scss */
 nav.main-nav ul {
   clear: both;
   height: 2em;
   padding: 0;
   margin: 0;
 }
-/* line 703, ../sass/coba.scss */
+/* line 694, ../sass/coba.scss */
 nav.main-nav ul li {
   list-style: none;
   float: left;
   margin-right: 2em;
   display: inline;
 }
-/* line 709, ../sass/coba.scss */
+/* line 700, ../sass/coba.scss */
 nav.main-nav ul li a {
   text-decoration: none;
   color: gray;
   font-size: 1.7em;
   font-weight: bold;
 }
-/* line 715, ../sass/coba.scss */
+/* line 706, ../sass/coba.scss */
 nav.main-nav ul li a:visited {
   border-bottom: solid #f0555a 0.3em;
 }
-/* line 719, ../sass/coba.scss */
+/* line 710, ../sass/coba.scss */
 nav.main-nav ul li a:hover, nav.main-nav ul li a:focus, nav.main-nav ul li a:active {
   border-bottom: solid #f0555a 0.3em;
 }
 
-/* line 727, ../sass/coba.scss */
+/* line 718, ../sass/coba.scss */
 li.contact-nav {
   margin-right: 0em !important;
 }
 
-/* line 731, ../sass/coba.scss */
+/* line 722, ../sass/coba.scss */
 section.nipost-first-container {
   height: 2000em;
   border: solid red 1px;
   padding-top: 7%;
 }
-/* line 737, ../sass/coba.scss */
+/* line 728, ../sass/coba.scss */
 section.nipost-first-container h2 {
   margin-bottom: 0.5em;
 }
-/* line 742, ../sass/coba.scss */
+/* line 733, ../sass/coba.scss */
 section.nipost-first-container > img {
   width: 100%;
   max-width: 100em;
@@ -655,7 +653,7 @@ section.nipost-first-container > img {
   margin: 0 auto;
   margin-bottom: 2em;
 }
-/* line 750, ../sass/coba.scss */
+/* line 741, ../sass/coba.scss */
 section.nipost-first-container > p {
   font-size: 1.9em;
   line-height: 1.4em;
@@ -667,18 +665,18 @@ section.nipost-first-container > p {
   margin: 0 auto;
   margin-bottom: 3em;
 }
-/* line 762, ../sass/coba.scss */
+/* line 753, ../sass/coba.scss */
 section.nipost-first-container h3 {
   margin-bottom: 1em;
 }
 
-/* line 768, ../sass/coba.scss */
+/* line 759, ../sass/coba.scss */
 div.sketches {
   height: 100%;
   max-height: 70em;
   margin-bottom: 5em;
 }
-/* line 773, ../sass/coba.scss */
+/* line 764, ../sass/coba.scss */
 div.sketches > p {
   font-size: 2.5em;
   color: gray;
@@ -686,7 +684,7 @@ div.sketches > p {
   text-align: center;
   margin-bottom: 3%;
 }
-/* line 781, ../sass/coba.scss */
+/* line 772, ../sass/coba.scss */
 div.sketches > img {
   width: 100%;
   max-width: 100em;
@@ -699,17 +697,17 @@ div.sketches > img {
 /* =Cell Phone Media Query Portrait
 -----------------------------------------------------------------------------*/
 @media only screen and (min-width: 320px) and (max-width: 740px) and (orientation: portrait) {
-  /* line 806, ../sass/coba.scss */
+  /* line 797, ../sass/coba.scss */
   section#home {
     width: 100%;
   }
 
-  /* line 810, ../sass/coba.scss */
+  /* line 801, ../sass/coba.scss */
   header.main-header {
     width: 100%;
     height: 17em;
   }
-  /* line 814, ../sass/coba.scss */
+  /* line 805, ../sass/coba.scss */
   header.main-header img {
     margin: 0 auto !important;
     display: block;
@@ -717,19 +715,19 @@ div.sketches > img {
     float: none;
   }
 
-  /* line 822, ../sass/coba.scss */
+  /* line 813, ../sass/coba.scss */
   nav.main-nav {
     float: none;
     padding: 0 2em 0 2em;
   }
-  /* line 826, ../sass/coba.scss */
+  /* line 817, ../sass/coba.scss */
   nav.main-nav ul {
     margin: 0 auto;
     width: 100%;
     max-width: 30em;
   }
 
-  /* line 833, ../sass/coba.scss */
+  /* line 824, ../sass/coba.scss */
   div#projects {
     margin: 0 auto;
     border: solid 1px pink;
@@ -739,7 +737,7 @@ div.sketches > img {
     padding: 7% 2% 0% 2%;
     box-sizing: border-box;
   }
-  /* line 842, ../sass/coba.scss */
+  /* line 833, ../sass/coba.scss */
   div#projects h2 {
     text-align: center;
     margin-bottom: 2%;
@@ -748,7 +746,7 @@ div.sketches > img {
     margin: 2% 0 2% 0;
   }
 
-  /* line 852, ../sass/coba.scss */
+  /* line 843, ../sass/coba.scss */
   div.port-item {
     border: solid 1px red;
     width: 48.4%;
@@ -758,7 +756,7 @@ div.sketches > img {
     margin-bottom: 2%;
   }
 
-  /* line 863, ../sass/coba.scss */
+  /* line 854, ../sass/coba.scss */
   div.port-item-last {
     margin-right: 0% !important;
     border: solid 1px red;
@@ -768,12 +766,12 @@ div.sketches > img {
     margin-bottom: 2%;
   }
 
-  /* line 872, ../sass/coba.scss */
+  /* line 863, ../sass/coba.scss */
   div#margin-out {
     margin-right: 0;
   }
 
-  /* line 876, ../sass/coba.scss */
+  /* line 867, ../sass/coba.scss */
   div#margin-outter {
     margin-right: 0;
   }
@@ -787,7 +785,7 @@ div.sketches > img {
   -----------------------------------------------------------------------------*/
   /* START STYLING LAPTOP SIZE SECTION HOME AND FIRST-INDEX-PAGE-CONTAINER STYLES
   -----------------------------------------------------------------------------*/
-  /* line 925, ../sass/coba.scss */
+  /* line 916, ../sass/coba.scss */
   section.first-index-page-container {
     background-image: url(../imgs/bg.jpg);
     background-position: center center;
@@ -798,14 +796,14 @@ div.sketches > img {
     height: 68em;
   }
 
-  /* line 936, ../sass/coba.scss */
+  /* line 927, ../sass/coba.scss */
   div#home {
     max-width: 135em;
     padding-top: 1em;
     height: 68em;
   }
 
-  /* line 943, ../sass/coba.scss */
+  /* line 934, ../sass/coba.scss */
   div.letters-holder {
     height: 64.5em;
     width: 100%;
@@ -813,7 +811,7 @@ div.sketches > img {
     margin: 0 auto;
     margin-top: 1%;
   }
-  /* line 950, ../sass/coba.scss */
+  /* line 941, ../sass/coba.scss */
   div.letters-holder h1 {
     width: 100%;
     max-width: 22em;
@@ -824,7 +822,7 @@ div.sketches > img {
     font-weight: 200;
     line-height: 1.5em;
   }
-  /* line 962, ../sass/coba.scss */
+  /* line 953, ../sass/coba.scss */
   div.letters-holder img {
     margin: 0 auto;
     display: block;
@@ -833,7 +831,7 @@ div.sketches > img {
     width: 100%;
     max-width: 70em;
   }
-  /* line 972, ../sass/coba.scss */
+  /* line 963, ../sass/coba.scss */
   div.letters-holder a {
     max-width: 4em;
     height: 4em;
@@ -847,7 +845,7 @@ div.sketches > img {
     background-size: 4em;
     background-repeat: no-repeat;
   }
-  /* line 985, ../sass/coba.scss */
+  /* line 976, ../sass/coba.scss */
   div.letters-holder a:hover, div.letters-holder a:focus {
     background-image: url(../imgs/dwn-btn.png);
   }
@@ -856,17 +854,17 @@ div.sketches > img {
   -----------------------------------------------------------------------------*/
   /* START LAPTOP SIZE SECTION PROJECTS AND SECOND-INDEX-PAGE-CONTAINER STYLES
   -----------------------------------------------------------------------------*/
-  /* line 1005, ../sass/coba.scss */
+  /* line 996, ../sass/coba.scss */
   div#projects {
     border: solid red 1px;
     height: 67.8em;
   }
-  /* line 1010, ../sass/coba.scss */
+  /* line 1001, ../sass/coba.scss */
   div#projects h2 {
     margin: 3% 0 1.3% 0;
   }
 
-  /* line 1017, ../sass/coba.scss */
+  /* line 1008, ../sass/coba.scss */
   div.port-item {
     border: solid 1px red;
     width: 100%;
@@ -876,7 +874,7 @@ div.sketches > img {
     overflow: hidden;
   }
 
-  /* line 1031, ../sass/coba.scss */
+  /* line 1022, ../sass/coba.scss */
   div#nipost a img {
     width: 100%;
     max-width: 34em;
@@ -888,25 +886,25 @@ div.sketches > img {
   -----------------------------------------------------------------------------*/
   /* START LAPTOP SECTION RESUME AND FOURTH-CONTAINER STYLES
   -----------------------------------------------------------------------------*/
-  /* line 1048, ../sass/coba.scss */
-  section#fourth-container {
+  /* line 1039, ../sass/coba.scss */
+  section#resume-fourth-container {
     max-height: 180em;
     clear: both;
     border: solid 1px red;
   }
 
-  /* line 1055, ../sass/coba.scss */
+  /* line 1046, ../sass/coba.scss */
   div#resume {
     max-width: 112.5em;
     padding-top: 10%;
     max-height: 180em;
   }
 
-  /* line 1063, ../sass/coba.scss */
+  /* line 1054, ../sass/coba.scss */
   div.dwn-pdf {
     margin-bottom: 4em;
   }
-  /* line 1067, ../sass/coba.scss */
+  /* line 1058, ../sass/coba.scss */
   div.dwn-pdf a {
     text-decoration: none;
     padding: 1.9em 0 0 1.5em;
@@ -924,29 +922,29 @@ div.sketches > img {
     background-position: 13em 1.1em;
     height: 5em;
   }
-  /* line 1084, ../sass/coba.scss */
+  /* line 1075, ../sass/coba.scss */
   div.dwn-pdf a:hover, div.dwn-pdf a:focus {
     background-image: url(../imgs/pdf-btn-red.png);
   }
 
-  /* line 1092, ../sass/coba.scss */
+  /* line 1083, ../sass/coba.scss */
   div.skill-info {
     height: 153em;
     background-color: #efefef;
     padding: 6em 3.5em 0 3.5em;
   }
-  /* line 1098, ../sass/coba.scss */
+  /* line 1089, ../sass/coba.scss */
   div.skill-info h3 {
     font-size: 2.5em;
     color: #f0555a;
     margin-bottom: 3em;
     text-align: center;
   }
-  /* line 1105, ../sass/coba.scss */
+  /* line 1096, ../sass/coba.scss */
   div.skill-info h4 {
     font-size: 2em;
   }
-  /* line 1109, ../sass/coba.scss */
+  /* line 1100, ../sass/coba.scss */
   div.skill-info hr {
     display: block;
     margin-top: 0.5em;
@@ -955,19 +953,19 @@ div.sketches > img {
     border: solid 0.2em #f0555a;
     width: 5.5em;
   }
-  /* line 1118, ../sass/coba.scss */
+  /* line 1109, ../sass/coba.scss */
   div.skill-info ul {
     margin-bottom: 4em;
   }
 
-  /* line 1128, ../sass/coba.scss */
+  /* line 1119, ../sass/coba.scss */
   div.resume-info {
     float: right;
     max-width: 76em;
     width: 100%;
   }
 
-  /* line 1134, ../sass/coba.scss */
+  /* line 1125, ../sass/coba.scss */
   div.education {
     color: #414042;
     background-color: #efefef;
@@ -976,28 +974,28 @@ div.sketches > img {
     width: 100%;
     max-width: 69em;
   }
-  /* line 1142, ../sass/coba.scss */
+  /* line 1133, ../sass/coba.scss */
   div.education h3 {
     font-size: 2.5em;
     color: #f0555a;
     margin-bottom: 1em;
   }
-  /* line 1148, ../sass/coba.scss */
+  /* line 1139, ../sass/coba.scss */
   div.education h4 {
     font-size: 2em;
     margin-bottom: .5em;
   }
-  /* line 1152, ../sass/coba.scss */
+  /* line 1143, ../sass/coba.scss */
   div.education h4 span {
     font-weight: 300;
   }
-  /* line 1157, ../sass/coba.scss */
+  /* line 1148, ../sass/coba.scss */
   div.education p {
     font-size: 1.7em;
     line-height: 1.5em;
     margin-bottom: 2em;
   }
-  /* line 1163, ../sass/coba.scss */
+  /* line 1154, ../sass/coba.scss */
   div.education ul {
     margin-bottom: 2em;
   }
@@ -1006,11 +1004,11 @@ div.sketches > img {
   -----------------------------------------------------------------------------*/
   /* START LAPTOP FOOTER STYLE
   -----------------------------------------------------------------------------*/
-  /* line 1179, ../sass/coba.scss */
+  /* line 1170, ../sass/coba.scss */
   footer.main-footer {
     padding: 2em 2em;
   }
-  /* line 1182, ../sass/coba.scss */
+  /* line 1173, ../sass/coba.scss */
   footer.main-footer p {
     text-align: center;
     font-size: 1.5em;

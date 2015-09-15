@@ -217,23 +217,20 @@ section.first-index-page-container{
 	height: $section-height;
 	clear: both;
 	width: 100%;
-	border: $border red;
 }
 
 div#home{
 	@extend %section-values;
 	max-width: 135em;
-	border: $border red;
-	padding-top: 0;
+	padding-top: 7%;
 }
 
 div.letters-holder{
-	height: 72em;
+	height: 81em;
 	width: 100%;
 	max-width: 103em;
 	margin: 0 auto;
 	margin-top: 1%;
-	border: $border red;
 
 	h1{
 		width: 100%;
@@ -244,7 +241,6 @@ div.letters-holder{
 		margin: 0 auto;
 		font-weight: 200;
 		line-height: 1.5em;
-		border: $border red;
 
 	}
 
@@ -253,7 +249,6 @@ div.letters-holder{
 		display: block;
 		margin-top: 5%;
 		margin-bottom: 5%;
-		border: $border red;
 
 	}
 
@@ -264,12 +259,11 @@ div.letters-holder{
 		width: 100%;
 		display: block;
 		position: relative;
-		top: 11%;
+		top: 17%;
 		margin: 0 auto;
 		background-image: url(../imgs/dwn-btn-white.png);
 		background-size: 6em;
 		background-repeat: no-repeat;
-		border: $border red;
 
 		&:hover, &:focus{
 			background-image: url(../imgs/dwn-btn.png);
@@ -288,15 +282,16 @@ div.letters-holder{
 
 section.second-index-page-container{
 	@extend %container-style;
-	height: $section-height;
+	height: $section-height - 26;
 
 }
 
 div#projects{
 	@extend %section-values;
 	border: solid red 1px;
-	height: 70.1em;
-	margin-top: 7em;
+	height: 56.9em;
+	margin-top: 9em;
+	padding-top: 0;
 
 	h2{
 		@extend %h2-values;
@@ -344,7 +339,6 @@ div#nipost{
 
 section.about-container{
 	@extend %container-style;
-	background-color: $alt-gray-color;
 	height: $section-height;
 
 }
@@ -353,6 +347,7 @@ div#about{
 	@extend %section-values;
 	height: 80em;
 	border: $border red;
+	padding-top: 10%;
 
 
 	h2{
@@ -363,13 +358,14 @@ div#about{
 	p{
 		font-size: 2.5em;
 		line-height: 1.6em;
-		color: $white-font;
+		color: $font-color;
 		font-weight: 300;
 		width: 100%;
 		max-width: 28.1em;
 		margin-left: 11%;
 		border: $border red;
 		float: left;
+		margin-bottom: 5%;
 
 
 		a{
@@ -380,9 +376,26 @@ div#about{
 			font-weight: bold;
 
 			&:hover, &:focus{
-				color: #ffffff;
+				color: $font-color;
 			}
 		}
+	}
+}
+
+div.interests{
+	float: left;
+	border: $border red;
+	margin-left: 19%;
+	width: 48em;
+
+	h2{
+		@extend %h2-values;
+		color:$alt-font-color;
+	}
+
+	&>img{
+		width: 7em;
+		margin: 5%;
 	}
 }
 
@@ -396,7 +409,6 @@ div.img-holder{
 	&>img{
 	width: 100%;
 	max-width: 28.2em;
-	clear: both;
 	margin-bottom: 5%;
 
 	}
@@ -405,10 +417,9 @@ div.img-holder{
 
 div.social{
 	width: 100%;
-	max-width: 12em;
+	max-width: 4em;
 	border: $border red;
-	height: 100%;
-	max-height: 4em;
+	height: 4em;
 	margin: 0 auto;
 }
 
@@ -422,50 +433,25 @@ a.social-one{
 	}
 }
 
-a.social-two{
-	@extend %social-values;
-	background-image: url(../imgs/pin.png);
-	background-size: 3.7em;
-
-	&:hover, &:focus{
-		background-image: url(../imgs/pin-white.png);
-	}
-}
-
-a.social-three{
-	@extend %social-values;
-	background-image: url(../imgs/rss.png);
-	background-size: 3.7em;
-
-
-	&:hover, &:focus{
-		background-image: url(../imgs/rss-white.png);
-	}
-}
-
 /* END SECTION ABOUT AND THIRD-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
 
-/* START SECTION RESUME AND FOURTH-CONTAINER STYLES
+/* START SECTION RESUME AND RESUME-FOURTH-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
 
-section#fourth-container{
+section#resume-fourth-container{
 	@extend %container-style;
-	height: $section-height + 112;
 	clear: both;
-
-
+	height: 233em;
 }
 
 div#resume{
 	@extend %section-values;
-	height: 195em;
-
-	h2{
-		@extend %h2-values;
-	}
+	max-width: 112.5em;
+	padding-top: 10%;
+	height: 233em;
 }
 
 div.dwn-pdf{
@@ -535,12 +521,17 @@ div.skill-info{
 
 div.resume-info{
 	float: right;
-	max-width:68.2em;
+	max-width:76em;
 	width: 100%;
 }
 
 div.education{
 	color: $alt-font-color;
+	background-color: $resume-gray;
+	padding: 5%;
+	margin-bottom: 5%;
+	width: 100%;
+	max-width: 69em;
 
 	h3{
 		font-size:2.5em;
@@ -1045,7 +1036,7 @@ div#nipost{
 -----------------------------------------------------------------------------*/
 
 
-section#fourth-container{
+section#resume-fourth-container{
 	@extend %container-style;
 	max-height: $section-height + 84;
 	clear: both;
