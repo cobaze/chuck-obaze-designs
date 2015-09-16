@@ -288,7 +288,6 @@ section.second-index-page-container{
 
 div#projects{
 	@extend %section-values;
-	border: solid red 1px;
 	height: 56.9em;
 	margin-top: 9em;
 	padding-top: 0;
@@ -307,15 +306,20 @@ div.port-item{
 	float: right;
 	overflow: hidden;
 
-
+	a{
+		&>img{
+			width: 100%;
+			max-width: 33.5em;
+		}
+	}
 }
 
 div#nipost{
 
 	a{
-		img{
+		&>img{
 			width: 100%;
-			max-width: 34em;
+			max-width: 33.5em;
 		}
 	}
 }
@@ -334,20 +338,19 @@ div#nipost{
 
 /* START STYLING ABOUT PAGE
 -----------------------------------------------------------------------------*/
+
 /* START ABOUT CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
 section.about-container{
 	@extend %container-style;
-	height: $section-height;
-
+	height: 90em;
 }
 
 div#about{
 	@extend %section-values;
-	height: 80em;
-	border: $border red;
-	padding-top: 10%;
+	height: 90em;
+	padding-top: 12%;
 
 
 	h2{
@@ -361,11 +364,9 @@ div#about{
 		color: $font-color;
 		font-weight: 300;
 		width: 100%;
-		max-width: 28.1em;
-		margin-left: 11%;
-		border: $border red;
+		max-width: 38em;
 		float: left;
-		margin-bottom: 5%;
+		margin-top: 5%;
 
 
 		a{
@@ -382,33 +383,14 @@ div#about{
 	}
 }
 
-div.interests{
-	float: left;
-	border: $border red;
-	margin-left: 19%;
-	width: 48em;
-
-	h2{
-		@extend %h2-values;
-		color:$alt-font-color;
-	}
-
-	&>img{
-		width: 7em;
-		margin: 5%;
-	}
-}
-
 div.img-holder{
 	width: auto;
-	border: $border red;
 	display: block;
 	float: right;
-	margin-right: 11%;
 
 	&>img{
 	width: 100%;
-	max-width: 28.2em;
+	max-width: 35em;
 	margin-bottom: 5%;
 
 	}
@@ -418,7 +400,6 @@ div.img-holder{
 div.social{
 	width: 100%;
 	max-width: 4em;
-	border: $border red;
 	height: 4em;
 	margin: 0 auto;
 }
@@ -433,7 +414,7 @@ a.social-one{
 	}
 }
 
-/* END SECTION ABOUT AND THIRD-CONTAINER STYLES
+/* END SECTION ABOUT AND ABOUT-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
 
@@ -568,23 +549,22 @@ div.education{
 -----------------------------------------------------------------------------*/
 
 
-/* START SECTION CONTACT AND FIFTH-CONTAINER STYLES
+/* START SECTION CONTACT AND CONTACT-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
-section#fifth-container{
+section#contact-container{
 	@extend %container-style;
 	/*background-color: $alt-gray-color;*/
 	background-image: url(../imgs/contact-us-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-
 }
 
 div#contact-me{
 	@extend %section-values;
-	height: 85em;
-	padding-top: 7%;
+	height: 90em;
+	padding-top: 10%;
 
 	h2{
 		text-align: center;
@@ -638,7 +618,7 @@ button{
 	}
 }
 
-/* END SECTION CONTACT AND FIFTH-CONTAINER STYLES
+/* END SECTION CONTACT AND CONTACT-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
 /* START FOOTER STYLE
@@ -663,66 +643,9 @@ footer.main-footer{
 /* START NIPOST PROJECT PAGE STYLES
 -----------------------------------------------------------------------------*/
 
-header.nipost-header{
-	position: fixed;
-	z-index: 2;
-	width: 100%;
-	background-color: #ffffff;
-	padding: 2em 0 2em 0;
-	border-bottom: 1px solid $font-color;
-
-	img{
-		float: left;
-		width: 20em;
-		padding-left: 2%;
-	}
-}
-
-nav.main-nav{
-	float: right;
-	padding-right: 2%;
-	position: relative;
-	top: 4.5em;
-
-	ul{
-		clear: both;
-		height: 2em;
-		padding: 0;
-		margin: 0;
-
-
-		li{
-			list-style: none;
-			float: left;
-			margin-right: 2em;
-			display: inline;
-
-			a{
-				text-decoration: none;
-				color: $font-color;
-				font-size: 1.7em;
-				font-weight: bold;
-
-				&:visited{
-					border-bottom: solid $red-color .3em;
-				}
-
-				&:hover, &:focus, &:active{
-					border-bottom: solid $red-color .3em;
-				}
-			}
-		}
-	}
-}
-
-li.contact-nav{
-	margin-right: 0em !important;
-}
-
 section.nipost-first-container{
 	@extend %section-values;
-	height: 2000em;
-	border: solid red 1px;
+	height: auto;
 	padding-top: 7%;
 
 	h2{
@@ -735,7 +658,7 @@ section.nipost-first-container{
 		max-width: 100em;
 		display: block;
 		margin: 0 auto;
-		margin-bottom:2em;;
+		margin-bottom:3em;
 	}
 
 	&>p{
@@ -747,7 +670,7 @@ section.nipost-first-container{
 		max-width: 45em;
 		text-align: center;
 		margin: 0 auto;
-		margin-bottom: 3em;
+		margin-bottom: 1em;
 	}
 
 	h3{
@@ -756,17 +679,56 @@ section.nipost-first-container{
 	}
 }
 
-div.sketches{
-	height: 100%;
-	max-height: 70em;
-	margin-bottom: 5em;
+div.first-sketches{
+	margin-bottom: 3em;
 
 	&>p{
 		font-size: 2.5em;
 		color: $font-color;
 		font-weight: 300;
 		text-align: center;
-		margin-bottom: 3%;
+		margin-bottom: 1em;
+	}
+
+	&>img{
+		width: 100%;
+	    max-width: 100em;
+	    margin: 0 auto;
+	    display: block;
+	}
+
+}
+
+div.second-sketches{
+
+
+	&>p{
+		font-size: 2.5em;
+		color: $font-color;
+		font-weight: 300;
+		text-align: center;
+		margin-top: 1em;
+	}
+
+	&>img{
+		width: 100%;
+	    max-width: 100em;
+	    margin: 0 auto;
+	    display: block;
+	    margin-top: 3em;
+	}
+
+}
+
+div.sketches{
+	margin-bottom: 3em;
+
+	&>p{
+		font-size: 2.5em;
+		color: $font-color;
+		font-weight: 300;
+		text-align: center;
+		margin-bottom: 1em;
 	}
 
 	&>img{
@@ -777,6 +739,8 @@ div.sketches{
 	}
 }
 
+/* END NIPOST PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
 
 
 /* START MEDIA QUERIES
@@ -827,7 +791,7 @@ div.sketches{
 	height: $section-height - 20;
 	clear: both;
 	width: 100%;
-	padding: 7% 2% 0% 2%;
+	padding: 10% 2% 0% 2%;
 	box-sizing: border-box;
 
 		h2{
@@ -990,17 +954,19 @@ div.letters-holder{
 
 section.second-index-page-container{
 	@extend %container-style;
+	height: 67.2em;
 
 }
 
 div#projects{
 	@extend %section-values;
 	border: solid red 1px;
-	height: $section-height - 28.2;
+	height: 67.2em;
+	margin-top: 0;
 
 	h2{
 		@extend %h2-values;
-		margin: 3% 0 1.3% 0;
+		margin: 10% 0 1.3% 0;
 	}
 
 }
@@ -1012,6 +978,13 @@ div.port-item{
 	height: 24.6em;
 	float: right;
 	overflow: hidden;
+
+	a{
+		img{
+			width: 100%;
+			max-width: 34em;
+		}
+	}
 
 
 }
@@ -1038,16 +1011,15 @@ div#nipost{
 
 section#resume-fourth-container{
 	@extend %container-style;
-	max-height: $section-height + 84;
+	height: 226em;
 	clear: both;
-	border: $border red;
 }
 
 div#resume{
 	@extend %section-values;
 	max-width: 112.5em;
 	padding-top: 10%;
-	max-height: $section-height + 84;
+	height: 226em;
 
 }
 
@@ -1164,21 +1136,260 @@ div.education{
 /* END LAPTOP SECTION RESUME AND FOURTH-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
-/* START LAPTOP FOOTER STYLE
+/* START LAPTOP ABOUT CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
-footer.main-footer{
-	padding: 2em 2em;
+section.about-container{
+	@extend %container-style;
+	height: 62em;
+}
+
+div#about{
+	@extend %section-values;
+	height: 61em;
+	padding-top: 10%;
+	max-width: 110em;
+
+
+	h2{
+		@extend %h2-values;
+		color:$alt-font-color;
+	}
 
 	p{
-		text-align: center;
-		font-size: 1.5em;
-		font-weight: 700;
-		color: $alt-font-color;
+		font-size: 2em;
+		line-height: 1.6em;
+		color: $font-color;
+		font-weight: 300;
+		width: 100%;
+		max-width: 37em;
+		float: left;
+		margin-top: 6%;
+
+		a{
+			text-decoration: none;
+			font-size: 1em;
+			color: $white-font;
+			color: $alt-font-color;
+			font-weight: bold;
+
+			&:hover, &:focus{
+				color: $font-color;
+			}
+		}
 	}
 }
 
-/*END LAPTOP FOOTER STYLE
+div.img-holder{
+	width: auto;
+	display: block;
+	float: right;
+
+	&>img{
+	width: 100%;
+	max-width: 30em;
+	margin-bottom: 5%;
+	}
+
+}
+
+div.social{
+	width: 100%;
+	max-width: 4em;
+	height: 4em;
+	margin: 0 auto;
+}
+
+a.social-one{
+	@extend %social-values;
+	background-image: url(../imgs/in.png);
+	background-size: 4em;
+
+	&:hover, &:focus{
+		background-image: url(../imgs/in-white.png);
+	}
+}
+
+/* END LAPTOP SECTION ABOUT AND ABOUT-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
+
+/* START LAPTOP SECTION CONTACT AND CONTACT-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+
+section#contact-container{
+	@extend %container-style;
+	/*background-color: $alt-gray-color;*/
+	background-image: url(../imgs/contact-us-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 62em;
+}
+
+div#contact-me{
+	@extend %section-values;
+	height: 62em;
+	padding-top: 8.5%;
+
+	h2{
+		text-align: center;
+		margin-bottom:2%;
+		color: $alt-font-color;
+		font-size: 2.5em;
+		margin:2% 0 2% 0;
+	}
+}
+
+#form-holder{
+}
+
+form#get-in-touch{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 65em;
+}
+
+input,textarea{
+	margin-bottom: 1.5em;
+	display: block;
+    width: 100%;
+    max-width: 61em;
+    height: 100%;
+    padding: 1em;
+    font-size: 1.4em;
+    line-height: 1.42857143;
+    color: $font-color;
+    border: $border $alt-font-color;
+    border-radius: .5em;
+    @include box-shadow(inset 0.2em 0.2em 0.4em $alt-font-color);
+    box-sizing: border-box;
+
+}
+
+button{
+	padding: 0.8em 0.8em;
+	border: $red-color;
+	border-radius: .3em;
+	font-size: 2em;
+	font-weight: 600;
+	color: #ffffff;
+	background-color: $red-color;
+	margin: 0 auto;
+	box-sizing: border-box;
+	display: block;
+
+	&:hover, &:focus{
+		@extend %buttons;
+	}
+}
+
+/* END LAPTOP SECTION CONTACT AND CONTACT-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+
+
+/* START LAPTOP NIPOST PROJECT STYLES
+-----------------------------------------------------------------------------*/
+
+section.nipost-first-container{
+	@extend %section-values;
+	height: auto;
+	padding-top: 10%;
+
+	h2{
+		@extend %h2-values;
+		margin-bottom: 0.5em;
+	}
+
+	&>img{
+		width: 100%;
+		max-width: 80em;
+		display: block;
+		margin: 0 auto;
+		margin-bottom:3em;
+	}
+
+	&>p{
+		font-size: 1.9em;
+		line-height: 1.4em;
+		color: $font-color;
+		font-weight: 300;
+		width: 100%;
+		max-width: 45em;
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 1em;
+	}
+
+	h3{
+		@extend %h2-values;
+		margin-bottom: 1em;
+	}
+}
+
+div.first-sketches{
+	margin-bottom: 3em;
+
+	&>p{
+		font-size: 2.5em;
+		color: $font-color;
+		font-weight: 300;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+
+	&>img{
+		width: 100%;
+	    max-width: 80em;
+	    margin: 0 auto;
+	    display: block;
+	}
+
+}
+
+div.second-sketches{
+	max-height:250em;
+	height: 100%;
+
+	&>p{
+		font-size: 2.5em;
+		color: $font-color;
+		font-weight: 300;
+		text-align: center;
+		margin-top: 1em;
+	}
+
+	&>img{
+		width: 100%;
+	    max-width: 80em;
+	    margin: 0 auto;
+	    display: block;
+	    margin-top: 3em;
+	}
+
+}
+
+div.sketches{
+	margin-bottom: 3em;
+
+	&>p{
+		font-size: 2.5em;
+		color: $font-color;
+		font-weight: 300;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+
+	&>img{
+		width: 100%;
+	    max-width: 80em;
+	    margin: 0 auto;
+	    display: block;
+	}
+}
+
+/* END LAPTOP NIPOST PROJECT STYLES
+-----------------------------------------------------------------------------*/
+
+
 
 }
