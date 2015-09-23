@@ -703,6 +703,7 @@ div.first-sketches{
 		max-width: 100em;
 		border: $border $alt-font-color;
 		margin-bottom: 10em;
+		height: 593px;
 	}
 
 }
@@ -982,7 +983,7 @@ div#projects{
 div.port-item{
 	border: $border red;
 	width: 100%;
-	max-width: 31.7em;
+	max-width: 31.75em;
 	height: 24.6em;
 	float: right;
 	overflow: hidden;
@@ -1350,6 +1351,16 @@ div.first-sketches{
 	    max-width: 80em;
 	    margin: 0 auto;
 	    display: block;
+	}
+
+	iframe{
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 80em;
+		border: $border $alt-font-color;
+		margin-bottom: 10em;
+		height: 500px
 	}
 
 }
