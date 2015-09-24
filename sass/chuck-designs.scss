@@ -282,7 +282,8 @@ div.letters-holder{
 
 section.second-index-page-container{
 	@extend %container-style;
-	height: $section-height - 26;
+	height: 56.9em;
+	margin-bottom: 18.5em;
 
 }
 
@@ -909,7 +910,7 @@ div.letters-holder{
 	width: 100%;
 	max-width: 103em;
 	margin: 0 auto;
-	margin-top: 1%;
+	margin-top: 3%;
 
 	h1{
 		width: 100%;
@@ -963,28 +964,27 @@ div.letters-holder{
 
 section.second-index-page-container{
 	@extend %container-style;
-	height: 67.2em;
+	height: 53em;
+	margin-bottom:0;
+
 
 }
 
 div#projects{
 	@extend %section-values;
-	border: solid red 1px;
-	height: 67.2em;
-	margin-top: 0;
+	height: 53em;
+	margin-top: 20em;
 
 	h2{
 		@extend %h2-values;
-		margin: 10% 0 1.3% 0;
 	}
 
 }
 
 div.port-item{
-	border: $border red;
 	width: 100%;
-	max-width: 31.75em;
-	height: 24.6em;
+	max-width: 31.99em;
+	height: 23.8em;
 	float: right;
 	overflow: hidden;
 
