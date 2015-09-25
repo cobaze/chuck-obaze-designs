@@ -18,14 +18,14 @@
 		<div id="main-container"> <!-- Start Main Container -->
 
 			<header class="main-header"> <!-- Start Main Header -->
-				<a class="logo-link" href="index.html"><img src="imgs/chuckobaze.png" alt="Chuck Obaze Graphic and Web Design Logo"></a>
+				<a class="logo-link" href="index.html"><img src="imgs/chuck-obaze-logo-3.png" alt="Chuck Obaze Graphic and Web Design Logo"></a>
 				<nav class="main-nav">
 					<ul class="active-nav">
-						<li class="home-nav"><a href="index.html">HOME</a></li>
-						<li class="projects-nav"><a style="border-bottom: solid #f0555a 0.3em;" class="active-link" href="index.html#projects">PROJECTS</a></li>
-						<li class="resume-nav"><a href="resume.html">RESUME</a></li>
-						<li class="about-nav"><a href="about.html">ABOUT</a></li>
-						<li class="contact-nav"><a href="contact.html">CONTACT</a></li>
+						<li class="home-nav"><a class="home-link" href="index.html">HOME</a></li>
+						<li class="projects-nav"><a style="border-bottom: solid #82cec4 0.3em;" class="project-link" href="index.html#projects">PROJECTS</a></li>
+						<li class="resume-nav"><a class="active-link-b" href="resume.html">RESUME</a></li>
+						<li class="about-nav"><a class="active-link-c" href="about.html">ABOUT</a></li>
+						<li class="contact-nav"><a class="active-link-d" href="contact.html">CONTACT</a></li>
 					</ul>
 				</nav>
 			</header> <!-- End Main Header -->
@@ -57,5 +57,16 @@
 		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="js/coba.js"></script>
+		<script>
+			$(document).ready(function(){
+
+				//$('.main-header').hide();
+
+				$(document.body).hide().fadeIn(2000);
+
+				$('.main-header').css({ 'background-color': 'rgba(0, 0, 0, 0.8)'});
+
+			});
+		</script>
 	</body>
 </html>

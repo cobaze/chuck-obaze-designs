@@ -183,7 +183,7 @@ nav.main-nav{
 
 			a{
 				text-decoration: none;
-				color: $font-color;
+				color: #ffffff;
 				font-size: 1.7em;
 				font-weight: bold;
 
@@ -241,8 +241,6 @@ div.letters-holder{
 		margin: 0 auto;
 		font-weight: 200;
 		line-height: 1.5em;
-
-
 	}
 
 	img{
@@ -250,7 +248,6 @@ div.letters-holder{
 		display: block;
 		margin-top: 5%;
 		margin-bottom: 5%;
-
 	}
 
 	a{
@@ -283,16 +280,15 @@ div.letters-holder{
 
 section.second-index-page-container{
 	@extend %container-style;
-	height: 56.9em;
+	height: 72em;
 	margin-bottom: 18.5em;
 
 }
 
 div#projects{
 	@extend %section-values;
-	height: 56.9em;
-	margin-top: 9em;
-	padding-top: 0;
+	height: 72em;
+	padding-top: 22em;
 
 	h2{
 		@extend %h2-values;

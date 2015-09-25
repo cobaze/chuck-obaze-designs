@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="Graphic and Web Design Portfolio of Chuck Obaze. ">
 		<meta name="keywords" content="Graphic Design, Web Design, Web Development, Logo Design, Brochures, Magazines">
-		<title>NIPOST | Nigerian Postal Service Redesign | Chuck Obaze Designs</title>
+		<title>Wedding Lens | Chuck Obaze Designs</title>
 		<link rel="shortcut icon" href="imgs/chuckobaze-favicon16.png"/>
 		<link rel="shortcut icon" href="imgs/chuckobaze-favicon32.png"/>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -21,11 +21,11 @@
 				<a class="logo-link" href="index.html"><img src="imgs/chuck-obaze-logo-3.png" alt="Chuck Obaze Graphic and Web Design Logo"></a>
 				<nav class="main-nav">
 					<ul class="active-nav">
-						<li class="home-nav"><a href="index.html">HOME</a></li>
-						<li class="projects-nav"><a style="border-bottom: solid #82cec4 0.3em;" class="active-link" href="index.html#projects">PROJECTS</a></li>
-						<li class="resume-nav"><a href="resume.html">RESUME</a></li>
-						<li class="about-nav"><a href="about.html">ABOUT</a></li>
-						<li class="contact-nav"><a href="contact.html">CONTACT</a></li>
+						<li class="home-nav"><a class="home-link" href="index.html">HOME</a></li>
+						<li class="projects-nav"><a style="border-bottom: solid #82cec4 0.3em;" class="project-link" href="index.html#projects">PROJECTS</a></li>
+						<li class="resume-nav"><a class="active-link-b" href="resume.html">RESUME</a></li>
+						<li class="about-nav"><a class="active-link-c" href="about.html">ABOUT</a></li>
+						<li class="contact-nav"><a class="active-link-d" href="contact.html">CONTACT</a></li>
 					</ul>
 				</nav>
 			</header> <!-- End Main Header -->
@@ -41,23 +41,9 @@
 
 				<h3>Spreads</h3>
 				<div class="sketches">
-					<img src="imgs/wedding-lens-img-4.jpg" alt="Nipost Iphone Sketches" />
 					<img src="imgs/wedding-lens-img-5.jpg" alt="Nipost Iphone Sketches" />
-					<img src="imgs/wedding-lens-img-6.jpg" alt="Nipost Iphone Sketches" />
-				</div>
-
-				<div class="sketches">
-					<p>Wireframes</p>
-					<img src="imgs/nipost-iphone-wireframe.png" alt="Nipost Iphone Wireframes" />
-				</div>
-
-				<div class="second-sketches">
-					<p>Visual Representation</p>
-					<img src="imgs/nipost-iphone-visuals.png" alt="Nipost Iphone Visual" />
-					<img src="imgs/nipost-iphone-context.jpg" alt="Nipost Iphone Visual" />
-					<p>Other Collateral</p>
-					<img src="imgs/nipost-apple-watch.jpg" alt="Nipost Apple Watch" />
-					<img style="margin-bottom:10em;" src="imgs/nipost-vehicle-mockup.jpg" alt="Nipost Vehicle Mockup" />
+					<img src="imgs/wedding-lens-img-7.jpg" alt="Nipost Iphone Sketches" />
+					<img style="margin-bottom:10em;" src="imgs/wedding-lens-img-6.jpg" alt="Nipost Iphone Sketches" />
 				</div>
 
 			</section> <!-- End first container -->
@@ -72,5 +58,16 @@
 		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="js/coba.js"></script>
+		<script>
+			$(document).ready(function(){
+
+				//$('.main-header').hide();
+
+				$(document.body).hide().fadeIn(2000);
+
+				$('.main-header').css({ 'background-color': 'rgba(0, 0, 0, 0.8)'});
+
+			});
+		</script>
 	</body>
 </html>
