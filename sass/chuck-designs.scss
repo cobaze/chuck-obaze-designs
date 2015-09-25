@@ -146,20 +146,20 @@ header.main-header{
 	position: fixed;
 	z-index: 2;
 	width: 100%;
-	background-color: #ffffff;
+	background-color: transparent;
 	padding: 2em 0 2em 0;
-	border-bottom: 1px solid $font-color;
+
 
 	img{
 		float: left;
-		max-width: 15em;
+		max-width: 6em;
 		width: 100%;
 		padding-left: 2%;
 	}
 }
 
 .active-link-style{
-	border-bottom: solid $red-color 0.3em;
+	border-bottom: solid $green-color 0.3em;
 }
 
 nav.main-nav{
@@ -187,12 +187,12 @@ nav.main-nav{
 				font-size: 1.7em;
 				font-weight: bold;
 
-				&:visited{
+				/*&:visited{
 					border-bottom: solid $red-color .3em;
-				}
+				}*/
 
-				&:hover, &:focus, &:active{
-					border-bottom: solid $red-color .3em;
+				&:hover, &:focus, /*&:active*/{
+					border-bottom: solid $green-color .3em;
 				}
 			}
 		}
@@ -241,6 +241,7 @@ div.letters-holder{
 		margin: 0 auto;
 		font-weight: 200;
 		line-height: 1.5em;
+
 
 	}
 

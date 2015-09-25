@@ -17,14 +17,14 @@
 	<body class="main-body">
 		<div id="main-container"> <!-- Start Main Container -->
 			<header class="main-header"> <!-- Start Main Header -->
-				<a class="logo-link" href="#home"><img src="imgs/chuckobaze.png" alt="Chuck Obaze Graphic and Web Design Logo"></a>
+				<a class="logo-link" href="#home"><img src="imgs/chuck-obaze-logo-3.png" alt="Chuck Obaze Graphic and Web Design Logo"></a>
 				<nav class="main-nav">
 					<ul class="active-nav">
-						<li class="home-nav"><a href="index.html">HOME</a></li>
-						<li class="projects-nav"><a class="active-link" href="#projects">PROJECTS</a></li>
-						<li class="resume-nav"><a href="resume.html">RESUME</a></li>
-						<li class="about-nav"><a href="about.html">ABOUT</a></li>
-						<li class="contact-nav"><a href="contact.html">CONTACT</a></li>
+						<li class="home-nav"><a class="home-link" href="index.html">HOME</a></li>
+						<li class="projects-nav"><a class="project-link" href="index.html#projects">PROJECTS</a></li>
+						<li class="resume-nav"><a class="active-link-b" href="resume.html">RESUME</a></li>
+						<li class="about-nav"><a class="active-link-c" href="about.html">ABOUT</a></li>
+						<li class="contact-nav"><a class="active-link-d" href="contact.html">CONTACT</a></li>
 					</ul>
 				</nav>
 			</header> <!-- End Main Header -->
@@ -32,8 +32,8 @@
 				<div id="home"> <!-- Start Section Home -->
 					<div class="letters-holder">
 						<h1>My Name is</h1>
-						<img class="home-logo" src="imgs/chuck-obaze-logo-white.png" alt="Chuck Obaze Graphic and Web Design Logo">
-						<h1>I am a Designer that believes in Using Design for the Good of Humanity.</h1>
+						<img class="home-logo" src="imgs/chuck-obaze-logo-white-1.png" alt="Chuck Obaze Graphic and Web Design Logo">
+						<h1>I am a Designer that believes in The Use of Design for the Good of Humanity.</h1>
 						<a class="dwn-btn" href="#projects"></a>
 					</div>
 				</div> <!-- End Section Home -->
@@ -42,14 +42,14 @@
 			<section class="second-index-page-container"> <!-- Start second container -->
 				<div id="projects"> <!-- Start projects -->
 					<h2>PROJECTS</h2>
-						<div class="port-item" style="margin-right: 0% !important;"><a href="aglow.html"><img src="imgs/aglow-img.jpg" alt="Aglow Organic Scented Candles"></a></div>
-						<div class="port-item"><a href="connect-ga.html"><img src="imgs/connect-ga-img.jpg" alt="Nipost, Nigerian Postal Service Redesign"></a></div>
 						<div class="port-item" id="margin-out"><a href="bug-out.html"><img src="imgs/bug-out-img-1.jpg" alt="BugOut, Insect Repellant For Children"></a></div>
+						<div class="port-item"><a href="connect-ga.html"><img src="imgs/connect-ga-img.jpg" alt="Nipost, Nigerian Postal Service Redesign"></a></div>
+						<div class="port-item" style="margin-right: 0% !important;"><a href="aglow.html"><img src="imgs/aglow-img.jpg" alt="Aglow Organic Scented Candles"></a></div>
 						<div class="port-item" id="nipost"><a href="nipost.html"><img src="imgs/nipost-img-2.jpg" alt="Nipost, Nigerian Postal Service Redesign"></a></div>
-						<div class="port-item" style="margin-right: 0% !important;"><a href="nipost.html"><img src="imgs/nipost-img-2.jpg" alt="Nipost, Nigerian Postal Service Redesign"></a></div>
+						<div class="port-item" style="margin-right: 0% !important;"><a href="interconf.html"><img src="imgs/internet-conf-img.jpg" alt="Internet Security Conference"></a></div>
 						<div class="port-item"><a href="nipost.html"><img src="imgs/nipost-img-2.jpg" alt="Nipost, Nigerian Postal Service Redesign"></a></div>
-						<div class="port-item" id="margin-outter"><a href="nipost.html"><img src="imgs/nipost-img-2.jpg" alt="Nipost, Nigerian Postal Service Redesign"></a></div>
-						<div class="port-item"><a href="nipost.html"><img src="imgs/nipost-img-2.jpg" alt="Nipost, Nigerian Postal Service Redesign"></a></div>
+						<div class="port-item" id="margin-outter"><a href="wedding-lens.html"><img src="imgs/wedding-lens-img-3.jpg" alt="Wedding Photography Magazine"></a></div>
+						<div class="port-item"><a href="ndqc.html"><img src="imgs/ndqc.jpg" alt="National Design Qualification Council"></a></div>
 				</div> <!-- End projects -->
 			</section> <!-- End second container -->
 
@@ -65,7 +65,11 @@
 		<script>
 			$(document).ready(function(){
 
-				$('.main-header').hide();
+				//$('.main-header').hide();
+
+				$(document.body).hide().fadeIn(700);
+
+				$('.home-link').addClass('active-link-style');
 
 				$('.home-nav').click(function(e){
 					e.preventDefault();
@@ -83,6 +87,7 @@
 
 				$('.projects-nav').click(function(e){
 					e.preventDefault();
+					$('.home-link').removeClass('active-link-style');
 					$('html, body').animate({
 						scrollTop: $("#projects").offset().top
 							}, 2000);
@@ -97,17 +102,22 @@
 
 				$(window).scroll(function(){
 
-					if ($(window).scrollTop() > 450) {
-						$('.main-header').fadeIn(200);
+					if ($(window).scrollTop() > 1) {
+						$('.main-header').css({ 'background-color': 'rgba(255, 255, 255, 0.8)'});
 					} else {
-						$('.main-header').fadeOut(200);
+						$('.main-header').css("background-color", "transparent");
 					}
 
-					if ($(window).scrollTop() > 450){
-					$('.active-link').addClass('active-link-style');
+
+					if ($(window).scrollTop() >= 850){
+						$('.project-link').addClass('active-link-style');
+						$('.home-link').removeClass('active-link-style');
 					} else {
-						$('.active-link').removeClass('active-link-style');
+						$('.project-link').removeClass('active-link-style');
+						$('.home-link').addClass('active-link-style');
 					}
+
+					 return false;
 
 				});
 
