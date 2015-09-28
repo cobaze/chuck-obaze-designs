@@ -70,9 +70,9 @@ $white-font: #ffffff;
 }
 
 %buttons{
-	color: $green-color;
+	color: $red-color;
 	background-color: #ffffff;
-	border: solid $green-color .125em;
+	border: solid $red-color .125em;
 }
 
 %listing-style{
@@ -222,10 +222,10 @@ section.home-container{
 div#home{
 	@extend %section-values;
 	max-width: 135em;
-	padding-top: 7%;
+	padding-top: 10%;
 }
 
-div.home-content{
+div.home-contents{
 	height: 81em;
 	width: 100%;
 	max-width: 103em;
@@ -274,7 +274,6 @@ div.home-content{
 /* END SECTION HOME AND HOME-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
-
 /* START STYLING SECTION PHIL AND PHIL-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
@@ -314,21 +313,20 @@ div#phil{
 -----------------------------------------------------------------------------*/
 
 
-
-/* START SECTION PROJECTS AND PROJECTS-CONTAINER STYLES
+/* START SECTION PROJECTS AND PROJECT-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
-section.projects-container{
+section.project-container{
 	@extend %container-style;
-	height: 72em;
-	margin-bottom: 18.5em;
+	height: 91em;
 
 }
 
 div#projects{
 	@extend %section-values;
-	height: 72em;
+	height: 91em;
 	padding-top: 15em;
+	max-width: 192em;
 
 	h2{
 		@extend %h2-values;
@@ -338,15 +336,15 @@ div#projects{
 
 div.port-item{
 	width: 100%;
-	max-width: 33.5em;
-	height: 25em;
+	max-width: 47.88em;
+	height: 34em;
 	float: right;
 	overflow: hidden;
 
 	a{
 		&>img{
 			width: 100%;
-			max-width: 33.5em;
+			max-width: 48.5em;
 		}
 	}
 }
@@ -356,12 +354,12 @@ div#nipost{
 	a{
 		&>img{
 			width: 100%;
-			max-width: 33.5em;
+			max-width: 48.5em;
 		}
 	}
 }
 
-/* END SECTION PROJECTS AND PROJECTS-CONTAINER STYLES
+/* END SECTION PROJECTS AND PROJECT-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
 /* END STYLING INDEX PAGE
@@ -455,11 +453,11 @@ a.social-one{
 -----------------------------------------------------------------------------*/
 
 
-/* START SECTION RESUME AND RESUME-CONTAINER STYLES
+/* START SECTION RESUME AND RESUME-FOURTH-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
 
-section#resume-container{
+section#resume-fourth-container{
 	@extend %container-style;
 	clear: both;
 	height: 233em;
@@ -509,7 +507,7 @@ div.skill-info{
 
 	h3{
 		font-size:2.5em;
-		color: $green-color;
+		color: $red-color;
 		margin-bottom: 3em;
 		text-align: center;
 	}
@@ -523,7 +521,7 @@ div.skill-info{
 		margin-top: 0.5em;
 		margin-bottom: 0.5em;
 		margin-right: 1em;
-		border: solid 0.2em $green-color;
+		border: solid 0.2em $red-color;
 		width:5.5em;
 	}
 
@@ -553,7 +551,7 @@ div.education{
 
 	h3{
 		font-size:2.5em;
-		color: $green-color;
+		color: $red-color;
 		margin-bottom: 1em;
 	}
 
@@ -582,7 +580,7 @@ div.education{
 }
 
 
-/* END SECTION RESUME AND RESUME-CONTAINER STYLES
+/* END SECTION RESUME AND FOURTH-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
 
@@ -640,12 +638,12 @@ input,textarea{
 
 button{
 	padding: 1em 1em;
-	border: $green-color;
+	border: $red-color;
 	border-radius: .3em;
 	font-size: 3em;
 	font-weight: 600;
 	color: #ffffff;
-	background-color: $green-color;
+	background-color: $red-color;
 	margin: 0 auto;
 	box-sizing: border-box;
 	display: block;
@@ -943,7 +941,7 @@ div#home{
 	height: 68em;
 }
 
-div.home-content{
+div.home-contents{
 	height: 64.5em;
 	width: 100%;
 	max-width: 103em;
@@ -997,10 +995,10 @@ div.home-content{
 -----------------------------------------------------------------------------*/
 
 
-/* START LAPTOP SIZE SECTION PROJECTS AND PROJECTS-CONTAINER STYLES
+/* START LAPTOP SIZE SECTION PROJECTS AND PROJECT-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
-section.projects-container{
+section.project-container{
 	@extend %container-style;
 	height: 53em;
 	margin-bottom:0;
@@ -1046,17 +1044,17 @@ div#nipost{
 	}
 }
 
-/* END LAPTOP SIZE SECTION PROJECTS AND PROJECTS-CONTAINER STYLES
+/* END LAPTOP SIZE SECTION PROJECTS AND SECOND-INDEX-PAGE-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
 /* END LAPTOP SIZE STYLING INDEX PAGE
 -----------------------------------------------------------------------------*/
 
-/* START LAPTOP SECTION RESUME AND RESUME-CONTAINER STYLES
+/* START LAPTOP SECTION RESUME AND FOURTH-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
 
-section#resume-container{
+section#resume-fourth-container{
 	@extend %container-style;
 	height: 226em;
 	clear: both;
@@ -1180,7 +1178,7 @@ div.education{
 }
 
 
-/* END LAPTOP SECTION RESUME AND RESUME-CONTAINER STYLES
+/* END LAPTOP SECTION RESUME AND FOURTH-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
 /* START LAPTOP ABOUT CONTAINER STYLES
