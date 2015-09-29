@@ -44,8 +44,9 @@ $white-font: #ffffff;
 %h2-values{
 	text-align: center;
 	margin-bottom:2%;
-	color: $green-color;
-	font-size: 3.5em;
+	color: $alt-font-color;
+	font-size: 4.5em;
+	font-weight: 300;
 }
 
 %social-values{
@@ -129,6 +130,14 @@ html{
 	padding: 0;
 }
 
+hr{
+	height: 3px;
+	background-color: #ffffff;
+	margin: 0 auto;
+	width: 1.5em;
+	border: 0;
+}
+
 body{
 	font-size: $body-font-size;
 	/*font-family: $helvetica;*/
@@ -146,13 +155,13 @@ header.main-header{
 	position: fixed;
 	z-index: 2;
 	width: 100%;
-	background-color: transparent;
+	background-color: #ffffff;
 	padding: 2em 0 2em 0;
 
 
 	img{
 		float: left;
-		max-width: 6em;
+		max-width: 4em;
 		width: 100%;
 		padding-left: 2%;
 	}
@@ -166,7 +175,7 @@ nav.main-nav{
 	float: right;
 	padding-right: 2%;
 	position: relative;
-	top: 4.5em;
+	top: 1.3em;
 
 	ul{
 		clear: both;
@@ -183,7 +192,7 @@ nav.main-nav{
 
 			a{
 				text-decoration: none;
-				color: #ffffff;
+				color:$alt-font-color;
 				font-size: 1.7em;
 				font-weight: bold;
 
@@ -276,12 +285,23 @@ div.home-contents{
 
 /* START STYLING SECTION PHIL AND PHIL-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
+div.phil-bg{
+	height: 150em;
+	width: 100%;
+	position: fixed;
+	background-image: url(../imgs/phil-bg.jpg);
+	background-position: center bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: -1;
+	top:0em;
+	left:0;
+
+}
 
 section.phil-container{
 	@extend %container-style;
 	height: 50em;
-	background-color: $green-color;
-
 }
 
 div#phil{
@@ -290,7 +310,6 @@ div#phil{
 	padding-top: 15em;
 	padding-bottom: 15em;
 	max-width: 192em;
-
 
 	h2{
 		@extend %h2-values;
@@ -302,11 +321,117 @@ div#phil{
 		font-weight: 200;
 		line-height: 1.5em;
 		color: #ffffff;
-		width: 50em;
+		width: 37em;
 		margin: 0 auto;
 		text-align: center;
 	}
 
+}
+
+section.process-container{
+	@extend %container-style;
+	height: 70em;
+	background-color: #fafafa;
+
+}
+
+div#process{
+	@extend %section-values;
+	height: 70em;
+	padding-top: 15em;
+	max-width: 192em;
+	margin: 0 auto;
+
+	h2{
+		@extend %h2-values;
+	}
+
+}
+
+div.icon-holder{
+	height: 30em;
+	max-width: 85em;
+	width: 100%;
+	margin: 0 auto;
+}
+
+div.icon{
+	float: left;
+	width: auto;
+	margin: 3em;
+
+	img{
+		width: 15em;
+		margin-bottom: 3.5em
+	}
+
+	p{
+		text-align: center;
+		font-size: 2.5em;
+		font-weight: bold;
+		color: $alt-font-color;
+		text-align: center;
+	}
+}
+
+section.expertise-container{
+	@extend %container-style;
+	height: 70em;
+	background-color: #fafafa;
+
+}
+
+div#expertise{
+	@extend %section-values;
+	height: 70em;
+	padding-top: 15em;
+	margin: 0 auto;
+	max-width: 195em;
+
+	h2{
+		@extend %h2-values;
+	}
+
+}
+
+div.icon-holder-one{
+	height: 29em;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*div.icon-holder-two{
+	height: 29em;
+	max-width: 80em;
+	width: 100%;
+	margin: 0 auto;
+}*/
+
+div.ex-icon{
+	float: left;
+	width: auto;
+	margin: 3em;
+
+	img{
+		width: 15em;
+		margin: 0 auto;
+		display: block;
+	}
+
+	p{
+		text-align: center;
+		font-size: 2em;
+		font-weight: bold;
+		color: $alt-font-color;
+		text-align: center;
+		width: 13em;
+		margin-top: 1em;
+
+		span{
+			font-size: 0.8em;
+			font-weight: 200;
+		}
+	}
 }
 
 /* END STYLING SECTION PHIL AND PHIL-CONTAINER STYLES
@@ -318,13 +443,14 @@ div#phil{
 
 section.project-container{
 	@extend %container-style;
-	height: 91em;
+	height: 92em;
+	background-color: #ffffff;
 
 }
 
 div#projects{
 	@extend %section-values;
-	height: 91em;
+	height: 92em;
 	padding-top: 15em;
 	max-width: 192em;
 
@@ -834,7 +960,7 @@ div.sketches{
 
 	div#projects{
 	margin: 0 auto;
-	border: $border pink;
+	border: $border red;
 	height: $section-height - 20;
 	clear: both;
 	width: 100%;

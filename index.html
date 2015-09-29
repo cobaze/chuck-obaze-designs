@@ -110,15 +110,16 @@
 				$(window).scroll(function(){
 
 					if ($(window).scrollTop() > 1) {
-						$('.main-header').css({ 'background-color': 'rgba(0, 0, 0, 0.8)'});
+						$('.main-header').css({ 'background-color': 'rgba(255, 255, 255, 0.8)'});
 					} else {
-						$('.main-header').css("background-color", "transparent");
+						$('.main-header').css("background-color", "#ffffff");;
 					}
 
 
 					if ($(window).scrollTop() >= 850){
 						$('.project-link').addClass('active-link-style');
 						$('.home-link').removeClass('active-link-style');
+						$('.main-header').css({'border-bottom':'solid #82cec4 1px'});
 					} else {
 						$('.project-link').removeClass('active-link-style');
 						$('.home-link').addClass('active-link-style');

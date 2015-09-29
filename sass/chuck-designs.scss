@@ -146,13 +146,13 @@ header.main-header{
 	position: fixed;
 	z-index: 2;
 	width: 100%;
-	background-color: transparent;
+	background-color: #ffffff;
 	padding: 2em 0 2em 0;
 
 
 	img{
 		float: left;
-		max-width: 6em;
+		max-width: 4em;
 		width: 100%;
 		padding-left: 2%;
 	}
@@ -166,7 +166,7 @@ nav.main-nav{
 	float: right;
 	padding-right: 2%;
 	position: relative;
-	top: 4.5em;
+	top: 1.3em;
 
 	ul{
 		clear: both;
@@ -183,7 +183,7 @@ nav.main-nav{
 
 			a{
 				text-decoration: none;
-				color: #ffffff;
+				color:$alt-font-color;
 				font-size: 1.7em;
 				font-weight: bold;
 
