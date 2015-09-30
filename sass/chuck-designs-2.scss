@@ -483,13 +483,15 @@ div.port{
 		padding: 1em;
 		font-size: 2em;
 		font-weight: 600;
-		@extend %buttons;
+		color: $orange-color;
+		background-color: #ffffff;
+		border: solid $orange-color 0.125em;
 		box-sizing: border-box;
 		display: block;
 
 		&:hover, &:focus{
 			color: #ffffff;
-			background-color: $green-color;
+			background-color: $orange-color;
 		}
 
 	}
@@ -615,22 +617,15 @@ div#expertise{
 }
 
 div.icon-holder-one{
-	height: 29em;
+	height: 30em;
 	width: 100%;
 	margin: 0 auto;
 }
 
-/*div.icon-holder-two{
-	height: 29em;
-	max-width: 80em;
-	width: 100%;
-	margin: 0 auto;
-}*/
-
 div.ex-icon{
 	float: left;
 	width: auto;
-	margin: 3em;
+	margin: 2.9em;
 
 	img{
 		width: 15em;
@@ -660,12 +655,12 @@ section.end-container{
 	background-position: center cover;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 81em;
+	height: 81.5em;
 }
 
 div#end{
 	@extend %section-values;
-	height: 81em;
+	height: 81.5em;
 	padding-top: 20em;
 	padding-bottom: 15em;
 	max-width: 192em;
@@ -674,6 +669,7 @@ div#end{
 		@extend %h2-values;
 		color: #ffffff;
 		font-family: 'Kaushan Script', cursive;
+		margin-bottom: 1%;
 	}
 
 	p{
@@ -687,9 +683,13 @@ div#end{
 
 		a{
 			text-decoration: none;
-			color: $green-color;
+			color: $orange-color;
 			font-size: 1em;
 			font-weight: bold;
+
+			&:hover, &:focus{
+				color: $green-color;
+			}
 		}
 	}
 
@@ -697,7 +697,7 @@ div#end{
 		width: 5%;
 		margin: 0 auto;
 		display: block;
-		margin-bottom: 5em;
+		margin-bottom: 3em;
 	}
 
 }

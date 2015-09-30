@@ -62,7 +62,7 @@ div.port, div.dwn-pdf, div.skill-info {
 }
 
 /* line 73, ../sass/chuck-designs-2.scss */
-div.port a, div.dwn-pdf a:hover, div.dwn-pdf a:focus, button:hover, button:focus {
+div.dwn-pdf a:hover, div.dwn-pdf a:focus, button:hover, button:focus {
   color: #82cec4;
   background-color: #ffffff;
   border: solid #82cec4 0.125em;
@@ -446,18 +446,21 @@ div.port a {
   padding: 1em;
   font-size: 2em;
   font-weight: 600;
+  color: #f98348;
+  background-color: #ffffff;
+  border: solid #f98348 0.125em;
   box-sizing: border-box;
   display: block;
 }
-/* line 490, ../sass/chuck-designs-2.scss */
+/* line 492, ../sass/chuck-designs-2.scss */
 div.port a:hover, div.port a:focus {
   color: #ffffff;
-  background-color: #82cec4;
+  background-color: #f98348;
 }
 
 /* START STYLING SECTION PHIL AND PHIL-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
-/* line 501, ../sass/chuck-designs-2.scss */
+/* line 503, ../sass/chuck-designs-2.scss */
 div.phil-bg {
   height: 150em;
   width: 100%;
@@ -471,23 +474,23 @@ div.phil-bg {
   left: 0;
 }
 
-/* line 515, ../sass/chuck-designs-2.scss */
+/* line 517, ../sass/chuck-designs-2.scss */
 section.phil-container {
   height: 50em;
 }
 
-/* line 520, ../sass/chuck-designs-2.scss */
+/* line 522, ../sass/chuck-designs-2.scss */
 div#phil {
   height: 50em;
   padding-top: 15em;
   padding-bottom: 15em;
   max-width: 192em;
 }
-/* line 527, ../sass/chuck-designs-2.scss */
+/* line 529, ../sass/chuck-designs-2.scss */
 div#phil h2 {
   color: #ffffff;
 }
-/* line 532, ../sass/chuck-designs-2.scss */
+/* line 534, ../sass/chuck-designs-2.scss */
 div#phil p {
   font-size: 2.5em;
   font-weight: 200;
@@ -498,13 +501,13 @@ div#phil p {
   text-align: center;
 }
 
-/* line 544, ../sass/chuck-designs-2.scss */
+/* line 546, ../sass/chuck-designs-2.scss */
 section.process-container {
   height: 70em;
   background-color: #fafafa;
 }
 
-/* line 551, ../sass/chuck-designs-2.scss */
+/* line 553, ../sass/chuck-designs-2.scss */
 div#process {
   height: 70em;
   padding-top: 15em;
@@ -512,26 +515,26 @@ div#process {
   margin: 0 auto;
 }
 
-/* line 564, ../sass/chuck-designs-2.scss */
+/* line 566, ../sass/chuck-designs-2.scss */
 div.icon-holder {
   height: 35em;
   width: 67%;
   margin: 0 auto;
 }
 
-/* line 570, ../sass/chuck-designs-2.scss */
+/* line 572, ../sass/chuck-designs-2.scss */
 div.icon {
   float: left;
   width: auto;
   margin: 3em;
 }
-/* line 575, ../sass/chuck-designs-2.scss */
+/* line 577, ../sass/chuck-designs-2.scss */
 div.icon img {
   width: 15em;
   margin: 0 auto;
   display: block;
 }
-/* line 581, ../sass/chuck-designs-2.scss */
+/* line 583, ../sass/chuck-designs-2.scss */
 div.icon p {
   text-align: center;
   font-size: 2em;
@@ -541,19 +544,19 @@ div.icon p {
   width: 13em;
   margin-top: 1em;
 }
-/* line 590, ../sass/chuck-designs-2.scss */
+/* line 592, ../sass/chuck-designs-2.scss */
 div.icon p span {
   font-size: 0.8em;
   font-weight: 200;
 }
 
-/* line 597, ../sass/chuck-designs-2.scss */
+/* line 599, ../sass/chuck-designs-2.scss */
 section.expertise-container {
   height: 70em;
   background-color: #fafafa;
 }
 
-/* line 604, ../sass/chuck-designs-2.scss */
+/* line 606, ../sass/chuck-designs-2.scss */
 div#expertise {
   height: 70em;
   padding-top: 15em;
@@ -561,32 +564,26 @@ div#expertise {
   max-width: 195em;
 }
 
-/* line 617, ../sass/chuck-designs-2.scss */
+/* line 619, ../sass/chuck-designs-2.scss */
 div.icon-holder-one {
-  height: 29em;
+  height: 30em;
   width: 100%;
   margin: 0 auto;
 }
 
-/*div.icon-holder-two{
-	height: 29em;
-	max-width: 80em;
-	width: 100%;
-	margin: 0 auto;
-}*/
-/* line 630, ../sass/chuck-designs-2.scss */
+/* line 625, ../sass/chuck-designs-2.scss */
 div.ex-icon {
   float: left;
   width: auto;
-  margin: 3em;
+  margin: 2.9em;
 }
-/* line 635, ../sass/chuck-designs-2.scss */
+/* line 630, ../sass/chuck-designs-2.scss */
 div.ex-icon img {
   width: 15em;
   margin: 0 auto;
   display: block;
 }
-/* line 641, ../sass/chuck-designs-2.scss */
+/* line 636, ../sass/chuck-designs-2.scss */
 div.ex-icon p {
   text-align: center;
   font-size: 2em;
@@ -596,34 +593,35 @@ div.ex-icon p {
   width: 13em;
   margin-top: 1em;
 }
-/* line 650, ../sass/chuck-designs-2.scss */
+/* line 645, ../sass/chuck-designs-2.scss */
 div.ex-icon p span {
   font-size: 0.8em;
   font-weight: 200;
 }
 
-/* line 657, ../sass/chuck-designs-2.scss */
+/* line 652, ../sass/chuck-designs-2.scss */
 section.end-container {
   background-image: url(../imgs/phil.jpg);
   background-position: center cover;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 81em;
+  height: 81.5em;
 }
 
-/* line 666, ../sass/chuck-designs-2.scss */
+/* line 661, ../sass/chuck-designs-2.scss */
 div#end {
-  height: 81em;
+  height: 81.5em;
   padding-top: 20em;
   padding-bottom: 15em;
   max-width: 192em;
 }
-/* line 673, ../sass/chuck-designs-2.scss */
+/* line 668, ../sass/chuck-designs-2.scss */
 div#end h2 {
   color: #ffffff;
   font-family: 'Kaushan Script', cursive;
+  margin-bottom: 1%;
 }
-/* line 679, ../sass/chuck-designs-2.scss */
+/* line 675, ../sass/chuck-designs-2.scss */
 div#end p {
   font-size: 2em;
   font-weight: 200;
@@ -633,19 +631,23 @@ div#end p {
   margin: 0 auto;
   text-align: center;
 }
-/* line 688, ../sass/chuck-designs-2.scss */
+/* line 684, ../sass/chuck-designs-2.scss */
 div#end p a {
   text-decoration: none;
-  color: #82cec4;
+  color: #f98348;
   font-size: 1em;
   font-weight: bold;
+}
+/* line 690, ../sass/chuck-designs-2.scss */
+div#end p a:hover, div#end p a:focus {
+  color: #82cec4;
 }
 /* line 696, ../sass/chuck-designs-2.scss */
 div#end img {
   width: 5%;
   margin: 0 auto;
   display: block;
-  margin-bottom: 5em;
+  margin-bottom: 3em;
 }
 
 /* line 705, ../sass/chuck-designs-2.scss */
