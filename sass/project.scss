@@ -71,9 +71,9 @@ $white-font: #ffffff;
 }
 
 %buttons{
-	color: $green-color;
+	color: $red-color;
 	background-color: #ffffff;
-	border: solid $green-color .125em;
+	border: solid $red-color .125em;
 }
 
 %listing-style{
@@ -283,219 +283,6 @@ div.home-contents{
 /* END SECTION HOME AND HOME-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
-section.portfolio-container{
-	@extend %container-style;
-	height: 120em;
-	background-color: #ffffff;
-}
-
-div#portfolio{
-	@extend %section-values;
-	width: 120em;
-	height: 110em;
-
-	h2{
-		@extend %h2-values;
-	}
-
-	&>p{
-		font-size: 2em;
-		font-weight: 200;
-		line-height: 1.5em;
-		color: $alt-font-color;
-		width: 37em;
-		margin: 0 auto;
-		text-align: center;
-		margin-bottom: 2em;
-	}
-}
-
-div.left-holder, div.right-holder{
-	height: 70em;
-	width: 50%;
-	float: left;
-	margin-bottom: 5em;
-
-}
-
-div.left-top{
-	height: 43.5em;
-	width: 100%;
-	overflow: hidden;
-
-	a{
-		text-decoration: none;
-
-		&>p{
-			font-size: medium;
-			width: 6em;
-			position: relative;
-			padding: 0.5em;
-			color: #ffffff;
-			font-weight: bold;
-			text-decoration: none;
-			z-index: 1;
-			top: 25em;
-			background-color: $green-color;
-		}
-
-		img{
-			width: 103%;
-			position: relative;
-			bottom: 5em;
-		}
-	}
-
-}
-
-div.left-bottom{
-	height: 29em;
-	width: 100%;
-	overflow: hidden;
-
-	a{
-		text-decoration: none;
-
-	img{
-		width: 102%;
-		position: relative;
-		bottom: 17.5em;
-	}
-
-	&>p{
-			font-size: medium;
-			width: 8.1em;
-			position: relative;
-			padding: 0.5em;
-			color: #ffffff;
-			font-weight: bold;
-			text-decoration: none;
-			z-index: 2;
-			top: 16em;
-			background-color: $green-color;
-		}
-
-	}
-}
-
-div.right-top-one{
-	float: left;
-	width: 50%;
-	height: 25.5em;
-	overflow: hidden;
-
-	a{
-		text-decoration: none;
-
-	img{
-		width: 107%;
-		position: relative;
-		right: 2em;
-		bottom: 4.5em;
-	}
-
-	&>p{
-			font-size: medium;
-			width: 10em;
-			position: relative;
-			padding: 0.5em;
-			color: #ffffff;
-			font-weight: bold;
-			text-decoration: none;
-			z-index: 3;
-			top: 13.8em;
-			background-color: $green-color;
-		}
-	}
-}
-
-div.right-top-two{
-	float: left;
-	width: 50%;
-	height: 25.5em;
-	overflow: hidden;
-
-	a{
-		text-decoration: none;
-
-		img{
-		width: 107%;
-		position: relative;
-		right: 2em;
-		bottom: 5.5em;
-		}
-
-		&>p{
-			font-size: medium;
-			width: 8em;
-			position: relative;
-			padding: 0.5em;
-			color: #ffffff;
-			font-weight: bold;
-			text-decoration: none;
-			z-index: 3;
-			top: 13.8em;
-			background-color: $green-color;
-		}
-	}
-}
-
-div.right-bottom{
-	height: 40em;
-	width: 100%;
-	float: left;
-	overflow: hidden;
-
-	a{
-		text-decoration: none;
-
-	img{
-		width: 130%;
-		position: relative;
-		right: 10.5em;
-		bottom: 12em;
-	}
-
-	&>p{
-			font-size: medium;
-			width: 9em;
-			position: relative;
-			padding: 0.5em;
-			color: #ffffff;
-			font-weight: bold;
-			text-decoration: none;
-			z-index: 4;
-			top: 22.9em;
-			background-color: $green-color;
-		}
-	}
-}
-
-div.port{
-	@extend %left-resume;
-	margin: 0 auto;
-	clear: both;
-	float: none;
-	max-width: 31em;
-
-	a{
-		text-decoration: none;
-		padding: 1em;
-		font-size: 2em;
-		font-weight: 600;
-		@extend %buttons;
-		box-sizing: border-box;
-		display: block;
-
-		&:hover, &:focus{
-			color: #ffffff;
-			background-color: $green-color;
-		}
-
-	}
-}
-
-
 /* START STYLING SECTION PHIL AND PHIL-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 div.phil-bg{
@@ -562,8 +349,9 @@ div#process{
 }
 
 div.icon-holder{
-	height: 35em;
-	width: 67%;
+	height: 30em;
+	max-width: 85em;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -574,23 +362,15 @@ div.icon{
 
 	img{
 		width: 15em;
-		margin: 0 auto;
-		display: block;
+		margin-bottom: 3.5em
 	}
 
 	p{
 		text-align: center;
-		font-size: 2em;
+		font-size: 2.5em;
 		font-weight: bold;
 		color: $alt-font-color;
 		text-align: center;
-		width: 13em;
-		margin-top: 1em;
-
-		span{
-			font-size: 0.8em;
-			font-weight: 200;
-		}
 	}
 }
 
@@ -652,125 +432,6 @@ div.ex-icon{
 			font-weight: 200;
 		}
 	}
-}
-
-section.end-container{
-	@extend %container-style;
-	background-image: url(../imgs/phil.jpg);
-	background-position: center cover;
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 81em;
-}
-
-div#end{
-	@extend %section-values;
-	height: 81em;
-	padding-top: 20em;
-	padding-bottom: 15em;
-	max-width: 192em;
-
-	h2{
-		@extend %h2-values;
-		color: #ffffff;
-		font-family: 'Kaushan Script', cursive;
-	}
-
-	p{
-		font-size: 2em;
-		font-weight: 200;
-		line-height: 1.5em;
-		color: #ffffff;
-		width: 22em;
-		margin: 0 auto;
-		text-align: center;
-
-		a{
-			text-decoration: none;
-			color: $green-color;
-			font-size: 1em;
-			font-weight: bold;
-		}
-	}
-
-	img{
-		width: 5%;
-		margin: 0 auto;
-		display: block;
-		margin-bottom: 5em;
-	}
-
-}
-
-div.social-icons{
-	height: 5.3em;
-	width: 13.6%;
-	margin: 0 auto;
-}
-
-div.linked{
-	background: url(../imgs/linkedin.png) no-repeat;
-	background-size: 3em;
-	width: 3em;
-	height: 3em;
-	float: left;
-	margin: 1em;
-
-	&:hover, &:focus{
-			background-image: url(../imgs/linkedin-green.png);
-		}
-}
-
-div.pin{
-	background: url(../imgs/pinterest.png) no-repeat;
-	background-size: 3em;
-	width: 3em;
-	height: 3em;
-	float: left;
-	margin: 1em;
-
-	&:hover, &:focus{
-			background-image: url(../imgs/pinterest-green.png);
-		}
-}
-
-div.google-plus{
-	background: url(../imgs/google-plus.png) no-repeat;
-	background-size: 3em;
-	width: 3em;
-	height: 3em;
-	float: left;
-	margin: 1em;
-
-	&:hover, &:focus{
-			background-image: url(../imgs/google-plus-green.png);
-		}
-}
-
-div.vim{
-	background: url(../imgs/vimeo.png) no-repeat;
-	background-size: 3em;
-	width: 3em;
-	height: 3em;
-	float: left;
-	margin: 1em;
-
-	&:hover, &:focus{
-			background-image: url(../imgs/vimeo-green.png);
-		}
-}
-
-div.behan{
-	background: url(../imgs/behance.png) no-repeat;
-	background-size: 3em;
-	width: 3em;
-	height: 3em;
-	float: left;
-	margin: 1em;
-
-	&:hover, &:focus{
-			background-image: url(../imgs/behance-green.png);
-		}
 }
 
 /* END STYLING SECTION PHIL AND PHIL-CONTAINER STYLES
