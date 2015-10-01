@@ -15,7 +15,7 @@ website:   http://cobadesign.com
 /* =SASS Variables
 -----------------------------------------------------------------------------*/
 /* line 30, ../sass/chuck-designs-2.scss */
-div#home, div#portfolio, div#phil, div#process, div#expertise, div#end, div#projects, div#about, div#resume, div#contact-me, section.nipost-first-container {
+div#portfolio, div#phil, div#process, div#expertise, div#end, div#projects, div#about, div#resume, div#contact-me, section.nipost-first-container {
   margin: 0 auto;
   max-width: 135em;
   width: 100%;
@@ -99,7 +99,7 @@ hr {
   height: 3px;
   background-color: #ffffff;
   margin: 0 auto;
-  width: 1.5em;
+  width: 5%;
   border: 0;
 }
 
@@ -128,8 +128,8 @@ header.main-header {
 /* line 162, ../sass/chuck-designs-2.scss */
 header.main-header img {
   float: left;
-  max-width: 4em;
   width: 100%;
+  max-width: 4em;
   padding-left: 2%;
 }
 
@@ -185,29 +185,33 @@ li.contact-nav {
 -----------------------------------------------------------------------------*/
 /* line 221, ../sass/chuck-designs-2.scss */
 section.home-container {
-  background-image: url(../imgs/bg.jpg);
+  background-image: url(../imgs/bgrd.jpeg);
   background-position: center center;
   background-size: cover;
-  height: 96em;
+  height: 96.2em;
   clear: both;
   width: 100%;
 }
 
 /* line 231, ../sass/chuck-designs-2.scss */
 div#home {
-  max-width: 135em;
+  width: 100%;
   padding-top: 10%;
+  box-sizing: border-box;
+  height: 96em;
+  margin: 0 auto;
 }
 
-/* line 237, ../sass/chuck-designs-2.scss */
+/* line 239, ../sass/chuck-designs-2.scss */
 div.home-contents {
-  height: 81em;
+  height: 74.8em;
   width: 100%;
   max-width: 103em;
   margin: 0 auto;
-  margin-top: 1%;
+  margin-top: 2em;
+  border: solid 1px red;
 }
-/* line 244, ../sass/chuck-designs-2.scss */
+/* line 247, ../sass/chuck-designs-2.scss */
 div.home-contents h1 {
   width: 100%;
   max-width: 22em;
@@ -218,14 +222,16 @@ div.home-contents h1 {
   font-weight: 200;
   line-height: 1.5em;
 }
-/* line 255, ../sass/chuck-designs-2.scss */
+/* line 258, ../sass/chuck-designs-2.scss */
 div.home-contents img {
   margin: 0 auto;
   display: block;
   margin-top: 5%;
   margin-bottom: 5%;
+  width: 80em;
+  max-width: 80%;
 }
-/* line 262, ../sass/chuck-designs-2.scss */
+/* line 267, ../sass/chuck-designs-2.scss */
 div.home-contents a {
   max-width: 6em;
   height: 6em;
@@ -239,25 +245,25 @@ div.home-contents a {
   background-size: 6em;
   background-repeat: no-repeat;
 }
-/* line 275, ../sass/chuck-designs-2.scss */
+/* line 280, ../sass/chuck-designs-2.scss */
 div.home-contents a:hover, div.home-contents a:focus {
   background-image: url(../imgs/dwn-btn.png);
 }
 
 /* END SECTION HOME AND HOME-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
-/* line 286, ../sass/chuck-designs-2.scss */
+/* line 291, ../sass/chuck-designs-2.scss */
 section.portfolio-container {
   height: 120em;
   background-color: #ffffff;
 }
 
-/* line 292, ../sass/chuck-designs-2.scss */
+/* line 297, ../sass/chuck-designs-2.scss */
 div#portfolio {
   width: 120em;
   height: 110em;
 }
-/* line 301, ../sass/chuck-designs-2.scss */
+/* line 306, ../sass/chuck-designs-2.scss */
 div#portfolio > p {
   font-size: 2em;
   font-weight: 200;
@@ -269,7 +275,7 @@ div#portfolio > p {
   margin-bottom: 2em;
 }
 
-/* line 313, ../sass/chuck-designs-2.scss */
+/* line 318, ../sass/chuck-designs-2.scss */
 div.left-holder, div.right-holder {
   height: 70em;
   width: 50%;
@@ -277,17 +283,17 @@ div.left-holder, div.right-holder {
   margin-bottom: 5em;
 }
 
-/* line 321, ../sass/chuck-designs-2.scss */
+/* line 326, ../sass/chuck-designs-2.scss */
 div.left-top {
   height: 43.5em;
   width: 100%;
   overflow: hidden;
 }
-/* line 326, ../sass/chuck-designs-2.scss */
+/* line 331, ../sass/chuck-designs-2.scss */
 div.left-top a {
   text-decoration: none;
 }
-/* line 329, ../sass/chuck-designs-2.scss */
+/* line 334, ../sass/chuck-designs-2.scss */
 div.left-top a > p {
   font-size: medium;
   width: 6em;
@@ -300,30 +306,30 @@ div.left-top a > p {
   top: 25em;
   background-color: #82cec4;
 }
-/* line 342, ../sass/chuck-designs-2.scss */
+/* line 347, ../sass/chuck-designs-2.scss */
 div.left-top a img {
   width: 103%;
   position: relative;
   bottom: 5em;
 }
 
-/* line 351, ../sass/chuck-designs-2.scss */
+/* line 356, ../sass/chuck-designs-2.scss */
 div.left-bottom {
   height: 29em;
   width: 100%;
   overflow: hidden;
 }
-/* line 356, ../sass/chuck-designs-2.scss */
+/* line 361, ../sass/chuck-designs-2.scss */
 div.left-bottom a {
   text-decoration: none;
 }
-/* line 359, ../sass/chuck-designs-2.scss */
+/* line 364, ../sass/chuck-designs-2.scss */
 div.left-bottom a img {
   width: 102%;
   position: relative;
   bottom: 17.5em;
 }
-/* line 365, ../sass/chuck-designs-2.scss */
+/* line 370, ../sass/chuck-designs-2.scss */
 div.left-bottom a > p {
   font-size: medium;
   width: 8.1em;
@@ -337,25 +343,25 @@ div.left-bottom a > p {
   background-color: #82cec4;
 }
 
-/* line 381, ../sass/chuck-designs-2.scss */
+/* line 386, ../sass/chuck-designs-2.scss */
 div.right-top-one {
   float: left;
   width: 50%;
   height: 25.5em;
   overflow: hidden;
 }
-/* line 387, ../sass/chuck-designs-2.scss */
+/* line 392, ../sass/chuck-designs-2.scss */
 div.right-top-one a {
   text-decoration: none;
 }
-/* line 390, ../sass/chuck-designs-2.scss */
+/* line 395, ../sass/chuck-designs-2.scss */
 div.right-top-one a img {
   width: 107%;
   position: relative;
   right: 2em;
   bottom: 4.5em;
 }
-/* line 397, ../sass/chuck-designs-2.scss */
+/* line 402, ../sass/chuck-designs-2.scss */
 div.right-top-one a > p {
   font-size: medium;
   width: 10em;
@@ -369,25 +375,25 @@ div.right-top-one a > p {
   background-color: #82cec4;
 }
 
-/* line 412, ../sass/chuck-designs-2.scss */
+/* line 417, ../sass/chuck-designs-2.scss */
 div.right-top-two {
   float: left;
   width: 50%;
   height: 25.5em;
   overflow: hidden;
 }
-/* line 418, ../sass/chuck-designs-2.scss */
+/* line 423, ../sass/chuck-designs-2.scss */
 div.right-top-two a {
   text-decoration: none;
 }
-/* line 421, ../sass/chuck-designs-2.scss */
+/* line 426, ../sass/chuck-designs-2.scss */
 div.right-top-two a img {
   width: 107%;
   position: relative;
   right: 2em;
   bottom: 5.5em;
 }
-/* line 428, ../sass/chuck-designs-2.scss */
+/* line 433, ../sass/chuck-designs-2.scss */
 div.right-top-two a > p {
   font-size: medium;
   width: 8em;
@@ -401,25 +407,25 @@ div.right-top-two a > p {
   background-color: #82cec4;
 }
 
-/* line 443, ../sass/chuck-designs-2.scss */
+/* line 448, ../sass/chuck-designs-2.scss */
 div.right-bottom {
   height: 40em;
   width: 100%;
   float: left;
   overflow: hidden;
 }
-/* line 449, ../sass/chuck-designs-2.scss */
+/* line 454, ../sass/chuck-designs-2.scss */
 div.right-bottom a {
   text-decoration: none;
 }
-/* line 452, ../sass/chuck-designs-2.scss */
+/* line 457, ../sass/chuck-designs-2.scss */
 div.right-bottom a img {
   width: 130%;
   position: relative;
   right: 10.5em;
   bottom: 12em;
 }
-/* line 459, ../sass/chuck-designs-2.scss */
+/* line 464, ../sass/chuck-designs-2.scss */
 div.right-bottom a > p {
   font-size: medium;
   width: 9em;
@@ -433,14 +439,14 @@ div.right-bottom a > p {
   background-color: #82cec4;
 }
 
-/* line 474, ../sass/chuck-designs-2.scss */
+/* line 479, ../sass/chuck-designs-2.scss */
 div.port {
   margin: 0 auto;
   clear: both;
   float: none;
   max-width: 31em;
 }
-/* line 481, ../sass/chuck-designs-2.scss */
+/* line 486, ../sass/chuck-designs-2.scss */
 div.port a {
   text-decoration: none;
   padding: 1em;
@@ -452,7 +458,7 @@ div.port a {
   box-sizing: border-box;
   display: block;
 }
-/* line 492, ../sass/chuck-designs-2.scss */
+/* line 497, ../sass/chuck-designs-2.scss */
 div.port a:hover, div.port a:focus {
   color: #ffffff;
   background-color: #f98348;
@@ -460,7 +466,7 @@ div.port a:hover, div.port a:focus {
 
 /* START STYLING SECTION PHIL AND PHIL-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
-/* line 503, ../sass/chuck-designs-2.scss */
+/* line 508, ../sass/chuck-designs-2.scss */
 div.phil-bg {
   height: 150em;
   width: 100%;
@@ -474,23 +480,23 @@ div.phil-bg {
   left: 0;
 }
 
-/* line 517, ../sass/chuck-designs-2.scss */
+/* line 522, ../sass/chuck-designs-2.scss */
 section.phil-container {
   height: 50em;
 }
 
-/* line 522, ../sass/chuck-designs-2.scss */
+/* line 527, ../sass/chuck-designs-2.scss */
 div#phil {
   height: 50em;
   padding-top: 15em;
   padding-bottom: 15em;
   max-width: 192em;
 }
-/* line 529, ../sass/chuck-designs-2.scss */
+/* line 534, ../sass/chuck-designs-2.scss */
 div#phil h2 {
   color: #ffffff;
 }
-/* line 534, ../sass/chuck-designs-2.scss */
+/* line 539, ../sass/chuck-designs-2.scss */
 div#phil p {
   font-size: 2.5em;
   font-weight: 200;
@@ -501,13 +507,13 @@ div#phil p {
   text-align: center;
 }
 
-/* line 546, ../sass/chuck-designs-2.scss */
+/* line 551, ../sass/chuck-designs-2.scss */
 section.process-container {
   height: 70em;
   background-color: #fafafa;
 }
 
-/* line 553, ../sass/chuck-designs-2.scss */
+/* line 558, ../sass/chuck-designs-2.scss */
 div#process {
   height: 70em;
   padding-top: 15em;
@@ -515,26 +521,26 @@ div#process {
   margin: 0 auto;
 }
 
-/* line 566, ../sass/chuck-designs-2.scss */
+/* line 571, ../sass/chuck-designs-2.scss */
 div.icon-holder {
   height: 35em;
   width: 67%;
   margin: 0 auto;
 }
 
-/* line 572, ../sass/chuck-designs-2.scss */
+/* line 577, ../sass/chuck-designs-2.scss */
 div.icon {
   float: left;
   width: auto;
   margin: 3em;
 }
-/* line 577, ../sass/chuck-designs-2.scss */
+/* line 582, ../sass/chuck-designs-2.scss */
 div.icon img {
   width: 15em;
   margin: 0 auto;
   display: block;
 }
-/* line 583, ../sass/chuck-designs-2.scss */
+/* line 588, ../sass/chuck-designs-2.scss */
 div.icon p {
   text-align: center;
   font-size: 2em;
@@ -544,62 +550,74 @@ div.icon p {
   width: 13em;
   margin-top: 1em;
 }
-/* line 592, ../sass/chuck-designs-2.scss */
+/* line 597, ../sass/chuck-designs-2.scss */
 div.icon p span {
   font-size: 0.8em;
   font-weight: 200;
 }
 
-/* line 599, ../sass/chuck-designs-2.scss */
+/* line 604, ../sass/chuck-designs-2.scss */
 section.expertise-container {
-  height: 70em;
-  background-color: #fafafa;
+  height: 96em;
+  background-color: #82cec4;
 }
 
-/* line 606, ../sass/chuck-designs-2.scss */
+/* line 611, ../sass/chuck-designs-2.scss */
 div#expertise {
-  height: 70em;
+  height: 96em;
   padding-top: 15em;
   margin: 0 auto;
   max-width: 195em;
 }
+/* line 618, ../sass/chuck-designs-2.scss */
+div#expertise h2 {
+  color: #ffffff;
+  margin-bottom: 5%;
+}
 
-/* line 619, ../sass/chuck-designs-2.scss */
-div.icon-holder-one {
-  height: 30em;
-  width: 100%;
+/* line 626, ../sass/chuck-designs-2.scss */
+div.grouped {
+  height: 45em;
+  width: 65%;
   margin: 0 auto;
 }
 
-/* line 625, ../sass/chuck-designs-2.scss */
-div.ex-icon {
+/* line 632, ../sass/chuck-designs-2.scss */
+div.left-group-top, div.left-group-bottom, div.right-group-top, div.right-group-bottom {
+  height: 25em;
   float: left;
-  width: auto;
-  margin: 2.9em;
+  width: 50%;
 }
-/* line 630, ../sass/chuck-designs-2.scss */
+
+/* line 638, ../sass/chuck-designs-2.scss */
+div.ex-icon {
+  margin: 0 auto;
+  height: 15em;
+}
+/* line 642, ../sass/chuck-designs-2.scss */
 div.ex-icon img {
   width: 15em;
-  margin: 0 auto;
+  float: left;
   display: block;
+  margin-right: 5%;
 }
-/* line 636, ../sass/chuck-designs-2.scss */
+/* line 649, ../sass/chuck-designs-2.scss */
 div.ex-icon p {
-  text-align: center;
+  text-align: left;
   font-size: 2em;
   font-weight: bold;
-  color: #414042;
-  text-align: center;
-  width: 13em;
+  color: #ffffff;
+  width: 19em;
   margin-top: 1em;
+  float: left;
 }
-/* line 645, ../sass/chuck-designs-2.scss */
+/* line 658, ../sass/chuck-designs-2.scss */
 div.ex-icon p span {
   font-size: 0.8em;
   font-weight: 200;
 }
 
-/* line 652, ../sass/chuck-designs-2.scss */
+/* line 665, ../sass/chuck-designs-2.scss */
 section.end-container {
   background-image: url(../imgs/phil.jpg);
   background-position: center cover;
@@ -608,20 +626,20 @@ section.end-container {
   height: 81.5em;
 }
 
-/* line 661, ../sass/chuck-designs-2.scss */
+/* line 674, ../sass/chuck-designs-2.scss */
 div#end {
   height: 81.5em;
   padding-top: 20em;
   padding-bottom: 15em;
   max-width: 192em;
 }
-/* line 668, ../sass/chuck-designs-2.scss */
+/* line 681, ../sass/chuck-designs-2.scss */
 div#end h2 {
   color: #ffffff;
   font-family: 'Kaushan Script', cursive;
   margin-bottom: 1%;
 }
-/* line 675, ../sass/chuck-designs-2.scss */
+/* line 688, ../sass/chuck-designs-2.scss */
 div#end p {
   font-size: 2em;
   font-weight: 200;
@@ -631,33 +649,33 @@ div#end p {
   margin: 0 auto;
   text-align: center;
 }
-/* line 684, ../sass/chuck-designs-2.scss */
+/* line 697, ../sass/chuck-designs-2.scss */
 div#end p a {
   text-decoration: none;
   color: #f98348;
   font-size: 1em;
   font-weight: bold;
 }
-/* line 690, ../sass/chuck-designs-2.scss */
+/* line 703, ../sass/chuck-designs-2.scss */
 div#end p a:hover, div#end p a:focus {
   color: #82cec4;
 }
-/* line 696, ../sass/chuck-designs-2.scss */
+/* line 709, ../sass/chuck-designs-2.scss */
 div#end img {
-  width: 5%;
+  width: 8%;
   margin: 0 auto;
   display: block;
   margin-bottom: 3em;
 }
 
-/* line 705, ../sass/chuck-designs-2.scss */
+/* line 718, ../sass/chuck-designs-2.scss */
 div.social-icons {
   height: 5.3em;
   width: 13.6%;
   margin: 0 auto;
 }
 
-/* line 711, ../sass/chuck-designs-2.scss */
+/* line 724, ../sass/chuck-designs-2.scss */
 div.linked {
   background: url(../imgs/linkedin.png) no-repeat;
   background-size: 3em;
@@ -666,12 +684,12 @@ div.linked {
   float: left;
   margin: 1em;
 }
-/* line 719, ../sass/chuck-designs-2.scss */
+/* line 732, ../sass/chuck-designs-2.scss */
 div.linked:hover, div.linked:focus {
-  background-image: url(../imgs/linkedin-green.png);
+  background-image: url(../imgs/linkedin-orange.png);
 }
 
-/* line 724, ../sass/chuck-designs-2.scss */
+/* line 737, ../sass/chuck-designs-2.scss */
 div.pin {
   background: url(../imgs/pinterest.png) no-repeat;
   background-size: 3em;
@@ -680,12 +698,12 @@ div.pin {
   float: left;
   margin: 1em;
 }
-/* line 732, ../sass/chuck-designs-2.scss */
+/* line 745, ../sass/chuck-designs-2.scss */
 div.pin:hover, div.pin:focus {
-  background-image: url(../imgs/pinterest-green.png);
+  background-image: url(../imgs/pinterest-orange.png);
 }
 
-/* line 737, ../sass/chuck-designs-2.scss */
+/* line 750, ../sass/chuck-designs-2.scss */
 div.google-plus {
   background: url(../imgs/google-plus.png) no-repeat;
   background-size: 3em;
@@ -694,12 +712,12 @@ div.google-plus {
   float: left;
   margin: 1em;
 }
-/* line 745, ../sass/chuck-designs-2.scss */
+/* line 758, ../sass/chuck-designs-2.scss */
 div.google-plus:hover, div.google-plus:focus {
-  background-image: url(../imgs/google-plus-green.png);
+  background-image: url(../imgs/google-plus-orange.png);
 }
 
-/* line 750, ../sass/chuck-designs-2.scss */
+/* line 763, ../sass/chuck-designs-2.scss */
 div.vim {
   background: url(../imgs/vimeo.png) no-repeat;
   background-size: 3em;
@@ -708,12 +726,12 @@ div.vim {
   float: left;
   margin: 1em;
 }
-/* line 758, ../sass/chuck-designs-2.scss */
+/* line 771, ../sass/chuck-designs-2.scss */
 div.vim:hover, div.vim:focus {
-  background-image: url(../imgs/vimeo-green.png);
+  background-image: url(../imgs/vimeo-orange.png);
 }
 
-/* line 763, ../sass/chuck-designs-2.scss */
+/* line 776, ../sass/chuck-designs-2.scss */
 div.behan {
   background: url(../imgs/behance.png) no-repeat;
   background-size: 3em;
@@ -722,29 +740,29 @@ div.behan {
   float: left;
   margin: 1em;
 }
-/* line 771, ../sass/chuck-designs-2.scss */
+/* line 784, ../sass/chuck-designs-2.scss */
 div.behan:hover, div.behan:focus {
-  background-image: url(../imgs/behance-green.png);
+  background-image: url(../imgs/behance-orange.png);
 }
 
 /* END STYLING SECTION PHIL AND PHIL-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 /* START SECTION PROJECTS AND PROJECT-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
-/* line 783, ../sass/chuck-designs-2.scss */
+/* line 796, ../sass/chuck-designs-2.scss */
 section.project-container {
   height: 92em;
   background-color: #ffffff;
 }
 
-/* line 790, ../sass/chuck-designs-2.scss */
+/* line 803, ../sass/chuck-designs-2.scss */
 div#projects {
   height: 92em;
   padding-top: 15em;
   max-width: 192em;
 }
 
-/* line 802, ../sass/chuck-designs-2.scss */
+/* line 815, ../sass/chuck-designs-2.scss */
 div.port-item {
   width: 100%;
   max-width: 47.88em;
@@ -752,13 +770,13 @@ div.port-item {
   float: right;
   overflow: hidden;
 }
-/* line 810, ../sass/chuck-designs-2.scss */
+/* line 823, ../sass/chuck-designs-2.scss */
 div.port-item a > img {
   width: 100%;
   max-width: 48.5em;
 }
 
-/* line 820, ../sass/chuck-designs-2.scss */
+/* line 833, ../sass/chuck-designs-2.scss */
 div#nipost a > img {
   width: 100%;
   max-width: 48.5em;
@@ -773,21 +791,21 @@ div#nipost a > img {
 -----------------------------------------------------------------------------*/
 /* START ABOUT CONTAINER STYLES
 -----------------------------------------------------------------------------*/
-/* line 845, ../sass/chuck-designs-2.scss */
+/* line 858, ../sass/chuck-designs-2.scss */
 section.about-container {
   height: 90em;
 }
 
-/* line 850, ../sass/chuck-designs-2.scss */
+/* line 863, ../sass/chuck-designs-2.scss */
 div#about {
   height: 90em;
   padding-top: 12%;
 }
-/* line 856, ../sass/chuck-designs-2.scss */
+/* line 869, ../sass/chuck-designs-2.scss */
 div#about h2 {
   color: #414042;
 }
-/* line 861, ../sass/chuck-designs-2.scss */
+/* line 874, ../sass/chuck-designs-2.scss */
 div#about p {
   font-size: 2.5em;
   line-height: 1.6em;
@@ -798,7 +816,7 @@ div#about p {
   float: left;
   margin-top: 5%;
 }
-/* line 872, ../sass/chuck-designs-2.scss */
+/* line 885, ../sass/chuck-designs-2.scss */
 div#about p a {
   text-decoration: none;
   font-size: 1em;
@@ -806,25 +824,25 @@ div#about p a {
   color: #414042;
   font-weight: bold;
 }
-/* line 879, ../sass/chuck-designs-2.scss */
+/* line 892, ../sass/chuck-designs-2.scss */
 div#about p a:hover, div#about p a:focus {
   color: gray;
 }
 
-/* line 886, ../sass/chuck-designs-2.scss */
+/* line 899, ../sass/chuck-designs-2.scss */
 div.img-holder {
   width: auto;
   display: block;
   float: right;
 }
-/* line 891, ../sass/chuck-designs-2.scss */
+/* line 904, ../sass/chuck-designs-2.scss */
 div.img-holder > img {
   width: 100%;
   max-width: 35em;
   margin-bottom: 5%;
 }
 
-/* line 900, ../sass/chuck-designs-2.scss */
+/* line 913, ../sass/chuck-designs-2.scss */
 div.social {
   width: 100%;
   max-width: 4em;
@@ -832,12 +850,12 @@ div.social {
   margin: 0 auto;
 }
 
-/* line 907, ../sass/chuck-designs-2.scss */
+/* line 920, ../sass/chuck-designs-2.scss */
 a.social-one {
   background-image: url(../imgs/in.png);
   background-size: 4em;
 }
-/* line 912, ../sass/chuck-designs-2.scss */
+/* line 925, ../sass/chuck-designs-2.scss */
 a.social-one:hover, a.social-one:focus {
   background-image: url(../imgs/in-white.png);
 }
@@ -846,24 +864,24 @@ a.social-one:hover, a.social-one:focus {
 -----------------------------------------------------------------------------*/
 /* START SECTION RESUME AND RESUME-FOURTH-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
-/* line 925, ../sass/chuck-designs-2.scss */
+/* line 938, ../sass/chuck-designs-2.scss */
 section#resume-fourth-container {
   clear: both;
   height: 233em;
 }
 
-/* line 931, ../sass/chuck-designs-2.scss */
+/* line 944, ../sass/chuck-designs-2.scss */
 div#resume {
   max-width: 112.5em;
   padding-top: 10%;
   height: 233em;
 }
 
-/* line 938, ../sass/chuck-designs-2.scss */
+/* line 951, ../sass/chuck-designs-2.scss */
 div.dwn-pdf {
   margin-bottom: 4em;
 }
-/* line 942, ../sass/chuck-designs-2.scss */
+/* line 955, ../sass/chuck-designs-2.scss */
 div.dwn-pdf a {
   text-decoration: none;
   padding: 1.9em 0 0 1.5em;
@@ -881,29 +899,29 @@ div.dwn-pdf a {
   background-position: 13em 1.1em;
   height: 5em;
 }
-/* line 959, ../sass/chuck-designs-2.scss */
+/* line 972, ../sass/chuck-designs-2.scss */
 div.dwn-pdf a:hover, div.dwn-pdf a:focus {
   background-image: url(../imgs/pdf-btn-red.png);
 }
 
-/* line 967, ../sass/chuck-designs-2.scss */
+/* line 980, ../sass/chuck-designs-2.scss */
 div.skill-info {
   height: 153em;
   background-color: #efefef;
   padding: 6em 3.5em 0 3.5em;
 }
-/* line 973, ../sass/chuck-designs-2.scss */
+/* line 986, ../sass/chuck-designs-2.scss */
 div.skill-info h3 {
   font-size: 2.5em;
   color: #f0555a;
   margin-bottom: 3em;
   text-align: center;
 }
-/* line 980, ../sass/chuck-designs-2.scss */
+/* line 993, ../sass/chuck-designs-2.scss */
 div.skill-info h4 {
   font-size: 2em;
 }
-/* line 984, ../sass/chuck-designs-2.scss */
+/* line 997, ../sass/chuck-designs-2.scss */
 div.skill-info hr {
   display: block;
   margin-top: 0.5em;
@@ -912,19 +930,19 @@ div.skill-info hr {
   border: solid 0.2em #f0555a;
   width: 5.5em;
 }
-/* line 993, ../sass/chuck-designs-2.scss */
+/* line 1006, ../sass/chuck-designs-2.scss */
 div.skill-info ul {
   margin-bottom: 4em;
 }
 
-/* line 1003, ../sass/chuck-designs-2.scss */
+/* line 1016, ../sass/chuck-designs-2.scss */
 div.resume-info {
   float: right;
   max-width: 76em;
   width: 100%;
 }
 
-/* line 1009, ../sass/chuck-designs-2.scss */
+/* line 1022, ../sass/chuck-designs-2.scss */
 div.education {
   color: #414042;
   background-color: #efefef;
@@ -933,28 +951,28 @@ div.education {
   width: 100%;
   max-width: 69em;
 }
-/* line 1017, ../sass/chuck-designs-2.scss */
+/* line 1030, ../sass/chuck-designs-2.scss */
 div.education h3 {
   font-size: 2.5em;
   color: #f0555a;
   margin-bottom: 1em;
 }
-/* line 1023, ../sass/chuck-designs-2.scss */
+/* line 1036, ../sass/chuck-designs-2.scss */
 div.education h4 {
   font-size: 2em;
   margin-bottom: .5em;
 }
-/* line 1027, ../sass/chuck-designs-2.scss */
+/* line 1040, ../sass/chuck-designs-2.scss */
 div.education h4 span {
   font-weight: 300;
 }
-/* line 1032, ../sass/chuck-designs-2.scss */
+/* line 1045, ../sass/chuck-designs-2.scss */
 div.education p {
   font-size: 1.7em;
   line-height: 1.5em;
   margin-bottom: 2em;
 }
-/* line 1038, ../sass/chuck-designs-2.scss */
+/* line 1051, ../sass/chuck-designs-2.scss */
 div.education ul {
   margin-bottom: 2em;
 }
@@ -963,7 +981,7 @@ div.education ul {
 -----------------------------------------------------------------------------*/
 /* START SECTION CONTACT AND CONTACT-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
-/* line 1055, ../sass/chuck-designs-2.scss */
+/* line 1068, ../sass/chuck-designs-2.scss */
 section#contact-container {
   /*background-color: $alt-gray-color;*/
   background-image: url(../imgs/contact-us-bg.jpg);
@@ -972,12 +990,12 @@ section#contact-container {
   background-position: center center;
 }
 
-/* line 1064, ../sass/chuck-designs-2.scss */
+/* line 1077, ../sass/chuck-designs-2.scss */
 div#contact-me {
   height: 90em;
   padding-top: 10%;
 }
-/* line 1069, ../sass/chuck-designs-2.scss */
+/* line 1082, ../sass/chuck-designs-2.scss */
 div#contact-me h2 {
   text-align: center;
   margin-bottom: 2%;
@@ -986,14 +1004,14 @@ div#contact-me h2 {
   margin: 2% 0 2% 0;
 }
 
-/* line 1081, ../sass/chuck-designs-2.scss */
+/* line 1094, ../sass/chuck-designs-2.scss */
 form#get-in-touch {
   margin: 0 auto;
   width: 100%;
   max-width: 85em;
 }
 
-/* line 1087, ../sass/chuck-designs-2.scss */
+/* line 1100, ../sass/chuck-designs-2.scss */
 input, textarea {
   margin-bottom: 1.5em;
   display: block;
@@ -1013,7 +1031,7 @@ input, textarea {
   box-sizing: border-box;
 }
 
-/* line 1104, ../sass/chuck-designs-2.scss */
+/* line 1117, ../sass/chuck-designs-2.scss */
 button {
   padding: 1em 1em;
   border: #f0555a;
@@ -1031,14 +1049,14 @@ button {
 -----------------------------------------------------------------------------*/
 /* START FOOTER STYLE
 -----------------------------------------------------------------------------*/
-/* line 1127, ../sass/chuck-designs-2.scss */
+/* line 1140, ../sass/chuck-designs-2.scss */
 footer.main-footer {
   padding-top: 2em;
   padding-bottom: 2em;
   box-sizing: border-box;
   background-color: #82cec4;
 }
-/* line 1133, ../sass/chuck-designs-2.scss */
+/* line 1146, ../sass/chuck-designs-2.scss */
 footer.main-footer p {
   text-align: center;
   font-size: 1.5em;
@@ -1050,16 +1068,16 @@ footer.main-footer p {
 -----------------------------------------------------------------------------*/
 /* START NIPOST PROJECT PAGE STYLES
 -----------------------------------------------------------------------------*/
-/* line 1147, ../sass/chuck-designs-2.scss */
+/* line 1160, ../sass/chuck-designs-2.scss */
 section.nipost-first-container {
   height: auto;
   padding-top: 7%;
 }
-/* line 1152, ../sass/chuck-designs-2.scss */
+/* line 1165, ../sass/chuck-designs-2.scss */
 section.nipost-first-container h2 {
   margin-bottom: 0.5em;
 }
-/* line 1157, ../sass/chuck-designs-2.scss */
+/* line 1170, ../sass/chuck-designs-2.scss */
 section.nipost-first-container > img {
   width: 100%;
   max-width: 100em;
@@ -1067,7 +1085,7 @@ section.nipost-first-container > img {
   margin: 0 auto;
   margin-bottom: 10em;
 }
-/* line 1165, ../sass/chuck-designs-2.scss */
+/* line 1178, ../sass/chuck-designs-2.scss */
 section.nipost-first-container > p {
   font-size: 1.9em;
   line-height: 1.4em;
@@ -1079,16 +1097,16 @@ section.nipost-first-container > p {
   margin: 0 auto;
   margin-bottom: 1em;
 }
-/* line 1177, ../sass/chuck-designs-2.scss */
+/* line 1190, ../sass/chuck-designs-2.scss */
 section.nipost-first-container h3 {
   margin-bottom: 1em;
 }
 
-/* line 1183, ../sass/chuck-designs-2.scss */
+/* line 1196, ../sass/chuck-designs-2.scss */
 div.first-sketches {
   margin-bottom: 3em;
 }
-/* line 1186, ../sass/chuck-designs-2.scss */
+/* line 1199, ../sass/chuck-designs-2.scss */
 div.first-sketches > p {
   font-size: 2.5em;
   color: gray;
@@ -1096,14 +1114,14 @@ div.first-sketches > p {
   text-align: center;
   margin-bottom: 1em;
 }
-/* line 1194, ../sass/chuck-designs-2.scss */
+/* line 1207, ../sass/chuck-designs-2.scss */
 div.first-sketches > img {
   width: 100%;
   max-width: 100em;
   margin: 0 auto;
   display: block;
 }
-/* line 1201, ../sass/chuck-designs-2.scss */
+/* line 1214, ../sass/chuck-designs-2.scss */
 div.first-sketches iframe {
   display: block;
   margin: 0 auto;
@@ -1114,7 +1132,7 @@ div.first-sketches iframe {
   height: 593px;
 }
 
-/* line 1216, ../sass/chuck-designs-2.scss */
+/* line 1229, ../sass/chuck-designs-2.scss */
 div.second-sketches > p {
   font-size: 2.5em;
   color: gray;
@@ -1122,7 +1140,7 @@ div.second-sketches > p {
   text-align: center;
   margin-top: 1em;
 }
-/* line 1224, ../sass/chuck-designs-2.scss */
+/* line 1237, ../sass/chuck-designs-2.scss */
 div.second-sketches > img {
   width: 100%;
   max-width: 100em;
@@ -1131,11 +1149,11 @@ div.second-sketches > img {
   margin-top: 3em;
 }
 
-/* line 1234, ../sass/chuck-designs-2.scss */
+/* line 1247, ../sass/chuck-designs-2.scss */
 div.sketches {
   margin-bottom: 3em;
 }
-/* line 1237, ../sass/chuck-designs-2.scss */
+/* line 1250, ../sass/chuck-designs-2.scss */
 div.sketches > p {
   font-size: 2.5em;
   color: gray;
@@ -1143,7 +1161,7 @@ div.sketches > p {
   text-align: center;
   margin-bottom: 1em;
 }
-/* line 1245, ../sass/chuck-designs-2.scss */
+/* line 1258, ../sass/chuck-designs-2.scss */
 div.sketches > img {
   width: 100%;
   max-width: 100em;
@@ -1159,17 +1177,17 @@ div.sketches > img {
 /* =Cell Phone Media Query Portrait
 -----------------------------------------------------------------------------*/
 @media only screen and (min-width: 320px) and (max-width: 740px) and (orientation: portrait) {
-  /* line 1273, ../sass/chuck-designs-2.scss */
+  /* line 1286, ../sass/chuck-designs-2.scss */
   section#home {
     width: 100%;
   }
 
-  /* line 1277, ../sass/chuck-designs-2.scss */
+  /* line 1290, ../sass/chuck-designs-2.scss */
   header.main-header {
     width: 100%;
     height: 17em;
   }
-  /* line 1281, ../sass/chuck-designs-2.scss */
+  /* line 1294, ../sass/chuck-designs-2.scss */
   header.main-header img {
     margin: 0 auto !important;
     display: block;
@@ -1177,19 +1195,19 @@ div.sketches > img {
     float: none;
   }
 
-  /* line 1289, ../sass/chuck-designs-2.scss */
+  /* line 1302, ../sass/chuck-designs-2.scss */
   nav.main-nav {
     float: none;
     padding: 0 2em 0 2em;
   }
-  /* line 1293, ../sass/chuck-designs-2.scss */
+  /* line 1306, ../sass/chuck-designs-2.scss */
   nav.main-nav ul {
     margin: 0 auto;
     width: 100%;
     max-width: 30em;
   }
 
-  /* line 1300, ../sass/chuck-designs-2.scss */
+  /* line 1313, ../sass/chuck-designs-2.scss */
   div#projects {
     margin: 0 auto;
     border: solid 1px red;
@@ -1199,7 +1217,7 @@ div.sketches > img {
     padding: 10% 2% 0% 2%;
     box-sizing: border-box;
   }
-  /* line 1309, ../sass/chuck-designs-2.scss */
+  /* line 1322, ../sass/chuck-designs-2.scss */
   div#projects h2 {
     text-align: center;
     margin-bottom: 2%;
@@ -1208,7 +1226,7 @@ div.sketches > img {
     margin: 2% 0 2% 0;
   }
 
-  /* line 1319, ../sass/chuck-designs-2.scss */
+  /* line 1332, ../sass/chuck-designs-2.scss */
   div.port-item {
     width: 48.4%;
     margin-right: 2%;
@@ -1217,7 +1235,7 @@ div.sketches > img {
     margin-bottom: 2%;
   }
 
-  /* line 1329, ../sass/chuck-designs-2.scss */
+  /* line 1342, ../sass/chuck-designs-2.scss */
   div.port-item-last {
     margin-right: 0% !important;
     border: solid 1px red;
@@ -1227,12 +1245,12 @@ div.sketches > img {
     margin-bottom: 2%;
   }
 
-  /* line 1338, ../sass/chuck-designs-2.scss */
+  /* line 1351, ../sass/chuck-designs-2.scss */
   div#margin-out {
     margin-right: 0;
   }
 
-  /* line 1342, ../sass/chuck-designs-2.scss */
+  /* line 1355, ../sass/chuck-designs-2.scss */
   div#margin-outter {
     margin-right: 0;
   }
@@ -1246,7 +1264,7 @@ div.sketches > img {
   -----------------------------------------------------------------------------*/
   /* START STYLING LAPTOP SIZE SECTION HOME AND HOME-CONTAINER STYLES
   -----------------------------------------------------------------------------*/
-  /* line 1391, ../sass/chuck-designs-2.scss */
+  /* line 1404, ../sass/chuck-designs-2.scss */
   section.home-container {
     background-image: url(../imgs/bg.jpg);
     background-position: center center;
@@ -1257,14 +1275,14 @@ div.sketches > img {
     height: 68em;
   }
 
-  /* line 1402, ../sass/chuck-designs-2.scss */
+  /* line 1415, ../sass/chuck-designs-2.scss */
   div#home {
     max-width: 135em;
     padding-top: 1em;
     height: 68em;
   }
 
-  /* line 1409, ../sass/chuck-designs-2.scss */
+  /* line 1422, ../sass/chuck-designs-2.scss */
   div.home-contents {
     height: 64.5em;
     width: 100%;
@@ -1272,7 +1290,7 @@ div.sketches > img {
     margin: 0 auto;
     margin-top: 3%;
   }
-  /* line 1416, ../sass/chuck-designs-2.scss */
+  /* line 1429, ../sass/chuck-designs-2.scss */
   div.home-contents h1 {
     width: 100%;
     max-width: 22em;
@@ -1283,7 +1301,7 @@ div.sketches > img {
     font-weight: 200;
     line-height: 1.5em;
   }
-  /* line 1428, ../sass/chuck-designs-2.scss */
+  /* line 1441, ../sass/chuck-designs-2.scss */
   div.home-contents img {
     margin: 0 auto;
     display: block;
@@ -1292,7 +1310,7 @@ div.sketches > img {
     width: 100%;
     max-width: 70em;
   }
-  /* line 1438, ../sass/chuck-designs-2.scss */
+  /* line 1451, ../sass/chuck-designs-2.scss */
   div.home-contents a {
     max-width: 4em;
     height: 4em;
@@ -1306,7 +1324,7 @@ div.sketches > img {
     background-size: 4em;
     background-repeat: no-repeat;
   }
-  /* line 1451, ../sass/chuck-designs-2.scss */
+  /* line 1464, ../sass/chuck-designs-2.scss */
   div.home-contents a:hover, div.home-contents a:focus {
     background-image: url(../imgs/dwn-btn.png);
   }
@@ -1315,19 +1333,19 @@ div.sketches > img {
   -----------------------------------------------------------------------------*/
   /* START LAPTOP SIZE SECTION PROJECTS AND PROJECT-CONTAINER STYLES
   -----------------------------------------------------------------------------*/
-  /* line 1466, ../sass/chuck-designs-2.scss */
+  /* line 1479, ../sass/chuck-designs-2.scss */
   section.project-container {
     height: 53em;
     margin-bottom: 0;
   }
 
-  /* line 1474, ../sass/chuck-designs-2.scss */
+  /* line 1487, ../sass/chuck-designs-2.scss */
   div#projects {
     height: 53em;
     margin-top: 20em;
   }
 
-  /* line 1485, ../sass/chuck-designs-2.scss */
+  /* line 1498, ../sass/chuck-designs-2.scss */
   div.port-item {
     width: 100%;
     max-width: 31.99em;
@@ -1335,13 +1353,13 @@ div.sketches > img {
     float: right;
     overflow: hidden;
   }
-  /* line 1493, ../sass/chuck-designs-2.scss */
+  /* line 1506, ../sass/chuck-designs-2.scss */
   div.port-item a img {
     width: 100%;
     max-width: 34em;
   }
 
-  /* line 1505, ../sass/chuck-designs-2.scss */
+  /* line 1518, ../sass/chuck-designs-2.scss */
   div#nipost a img {
     width: 100%;
     max-width: 34em;
@@ -1353,24 +1371,24 @@ div.sketches > img {
   -----------------------------------------------------------------------------*/
   /* START LAPTOP SECTION RESUME AND FOURTH-CONTAINER STYLES
   -----------------------------------------------------------------------------*/
-  /* line 1522, ../sass/chuck-designs-2.scss */
+  /* line 1535, ../sass/chuck-designs-2.scss */
   section#resume-fourth-container {
     height: 226em;
     clear: both;
   }
 
-  /* line 1528, ../sass/chuck-designs-2.scss */
+  /* line 1541, ../sass/chuck-designs-2.scss */
   div#resume {
     max-width: 112.5em;
     padding-top: 10%;
     height: 226em;
   }
 
-  /* line 1536, ../sass/chuck-designs-2.scss */
+  /* line 1549, ../sass/chuck-designs-2.scss */
   div.dwn-pdf {
     margin-bottom: 4em;
   }
-  /* line 1540, ../sass/chuck-designs-2.scss */
+  /* line 1553, ../sass/chuck-designs-2.scss */
   div.dwn-pdf a {
     text-decoration: none;
     padding: 1.9em 0 0 1.5em;
@@ -1388,29 +1406,29 @@ div.sketches > img {
     background-position: 13em 1.1em;
     height: 5em;
   }
-  /* line 1557, ../sass/chuck-designs-2.scss */
+  /* line 1570, ../sass/chuck-designs-2.scss */
   div.dwn-pdf a:hover, div.dwn-pdf a:focus {
     background-image: url(../imgs/pdf-btn-red.png);
   }
 
-  /* line 1565, ../sass/chuck-designs-2.scss */
+  /* line 1578, ../sass/chuck-designs-2.scss */
   div.skill-info {
     height: 153em;
     background-color: #efefef;
     padding: 6em 3.5em 0 3.5em;
   }
-  /* line 1571, ../sass/chuck-designs-2.scss */
+  /* line 1584, ../sass/chuck-designs-2.scss */
   div.skill-info h3 {
     font-size: 2.5em;
     color: #f0555a;
     margin-bottom: 3em;
     text-align: center;
   }
-  /* line 1578, ../sass/chuck-designs-2.scss */
+  /* line 1591, ../sass/chuck-designs-2.scss */
   div.skill-info h4 {
     font-size: 2em;
   }
-  /* line 1582, ../sass/chuck-designs-2.scss */
+  /* line 1595, ../sass/chuck-designs-2.scss */
   div.skill-info hr {
     display: block;
     margin-top: 0.5em;
@@ -1419,19 +1437,19 @@ div.sketches > img {
     border: solid 0.2em #f0555a;
     width: 5.5em;
   }
-  /* line 1591, ../sass/chuck-designs-2.scss */
+  /* line 1604, ../sass/chuck-designs-2.scss */
   div.skill-info ul {
     margin-bottom: 4em;
   }
 
-  /* line 1601, ../sass/chuck-designs-2.scss */
+  /* line 1614, ../sass/chuck-designs-2.scss */
   div.resume-info {
     float: right;
     max-width: 76em;
     width: 100%;
   }
 
-  /* line 1607, ../sass/chuck-designs-2.scss */
+  /* line 1620, ../sass/chuck-designs-2.scss */
   div.education {
     color: #414042;
     background-color: #efefef;
@@ -1440,28 +1458,28 @@ div.sketches > img {
     width: 100%;
     max-width: 69em;
   }
-  /* line 1615, ../sass/chuck-designs-2.scss */
+  /* line 1628, ../sass/chuck-designs-2.scss */
   div.education h3 {
     font-size: 2.5em;
     color: #f0555a;
     margin-bottom: 1em;
   }
-  /* line 1621, ../sass/chuck-designs-2.scss */
+  /* line 1634, ../sass/chuck-designs-2.scss */
   div.education h4 {
     font-size: 2em;
     margin-bottom: .5em;
   }
-  /* line 1625, ../sass/chuck-designs-2.scss */
+  /* line 1638, ../sass/chuck-designs-2.scss */
   div.education h4 span {
     font-weight: 300;
   }
-  /* line 1630, ../sass/chuck-designs-2.scss */
+  /* line 1643, ../sass/chuck-designs-2.scss */
   div.education p {
     font-size: 1.7em;
     line-height: 1.5em;
     margin-bottom: 2em;
   }
-  /* line 1636, ../sass/chuck-designs-2.scss */
+  /* line 1649, ../sass/chuck-designs-2.scss */
   div.education ul {
     margin-bottom: 2em;
   }
@@ -1470,22 +1488,22 @@ div.sketches > img {
   -----------------------------------------------------------------------------*/
   /* START LAPTOP ABOUT CONTAINER STYLES
   -----------------------------------------------------------------------------*/
-  /* line 1652, ../sass/chuck-designs-2.scss */
+  /* line 1665, ../sass/chuck-designs-2.scss */
   section.about-container {
     height: 62em;
   }
 
-  /* line 1657, ../sass/chuck-designs-2.scss */
+  /* line 1670, ../sass/chuck-designs-2.scss */
   div#about {
     height: 61em;
     padding-top: 10%;
     max-width: 110em;
   }
-  /* line 1664, ../sass/chuck-designs-2.scss */
+  /* line 1677, ../sass/chuck-designs-2.scss */
   div#about h2 {
     color: #414042;
   }
-  /* line 1669, ../sass/chuck-designs-2.scss */
+  /* line 1682, ../sass/chuck-designs-2.scss */
   div#about p {
     font-size: 2em;
     line-height: 1.6em;
@@ -1496,7 +1514,7 @@ div.sketches > img {
     float: left;
     margin-top: 6%;
   }
-  /* line 1679, ../sass/chuck-designs-2.scss */
+  /* line 1692, ../sass/chuck-designs-2.scss */
   div#about p a {
     text-decoration: none;
     font-size: 1em;
@@ -1504,25 +1522,25 @@ div.sketches > img {
     color: #414042;
     font-weight: bold;
   }
-  /* line 1686, ../sass/chuck-designs-2.scss */
+  /* line 1699, ../sass/chuck-designs-2.scss */
   div#about p a:hover, div#about p a:focus {
     color: gray;
   }
 
-  /* line 1693, ../sass/chuck-designs-2.scss */
+  /* line 1706, ../sass/chuck-designs-2.scss */
   div.img-holder {
     width: auto;
     display: block;
     float: right;
   }
-  /* line 1698, ../sass/chuck-designs-2.scss */
+  /* line 1711, ../sass/chuck-designs-2.scss */
   div.img-holder > img {
     width: 100%;
     max-width: 30em;
     margin-bottom: 5%;
   }
 
-  /* line 1706, ../sass/chuck-designs-2.scss */
+  /* line 1719, ../sass/chuck-designs-2.scss */
   div.social {
     width: 100%;
     max-width: 4em;
@@ -1530,12 +1548,12 @@ div.sketches > img {
     margin: 0 auto;
   }
 
-  /* line 1713, ../sass/chuck-designs-2.scss */
+  /* line 1726, ../sass/chuck-designs-2.scss */
   a.social-one {
     background-image: url(../imgs/in.png);
     background-size: 4em;
   }
-  /* line 1718, ../sass/chuck-designs-2.scss */
+  /* line 1731, ../sass/chuck-designs-2.scss */
   a.social-one:hover, a.social-one:focus {
     background-image: url(../imgs/in-white.png);
   }
@@ -1544,7 +1562,7 @@ div.sketches > img {
   -----------------------------------------------------------------------------*/
   /* START LAPTOP SECTION CONTACT AND CONTACT-CONTAINER STYLES
   -----------------------------------------------------------------------------*/
-  /* line 1729, ../sass/chuck-designs-2.scss */
+  /* line 1742, ../sass/chuck-designs-2.scss */
   section#contact-container {
     /*background-color: $alt-gray-color;*/
     background-image: url(../imgs/contact-us-bg.jpg);
@@ -1554,12 +1572,12 @@ div.sketches > img {
     height: 62em;
   }
 
-  /* line 1739, ../sass/chuck-designs-2.scss */
+  /* line 1752, ../sass/chuck-designs-2.scss */
   div#contact-me {
     height: 62em;
     padding-top: 8.5%;
   }
-  /* line 1744, ../sass/chuck-designs-2.scss */
+  /* line 1757, ../sass/chuck-designs-2.scss */
   div#contact-me h2 {
     text-align: center;
     margin-bottom: 2%;
@@ -1568,14 +1586,14 @@ div.sketches > img {
     margin: 2% 0 2% 0;
   }
 
-  /* line 1756, ../sass/chuck-designs-2.scss */
+  /* line 1769, ../sass/chuck-designs-2.scss */
   form#get-in-touch {
     margin: 0 auto;
     width: 100%;
     max-width: 65em;
   }
 
-  /* line 1762, ../sass/chuck-designs-2.scss */
+  /* line 1775, ../sass/chuck-designs-2.scss */
   input, textarea {
     margin-bottom: 1.5em;
     display: block;
@@ -1595,7 +1613,7 @@ div.sketches > img {
     box-sizing: border-box;
   }
 
-  /* line 1779, ../sass/chuck-designs-2.scss */
+  /* line 1792, ../sass/chuck-designs-2.scss */
   button {
     padding: 0.8em 0.8em;
     border: #f0555a;
@@ -1613,16 +1631,16 @@ div.sketches > img {
   -----------------------------------------------------------------------------*/
   /* START LAPTOP NIPOST PROJECT STYLES
   -----------------------------------------------------------------------------*/
-  /* line 1803, ../sass/chuck-designs-2.scss */
+  /* line 1816, ../sass/chuck-designs-2.scss */
   section.nipost-first-container {
     height: auto;
     padding-top: 10%;
   }
-  /* line 1808, ../sass/chuck-designs-2.scss */
+  /* line 1821, ../sass/chuck-designs-2.scss */
   section.nipost-first-container h2 {
     margin-bottom: 0.5em;
   }
-  /* line 1813, ../sass/chuck-designs-2.scss */
+  /* line 1826, ../sass/chuck-designs-2.scss */
   section.nipost-first-container > img {
     width: 100%;
     max-width: 80em;
@@ -1630,7 +1648,7 @@ div.sketches > img {
     margin: 0 auto;
     margin-bottom: 3em;
   }
-  /* line 1821, ../sass/chuck-designs-2.scss */
+  /* line 1834, ../sass/chuck-designs-2.scss */
   section.nipost-first-container > p {
     font-size: 1.9em;
     line-height: 1.4em;
@@ -1642,16 +1660,16 @@ div.sketches > img {
     margin: 0 auto;
     margin-bottom: 1em;
   }
-  /* line 1833, ../sass/chuck-designs-2.scss */
+  /* line 1846, ../sass/chuck-designs-2.scss */
   section.nipost-first-container h3 {
     margin-bottom: 1em;
   }
 
-  /* line 1839, ../sass/chuck-designs-2.scss */
+  /* line 1852, ../sass/chuck-designs-2.scss */
   div.first-sketches {
     margin-bottom: 3em;
   }
-  /* line 1842, ../sass/chuck-designs-2.scss */
+  /* line 1855, ../sass/chuck-designs-2.scss */
   div.first-sketches > p {
     font-size: 2.5em;
     color: gray;
@@ -1659,14 +1677,14 @@ div.sketches > img {
     text-align: center;
     margin-bottom: 1em;
   }
-  /* line 1850, ../sass/chuck-designs-2.scss */
+  /* line 1863, ../sass/chuck-designs-2.scss */
   div.first-sketches > img {
     width: 100%;
     max-width: 80em;
     margin: 0 auto;
     display: block;
   }
-  /* line 1857, ../sass/chuck-designs-2.scss */
+  /* line 1870, ../sass/chuck-designs-2.scss */
   div.first-sketches iframe {
     display: block;
     margin: 0 auto;
@@ -1677,12 +1695,12 @@ div.sketches > img {
     height: 500px;
   }
 
-  /* line 1869, ../sass/chuck-designs-2.scss */
+  /* line 1882, ../sass/chuck-designs-2.scss */
   div.second-sketches {
     max-height: 250em;
     height: 100%;
   }
-  /* line 1873, ../sass/chuck-designs-2.scss */
+  /* line 1886, ../sass/chuck-designs-2.scss */
   div.second-sketches > p {
     font-size: 2.5em;
     color: gray;
@@ -1690,7 +1708,7 @@ div.sketches > img {
     text-align: center;
     margin-top: 1em;
   }
-  /* line 1881, ../sass/chuck-designs-2.scss */
+  /* line 1894, ../sass/chuck-designs-2.scss */
   div.second-sketches > img {
     width: 100%;
     max-width: 80em;
@@ -1699,11 +1717,11 @@ div.sketches > img {
     margin-top: 3em;
   }
 
-  /* line 1891, ../sass/chuck-designs-2.scss */
+  /* line 1904, ../sass/chuck-designs-2.scss */
   div.sketches {
     margin-bottom: 3em;
   }
-  /* line 1894, ../sass/chuck-designs-2.scss */
+  /* line 1907, ../sass/chuck-designs-2.scss */
   div.sketches > p {
     font-size: 2.5em;
     color: gray;
@@ -1711,7 +1729,7 @@ div.sketches > img {
     text-align: center;
     margin-bottom: 1em;
   }
-  /* line 1902, ../sass/chuck-designs-2.scss */
+  /* line 1915, ../sass/chuck-designs-2.scss */
   div.sketches > img {
     width: 100%;
     max-width: 80em;

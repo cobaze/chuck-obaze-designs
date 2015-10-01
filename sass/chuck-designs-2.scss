@@ -134,7 +134,7 @@ hr{
 	height: 3px;
 	background-color: #ffffff;
 	margin: 0 auto;
-	width: 1.5em;
+	width: 5%;
 	border: 0;
 }
 
@@ -161,8 +161,8 @@ header.main-header{
 
 	img{
 		float: left;
-		max-width: 4em;
 		width: 100%;
+		max-width: 4em;
 		padding-left: 2%;
 	}
 }
@@ -220,26 +220,29 @@ li.contact-nav{
 
 section.home-container{
 	@extend %container-style;
-	background-image: url(../imgs/bg.jpg);
+	background-image: url(../imgs/bgrd.jpeg);
 	background-position: center center;
 	background-size: cover;
-	height: $section-height;
+	height: $section-height + 0.2;
 	clear: both;
 	width: 100%;
 }
 
 div#home{
-	@extend %section-values;
-	max-width: 135em;
+	width: 100%;
 	padding-top: 10%;
+	box-sizing: border-box;
+	height: 96em;
+	margin: 0 auto;
 }
 
 div.home-contents{
-	height: 81em;
+	height: 74.8em;
 	width: 100%;
 	max-width: 103em;
 	margin: 0 auto;
-	margin-top: 1%;
+	margin-top: 2em;
+	border: $border red;
 
 	h1{
 		width: 100%;
@@ -257,6 +260,8 @@ div.home-contents{
 		display: block;
 		margin-top: 5%;
 		margin-bottom: 5%;
+		width: 80em;
+		max-width: 80%;
 	}
 
 	a{
@@ -598,49 +603,57 @@ div.icon{
 
 section.expertise-container{
 	@extend %container-style;
-	height: 70em;
-	background-color: #fafafa;
+	height: 96em;
+	background-color: $green-color;
 
 }
 
 div#expertise{
 	@extend %section-values;
-	height: 70em;
+	height: 96em;
 	padding-top: 15em;
 	margin: 0 auto;
 	max-width: 195em;
 
 	h2{
 		@extend %h2-values;
+		color: #ffffff;
+		margin-bottom: 5%;
 	}
 
 }
 
-div.icon-holder-one{
-	height: 30em;
-	width: 100%;
+div.grouped{
+	height: 45em;
+	width: 65%;
 	margin: 0 auto;
 }
 
-div.ex-icon{
+div.left-group-top, div.left-group-bottom, div.right-group-top, div.right-group-bottom{
+	height: 25em;
 	float: left;
-	width: auto;
-	margin: 2.9em;
+	width: 50%;
+}
+
+div.ex-icon{
+	margin:0 auto;
+	height: 15em;
 
 	img{
 		width: 15em;
-		margin: 0 auto;
+		float: left;
 		display: block;
+		margin-right: 5%;
 	}
 
 	p{
-		text-align: center;
+		text-align: left;
 		font-size: 2em;
 		font-weight: bold;
-		color: $alt-font-color;
-		text-align: center;
-		width: 13em;
+		color: #ffffff;
+		width: 19em;
 		margin-top: 1em;
+		float: left;
 
 		span{
 			font-size: 0.8em;
@@ -694,7 +707,7 @@ div#end{
 	}
 
 	img{
-		width: 5%;
+		width: 8%;
 		margin: 0 auto;
 		display: block;
 		margin-bottom: 3em;
@@ -717,7 +730,7 @@ div.linked{
 	margin: 1em;
 
 	&:hover, &:focus{
-			background-image: url(../imgs/linkedin-green.png);
+			background-image: url(../imgs/linkedin-orange.png);
 		}
 }
 
@@ -730,7 +743,7 @@ div.pin{
 	margin: 1em;
 
 	&:hover, &:focus{
-			background-image: url(../imgs/pinterest-green.png);
+			background-image: url(../imgs/pinterest-orange.png);
 		}
 }
 
@@ -743,7 +756,7 @@ div.google-plus{
 	margin: 1em;
 
 	&:hover, &:focus{
-			background-image: url(../imgs/google-plus-green.png);
+			background-image: url(../imgs/google-plus-orange.png);
 		}
 }
 
@@ -756,7 +769,7 @@ div.vim{
 	margin: 1em;
 
 	&:hover, &:focus{
-			background-image: url(../imgs/vimeo-green.png);
+			background-image: url(../imgs/vimeo-orange.png);
 		}
 }
 
@@ -769,7 +782,7 @@ div.behan{
 	margin: 1em;
 
 	&:hover, &:focus{
-			background-image: url(../imgs/behance-green.png);
+			background-image: url(../imgs/behance-orange.png);
 		}
 }
 
