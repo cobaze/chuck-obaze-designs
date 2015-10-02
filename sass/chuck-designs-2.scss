@@ -37,10 +37,6 @@ $white-font: #ffffff;
 	box-sizing: border-box;
 }
 
-%container-style {
-	width: 100%;
-}
-
 %h2-values{
 	text-align: center;
 	margin-bottom:2%;
@@ -130,14 +126,6 @@ html{
 	padding: 0;
 }
 
-hr{
-	height: 3px;
-	background-color: #ffffff;
-	margin: 0 auto;
-	width: 5%;
-	border: 0;
-}
-
 body{
 	font-size: $body-font-size;
 	/*font-family: $helvetica;*/
@@ -147,15 +135,24 @@ body{
 
 }
 
+hr{
+	height: 3px;
+	background-color: #ffffff;
+	margin: 0 auto;
+	width: 5%;
+	border: 0;
+}
+
 #main-container{
 	width: 100%;
+	overflow: hidden;
 }
 
 header.main-header{
 	position: fixed;
 	z-index: 2;
 	width: 100%;
-	background-color: #ffffff;
+	background-color: transparent;
 	padding: 2em 0 2em 0;
 
 
@@ -192,9 +189,9 @@ nav.main-nav{
 
 			a{
 				text-decoration: none;
-				color:$alt-font-color;
+				color:#ffffff;
 				font-size: 1.7em;
-				font-weight: bold;
+				font-weight: 200;
 
 				/*&:visited{
 					border-bottom: solid $red-color .3em;
@@ -219,7 +216,6 @@ li.contact-nav{
 -----------------------------------------------------------------------------*/
 
 section.home-container{
-	@extend %container-style;
 	background-image: url(../imgs/bgrd.jpeg);
 	background-position: center center;
 	background-size: cover;
@@ -242,7 +238,6 @@ div.home-contents{
 	max-width: 103em;
 	margin: 0 auto;
 	margin-top: 2em;
-	border: $border red;
 
 	h1{
 		width: 100%;
@@ -274,7 +269,7 @@ div.home-contents{
 		top: 17%;
 		margin: 0 auto;
 		background-image: url(../imgs/dwn-btn-white.png);
-		background-size: 6em;
+		background-size: 100%;
 		background-repeat: no-repeat;
 
 		&:hover, &:focus{
@@ -284,20 +279,27 @@ div.home-contents{
 
 }
 
-
 /* END SECTION HOME AND HOME-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
+/* START STYLING SECTION PORTFOLIO AND PORTFOLIO-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+
 section.portfolio-container{
-	@extend %container-style;
+	width:100%;
 	height: 120em;
 	background-color: #ffffff;
 }
 
 div#portfolio{
-	@extend %section-values;
 	width: 120em;
-	height: 110em;
+	max-width: 100%;
+	height: 101em;
+	margin: 0 auto;
+	clear: both;
+	padding-top: 7%;
+	box-sizing: border-box;
+	margin-bottom: 3%;
 
 	h2{
 		@extend %h2-values;
@@ -308,7 +310,8 @@ div#portfolio{
 		font-weight: 200;
 		line-height: 1.5em;
 		color: $alt-font-color;
-		width: 37em;
+		width: 30em;
+		max-width: 100%;
 		margin: 0 auto;
 		text-align: center;
 		margin-bottom: 2em;
@@ -317,10 +320,9 @@ div#portfolio{
 
 div.left-holder, div.right-holder{
 	height: 70em;
-	width: 50%;
+	max-width: 100%;
+	width: 60em;
 	float: left;
-	margin-bottom: 5em;
-
 }
 
 div.left-top{
@@ -353,7 +355,7 @@ div.left-top{
 
 }
 
-div.left-bottom{
+div.right-top{
 	height: 29em;
 	width: 100%;
 	overflow: hidden;
@@ -383,7 +385,7 @@ div.left-bottom{
 	}
 }
 
-div.right-top-one{
+div.left-bottom-one{
 	float: left;
 	width: 50%;
 	height: 25.5em;
@@ -414,7 +416,7 @@ div.right-top-one{
 	}
 }
 
-div.right-top-two{
+div.left-bottom-two{
 	float: left;
 	width: 50%;
 	height: 25.5em;
@@ -432,6 +434,7 @@ div.right-top-two{
 
 		&>p{
 			font-size: medium;
+			max-width: 100%;
 			width: 8em;
 			position: relative;
 			padding: 0.5em;
@@ -477,10 +480,10 @@ div.right-bottom{
 }
 
 div.port{
-	@extend %left-resume;
+	box-sizing: border-box;
+	width: 100%;
 	margin: 0 auto;
 	clear: both;
-	float: none;
 	max-width: 31em;
 
 	a{
@@ -503,64 +506,26 @@ div.port{
 }
 
 
-/* START STYLING SECTION PHIL AND PHIL-CONTAINER STYLES
+/* END STYLING SECTION PORTFOLIO AND PORTFOLIO-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
-div.phil-bg{
-	height: 150em;
-	width: 100%;
-	position: fixed;
-	background-image: url(../imgs/phil-bg.jpg);
-	background-position: center bottom;
-	background-size: cover;
-	background-repeat: no-repeat;
-	z-index: -1;
-	top:0em;
-	left:0;
 
-}
-
-section.phil-container{
-	@extend %container-style;
-	height: 50em;
-}
-
-div#phil{
-	@extend %section-values;
-	height: 50em;
-	padding-top: 15em;
-	padding-bottom: 15em;
-	max-width: 192em;
-
-	h2{
-		@extend %h2-values;
-		color: #ffffff;
-	}
-
-	p{
-		font-size: 2.5em;
-		font-weight: 200;
-		line-height: 1.5em;
-		color: #ffffff;
-		width: 37em;
-		margin: 0 auto;
-		text-align: center;
-	}
-
-}
+/* START STYLING SECTION PROCESS AND PROCESS-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
 
 section.process-container{
-	@extend %container-style;
+	width:100%;
 	height: 70em;
 	background-color: #fafafa;
 
 }
 
 div#process{
-	@extend %section-values;
+	width: 100%;
 	height: 70em;
 	padding-top: 15em;
-	max-width: 192em;
 	margin: 0 auto;
+	clear: both;
+	box-sizing: border-box;
 
 	h2{
 		@extend %h2-values;
@@ -577,10 +542,11 @@ div.icon-holder{
 div.icon{
 	float: left;
 	width: auto;
-	margin: 3em;
+	margin: 2.3%;
 
 	img{
 		width: 15em;
+		max-width: 100%;
 		margin: 0 auto;
 		display: block;
 	}
@@ -601,8 +567,64 @@ div.icon{
 	}
 }
 
+/* END STYLING SECTION PROCESS AND PROCESS-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+
+/* START STYLING SECTION PHIL AND PHIL-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+div.phil-bg{
+	height: 150em;
+	width: 100%;
+	position: fixed;
+	background-image: url(../imgs/phil-bg.jpg);
+	background-position: center bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: -1;
+	top:0em;
+	left:0;
+	overflow: hidden;
+
+}
+
+section.phil-container{
+	width:100%;
+	height: 50em;
+}
+
+div#phil{
+	height: 50em;
+	padding-top: 15em;
+	padding-bottom: 15em;
+	margin: 0 auto;
+	width: 100%;
+	box-sizing: border-box;
+
+	h2{
+		@extend %h2-values;
+		color: #ffffff;
+	}
+
+	p{
+		font-size: 2.5em;
+		font-weight: 200;
+		line-height: 1.5em;
+		color: #ffffff;
+		width: 36em;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+}
+
+/* END STYLING SECTION PHIL AND PHIL-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+
+
+/* START STYLING EXPERTISE AND EXPERTISE-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
 section.expertise-container{
-	@extend %container-style;
+	width:100%;
 	height: 96em;
 	background-color: $green-color;
 
@@ -662,8 +684,13 @@ div.ex-icon{
 	}
 }
 
+/* END STYLING EXPERTISE AND EXPERTISE-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+
+/* START STYLING END AND END-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
 section.end-container{
-	@extend %container-style;
+	width:100%;
 	background-image: url(../imgs/phil.jpg);
 	background-position: center cover;
 	background-size: cover;
@@ -786,15 +813,116 @@ div.behan{
 		}
 }
 
-/* END STYLING SECTION PHIL AND PHIL-CONTAINER STYLES
+/* END STYLING END AND END-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
+
+/* END STYLING INDEX PAGE
+-----------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------*/
+
+
+/* START STYLING PROJECTS PAGE
+-----------------------------------------------------------------------------*/
+
+/* START PROJECTS-HOME AND PROJECT-HOME-CONTAINER SECTION
+-----------------------------------------------------------------------------*/
+
+div.project-bg{
+	height: 150em;
+	width: 100%;
+	position: fixed;
+	background-image: url(../imgs/portfolio-img.jpg);
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: -3;
+	top:0em;
+	left:0;
+	overflow: hidden;
+
+}
+
+section.project-home-container{
+	width:100%;
+	height: 50em;
+}
+
+div#project-home{
+	width: 100%;
+	padding-top: 7%;
+	box-sizing: border-box;
+	height: 96em;
+	margin: 0 auto;
+
+	h1{
+		width: 100%;
+		color: #ffffff;
+		font-size: 15em;
+		text-align: center;
+		margin: 0 auto;
+		font-weight: bolder;
+		line-height: 1.5em;
+		opacity: 0.7;
+		position: fixed;
+		z-index: -2;
+	}
+
+	h2{
+		width: 100%;
+		color: #ffffff;
+		font-size: 3.5em;
+		text-align: center;
+		margin: 0 auto;
+		font-weight: 300;
+		line-height: 1.5em;
+		position: fixed;
+		z-index: -1;
+	}
+
+	img{
+		margin: 0 auto;
+		display: block;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		width: 80em;
+		max-width: 100%;
+		position: fixed;
+		z-index: -1;
+		left: 30%;
+		border: $border red;
+	}
+
+	a{
+		max-width: 6em;
+		height: 6em;
+		max-height: 100%;
+		width: 100%;
+		display: block;
+		position: relative;
+		top: 17%;
+		margin: 0 auto;
+		background-image: url(../imgs/dwn-btn-white.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+
+		&:hover, &:focus{
+			background-image: url(../imgs/dwn-btn.png);
+		}
+	}
+
+}
+
+/* END PROJECTS-HOME AND PROJECT-HOME-CONTAINER SECTION
+-----------------------------------------------------------------------------*/
 
 /* START SECTION PROJECTS AND PROJECT-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
 section.project-container{
-	@extend %container-style;
+	width:100%;
 	height: 92em;
 	background-color: #ffffff;
 
@@ -840,13 +968,8 @@ div#nipost{
 /* END SECTION PROJECTS AND PROJECT-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
-/* END STYLING INDEX PAGE
+/* END STYLING PROJECTS
 -----------------------------------------------------------------------------*/
-
-
-
-/*-----------------------------------------------------------------------------*/
-
 
 
 /* START STYLING ABOUT PAGE
@@ -856,7 +979,7 @@ div#nipost{
 -----------------------------------------------------------------------------*/
 
 section.about-container{
-	@extend %container-style;
+	width:100%;
 	height: 90em;
 }
 
@@ -936,7 +1059,7 @@ a.social-one{
 
 
 section#resume-fourth-container{
-	@extend %container-style;
+	width:100%;
 	clear: both;
 	height: 233em;
 }
@@ -1066,7 +1189,7 @@ div.education{
 -----------------------------------------------------------------------------*/
 
 section#contact-container{
-	@extend %container-style;
+	width:100%;
 	/*background-color: $alt-gray-color;*/
 	background-image: url(../imgs/contact-us-bg.jpg);
 	background-repeat: no-repeat;
@@ -1402,7 +1525,7 @@ div.sketches{
 -----------------------------------------------------------------------------*/
 
 section.home-container{
-	@extend %container-style;
+	width:100%;
 	background-image: url(../imgs/bg.jpg);
 	background-position: center center;
 	background-size: cover;
@@ -1477,7 +1600,7 @@ div.home-contents{
 -----------------------------------------------------------------------------*/
 
 section.project-container{
-	@extend %container-style;
+	width:100%;
 	height: 53em;
 	margin-bottom:0;
 
@@ -1533,7 +1656,7 @@ div#nipost{
 
 
 section#resume-fourth-container{
-	@extend %container-style;
+	width:100%;
 	height: 226em;
 	clear: both;
 }
@@ -1663,7 +1786,7 @@ div.education{
 -----------------------------------------------------------------------------*/
 
 section.about-container{
-	@extend %container-style;
+	width:100%;
 	height: 62em;
 }
 
@@ -1740,7 +1863,7 @@ a.social-one{
 -----------------------------------------------------------------------------*/
 
 section#contact-container{
-	@extend %container-style;
+	width:100%;
 	/*background-color: $alt-gray-color;*/
 	background-image: url(../imgs/contact-us-bg.jpg);
 	background-repeat: no-repeat;

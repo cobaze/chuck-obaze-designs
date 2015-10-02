@@ -19,17 +19,18 @@
 	<body class="main-body">
 		<div id="main-container"> <!-- Start Main Container -->
 			<header class="main-header"> <!-- Start Main Header -->
-				<a class="logo-link" href="#home"><img src="imgs/chuck-obaze-logo-1.png" alt="Chuck Obaze Graphic and Web Design Logo"></a>
+				<a class="logo-link" href="#home"><img src="imgs/chuck-obaze-logo-5.png" alt="Chuck Obaze Graphic and Web Design Logo"></a>
 				<nav class="main-nav">
 					<ul class="active-nav">
 						<li class="home-nav"><a style="border-bottom: solid #82cec4 0.3em;" class="home-link" href="index.html">HOME</a></li>
-						<li class="projects-nav"><a class="project-link" href="index.html#projects">PORTFOLIO</a></li>
+						<li class="projects-nav"><a class="project-link" href="projects.html">PORTFOLIO</a></li>
 						<li class="resume-nav"><a class="resume-link" href="resume.html">RESUME</a></li>
 						<li class="about-nav"><a class="about-link" href="index.html#about-obaze">ABOUT</a></li>
 						<li class="contact-nav"><a class="contact-link" href="contact.html">CONTACT</a></li>
 					</ul>
 				</nav>
 			</header> <!-- End Main Header -->
+
 			<section class="home-container"> <!-- Start first container -->
 				<div id="home"> <!-- Start Section Home -->
 					<div class="home-contents">
@@ -52,13 +53,13 @@
 								<img src="imgs/connect-ga-img.jpg" alt="Connect Georgia">
 							</a>
 						</div>
-						<div class="right-top-one">
+						<div class="left-bottom-one">
 							<a href="ndqc.html">
 								<p>RESPONSIVE DESIGN</p>
 								<img src="imgs/internet-security.jpg" alt="Internet Security Conference">
 							</a>
 						</div>
-						<div class="right-top-two">
+						<div class="left-bottom-two">
 							<a href="#">
 								<p class="brand-id">BRAND IDENTITY</p>
 								<img src="imgs/driven-vision.jpg" alt="Driven Vision">
@@ -67,7 +68,7 @@
 					</div>
 
 					<div class="right-holder">
-						<div class="left-bottom">
+						<div class="right-top">
 							<a href="aglow.html">
 								<p>PACKAGE DESIGN</p>
 								<img src="imgs/aglow-img.jpg" alt="Aglow Organic Scented Candles">
@@ -80,9 +81,10 @@
 							</a>
 						</div>
 					</div>
-					<div class="port"> <!-- Start dwn-pdf -->
-						<a href="portfolio.html">VIEW COMPLETE PORTFOLIO</a>
-					</div>
+				</div>
+
+				<div class="port"> <!-- Start dwn-pdf -->
+					<a href="portfolio.html">VIEW COMPLETE PORTFOLIO</a>
 				</div>
 			</section>
 
@@ -205,15 +207,9 @@
 				$(window).scroll(function(){
 
 					if ($(window).scrollTop() > 1) {
-						$('.main-header').css({ 'background-color': 'rgba(255, 255, 255, 0.9)'});
+						$('.main-header').css({ 'background-color': 'rgba(0, 0, 0, 0.7)'});
 					} else {
-						$('.main-header').css("background-color", "#ffffff");;
-					}
-
-					if ($(window).scrollTop() >= 850){
-						$('.main-header').css({'border-bottom':'solid #808284 1px'});
-					} else {
-						$('.main-header').css({'border-bottom':'transparent'});
+						$('.main-header').css("background-color", "transparent");;
 					}
 
 				});
