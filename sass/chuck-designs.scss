@@ -139,7 +139,7 @@ hr{
 	height: 3px;
 	background-color: #ffffff;
 	margin: 0 auto;
-	width: 5%;
+	width: 2em;;
 	border: 0;
 }
 
@@ -215,10 +215,24 @@ li.contact-nav{
 /* START STYLING SECTION HOME AND HOME-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
-section.home-container{
-	background-image: url(../imgs/bgrd.jpeg);
-	background-position: center center;
+div.home-bg{
+	height: 150em;
+	width: 100%;
+	position: fixed;
+	background-image: url(../imgs/home-bg.jpg);
+	background-position: center bottom;
 	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: -1;
+	top:0em;
+	left:0;
+	overflow: hidden;
+
+}
+
+
+section.home-container{
+
 	height: $section-height + 0.2;
 	clear: both;
 	width: 100%;
@@ -228,18 +242,46 @@ div#home{
 	width: 100%;
 	padding-top: 10%;
 	box-sizing: border-box;
-	height: 96em;
+	height: 67em;
 	margin: 0 auto;
 }
 
 div.home-contents{
-	height: 74.8em;
+	height: 25em;
 	width: 100%;
-	max-width: 103em;
 	margin: 0 auto;
-	margin-top: 2em;
+	margin-top: 7%;
+	margin-bottom: 16%;
+	position: relative;
+	z-index: -1;
 
 	h1{
+		width: 100%;
+		color: #ffffff;
+		font-size: 15em;
+		text-align: center;
+		margin: 0 auto;
+		font-weight: bolder;
+		line-height: 2em;
+		opacity: 0.7;
+		position: fixed;
+		z-index: -1;
+	}
+
+	h2{
+		width: 100%;
+		color: #ffffff;
+		font-size: 6em;
+		text-align: center;
+		margin: 0 auto;
+		font-weight: 300;
+		line-height: 1.5em;
+		position: fixed;
+		z-index: -1;
+		font-family: 'Kaushan Script', cursive;
+	}
+
+	/*h1{
 		width: 100%;
 		max-width:22em;
 		color: #ffffff;
@@ -248,25 +290,27 @@ div.home-contents{
 		margin: 0 auto;
 		font-weight: 200;
 		line-height: 1.5em;
-	}
+		font-family: 'Kaushan Script', cursive;
+		border: $border red;
+	}*/
 
 	img{
 		margin: 0 auto;
 		display: block;
-		margin-top: 5%;
-		margin-bottom: 5%;
+		margin-top: 2%;
+		margin-bottom: 2%;
 		width: 80em;
 		max-width: 80%;
+		border: $border red;
 	}
+}
 
-	a{
+a.dwn-btn{
 		max-width: 6em;
 		height: 6em;
 		max-height: 100%;
 		width: 100%;
 		display: block;
-		position: relative;
-		top: 17%;
 		margin: 0 auto;
 		background-image: url(../imgs/dwn-btn-white.png);
 		background-size: 100%;
@@ -275,8 +319,6 @@ div.home-contents{
 		&:hover, &:focus{
 			background-image: url(../imgs/dwn-btn.png);
 		}
-	}
-
 }
 
 /* END SECTION HOME AND HOME-CONTAINER STYLES
@@ -572,24 +614,14 @@ div.icon{
 
 /* START STYLING SECTION PHIL AND PHIL-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
-div.phil-bg{
-	height: 150em;
-	width: 100%;
-	position: fixed;
-	background-image: url(../imgs/phil-bg.jpg);
-	background-position: center bottom;
-	background-size: cover;
-	background-repeat: no-repeat;
-	z-index: -1;
-	top:0em;
-	left:0;
-	overflow: hidden;
-
-}
 
 section.phil-container{
 	width:100%;
 	height: 50em;
+	background-image: url(../imgs/phil-bg.jpg);
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 div#phil{
@@ -872,7 +904,6 @@ div#project-home{
 
 	h2{
 		width: 100%;
-		color: #ffffff;
 		font-size: 3.5em;
 		text-align: center;
 		margin: 0 auto;
@@ -881,6 +912,7 @@ div#project-home{
 		position: fixed;
 		z-index: -1;
 		font-family: 'Kaushan Script', cursive;
+		color: #ffffff;
 	}
 
 	img{
@@ -973,91 +1005,10 @@ div#nipost{
 -----------------------------------------------------------------------------*/
 
 
-/* START STYLING ABOUT PAGE
+/* STYLE STYLING RESUME PAGE
 -----------------------------------------------------------------------------*/
-
-/* START ABOUT CONTAINER STYLES
------------------------------------------------------------------------------*/
-
-section.about-container{
-	width:100%;
-	height: 90em;
-}
-
-div#about{
-	@extend %section-values;
-	height: 90em;
-	padding-top: 12%;
-
-
-	h2{
-		@extend %h2-values;
-		color:$alt-font-color;
-	}
-
-	p{
-		font-size: 2.5em;
-		line-height: 1.6em;
-		color: $font-color;
-		font-weight: 300;
-		width: 100%;
-		max-width: 38em;
-		float: left;
-		margin-top: 5%;
-
-
-		a{
-			text-decoration: none;
-			font-size: 1em;
-			color: $white-font;
-			color: $alt-font-color;
-			font-weight: bold;
-
-			&:hover, &:focus{
-				color: $font-color;
-			}
-		}
-	}
-}
-
-div.img-holder{
-	width: auto;
-	display: block;
-	float: right;
-
-	&>img{
-	width: 100%;
-	max-width: 35em;
-	margin-bottom: 5%;
-
-	}
-
-}
-
-div.social{
-	width: 100%;
-	max-width: 4em;
-	height: 4em;
-	margin: 0 auto;
-}
-
-a.social-one{
-	@extend %social-values;
-	background-image: url(../imgs/in.png);
-	background-size: 4em;
-
-	&:hover, &:focus{
-		background-image: url(../imgs/in-white.png);
-	}
-}
-
-/* END SECTION ABOUT AND ABOUT-CONTAINER STYLES
------------------------------------------------------------------------------*/
-
-
 /* START SECTION RESUME AND RESUME-FOURTH-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
-
 
 section#resume-fourth-container{
 	width:100%;
@@ -1183,6 +1134,90 @@ div.education{
 
 
 /* END SECTION RESUME AND FOURTH-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+/* END STYLING RESUME PAGE
+-----------------------------------------------------------------------------*/
+
+
+/* START STYLING ABOUT PAGE
+-----------------------------------------------------------------------------*/
+
+/* START ABOUT CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+
+section.about-container{
+	width:100%;
+	height: 90em;
+}
+
+div#about{
+	@extend %section-values;
+	height: 90em;
+	padding-top: 12%;
+
+
+	h2{
+		@extend %h2-values;
+		color:$alt-font-color;
+	}
+
+	p{
+		font-size: 2.5em;
+		line-height: 1.6em;
+		color: $font-color;
+		font-weight: 300;
+		width: 100%;
+		max-width: 38em;
+		float: left;
+		margin-top: 5%;
+
+
+		a{
+			text-decoration: none;
+			font-size: 1em;
+			color: $white-font;
+			color: $alt-font-color;
+			font-weight: bold;
+
+			&:hover, &:focus{
+				color: $font-color;
+			}
+		}
+	}
+}
+
+div.img-holder{
+	width: auto;
+	display: block;
+	float: right;
+
+	&>img{
+	width: 100%;
+	max-width: 35em;
+	margin-bottom: 5%;
+
+	}
+
+}
+
+div.social{
+	width: 100%;
+	max-width: 4em;
+	height: 4em;
+	margin: 0 auto;
+}
+
+a.social-one{
+	@extend %social-values;
+	background-image: url(../imgs/in.png);
+	background-size: 4em;
+
+	&:hover, &:focus{
+		background-image: url(../imgs/in-white.png);
+	}
+}
+
+/* END SECTION ABOUT AND ABOUT-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
 

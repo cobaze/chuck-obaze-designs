@@ -22,10 +22,10 @@
 				<nav class="main-nav">
 					<ul class="active-nav">
 						<li class="home-nav"><a class="home-link" href="index.html">HOME</a></li>
-						<li class="projects-nav"><a style="border-bottom: solid #82cec4 0.3em;" class="project-link" href="index.html#projects">PROJECTS</a></li>
-						<li class="resume-nav"><a class="active-link-b" href="resume.html">RESUME</a></li>
-						<li class="about-nav"><a class="active-link-c" href="about.html">ABOUT</a></li>
-						<li class="contact-nav"><a class="active-link-d" href="contact.html">CONTACT</a></li>
+						<li class="projects-nav"><a style="border-bottom: solid #82cec4 0.3em;" class="project-link" href="projects.html">PORTFOLIO</a></li>
+						<li class="resume-nav"><a class="resume-link" href="resume.html">RESUME</a></li>
+						<li class="about-nav"><a class="about-link" href="about.html">ABOUT</a></li>
+						<li class="contact-nav"><a class="contact-link" href="contact.html">CONTACT</a></li>
 					</ul>
 				</nav>
 			</header> <!-- End Main Header -->
@@ -73,12 +73,28 @@
 		<script>
 			$(document).ready(function(){
 
-				//$('.main-header').hide();
+				 $(this).scrollTop(0);
 
-				$(document.body).hide().fadeIn(2000);
+				$(document.body).hide().fadeIn(1000);
 
-				$('.main-header').css({ 'background-color': 'rgba(0, 0, 0, 0.8)'});
+				$(window).scroll(function(){
 
+					if ($(window).scrollTop() > 1) {
+						$('.main-header').css({ 'background-color': 'rgba(0, 0, 0, 0.6)'});
+					} else {
+						$('.main-header').css("background-color", "transparent");
+					}
+
+				});
+
+				$(window).scroll(function(e){
+				  parallax();
+				});
+
+				function parallax(){
+				  var scrolled = $(window).scrollTop();
+				  $('.project-bg').css('top',-(scrolled*0.1)+'px');
+				}
 			});
 		</script>
 	</body>
