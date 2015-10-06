@@ -24,21 +24,25 @@
 						<li class="home-nav"><a class="home-link" href="index.html">HOME</a></li>
 						<li class="projects-nav"><a class="project-link" href="projects.html">PORTFOLIO</a></li>
 						<li class="resume-nav"><a class="resume-link" href="resume.html">RESUME</a></li>
-						<li class="about-nav"><a class="about-link" href="about.html">ABOUT</a></li>
+						<!--<li class="about-nav"><a class="about-link" href="about.html">ABOUT</a></li>-->
 						<li class="contact-nav"><a style="border-bottom: solid #82cec4 0.3em;" class="contact-link" href="contact.html">CONTACT</a></li>
 					</ul>
 				</nav>
 
 			</header> <!-- End Main Header -->
 
+			<div class="contact-bg"></div>
+			<section class="contact-home-container"> <!-- Start first container -->
+				<div id="contact-home"> <!-- Start Section Home -->
+					<h1>GET IN TOUCH</h1>
+				</div> <!-- End Section Home -->
+			</section> <!-- End first container -->
+
 			<section id="contact-container"> <!-- Start fifth-container -->
-
 				<div id="contact-me"> <!-- Start contact -->
-
-					<h2>GET IN TOUCH</h2>
-
+					<h2>CONTACT ME<hr style="background-color:#f98348;"></h2>
+					<p>If you need help, have a question, suggestion or want to hire me for a project, please feel free to contact me. Thanks</p>
 					<div id="form-holder"> <!-- Start form holder -->
-
 						<form id="get-in-touch" action="#" method="post" accept-charset="utf-8"> <!-- Start form -->
 
 							<div class="entry-one"> <!-- Start entry one -->
@@ -99,7 +103,7 @@
 
 				function parallax(){
 				  var scrolled = $(window).scrollTop();
-				  $('.project-bg').css('top',-(scrolled*0.1)+'px');
+				  $('.contact-bg').css('top',-(scrolled*0.1)+'px');
 				}
 			});
 		</script>
