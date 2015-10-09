@@ -1392,11 +1392,18 @@ section.nipost-first-container{
 	padding-top: 7%;
 	border: $border red;
 	background: #ffffff;
-	width: 100%;
 	clear: both;
 	box-sizing: border-box;
 	margin: 0 auto;
+	border: $border red;
+}
 
+div.nipost-holder{
+	width: 150em;
+	max-width: 100%;
+	border: $border red;
+	clear: both;
+	margin: 0 auto;
 
 	h2{
 		@extend %h2-values;
@@ -1404,8 +1411,8 @@ section.nipost-first-container{
 	}
 
 	&>img{
-		width: 100%;
-		max-width: 100em;
+		width: 85em;
+		max-width: 100%;
 		display: block;
 		margin: 0 auto;
 		margin-bottom:10em;
@@ -1426,79 +1433,11 @@ section.nipost-first-container{
 	h3{
 		@extend %h2-values;
 		margin-bottom: 1em;
+		font-weight: 100;
+		color: $alt-font-color;
 	}
 }
 
-div.first-sketches{
-	margin-bottom: 3em;
-
-	&>p{
-		font-size: 2.5em;
-		color: $font-color;
-		font-weight: 300;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-
-	&>img{
-		width: 100%;
-	    max-width: 100em;
-	    margin: 0 auto;
-	    display: block;
-	}
-
-	iframe{
-		display: block;
-		margin: 0 auto;
-		width: 100%;
-		max-width: 100em;
-		border: $border $alt-font-color;
-		margin-bottom: 10em;
-		height: 593px;
-	}
-
-}
-
-div.second-sketches{
-
-
-	&>p{
-		font-size: 2.5em;
-		color: $font-color;
-		font-weight: 300;
-		text-align: center;
-		margin-top: 1em;
-	}
-
-	&>img{
-		width: 100%;
-	    max-width: 100em;
-	    margin: 0 auto;
-	    display: block;
-	    margin-top: 3em;
-	}
-
-}
-
-div.sketches{
-	margin-bottom: 3em;
-
-	&>p{
-		font-size: 2.5em;
-		color: $font-color;
-		font-weight: 300;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-
-	&>img{
-		width: 100%;
-	    max-width: 100em;
-	    margin: 0 auto;
-	    display: block;
-	    margin-bottom: 10em;
-	}
-}
 
 /* END NIPOST PROJECT PAGE STYLES
 -----------------------------------------------------------------------------*/
