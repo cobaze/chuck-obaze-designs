@@ -4,32 +4,32 @@ error_reporting(E_ALL ^ E_NOTICE); ///// hide all notices from PHP
 
 if(isset($_POST['submitted'])) {
 
-    if(trim($_POST['yourName']) === '') {
-        $nameError =  'Forgot your name!';
+    if(trim($_POST['contactName']) === '') {
+        $nameError =  'You Forgot to Enter your Name!';
         $hasError = true;
     } else {
-        $name = trim($_POST['yourName']);
+        $name = trim($_POST['contactName']);
     }
 
 
-    if(trim($_POST['yourEmail']) === '')  {
-        $emailError = 'Hey You Forgot to enter in your e-mail address!';
+    if(trim($_POST['email']) === '')  {
+        $emailError = 'You Forgot to Enter a Valid E-Mail Address.';
         $hasError = true;
-    } else if (!preg_match("/^[[:alnum:]][a-z0-9_.-]*@[a-z0-9.-]+\.[a-z]{2,4}$/i", trim($_POST['yourEmail']))) {
-        $emailError = 'Ooops, You entered an invalid email address!';
+    } else if (!preg_match("/^[[:alnum:]][a-z0-9_.-]*@[a-z0-9.-]+\.[a-z]{2,4}$/i", trim($_POST['email']))) {
+        $emailError = 'You entered an invalid email address.';
         $hasError = true;
     } else {
-        $email = trim($_POST['yourEmail']);
+        $email = trim($_POST['email']);
     }
 
-    if(trim($_POST['message']) === '') {
-        $commentError = 'Uhh ooo, You forgot to enter a message!';
+    if(trim($_POST['comments']) === '') {
+        $commentError = 'You forgot to enter a message!';
         $hasError = true;
     } else {
         if(function_exists('stripslashes')) {
-            $comments = stripslashes(trim($_POST['message']));
+            $comments = stripslashes(trim($_POST['comments']));
         } else {
-            $comments = trim($_POST['message']);
+            $comments = trim($_POST['comments']);
         }
     }
 
@@ -38,7 +38,7 @@ if(isset($_POST['submitted'])) {
         $emailTo = 'obazechuck@gmail.com'; ///// YOUR email address /////
         $subject = 'Inquiry message from '.$name;
         $sendCopy = trim($_POST['sendCopy']);
-        $body = "Name: $yourName \n\nEmail: $yourEmail \n\nMessage: $message";
+        $body = "Name: $name \n\nEmail: $email \n\nMessage: $comments";
         $headers = 'From: ' .' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
 
         mail($emailTo, $subject, $body, $headers);
@@ -48,6 +48,7 @@ if(isset($_POST['submitted'])) {
     }
 }
 ?>
+
 <!doctype html>
 <html class="no-js" lang="en">
 	<head>
@@ -55,6 +56,7 @@ if(isset($_POST['submitted'])) {
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="Graphic and Web Design Portfolio of Chuck Obaze. ">
 		<meta name="keywords" content="Graphic Design, Web Design, Web Development, Logo Design, Brochures, Magazines">
+		<meta name="format-detection" content="telephone=no">
 		<title>Contact | Chuck Obaze Designs</title>
 		<link rel="shortcut icon" href="imgs/chuckobaze-favicon16-6.png"/>
 		<link rel="shortcut icon" href="imgs/chuckobaze-favicon32-2.png"/>
@@ -75,7 +77,7 @@ if(isset($_POST['submitted'])) {
 						<li class="projects-nav"><a class="project-link" href="projects.html">PORTFOLIO</a></li>
 						<li class="resume-nav"><a class="resume-link" href="resume.html">RESUME</a></li>
 						<!--<li class="about-nav"><a class="about-link" href="about.html">ABOUT</a></li>-->
-						<li class="contact-nav"><a style="border-bottom: solid #82cec4 0.3em;" class="contact-link" href="contact.html">CONTACT</a></li>
+						<li class="contact-nav"><a style="border-bottom: solid #82cec4 0.3em;" class="contact-link" href="contact.php">CONTACT</a></li>
 					</ul>
 				</nav>
 
@@ -92,33 +94,50 @@ if(isset($_POST['submitted'])) {
 				<div id="contact-me"> <!-- Start contact -->
 					<h2>CONTACT ME<hr style="background-color:#f98348;"></h2>
 					<p>If you need help, have a question, suggestion or want to hire me for a project, please feel free to contact me. Thanks</p>
+
+					<?php if(isset($emailSent) && $emailSent == true) { ?>
+                <div class="p1"><h3>Thank you. Your email was sent.</h3></div>
+            <?php } else { ?>
+
+            <?php if(isset($hasError) || isset($captchaError) ) { ?>
+                        <h3 class="alert">There Was An Error Submitting The Form!</h3>
+                    <?php } ?>
+
 					<div id="form-holder"> <!-- Start form holder -->
-						<form id="get-in-touch" action="#" method="post" accept-charset="utf-8"> <!-- Start form -->
 
-							<div class="entry-one"> <!-- Start entry one -->
-								<input id="contactName" name="contactName" type="text" value="" tabindex="1" placeholder="Enter Your Name *">
-							</div> <!-- End entry-one -->
+						<form id="contact-us" action="<?php $_SERVER['PHP_SELF']?>" method="post">
+                        <div class="formblock">
+	                        <?php if($nameError != '') { ?>
+                                <br /><span class="error"><h3><?php echo $nameError;?></h3></span>
+                            <?php } ?>
+                            <input type="text" name="contactName" id="contactName" value="<?php if(isset($_POST['contactName'])) echo $_POST['contactName'];?>" class="txt requiredField name" placeholder="Enter Your Name *" />
+                        </div>
 
-							<div class="entry-two"> <!-- Start entry two -->
-								<input id="email" name="email" type="text"  value="" tabindex="2" placeholder="Enter Your E-Mail *">
-							</div> <!-- End entry-two -->
+                        <div class="formblock">
+	                        <?php if($emailError != '') { ?>
+                                <br /><span class="error"><h3><?php echo $emailError;?></h3></span>
+                            <?php } ?>
+                            <input type="text" name="email" id="email" value="<?php if(isset($_POST['email']))  echo $_POST['email'];?>" class="txt requiredField email" placeholder="Enter Your E-Mail *"/>
+                        </div>
 
-							<div class="entry-three"> <!-- Start entry three -->
-								<textarea name="comments" id="commentsText" rows="8" cols="50" placeholder="Enter Your Message *" maxlength="100" tabindex="4"></textarea>
-							</div> <!-- End entry-three -->
+                        <div class="formblock">
+	                        <?php if($commentError != '') { ?>
+                                <br /><span class="error"><h3><?php echo $commentError;?></h3></span>
+                            <?php } ?>
+                             <textarea placeholder="Enter Your Message *" name="comments" id="commentsText" class="txtarea requiredField" cols="60" rows="10"><?php if(isset($_POST['comments'])) { if(function_exists('stripslashes')) { echo stripslashes($_POST['comments']); } else { echo $_POST['comments']; } } ?></textarea>
+                        </div>
 
-							<div> <!-- Start Submit -->
-								<button name="submit" type="submit" class="subbutton">SEND MESSAGE</button>
-								<input type="hidden" name="submitted" id="submitted" value="true" />
-							</div> <!-- End Submit -->
-
-						</form> <!-- End Form -->
+                            <button name="submit" type="submit" class="subbutton">SEND MESSAGE</button>
+                            <input type="hidden" name="submitted" id="submitted" value="true" />
+                    </form>
 
 					</div> <!-- End Form Holder -->
 
 				</div> <!-- End Contact -->
+				<?php } ?>
 
 			</section> <!-- end fifth-container -->
+
 
 			<footer class="main-footer">
 				<p>Copyright &copy; Chuck Obaze, 2015. All Rights Reserved</p>
