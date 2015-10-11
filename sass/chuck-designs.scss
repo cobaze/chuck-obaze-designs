@@ -551,7 +551,7 @@ section.process-container{
 div#process{
 	width: 100%;
 	height: 70em;
-	padding-top: 15em;
+	padding-top: 10em;
 	margin: 0 auto;
 	clear: both;
 	box-sizing: border-box;
@@ -564,7 +564,8 @@ div#process{
 
 div.icon-holder{
 	height: 35em;
-	width: 67%;
+	width: 131em;
+	max-width: 100%;
 	margin: 0 auto;
 }
 
@@ -604,7 +605,7 @@ div.icon{
 
 section.phil-container{
 	width:100%;
-	height: 50em;
+	height: 45em;
 	background-image: url(../imgs/phil-bg.jpg);
 	background-position: center top;
 	background-size: cover;
@@ -612,9 +613,8 @@ section.phil-container{
 }
 
 div#phil{
-	height: 50em;
-	padding-top: 15em;
-	padding-bottom: 15em;
+	height: 45em;
+	padding-top: 10%;
 	margin: 0 auto;
 	width: 100%;
 	box-sizing: border-box;
@@ -667,7 +667,8 @@ div#expertise{
 
 div.grouped{
 	height: 45em;
-	width: 65%;
+	width: 114em;
+	max-width: 100%;
 	margin: 0 auto;
 }
 
@@ -1501,528 +1502,42 @@ div.nipost-holder{
 /* START STYLING LAPTOP SIZE SECTION HOME AND HOME-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
-section.home-container{
-	width:100%;
-	background-image: url(../imgs/bg.jpg);
-	background-position: center center;
-	background-size: cover;
-	height: $section-height;
-	clear: both;
-	width: 100%;
-	height: 68em;
-}
+	div.home-bg {
+	    height: 67.8em;
+    }
 
-div#home{
-	@extend %section-values;
-	max-width: 135em;
-	padding-top: 1em;
-	height: 68em;
-}
-
-div.home-contents{
-	height: 64.5em;
-	width: 100%;
-	max-width: 103em;
-	margin: 0 auto;
-	margin-top: 3%;
-
-	h1{
-		width: 100%;
-		max-width:22em;
-		color: #ffffff;
-		font-size: 2.5em;
-		text-align: center;
-		margin: 0 auto;
-		font-weight: 200;
-		line-height: 1.5em;
-
+	section.home-container {
+	    height: 67.8em;
 	}
 
-	img{
-		margin: 0 auto;
-		display: block;
-		margin-top: 5%;
-		margin-bottom: 5%;
-		width: 100%;
-		max-width: 70em;
-
+	div.home-contents{
+		margin-top: 8%;
+		margin-bottom: 10%;
 	}
 
-	a{
-		max-width: 4em;
-		height: 4em;
-		max-height: 100%;
-		width: 100%;
-		display: block;
-		position: relative;
-		top: 5%;
-		margin: 0 auto;
-		background-image: url(../imgs/dwn-btn-white.png);
-		background-size: 4em;
-		background-repeat: no-repeat;
-
-		&:hover, &:focus{
-			background-image: url(../imgs/dwn-btn.png);
-		}
+	section.expertise-container {
+	    height: 85em;
 	}
 
-}
-
-
-/* END LAPTOP SIZE SECTION HOME AND HOME-CONTAINER STYLES
------------------------------------------------------------------------------*/
-
-
-/* START LAPTOP SIZE SECTION PROJECTS AND PROJECT-CONTAINER STYLES
------------------------------------------------------------------------------*/
-
-section.project-container{
-	width:100%;
-	height: 53em;
-	margin-bottom:0;
-
-
-}
-
-div#projects{
-	@extend %section-values;
-	height: 53em;
-	margin-top: 20em;
-
-	h2{
-		@extend %h2-values;
-	}
-
-}
-
-div.port-item{
-	width: 100%;
-	max-width: 31.99em;
-	height: 23.8em;
-	float: right;
-	overflow: hidden;
-
-	a{
-		img{
-			width: 100%;
-			max-width: 34em;
-		}
-	}
-
-
-}
-
-div#nipost{
-
-	a{
-		img{
-			width: 100%;
-			max-width: 34em;
-		}
-	}
-}
-
-/* END LAPTOP SIZE SECTION PROJECTS AND SECOND-INDEX-PAGE-CONTAINER STYLES
------------------------------------------------------------------------------*/
-
-/* END LAPTOP SIZE STYLING INDEX PAGE
------------------------------------------------------------------------------*/
-
-/* START LAPTOP SECTION RESUME AND FOURTH-CONTAINER STYLES
------------------------------------------------------------------------------*/
-
-
-section#resume-fourth-container{
-	width:100%;
-	height: 226em;
-	clear: both;
-}
-
-div#resume{
-	@extend %section-values;
-	max-width: 112.5em;
-	padding-top: 10%;
-	height: 226em;
-
-}
-
-div.dwn-pdf{
-	@extend %left-resume;
-	margin-bottom: 4em;
-
-	a{
-		text-decoration: none;
-		padding: 1.9em 0 0 1.5em;
-		font-size: 2em;
-		font-weight: 600;
-		text-align: left;
-		color: #ffffff;
-		background-color: $red-color;
-		margin: 0 auto;
-		box-sizing: border-box;
-		display: block;
-		background-image: url(../imgs/pdf-btn-white.png);
-		background-repeat: no-repeat;
-		background-size: 2em;
-		background-position: 13em 1.1em;
-		height: 5em;
-
-		&:hover, &:focus{
-			@extend %buttons;
-			background-image: url(../imgs/pdf-btn-red.png);
-		}
-
-	}
-}
-
-div.skill-info{
-	@extend %left-resume;
-	height: 153em;
-	background-color: $resume-gray;
-	padding: 6em 3.5em 0 3.5em;
-
-	h3{
-		font-size:2.5em;
-		color: $red-color;
-		margin-bottom: 3em;
-		text-align: center;
-	}
-
-	h4{
-		font-size: 2em;
-	}
-
-	hr{
-		display: block;
-		margin-top: 0.5em;
-		margin-bottom: 0.5em;
-		margin-right: 1em;
-		border: solid 0.2em $red-color;
-		width:5.5em;
-	}
-
-	ul{
-		margin-bottom: 4em;
-
-		li{
-			@extend %listing-style;
-		}
-	}
-
-}
-
-div.resume-info{
-	float: right;
-	max-width:76em;
-	width: 100%;
-}
-
-div.education{
-	color: $alt-font-color;
-	background-color: $resume-gray;
-	padding: 5%;
-	margin-bottom: 5%;
-	width: 100%;
-	max-width: 69em;
-
-	h3{
-		font-size:2.5em;
-		color: $red-color;
-		margin-bottom: 1em;
-	}
-
-	h4{
-		font-size: 2em;
-		margin-bottom: .5em;
-
-		span{
-			font-weight: 300;
-		}
-	}
-
-	p{
-		font-size: 1.7em;
-		line-height: 1.5em;
-		margin-bottom: 2em;
-	}
-
-	ul{
-		margin-bottom: 2em;
-
-		li{
-			@extend %listing-style;
-		}
-	}
-}
-
-
-/* END LAPTOP SECTION RESUME AND FOURTH-CONTAINER STYLES
------------------------------------------------------------------------------*/
-
-/* START LAPTOP ABOUT CONTAINER STYLES
------------------------------------------------------------------------------*/
-
-section.about-container{
-	width:100%;
-	height: 62em;
-}
-
-div#about{
-	@extend %section-values;
-	height: 61em;
-	padding-top: 10%;
-	max-width: 110em;
-
-
-	h2{
-		@extend %h2-values;
-		color:$alt-font-color;
-	}
-
-	p{
-		font-size: 2em;
-		line-height: 1.6em;
-		color: $font-color;
-		font-weight: 300;
-		width: 100%;
-		max-width: 37em;
-		float: left;
-		margin-top: 6%;
-
-		a{
-			text-decoration: none;
-			font-size: 1em;
-			color: $white-font;
-			color: $alt-font-color;
-			font-weight: bold;
-
-			&:hover, &:focus{
-				color: $font-color;
-			}
-		}
-	}
-}
-
-div.img-holder{
-	width: auto;
-	display: block;
-	float: right;
-
-	&>img{
-	width: 100%;
-	max-width: 30em;
-	margin-bottom: 5%;
-	}
-
-}
-
-div.social{
-	width: 100%;
-	max-width: 4em;
-	height: 4em;
-	margin: 0 auto;
-}
-
-a.social-one{
-	@extend %social-values;
-	background-image: url(../imgs/in.png);
-	background-size: 4em;
-
-	&:hover, &:focus{
-		background-image: url(../imgs/in-white.png);
-	}
-}
-
-/* END LAPTOP SECTION ABOUT AND ABOUT-CONTAINER STYLES
------------------------------------------------------------------------------*/
-
-/* START LAPTOP SECTION CONTACT AND CONTACT-CONTAINER STYLES
------------------------------------------------------------------------------*/
-
-section#contact-container{
-	width:100%;
-	/*background-color: $alt-gray-color;*/
-	background-image: url(../imgs/contact-us-bg.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	height: 62em;
-}
-
-div#contact-me{
-	@extend %section-values;
-	height: 62em;
-	padding-top: 8.5%;
-
-	h2{
-		text-align: center;
-		margin-bottom:2%;
-		color: $alt-font-color;
-		font-size: 2.5em;
-		margin:2% 0 2% 0;
-	}
-}
-
-#form-holder{
-}
-
-form#get-in-touch{
-	margin: 0 auto;
-	width: 100%;
-	max-width: 65em;
-}
-
-input,textarea{
-	margin-bottom: 1.5em;
-	display: block;
-    width: 100%;
-    max-width: 61em;
-    height: 100%;
-    padding: 1em;
-    font-size: 1.4em;
-    line-height: 1.42857143;
-    color: $font-color;
-    border: $border $alt-font-color;
-    border-radius: .5em;
-    @include box-shadow(inset 0.2em 0.2em 0.4em $alt-font-color);
-    box-sizing: border-box;
-
-}
-
-button{
-	padding: 0.8em 0.8em;
-	border: $red-color;
-	border-radius: .3em;
-	font-size: 2em;
-	font-weight: 600;
-	color: #ffffff;
-	background-color: $red-color;
-	margin: 0 auto;
-	box-sizing: border-box;
-	display: block;
-
-	&:hover, &:focus{
-		@extend %buttons;
-	}
-}
-
-/* END LAPTOP SECTION CONTACT AND CONTACT-CONTAINER STYLES
------------------------------------------------------------------------------*/
-
-
-/* START LAPTOP NIPOST PROJECT STYLES
------------------------------------------------------------------------------*/
-
-section.nipost-first-container{
-	@extend %section-values;
-	height: auto;
-	padding-top: 10%;
-
-	h2{
-		@extend %h2-values;
-		margin-bottom: 0.5em;
-	}
-
-	&>img{
-		width: 100%;
-		max-width: 80em;
-		display: block;
-		margin: 0 auto;
-		margin-bottom:3em;
-	}
-
-	&>p{
-		font-size: 1.9em;
-		line-height: 1.4em;
-		color: $font-color;
-		font-weight: 300;
-		width: 100%;
-		max-width: 45em;
-		text-align: center;
-		margin: 0 auto;
-		margin-bottom: 1em;
-	}
-
-	h3{
-		@extend %h2-values;
-		margin-bottom: 1em;
-	}
-}
-
-div.first-sketches{
-	margin-bottom: 3em;
-
-	&>p{
-		font-size: 2.5em;
-		color: $font-color;
-		font-weight: 300;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-
-	&>img{
-		width: 100%;
-	    max-width: 80em;
-	    margin: 0 auto;
-	    display: block;
-	}
-
-	iframe{
-		display: block;
-		margin: 0 auto;
-		width: 100%;
-		max-width: 80em;
-		border: $border $alt-font-color;
-		margin-bottom: 10em;
-		height: 500px
-	}
-
-}
-
-div.second-sketches{
-	max-height:250em;
-	height: 100%;
-
-	&>p{
-		font-size: 2.5em;
-		color: $font-color;
-		font-weight: 300;
-		text-align: center;
-		margin-top: 1em;
-	}
-
-	&>img{
-		width: 100%;
-	    max-width: 80em;
-	    margin: 0 auto;
-	    display: block;
-	    margin-top: 3em;
-	}
-
-}
-
-div.sketches{
-	margin-bottom: 3em;
-
-	&>p{
-		font-size: 2.5em;
-		color: $font-color;
-		font-weight: 300;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-
-	&>img{
-		width: 100%;
-	    max-width: 80em;
-	    margin: 0 auto;
-	    display: block;
-	}
-}
-
-/* END LAPTOP NIPOST PROJECT STYLES
------------------------------------------------------------------------------*/
-
+	div.icon {
+	    margin: 2.22%;
+    }
+
+    div.ex-icon {
+	    height: 20em;
+    }
+
+    div.ex-icon p{
+	    width: 15em;
+    }
+
+    div.left-group-top{
+	    width: 48em;
+    }
+
+    section.end-container{
+	    height: 70em;
+    }
 
 
 }
