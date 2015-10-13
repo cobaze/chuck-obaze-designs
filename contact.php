@@ -72,6 +72,7 @@ if(isset($_POST['submitted'])) {
 			<header class="main-header"> <!-- Start Main Header -->
 				<a class="logo-link" href="index.html#home"><img src="imgs/chuck-obaze-logo-3.png" alt="Chuck Obaze Graphic and Web Design Logo"></a>
 				<nav class="main-nav">
+					<a href="#" id="lines"></a>
 					<ul class="active-nav">
 						<li class="home-nav"><a class="home-link" href="index.html">HOME</a></li>
 						<li class="projects-nav"><a class="project-link" href="portfolio.html">PORTFOLIO</a></li>

@@ -58,11 +58,11 @@ $white-font: #ffffff;
 
 }
 
-%buttons{
+/*%buttons{
 	color: $green-color;
 	background-color: #ffffff;
 	border: solid $green-color .125em;
-}
+}*/
 
 %listing-style{
 	background-image: url(../imgs/bullet.png);
@@ -769,7 +769,7 @@ div#about{
 
 }
 
-div.social-icons{
+.social-icons{
 	height: 5.3em;
 	width: 25em;
 	max-width: 100%;
@@ -777,7 +777,7 @@ div.social-icons{
 	margin-top: 1%;
 }
 
-div.linked{
+.linked{
 	background: url(../imgs/linkedin.png) no-repeat;
 	background-size: 3em;
 	width: 3em;
@@ -790,7 +790,7 @@ div.linked{
 		}
 }
 
-div.pin{
+.pin{
 	background: url(../imgs/pinterest.png) no-repeat;
 	background-size: 3em;
 	width: 3em;
@@ -803,7 +803,7 @@ div.pin{
 		}
 }
 
-div.google-plus{
+.google-plus{
 	background: url(../imgs/google-plus.png) no-repeat;
 	background-size: 3em;
 	width: 3em;
@@ -816,7 +816,7 @@ div.google-plus{
 		}
 }
 
-div.vim{
+.vim{
 	background: url(../imgs/vimeo.png) no-repeat;
 	background-size: 3em;
 	width: 3em;
@@ -829,7 +829,7 @@ div.vim{
 		}
 }
 
-div.behan{
+.behan{
 	background: url(../imgs/behance.png) no-repeat;
 	background-size: 3em;
 	width: 3em;
@@ -1142,10 +1142,9 @@ input,textarea{
 }
 
 button{
-	padding: 1em 1em;
+	padding: 1em;
 	border: $orange-color solid .1em;
-	border-radius: .3em;
-	font-size: 3em;
+	font-size: 2.5em;
 	font-weight: 600;
 	color: $orange-color;
 	background-color: #ffffff;
@@ -1154,7 +1153,6 @@ button{
 	display: block;
 
 	&:hover, &:focus{
-		@extend %buttons;
 		background-color: $orange-color;
 		color: #ffffff;
 		border: $orange-color solid .1em;
@@ -1425,7 +1423,8 @@ div.nipost-holder{
 
 	a.dwn-btn{
 		max-width: 4.5em;
-		height: 4.5em
+		height: 4.5em;
+		display: none;
 	}
 
 /* =End Home Section Style */
@@ -1437,7 +1436,7 @@ div.nipost-holder{
 	}
 
 	div#home-portfolio{
-		padding-top: 10%;
+		padding: 10% 2% 0 2%;
 		height: 138em;
 
 		h2{
@@ -1451,7 +1450,7 @@ div.nipost-holder{
 	}
 
 	div.left-top{
-		height: 27.5em;
+		height: 27.4em;
 
 		a{
 			p{
@@ -1550,7 +1549,7 @@ div.nipost-holder{
 	}
 
 	div#process{
-		padding-top: 10%;
+		padding: 10% 2% 0 2%;
 		height: 150em;
 
 	}
@@ -1595,7 +1594,7 @@ div.nipost-holder{
 
 	div#expertise{
 		height: 150em;
-		padding-top: 10%;
+		padding: 10% 2% 0 2%;
 
 		h2{
 			margin-bottom: 10%;
@@ -1646,7 +1645,7 @@ div.nipost-holder{
 
 	div#about{
 		height: 110em;
-		padding: 10% 3% 0 3%;
+		padding: 10% 2% 0 2%;
 
 		h2{
 			margin-bottom: 10%;
@@ -1672,39 +1671,56 @@ div.nipost-holder{
 
 	div#top-portfolio{
 		padding-top: 0;
+		height: 63em;
 
-		h2{
-			margin-bottom: 10%;
+		h1{
+			font-size: 7em;
+			line-height: 1.5em;
+			top: 3.5em;
 		}
 	}
 
-	div#top-portfolio h1{
-		font-size: 7em;
-		line-height: 9.5em;
-	}
-
-
-	div.port-item{
-
-		height: 30em;
-	}
-
-	section.portfolio-container, div#portfolio {
+	section.portfolio-container{
 		height: 383.5em;
 	}
 
 	div#portfolio{
 		padding-top: 10%;
 		box-sizing: border-box;
+		height: 383.5em;
 
 		p{
 			margin-bottom: 10%;
 		}
+
+	}
+
+	div.port-item{
+		height: 30em;
 	}
 
 /* =End Portfolio Page Style */
 
 /* =Start Contact Section Style */
+
+	div.contact-bg{
+		background-position: -102em -32em;
+	}
+
+	section.contact-home-container{
+		height: 63em;
+	}
+
+	div#contact-home{
+		padding-top: 0;
+		height: 63em;
+
+		h1{
+			font-size: 11em;
+			line-height: 0.8em;
+			top: 2.1em;
+		}
+	}
 
 /* =End Contact Section Style */
 
