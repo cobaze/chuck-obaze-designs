@@ -58,14 +58,6 @@ $white-font: #ffffff;
 
 }
 
-%left-resume{
-	float: left;
-	width: 100%;
-	max-width: 33em;
-	box-sizing: border-box;
-	margin-right: 1em;
-}
-
 %buttons{
 	color: $green-color;
 	background-color: #ffffff;
@@ -311,16 +303,16 @@ a.dwn-btn{
 /* END SECTION HOME AND HOME-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
-/* START STYLING SECTION PORTFOLIO AND PORTFOLIO-CONTAINER STYLES
+/* START STYLING SECTION PORTFOLIO AND HOME-PORTFOLIO-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
-section.portfolio-container{
+section.home-portfolio-container{
 	width:100%;
 	height: 120em;
 	background-color: #ffffff;
 }
 
-div#portfolio{
+div#home-portfolio{
 	width: 120em;
 	max-width: 100%;
 	height: 101em;
@@ -535,7 +527,7 @@ div.port{
 }
 
 
-/* END STYLING SECTION PORTFOLIO AND PORTFOLIO-CONTAINER STYLES
+/* END STYLING SECTION PORTFOLIO AND home-portfolio-container STYLES
 -----------------------------------------------------------------------------*/
 
 /* START STYLING SECTION PROCESS AND PROCESS-CONTAINER STYLES
@@ -713,9 +705,9 @@ div.ex-icon{
 /* END STYLING EXPERTISE AND EXPERTISE-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
-/* START STYLING END AND END-CONTAINER STYLES
+/* START STYLING END AND about-container STYLES
 -----------------------------------------------------------------------------*/
-section.end-container{
+section.about-container{
 	width:100%;
 	background-image: url(../imgs/phil.jpg);
 	background-position: center cover;
@@ -724,7 +716,7 @@ section.end-container{
 	height: 81.5em;
 }
 
-div#end{
+div#about{
 	height: 81.5em;
 	padding-top: 10em;
 	margin: 0 auto;
@@ -841,7 +833,7 @@ div.behan{
 		}
 }
 
-/* END STYLING END AND END-CONTAINER STYLES
+/* END STYLING END AND about-container STYLES
 -----------------------------------------------------------------------------*/
 
 
@@ -858,7 +850,7 @@ div.behan{
 /* START PROJECTS-HOME AND PROJECT-HOME-CONTAINER SECTION
 -----------------------------------------------------------------------------*/
 
-div.project-bg{
+div.portfolio-bg{
 	height: 150em;
 	width: 100%;
 	position: fixed;
@@ -873,12 +865,12 @@ div.project-bg{
 
 }
 
-section.project-home-container{
+section.top-portfolio-container{
 	width:100%;
 	height: 50em;
 }
 
-div#project-home{
+div#top-portfolio{
 	width: 100%;
 	padding-top: 7%;
 	box-sizing: border-box;
@@ -919,14 +911,14 @@ div#project-home{
 /* START SECTION PROJECTS AND PROJECT-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
-section.project-container{
+section.portfolio-container{
 	width:100%;
 	height: 136.5em;
 	background-color: #ffffff;
 
 }
 
-div#projects{
+div#portfolio{
 	height: 136.5em;
 	padding-top: 15em;
 	margin: 0 auto;
@@ -970,222 +962,6 @@ div.port-item{
 -----------------------------------------------------------------------------*/
 
 /* END STYLING PROJECTS
------------------------------------------------------------------------------*/
-
-
-/* STYLE STYLING RESUME PAGE
------------------------------------------------------------------------------*/
-/* START SECTION RESUME AND RESUME-FOURTH-CONTAINER STYLES
------------------------------------------------------------------------------*/
-
-section#resume-fourth-container{
-	width:100%;
-	clear: both;
-	height: 233em;
-}
-
-div#resume{
-	@extend %section-values;
-	max-width: 112.5em;
-	padding-top: 10%;
-	height: 233em;
-}
-
-div.dwn-pdf{
-	@extend %left-resume;
-	margin-bottom: 4em;
-
-	a{
-		text-decoration: none;
-		padding: 1.9em 0 0 1.5em;
-		font-size: 2em;
-		font-weight: 600;
-		text-align: left;
-		color: #ffffff;
-		background-color: $green-color;
-		margin: 0 auto;
-		box-sizing: border-box;
-		display: block;
-		background-image: url(../imgs/pdf-btn-white.png);
-		background-repeat: no-repeat;
-		background-size: 2em;
-		background-position: 13em 1.1em;
-		height: 5em;
-
-		&:hover, &:focus{
-			@extend %buttons;
-			background-image: url(../imgs/pdf-btn-red.png);
-		}
-
-	}
-}
-
-div.skill-info{
-	@extend %left-resume;
-	height: 153em;
-	background-color: $resume-gray;
-	padding: 6em 3.5em 0 3.5em;
-
-	h3{
-		font-size:2.5em;
-		color: $red-color;
-		margin-bottom: 3em;
-		text-align: center;
-	}
-
-	h4{
-		font-size: 2em;
-	}
-
-	hr{
-		display: block;
-		margin-top: 0.5em;
-		margin-bottom: 0.5em;
-		margin-right: 1em;
-		border: solid 0.2em $red-color;
-		width:5.5em;
-	}
-
-	ul{
-		margin-bottom: 4em;
-
-		li{
-			@extend %listing-style;
-		}
-	}
-
-}
-
-div.resume-info{
-	float: right;
-	max-width:76em;
-	width: 100%;
-}
-
-div.education{
-	color: $alt-font-color;
-	background-color: $resume-gray;
-	padding: 5%;
-	margin-bottom: 5%;
-	width: 100%;
-	max-width: 69em;
-
-	h3{
-		font-size:2.5em;
-		color: $red-color;
-		margin-bottom: 1em;
-	}
-
-	h4{
-		font-size: 2em;
-		margin-bottom: .5em;
-
-		span{
-			font-weight: 300;
-		}
-	}
-
-	p{
-		font-size: 1.7em;
-		line-height: 1.5em;
-		margin-bottom: 2em;
-	}
-
-	ul{
-		margin-bottom: 2em;
-
-		li{
-			@extend %listing-style;
-		}
-	}
-}
-
-
-/* END SECTION RESUME AND FOURTH-CONTAINER STYLES
------------------------------------------------------------------------------*/
-/* END STYLING RESUME PAGE
------------------------------------------------------------------------------*/
-
-
-/* START STYLING ABOUT PAGE
------------------------------------------------------------------------------*/
-
-/* START ABOUT CONTAINER STYLES
------------------------------------------------------------------------------*/
-
-section.about-container{
-	width:100%;
-	height: 90em;
-}
-
-div#about{
-	@extend %section-values;
-	height: 90em;
-	padding-top: 12%;
-
-
-	h2{
-		@extend %h2-values;
-		color:$alt-font-color;
-	}
-
-	p{
-		font-size: 2.5em;
-		line-height: 1.6em;
-		color: $font-color;
-		font-weight: 300;
-		width: 100%;
-		max-width: 38em;
-		float: left;
-		margin-top: 5%;
-
-
-		a{
-			text-decoration: none;
-			font-size: 1em;
-			color: $white-font;
-			color: $alt-font-color;
-			font-weight: bold;
-
-			&:hover, &:focus{
-				color: $font-color;
-			}
-		}
-	}
-}
-
-div.img-holder{
-	width: auto;
-	display: block;
-	float: right;
-
-	&>img{
-	width: 100%;
-	max-width: 35em;
-	margin-bottom: 5%;
-
-	}
-
-}
-
-div.social{
-	width: 100%;
-	max-width: 4em;
-	height: 4em;
-	margin: 0 auto;
-}
-
-a.social-one{
-	@extend %social-values;
-	background-image: url(../imgs/in.png);
-	background-size: 4em;
-
-	&:hover, &:focus{
-		background-image: url(../imgs/in-white.png);
-	}
-}
-
-/* END SECTION ABOUT AND ABOUT-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
 
@@ -1579,7 +1355,7 @@ div.nipost-holder{
 	    width: 48em;
     }
 
-    section.end-container{
+    section.about-container{
 	    height: 70em;
     }
 

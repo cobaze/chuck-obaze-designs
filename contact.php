@@ -74,9 +74,7 @@ if(isset($_POST['submitted'])) {
 				<nav class="main-nav">
 					<ul class="active-nav">
 						<li class="home-nav"><a class="home-link" href="index.html">HOME</a></li>
-						<li class="projects-nav"><a class="project-link" href="projects.html">PORTFOLIO</a></li>
-						<li class="resume-nav"><a class="resume-link" href="resume.html">RESUME</a></li>
-						<!--<li class="about-nav"><a class="about-link" href="about.html">ABOUT</a></li>-->
+						<li class="projects-nav"><a class="project-link" href="portfolio.html">PORTFOLIO</a></li>
 						<li class="contact-nav"><a style="border-bottom: solid #82cec4 0.3em;" class="contact-link" href="contact.php">CONTACT</a></li>
 					</ul>
 				</nav>
