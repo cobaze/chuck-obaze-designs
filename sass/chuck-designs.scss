@@ -636,7 +636,7 @@ div#phil{
 -----------------------------------------------------------------------------*/
 section.expertise-container{
 	width:100%;
-	height: 80em;
+	height: 75em;
 	background-color: $green-color;
 
 }
@@ -645,7 +645,7 @@ div#expertise{
 	width: 100%;
 	clear: both;
 	box-sizing: border-box;
-	height: 80em;
+	height: 75em;
 	padding-top: 5%;
 	margin: 0 auto;
 
@@ -659,29 +659,32 @@ div#expertise{
 
 div.grouped{
 	height: 45em;
-	width: 155em;
+	width: 125em;
 	max-width: 100%;
 	margin: 0 auto;
-	border: $border red;
 }
 
 div.left-group-top, div.left-group-bottom, div.right-group-top, div.right-group-bottom{
-	height: 25em;
+	height: 15em;
 	float: left;
-	width: 50%;
+	max-width: 100%;
+	width: 57em;
+	margin-bottom: 5%;
+}
+
+div.left-group-top, div.right-group-top{
+	margin-right: 8%;
 }
 
 div.ex-icon{
 	margin:0 auto;
 	height: 15em;
-	border: $border red;
 
 	img{
 		width: 15em;
 		float: left;
 		display: block;
 		margin-right: 5%;
-		border: $border red;
 	}
 
 	p{
@@ -692,7 +695,6 @@ div.ex-icon{
 		width: 19em;
 		margin-top: 1em;
 		float: left;
-		border: $border red;
 
 		span{
 			font-size: 0.8em;
@@ -705,7 +707,7 @@ div.ex-icon{
 /* END STYLING EXPERTISE AND EXPERTISE-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
-/* START STYLING END AND about-container STYLES
+/* START STYLING END AND ABOUT-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 section.about-container{
 	width:100%;
@@ -718,7 +720,7 @@ section.about-container{
 
 div#about{
 	height: 81.5em;
-	padding-top: 10em;
+	padding-top: 5%;
 	margin: 0 auto;
 	width: 100%;
 	clear: both;
@@ -729,7 +731,7 @@ div#about{
 		color: #ffffff;
 	}
 
-	p{
+	&>p{
 		font-size: 2em;
 		font-weight: 200;
 		line-height: 1.5em;
@@ -738,7 +740,7 @@ div#about{
 		max-width: 100%;
 		margin: 0 auto;
 		text-align: center;
-		margin-bottom: 1%;
+		margin-bottom: 1.5%;
 
 		a{
 			text-decoration: none;
@@ -753,7 +755,8 @@ div#about{
 	}
 
 	img{
-		width: 8%;
+		width: 15em;
+		max-width: 100%;
 		margin: 0 auto;
 		display: block;
 		margin-bottom: 3em;
@@ -766,6 +769,7 @@ div.social-icons{
 	width: 25em;
 	max-width: 100%;
 	margin: 0 auto;
+	margin-top: 1%;
 }
 
 div.linked{
@@ -831,6 +835,39 @@ div.behan{
 	&:hover, &:focus{
 			background-image: url(../imgs/behance-orange.png);
 		}
+}
+
+div.dwn-pdf{
+	width: 20em;
+	max-width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 4em;
+	margin: 0 auto;
+
+	a{
+		text-decoration: none;
+		padding: 1em;
+		color: $orange-color;
+		background-color: transparent;
+		border: solid $orange-color 0.2em;
+		box-sizing: border-box;
+		display: block;
+		height: 5em;
+
+		&:hover, &:focus{
+			color: #ffffff;
+			background-color: $orange-color;
+		}
+
+		&>p{
+			text-align: center;
+			font-size: 2em;
+			font-weight: bold;
+			margin: 0 auto;
+			margin-bottom: 1%;
+		}
+
+	}
 }
 
 /* END STYLING END AND about-container STYLES
@@ -973,8 +1010,8 @@ div.contact-bg{
 	height: 150em;
 	width: 100%;
 	position: fixed;
-	background-image: url(../imgs/contact-bg-img.jpg);
-	background-position: -15em -40em;
+	background-image: url(../imgs/contact-bg-img-2.jpg);
+	background-position: -15em -35em;
 	background-size: cover;
 	background-repeat: no-repeat;
 	z-index: -3;
@@ -1286,7 +1323,28 @@ div.nipost-holder{
 	}
 
 
+	section.top-portfolio-container{
+		height: 63em;
+	}
 
+	div#top-portfolio{
+		padding-top: 0;
+
+		h2{
+			margin-bottom: 10%;
+		}
+	}
+
+	div#top-portfolio h1{
+		font-size: 7em;
+		line-height: 9.5em;
+	}
+
+	div.port-item{
+
+	}
+
+}
 
 }
 
