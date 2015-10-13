@@ -925,6 +925,7 @@ div#portfolio{
 	width: 100%;
 	clear: both;
 	box-sizing: border-box;
+	background-color: #ffffff;
 
 	h2{
 		@extend %h2-values;
@@ -1268,6 +1269,24 @@ div.nipost-holder{
   and (max-width: 740px)
   and (orientation: portrait) {
 
+	  div.home-bg {
+	    height: 67.8em;
+	    border: $border red;
+    }
+
+	section.home-container {
+	    height: 67.8em;
+	    border: $border red;
+	}
+
+	div.home-contents{
+		margin-top: 8%;
+		margin-bottom: 10%;
+		border: $border red;
+	}
+
+
+
 
 }
 
@@ -1289,6 +1308,70 @@ div.nipost-holder{
   and (max-device-width: 1024px)
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2) {
+
+	div.home-bg {
+	    height: 91.8em;
+	    border: $border red;
+    }
+
+	section.home-container {
+	    height: 91.8em;
+	    border: $border red;
+	}
+
+	div#home{
+		height: 91em;
+		padding-top: 5%;
+	}
+
+	div.home-contents{
+		margin-top: 30%;
+		margin-bottom: 33%;
+		border: $border red;
+		height: 31em;
+	}
+
+	div.home-contents h1{
+		line-height: 0.8em;
+		top: 2.1em;
+	}
+
+	section.home-portfolio-container, div#home-portfolio{
+		height: 185em;
+	}
+
+	div.left-holder, div.right-holder{
+		width: 76.8em;
+	}
+
+	div.left-bottom-one, div.left-bottom-two{
+		height: 26.5em;
+
+		a{
+			p{
+				top:14.4em;
+			}
+		}
+	}
+
+	div.left-bottom-two a img{
+		bottom: 7.5em;
+	}
+
+	div.right-top a img{
+		bottom: 26.5em;
+	}
+
+	div.right-bottom a img{
+		width: 115%;
+		bottom: 15em;
+		right: 8.5em;
+	}
+
+	div.port{
+		position: relative;
+		bottom: 15em;
+	}
 
 }
 
@@ -1358,6 +1441,16 @@ div.nipost-holder{
     section.about-container{
 	    height: 70em;
     }
+
+    div.port-item{
+		width: 32em;
+		max-width: 100%;
+		height: 24em;
+	}
+
+	section.portfolio-container, div#portfolio {
+		height: 105.3em;
+	}
 
 
 }
