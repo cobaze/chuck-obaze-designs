@@ -1386,19 +1386,31 @@ div.nipost-holder{
 	}
 
 	div.home-bg {
-	    height: 67.8em;
+	    height: 63em;
 	    border: $border red;
     }
 
 	section.home-container {
-	    height: 67.8em;
+	    height: 63em;
 	    border: $border red;
+	}
+
+	div#home{
+		padding-top: 0;
 	}
 
 	div.home-contents{
 		margin-top: 8%;
 		margin-bottom: 10%;
 		border: $border red;
+
+		h1{
+			line-height: 0.8em;
+		}
+
+		h2{
+
+		}
 	}
 
 
