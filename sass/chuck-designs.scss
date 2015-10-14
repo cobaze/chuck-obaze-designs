@@ -962,7 +962,7 @@ section.portfolio-container{
 
 div#portfolio{
 	height: 136.5em;
-	padding-top: 15em;
+	padding-top: 10%;
 	margin: 0 auto;
 	width: 100%;
 	clear: both;
@@ -1839,6 +1839,8 @@ div.nipost-holder{
 /* START STYLING LAPTOP SIZE SECTION HOME AND HOME-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
+/* =Start Home Section Style */
+
 	div.home-bg {
 	    height: 67.8em;
     }
@@ -1852,8 +1854,19 @@ div.nipost-holder{
 		margin-bottom: 10%;
 	}
 
+	div#home-portfolio{
+		padding-top: 10%;
+	}
+
+/* =End Home Section Style */
+
+	div#expertise{
+		height: 63em;
+		padding-top: 10%;
+	}
+
 	section.phil-container{
-		height: 35em;
+		height: 47em;
 	}
 
 	div#phil{
@@ -1861,7 +1874,16 @@ div.nipost-holder{
 	}
 
 	section.expertise-container {
-	    height: 85em;
+	    height: 80em;
+	}
+
+	div#about{
+		padding-top: 10%;
+	}
+
+	div.grouped{
+		width: 115.5em;
+		height: 38em;
 	}
 
 	div.icon {
@@ -1873,15 +1895,28 @@ div.nipost-holder{
     }
 
     div.ex-icon p{
-	    width: 15em;
+	    width: 19em;
     }
 
-    div.left-group-top{
-	    width: 48em;
+    div.left-group-top,
+    div.right-group-top{
+	    margin-right: 3%;
+	    width: 56em;
+	    height: 17em;
+    }
+
+    div#process, div#phil{
+	    padding-top: 10%;
+    }
+
+    div.left-group-bottom,
+    div.right-group-bottom{
+	    width: 56em;
+	    height: 17em;
     }
 
     section.about-container{
-	    height: 70em;
+	    height: 87em;
     }
 
     div.port-item{
@@ -1890,9 +1925,22 @@ div.nipost-holder{
 		height: 24em;
 	}
 
-	section.portfolio-container, div#portfolio {
-		height: 105.3em;
+	section.portfolio-container{
+		height: 96.7em;
 	}
 
+	div#portfolio{
+		height: 96.7em;
+		padding-top: 5%;
+	}
 
+	section.top-portfolio-container,
+	section.contact-home-container,
+	section.nipost-home-container{
+		height: 40em;
+	}
+
+	div.contact-bg{
+		background-position: -53em -35em;
+	}
 }
