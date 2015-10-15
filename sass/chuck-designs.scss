@@ -213,6 +213,7 @@ li.contact-nav{
 
 div.home-bg{
 	height: 150em;
+	max-height: 100%;
 	width: 100%;
 	position: fixed;
 	background-image: url(../imgs/home-bg.jpg);
@@ -229,7 +230,8 @@ div.home-bg{
 
 section.home-container{
 
-	height: $section-height + 0.2;
+	height: 100em;
+	max-height: 100%;
 	clear: both;
 	width: 100%;
 }
@@ -238,7 +240,8 @@ div#home{
 	width: 100%;
 	padding-top: 10%;
 	box-sizing: border-box;
-	height: 67em;
+	height: 100em;
+	max-height: 100%;
 	margin: 0 auto;
 }
 
