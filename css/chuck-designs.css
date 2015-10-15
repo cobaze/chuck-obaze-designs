@@ -1832,6 +1832,11 @@ div.nipost-holder h3 {
     box-sizing: border-box;
   }
 
+  /* line 1934, ../sass/chuck-designs.scss */
+  section.portfolio-container, div#portfolio {
+    height: 128.5em;
+  }
+
   /*div.port-item{
   	width: 41.57em;
   	height: 31em;
