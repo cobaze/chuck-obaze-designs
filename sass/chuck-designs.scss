@@ -933,13 +933,13 @@ div#top-portfolio{
 
 section.portfolio-container{
 	width:100%;
-	height: 136.5em;
+	height: 131.5em;
 	background-color: #ffffff;
 
 }
 
 div#portfolio{
-	height: 136.5em;
+	height: 131.5em;
 	padding-top: 10%;
 	margin: 0 auto;
 	width: 100%;
@@ -1923,7 +1923,7 @@ div.nipost-holder{
 
 @media screen
   and (max-width: 1696px)
-  and (-webkit-min-device-pixel-ratio: 1) {
+  and (-webkit-min-device-pixel-ratio: 2) {
 
   	div.home-contents{
 		margin-bottom: 30em;
@@ -1935,14 +1935,14 @@ div.nipost-holder{
 		height: 128.5em;
 	}
 
-	/*div.port-item{
-		width: 41.57em;
+	div.port-item{
 		height: 31em;
-	}*/
+	}
 
-
+	section.phil-container{
+		height: 38em;
+	}
 }
-
 
 
 
