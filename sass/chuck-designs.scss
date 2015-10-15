@@ -15,10 +15,6 @@ website:   http://obazedesigns.com
 @import 'colors';
 
 
-/* =Fonts
------------------------------------------------------------------------------*/
-
-
 /* =SASS Variables
 -----------------------------------------------------------------------------*/
 
@@ -57,12 +53,6 @@ $white-font: #ffffff;
 	box-sizing: border-box;
 
 }
-
-/*%buttons{
-	color: $green-color;
-	background-color: #ffffff;
-	border: solid $green-color .125em;
-}*/
 
 %listing-style{
 	background-image: url(../imgs/bullet.png);
@@ -108,6 +98,9 @@ $white-font: #ffffff;
 -----------------------------------------------------------------------------*/
 
 a:link, a:visited, a:hover, a:focus, a:active
+
+/* =Start General Website Style
+-----------------------------------------------------------------------------*/
 
 html{
 	font-size: $body-font-size;
@@ -160,7 +153,7 @@ header.main-header{
 	display: none;
 }
 
-.active-link-style{
+.active-link{
 	border-bottom: solid $green-color 0.3em;
 }
 
@@ -208,8 +201,8 @@ li.contact-nav{
 /* START STYLING INDEX PAGE
 -----------------------------------------------------------------------------*/
 
-/* START STYLING SECTION HOME AND HOME-CONTAINER STYLES
------------------------------------------------------------------------------*/
+/* START STYLING HOME SECTION STYLES
+-------------------------------------------*/
 
 div.home-bg{
 	height: 150em;
@@ -307,11 +300,8 @@ a.dwn-btn{
 		}
 }
 
-/* END SECTION HOME AND HOME-CONTAINER STYLES
------------------------------------------------------------------------------*/
-
-/* START STYLING SECTION PORTFOLIO AND HOME-PORTFOLIO-CONTAINER STYLES
------------------------------------------------------------------------------*/
+/* START STYLING HOME PORTFOLIO SECTION
+-------------------------------------------*/
 
 section.home-portfolio-container{
 	width:100%;
@@ -596,11 +586,8 @@ div.icon{
 	}
 }
 
-/* END STYLING SECTION PROCESS AND PROCESS-CONTAINER STYLES
------------------------------------------------------------------------------*/
-
-/* START STYLING SECTION PHIL AND PHIL-CONTAINER STYLES
------------------------------------------------------------------------------*/
+/* START STYLING PHIL SECTION
+-------------------------------------------*/
 
 section.phil-container{
 	width:100%;
@@ -636,12 +623,9 @@ div#phil{
 
 }
 
-/* END STYLING SECTION PHIL AND PHIL-CONTAINER STYLES
------------------------------------------------------------------------------*/
+/* START STYLING EXPERTISE SECTION
+-------------------------------------------*/
 
-
-/* START STYLING EXPERTISE AND EXPERTISE-CONTAINER STYLES
------------------------------------------------------------------------------*/
 section.expertise-container{
 	width:100%;
 	height: 75em;
@@ -712,11 +696,9 @@ div.ex-icon{
 	}
 }
 
-/* END STYLING EXPERTISE AND EXPERTISE-CONTAINER STYLES
------------------------------------------------------------------------------*/
+/* START STYLING ABOUT SECTION
+-------------------------------------------*/
 
-/* START STYLING END AND ABOUT-CONTAINER STYLES
------------------------------------------------------------------------------*/
 section.about-container{
 	width:100%;
 	background-image: url(../imgs/phil.jpg);
@@ -878,22 +860,18 @@ div.dwn-pdf{
 	}
 }
 
-/* END STYLING END AND about-container STYLES
------------------------------------------------------------------------------*/
-
-
 /* END STYLING INDEX PAGE
 -----------------------------------------------------------------------------*/
 
 
-/*-----------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
 
 
 /* START STYLING PROJECTS PAGE
 -----------------------------------------------------------------------------*/
 
-/* START PROJECTS-HOME AND PROJECT-HOME-CONTAINER SECTION
------------------------------------------------------------------------------*/
+/* START STYLING TOP PORTFOLIO SECTION
+-------------------------------------------*/
 
 div.portfolio-bg{
 	height: 150em;
@@ -950,11 +928,8 @@ div#top-portfolio{
 
 }
 
-/* END PROJECTS-HOME AND PROJECT-HOME-CONTAINER SECTION
------------------------------------------------------------------------------*/
-
-/* START SECTION PROJECTS AND PROJECT-CONTAINER STYLES
------------------------------------------------------------------------------*/
+/* START STYLING PORTFOLIO SECTION
+-------------------------------------------*/
 
 section.portfolio-container{
 	width:100%;
@@ -1003,15 +978,18 @@ div.port-item{
 	}
 }
 
-/* END SECTION PROJECTS AND PROJECT-CONTAINER STYLES
------------------------------------------------------------------------------*/
-
-/* END STYLING PROJECTS
+/* END STYLING PORTFOLIO PAGE
 -----------------------------------------------------------------------------*/
 
 
-/* START SECTION CONTACT AND CONTACT-CONTAINER STYLES
+/*---------------------------------------------------------------------------------------------------*/
+
+
+/* START STYLING CONTACT PAGE
 -----------------------------------------------------------------------------*/
+
+/* START STYLING TOP CONTACT SECTION
+-------------------------------------------*/
 
 div.contact-bg{
 	height: 150em;
@@ -1028,12 +1006,12 @@ div.contact-bg{
 
 }
 
-section.contact-home-container{
+section.top-contact-container{
 	width:100%;
 	height: 50em;
 }
 
-div#contact-home{
+div#top-contact{
 	width: 100%;
 	padding-top: 7%;
 	box-sizing: border-box;
@@ -1055,13 +1033,16 @@ div#contact-home{
 
 }
 
+/* START STYLING CONTACT SECTION
+-------------------------------------------*/
+
 section#contact-container{
 	width:100%;
 	height: 110em;
 	background-color: #ffffff;
 }
 
-div#contact-me{
+div#contact{
 	height: 110em;
 	padding-top: 5%;
 	margin: 0 auto;
@@ -1159,9 +1140,6 @@ button{
 	}
 }
 
-/* END SECTION CONTACT AND CONTACT-CONTAINER STYLES
------------------------------------------------------------------------------*/
-
 /* START FOOTER STYLE
 -----------------------------------------------------------------------------*/
 
@@ -1179,9 +1157,6 @@ footer.main-footer{
 		color: #ffffff;
 	}
 }
-
-/*END FOOTER STYLE
------------------------------------------------------------------------------*/
 
 /* START NIPOST PROJECT PAGE STYLES
 -----------------------------------------------------------------------------*/
@@ -1707,11 +1682,11 @@ div.nipost-holder{
 		background-position: -102em -32em;
 	}
 
-	section.contact-home-container{
+	section.top-contact-container{
 		height: 63em;
 	}
 
-	div#contact-home{
+	div#top-contact{
 		padding-top: 0;
 		height: 63em;
 
@@ -1722,7 +1697,7 @@ div.nipost-holder{
 		}
 	}
 
-	div#contact-me{
+	div#contact{
 		padding: 10% 2% 0 2%;
 
 		h2{
@@ -1936,7 +1911,7 @@ div.nipost-holder{
 	}
 
 	section.top-portfolio-container,
-	section.contact-home-container,
+	section.top-contact-container,
 	section.nipost-home-container{
 		height: 40em;
 	}

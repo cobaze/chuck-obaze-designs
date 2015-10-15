@@ -66,7 +66,6 @@ if(isset($_POST['submitted'])) {
 	      <script src="js/html5shiv.min.js"></script>
 	      <script src="js/respond.min.js"></script>
 	    <![endif]-->
-	    <script src="js/css_browser_selector.js" type="text/javascript"></script>
 		<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Vast+Shadow|Londrina+Outline|Londrina+Shadow|Sonsie+One|Exo+2:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600italic,600,700,700italic,800italic,900,900italic,800' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
@@ -82,23 +81,23 @@ if(isset($_POST['submitted'])) {
 				<nav class="main-nav">
 					<a href="#" id="lines"></a>
 					<ul class="active-nav">
-						<li class="home-nav"><a class="home-link" href="index.html">HOME</a></li>
-						<li class="projects-nav"><a class="project-link" href="portfolio.html">PORTFOLIO</a></li>
-						<li class="contact-nav"><a style="border-bottom: solid #82cec4 0.3em;" class="contact-link" href="contact.php">CONTACT</a></li>
+						<li class="home-nav"><a href="index.html">HOME</a></li>
+						<li class="projects-nav"><a href="portfolio.html">PORTFOLIO</a></li>
+						<li class="contact-nav"><a class="active-link"  href="contact.php">CONTACT</a></li>
 					</ul>
 				</nav>
 
 			</header> <!-- End Main Header -->
 
 			<div class="contact-bg"></div>
-			<section class="contact-home-container"> <!-- Start first container -->
-				<div id="contact-home"> <!-- Start Section Home -->
+			<section class="top-contact-container"> <!-- Start Top Contact Container -->
+				<div id="top-contact">
 					<h1>GET IN TOUCH</h1>
-				</div> <!-- End Section Home -->
-			</section> <!-- End first container -->
+				</div>
+			</section> <!-- End Top Contact Container -->
 
-			<section id="contact-container"> <!-- Start fifth-container -->
-				<div id="contact-me"> <!-- Start contact -->
+			<section id="contact-container"> <!-- Start Contact Container -->
+				<div id="contact">
 					<h2>CONTACT ME<hr style="background-color:#f98348;"></h2>
 					<p>If you need help, have a question, suggestion or want to hire me for a project, please feel free to contact me. Thanks</p>
 
@@ -143,14 +142,14 @@ if(isset($_POST['submitted'])) {
 				</div> <!-- End Contact -->
 				<?php } ?>
 
-			</section> <!-- end fifth-container -->
+			</section> <!-- End Contact Container -->
 
 
-			<footer class="main-footer">
+			<footer class="main-footer"> <!-- Start Main footer -->
 				<p>Copyright &copy; Chuck Obaze, 2015. All Rights Reserved</p>
-			</footer>
+			</footer> <!-- End Main footer -->
 
-		</div> <!-- END main-container -->
+		</div> <!-- End Main Container -->
 
 		<!-- Start jQuery Here -->
 		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>

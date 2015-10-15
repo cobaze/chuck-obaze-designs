@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<meta name="description" content="Graphic and Web Design Portfolio of Chuck Obaze. ">
 		<meta name="keywords" content="Graphic Design, Web Design, Web Development, Logo Design, Brochures, Magazines">
-		<title>Portfolio | Chuck Obaze Designs</title>
+		<title>Portfolio | Obaze Designs</title>
 		<link rel="shortcut icon" href="imgs/chuckobaze-favicon16-6.png"/>
 		<link rel="shortcut icon" href="imgs/chuckobaze-favicon32-2.png"/>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -15,6 +15,9 @@
 	      <script src="js/html5shiv.min.js"></script>
 	      <script src="js/respond.min.js"></script>
 	    <![endif]-->
+	    <!--[if IE]>
+				<link rel="stylesheet" type="text/css" href="css/all-ie-only.css" />
+		<![endif]-->
 		<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Vast+Shadow|Londrina+Outline|Londrina+Shadow|Sonsie+One|Exo+2:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600italic,600,700,700italic,800italic,900,900italic,800' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
@@ -28,23 +31,22 @@
 				<nav class="main-nav">
 					<a href="#" id="lines"></a>
 					<ul class="active-nav">
-						<li class="home-nav"><a class="home-link" href="index.html">HOME</a></li>
-						<li class="projects-nav"><a style="border-bottom: solid #82cec4 0.3em;" class="project-link" href="portfolio.html">PORTFOLIO</a></li>
-						<li class="contact-nav"><a class="contact-link" href="contact.php">CONTACT</a></li>
+						<li class="home-nav"><a href="index.html">HOME</a></li>
+						<li class="projects-nav"><a class="active-link"  href="portfolio.html">PORTFOLIO</a></li>
+						<li class="contact-nav"><a href="contact.php">CONTACT</a></li>
 					</ul>
 				</nav>
 			</header> <!-- End Main Header -->
 
 			<div class="portfolio-bg"></div>
-			<section class="top-portfolio-container"> <!-- Start first container -->
-				<div id="top-portfolio"> <!-- Start Section Home -->
-					<!--<h2>THE CRUX!</h2>-->
+			<section class="top-portfolio-container"> <!-- Start Top Portfolio Container -->
+				<div id="top-portfolio">
 					<h1>PORTFOLIO</h1>
-				</div> <!-- End Section Home -->
-			</section> <!-- End first container -->
+				</div>
+			</section> <!-- Start Top Portfolio Container -->
 
-			<section class="portfolio-container"> <!-- Start second container -->
-				<div id="portfolio"> <!-- Start projects -->
+			<section class="portfolio-container"> <!-- Start Portfolio Container -->
+				<div id="portfolio">
 					<h2>PROJECTS<hr style="background-color:#f98348;"></h2>
 					<p>My projects including past and present work. I try to update as much as i can, enjoy!</p>
 						<div class="port-item"><a href="nipost.html"><img src="imgs/nipost-img-2.jpg" alt="Nipost, Nigerian Postal Service Redesign"></a></div>
@@ -59,13 +61,13 @@
 						<div class="port-item"><a href="flyers.html"><img src="imgs/pss-flyer.jpg" alt="Corperate Flyers"></a></div>
 						<div class="port-item"><a href="nipost.html"><img src="imgs/nipost-img-2.jpg" alt="Nipost, Nigerian Postal Service Redesign"></a></div>
 						<div class="port-item"><a href="nipost.html"><img src="imgs/nipost-img-2.jpg" alt="Nipost, Nigerian Postal Service Redesign"></a></div>
-				</div> <!-- End projects -->
-			</section> <!-- End second container -->
+				</div>
+			</section> <!-- End Portfolio Container -->
 
-			<footer class="main-footer">
+			<footer class="main-footer"> <!-- Start Main footer -->
 				<p>Copyright &copy; Chuck Obaze, 2015. All Rights Reserved</p>
-			</footer>
-		</div> <!-- END main-container -->
+			</footer> <!-- End Main footer -->
+		</div> <!-- End Main Container -->
 
 		<!-- Start jQuery Here -->
 		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
