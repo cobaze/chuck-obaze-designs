@@ -1181,7 +1181,7 @@ section.nipost-home-container{
 	height: 50em;
 }
 
-div#nipost-home{
+/*div#nipost-home{
 	width: 100%;
 	padding-top: 7%;
 	box-sizing: border-box;
@@ -1214,7 +1214,7 @@ div#nipost-home{
 		color: #ffffff;
 	}
 
-}
+}*/
 
 section.nipost-first-container{
 	height: auto;
@@ -1228,9 +1228,7 @@ section.nipost-first-container{
 }
 
 div.nipost-holder{
-	width: 150em;
-	max-width: 100%;
-	border: $border red;
+	width: 75%;
 	clear: both;
 	margin: 0 auto;
 
