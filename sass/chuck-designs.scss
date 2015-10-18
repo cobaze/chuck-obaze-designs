@@ -524,7 +524,7 @@ div.port{
 }
 
 
-/* END STYLING SECTION PORTFOLIO AND home-portfolio-container STYLES
+/* END STYLING SECTION PORTFOLIO AND HOME-PORTFOLIO-CONTAINER STYLES
 -----------------------------------------------------------------------------*/
 
 /* START STYLING SECTION PROCESS AND PROCESS-CONTAINER STYLES
@@ -933,14 +933,14 @@ div#top-portfolio{
 
 section.portfolio-container{
 	width:100%;
-	height: 131.5em;
+	height: 131.1em;
 	background-color: #ffffff;
 
 }
 
 div#portfolio{
-	height: 131.5em;
-	padding-top: 10%;
+	height: 131.1em;
+	padding-top: 5%;
 	margin: 0 auto;
 	width: 100%;
 	clear: both;
@@ -1276,7 +1276,7 @@ div.nipost-collateral-holder{
 
 }
 
-/* START FLYERS PROJECT PAGE STYLES
+/* START FLYERS PROJECT PAGE STYLES */
 
 div.flyers-bg{
 	height: 150em;
@@ -1293,12 +1293,7 @@ div.flyers-bg{
 
 }
 
-section.nipost-home-container{
-	width:100%;
-	height: 50em;
-}
-
-div#nipost-home{
+div#flyer-home{
 	width: 100%;
 	padding-top: 7%;
 	box-sizing: border-box;
@@ -1312,78 +1307,28 @@ div#nipost-home{
 		text-align: center;
 		margin: 0 auto;
 		font-weight: bolder;
-		line-height: 1.5em;
+		line-height: 0.8em;
 		opacity: 0.7;
 		position: fixed;
 		z-index: -2;
 	}
 
-	h2{
-		width: 100%;
-		font-size: 4em;
-		text-align: center;
-		margin: 0 auto;
-		font-weight: 300;
-		line-height: 1.5em;
-		position: fixed;
-		z-index: -1;
-		font-family: 'Kaushan Script', cursive;
-		color: #ffffff;
-	}
-
 }
 
-section.nipost-first-container{
-	height: auto;
-	padding-top: 7%;
-	border: $border red;
-	background: #ffffff;
-	clear: both;
-	box-sizing: border-box;
-	margin: 0 auto;
-	border: $border red;
+div.rebrand-bg{
+	height: 150em;
+	width: 100%;
+	position: fixed;
+	background-image: url(../imgs/rebrand-bg.jpg);
+	background-position: 0em -40em;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: -3;
+	top:0em;
+	left:0;
+	overflow: hidden;
+
 }
-
-div.nipost-holder{
-	width: 150em;
-	max-width: 100%;
-	border: $border red;
-	clear: both;
-	margin: 0 auto;
-
-	h2{
-		@extend %h2-values;
-		margin-bottom: 0.5em;
-	}
-
-	&>img{
-		width: 85em;
-		max-width: 100%;
-		display: block;
-		margin: 0 auto;
-		margin-bottom:10em;
-	}
-
-	&>p{
-		font-size: 1.9em;
-		line-height: 1.4em;
-		color: $font-color;
-		font-weight: 300;
-		width: 100%;
-		max-width: 45em;
-		text-align: center;
-		margin: 0 auto;
-		margin-bottom: 1em;
-	}
-
-	h3{
-		@extend %h2-values;
-		margin-bottom: 1em;
-		font-weight: 100;
-		color: $alt-font-color;
-	}
-}
------------------------------------------------------------------------------*/
 
 /* START MEDIA QUERIES
 -----------------------------------------------------------------------------*/
@@ -1919,9 +1864,9 @@ div.nipost-holder{
 -----------------------------------------------------------------------------*/
 
 @media screen
-  and (min-width: 1200px)
-  and (max-width: 1600px)
-  and (-webkit-min-device-pixel-ratio: 1) {
+  and (min-width: 1024px)
+  and (max-width: 1450px)
+  and (-webkit-min-device-pixel-ratio: 2) {
 
 /* START STYLING LAPTOP SIZE INDEX PAGE
 -----------------------------------------------------------------------------*/
@@ -1941,35 +1886,14 @@ div.nipost-holder{
 
 	div.home-contents{
 		margin-top: 8%;
-		margin-bottom: 10%;
+		margin-bottom: 8%;
 	}
 
 	div#home-portfolio{
-		padding-top: 10%;
+		padding-top: 8%;
 	}
 
 /* =End Home Section Style */
-
-	div#expertise{
-		height: 63em;
-		padding-top: 10%;
-	}
-
-	section.phil-container{
-		height: 47em;
-	}
-
-	div#phil{
-		height: 35em;
-	}
-
-	section.expertise-container {
-	    height: 80em;
-	}
-
-	div#about{
-		padding-top: 10%;
-	}
 
 	div.grouped{
 		width: 115.5em;
@@ -1995,9 +1919,32 @@ div.nipost-holder{
 	    height: 17em;
     }
 
-    div#process, div#phil{
-	    padding-top: 10%;
+   section.process-container{
+	   	height: 55em;
     }
+
+    div#process{
+	    padding-top: 5%;
+	    height: 55em;
+    }
+
+    section.phil-container{
+		height: 35em;
+	}
+
+	div#phil{
+		height: 35em;
+		padding-top: 5%;
+	}
+
+	div#expertise{
+		height: 65em;
+		padding-top: 5%;
+	}
+
+	section.expertise-container {
+	    height: 65em;
+	}
 
     div.left-group-bottom,
     div.right-group-bottom{
@@ -2006,8 +1953,13 @@ div.nipost-holder{
     }
 
     section.about-container{
-	    height: 87em;
+	    height: 75em;
     }
+
+    div#about{
+		padding-top: 5%;
+		height: 75em;
+	}
 
     div.port-item{
 		width: 25%;
@@ -2032,28 +1984,43 @@ div.nipost-holder{
 	div.contact-bg{
 		background-position: -53em -35em;
 	}
+
+	/* NIPOST Page Style */
+
+	section.nipost-home-container, div.nipost-holder{
+		height: 465em;
+	}
 }
 
 @media screen
-  and (max-width: 1696px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (max-width: 1650px)
+  and (min-width: 1460px) {
 
-  	div.home-contents{
-		margin-bottom: 30em;
-		padding-top: 3%;
-		box-sizing: border-box;
+	section.home-container {
+	    height: 78.2em;
 	}
 
-	section.portfolio-container, div#portfolio{
-		height: 128.5em;
-	}
-
-	div.port-item{
-		height: 31em;
+	div.home-contents{
+		margin-top: 6%;
+		margin-bottom: 10%;
 	}
 
 	section.phil-container{
-		height: 38em;
+		height: 37em;
+	}
+
+	div.port-item{
+		height: 30em;
+
+	}
+
+	section.portfolio-container{
+		height:116.5em;
+	}
+
+	div#portfolio{
+		height:116.5em;
+		padding-top: 5%;
 	}
 }
 
