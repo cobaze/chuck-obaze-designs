@@ -66,6 +66,19 @@ $white-font: #ffffff;
 
 }
 
+%parrallex-bg{
+	height: 150em;
+	width: 100%;
+	position: fixed;
+	background-position: 0em -40em;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: -3;
+	top:0em;
+	left:0;
+	overflow: hidden;
+}
+
 @mixin transform($radius){
 	transform: $radius;
 	-moz-transform: $radius;
@@ -874,18 +887,8 @@ div.dwn-pdf{
 -------------------------------------------*/
 
 div.portfolio-bg{
-	height: 150em;
-	width: 100%;
-	position: fixed;
+	@extend %parrallex-bg;
 	background-image: url(../imgs/portfolio-img.jpg);
-	background-position: center top;
-	background-size: cover;
-	background-repeat: no-repeat;
-	z-index: -3;
-	top:0em;
-	left:0;
-	overflow: hidden;
-
 }
 
 section.top-portfolio-container{
@@ -992,18 +995,8 @@ div.port-item{
 -------------------------------------------*/
 
 div.contact-bg{
-	height: 150em;
-	width: 100%;
-	position: fixed;
+	@extend %parrallex-bg;
 	background-image: url(../imgs/contact-bg-img-2.jpg);
-	background-position: -15em -35em;
-	background-size: cover;
-	background-repeat: no-repeat;
-	z-index: -3;
-	top:0em;
-	left:0;
-	overflow: hidden;
-
 }
 
 section.top-contact-container{
@@ -1162,17 +1155,9 @@ footer.main-footer{
 -----------------------------------------------------------------------------*/
 
 div.nipost-bg{
-	height: 150em;
-	width: 100%;
-	position: fixed;
 	background-image: url(../imgs/nipost-bg-img.jpg);
-	background-position: 0em -40em;
-	background-size: cover;
-	background-repeat: no-repeat;
-	z-index: -3;
-	top:0em;
-	left:0;
-	overflow: hidden;
+	@extend %parrallex-bg;
+
 
 }
 
@@ -1298,7 +1283,6 @@ div.aglow-bg{
 	height: 150em;
 	width: 100%;
 	position: fixed;
-	background-image: url(../imgs/flyer-bg.jpg);
 	background-position: 0em -40em;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1306,9 +1290,7 @@ div.aglow-bg{
 	top:0em;
 	left:0;
 	overflow: hidden;
-
 }
-
 
 
 
