@@ -1278,11 +1278,12 @@ div.nipost-collateral-holder{
 
 /* START FLYERS PROJECT PAGE STYLES */
 
-div.flyers-bg{
+
+div.flyer-bg{
 	height: 150em;
 	width: 100%;
 	position: fixed;
-	background-image: url(../imgs/rebrand-bg-img.jpg);
+	background-image: url(../imgs/flyer-bg.jpg);
 	background-position: 0em -40em;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1293,27 +1294,8 @@ div.flyers-bg{
 
 }
 
-div#flyer-home{
-	width: 100%;
-	padding-top: 7%;
-	box-sizing: border-box;
-	height: 96em;
-	margin: 0 auto;
 
-	h1{
-		width: 100%;
-		color: #ffffff;
-		font-size: 15em;
-		text-align: center;
-		margin: 0 auto;
-		font-weight: bolder;
-		line-height: 0.8em;
-		opacity: 0.7;
-		position: fixed;
-		z-index: -2;
-	}
 
-}
 
 /* START MEDIA QUERIES
 -----------------------------------------------------------------------------*/
@@ -1972,7 +1954,7 @@ div#flyer-home{
 
 	/* NIPOST Page Style */
 
-	section.nipost-home-container, div.nipost-holder{
+	section.nipost-first-container, div.nipost-holder{
 		height: 465em;
 	}
 }
