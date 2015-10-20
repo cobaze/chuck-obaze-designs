@@ -79,6 +79,14 @@ $white-font: #ffffff;
 	overflow: hidden;
 }
 
+%port-container{
+	padding-top: 5%;
+    background: #ffffff;
+    clear: both;
+    margin: 0 auto;
+    width: 100%;
+}
+
 @mixin transform($radius){
 	transform: $radius;
 	-moz-transform: $radius;
@@ -889,6 +897,7 @@ div.dwn-pdf{
 div.portfolio-bg{
 	@extend %parrallex-bg;
 	background-image: url(../imgs/portfolio-img.jpg);
+	background-position: 0em 0em;
 }
 
 section.top-portfolio-container{
@@ -1157,6 +1166,7 @@ footer.main-footer{
 div.nipost-bg{
 	background-image: url(../imgs/nipost-bg-img.jpg);
 	@extend %parrallex-bg;
+	background-position: -90em -60em;
 
 
 }
@@ -1203,11 +1213,7 @@ div#nipost-home{
 
 section.nipost-first-container{
 	height: auto;
-	padding-top: 5%;
-	background: #ffffff;
-	clear: both;
-	margin: 0 auto;
-	width: 100%;
+	@extend %port-container;
 }
 
 div.nipost-holder{
@@ -1265,34 +1271,95 @@ div.nipost-collateral-holder{
 
 
 div.flyer-bg{
-	height: 150em;
-	width: 100%;
-	position: fixed;
 	background-image: url(../imgs/flyer-bg.jpg);
-	background-position: 0em -40em;
-	background-size: cover;
-	background-repeat: no-repeat;
-	z-index: -3;
-	top:0em;
-	left:0;
-	overflow: hidden;
+	@extend %parrallex-bg;
+	background-position: 0em -50em;
+}
 
+section.flyer-first-container{
+	height: 315em;
+	@extend %port-container;
+}
+
+div#flyer-home{
+
+	width: 100%;
+	padding-top: 7%;
+	box-sizing: border-box;
+	height: 96em;
+	margin: 0 auto;
+
+	h1{
+	    width: 100%;
+	    color: #ffffff;
+	    font-size: 15em;
+	    text-align: center;
+	    margin: 0 auto;
+	    font-weight: bolder;
+	    line-height: 0.8em;
+	    opacity: 0.7;
+	    position: fixed;
+	    z-index: -2;
+    }
 }
 
 div.aglow-bg{
-	height: 150em;
-	width: 100%;
-	position: fixed;
-	background-position: 0em -40em;
-	background-size: cover;
-	background-repeat: no-repeat;
-	z-index: -3;
-	top:0em;
-	left:0;
-	overflow: hidden;
+	background-image: url(../imgs/aglow-bg.jpg);
+	@extend %parrallex-bg;
+}
+
+section.aglow-first-container{
+	height: 275em;
+	@extend %port-container;
+}
+
+div.bugout-bg{
+	background-image: url(../imgs/bugout-bg.jpg);
+	@extend %parrallex-bg;
+	background-position: -20em -60em;
+}
+
+section.bugout-first-container{
+	height: 75em;
+	@extend %port-container;
 }
 
 
+div.connect-bg{
+	background-image: url(../imgs/connect-bg.jpg);
+	@extend %parrallex-bg;
+}
+
+section.connect-first-container{
+	height: 495em;
+	@extend %port-container;
+}
+
+.first-sketches{
+	margin-bottom: 5%;
+	border: solid gray 2px;
+}
+
+div.wedding-bg{
+	background-image: url(../imgs/wedding-bg.jpg);
+	@extend %parrallex-bg;
+}
+
+section.wedding-first-container{
+	height: 345em;
+	@extend %port-container;
+}
+
+div.branding-bg{
+	background-image: url(../imgs/branding-bg.jpg);
+	@extend %parrallex-bg;
+	background-position: -15em -5em;
+}
+
+section.branding-first-container{
+	height: 138em;
+	@extend %port-container;
+}
 
 /* START MEDIA QUERIES
 -----------------------------------------------------------------------------*/

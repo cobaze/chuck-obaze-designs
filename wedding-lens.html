@@ -36,22 +36,25 @@
 				</nav>
 			</header> <!-- End Main Header -->
 
-			<section class="nipost-first-container"> <!-- Start first container -->
-				<h2>WEDDING LENS</h2>
-				<p>Wedding Lens is a wedding magazine that helps reveal tips and tricks needed to be a successful wedding photographer. </p>
-				<img src="imgs/wedding-lens-img.jpg" alt="Wedding Lens Magazine">
-				<h3>ePUB VERSION</h3>
-				<div class="first-sketches">
-					<img src="imgs/wedding-lens-img-2.jpg" alt="Wedding Lens Magazine">
+			<div class="wedding-bg"></div>
+			<section class="nipost-home-container"> <!-- Start first container -->
+				<div id="nipost-home">
+					<h1>WEDDING LENS</h1>
 				</div>
+			</section> <!-- End first container -->
 
-				<h3>Spreads</h3>
-				<div class="sketches">
+			<section class="wedding-first-container"> <!-- Start first container -->
+				<div class="nipost-holder">
+					<h2>MAGAZINE DESIGN<hr style="background-color:#f98348;"></h2>
+					<p>Wedding Lens is a wedding magazine that helps reveal tips and tricks needed to be a successful wedding photographer. </p>
+					<img src="imgs/wedding-lens-img.jpg" alt="Wedding Lens Magazine">
+					<h3>ePUB VERSION</h3>
+					<img src="imgs/wedding-lens-img-2.jpg" alt="Wedding Lens Magazine">
+					<h3>SPREADS</h3>
 					<img src="imgs/wedding-lens-img-5.jpg" alt="Nipost Iphone Sketches" />
 					<img src="imgs/wedding-lens-img-7.jpg" alt="Nipost Iphone Sketches" />
-					<img style="margin-bottom:10em;" src="imgs/wedding-lens-img-6.jpg" alt="Nipost Iphone Sketches" />
+					<img src="imgs/wedding-lens-img-6.jpg" alt="Nipost Iphone Sketches" />
 				</div>
-
 			</section> <!-- End first container -->
 
 			<footer class="main-footer"> <!-- Start Main footer -->
@@ -67,12 +70,28 @@
 		<script>
 			$(document).ready(function(){
 
-				//$('.main-header').hide();
+				 $(this).scrollTop(0);
 
-				$(document.body).hide().fadeIn(2000);
+				$(document.body).hide().fadeIn(1000);
 
-				$('.main-header').css({ 'background-color': 'rgba(0, 0, 0, 0.8)'});
+				$(window).scroll(function(){
 
+					if ($(window).scrollTop() > 1) {
+						$('.main-header').css({ 'background-color': 'rgba(0, 0, 0, 0.6)'});
+					} else {
+						$('.main-header').css("background-color", "transparent");
+					}
+
+				});
+
+				$(window).scroll(function(e){
+				  parallax();
+				});
+
+				function parallax(){
+				  var scrolled = $(window).scrollTop();
+				  $('.wedding-bg').css('top',-(scrolled*0.1)+'px');
+				}
 			});
 		</script>
 	</body>

@@ -36,35 +36,34 @@
 				</nav>
 			</header> <!-- End Main Header -->
 
-			<section class="nipost-first-container"> <!-- Start first container -->
-				<h2>CONNECT GEORGIA</h2>
-				<p>Project pushes for legislation to create a more effective public transportation in georgia</p>
-				<img style="margin-bottom:10em;" src="imgs/connect-ga-website-2.jpg" alt="Connect Georgia Website">
-
-				<h3>KINETIC TYPOGRAPHY VIDEO</h3>
-				<div class="first-sketches">
-					<iframe width="560" height="593" src="https://www.youtube-nocookie.com/embed/uGrOrXavV3c?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+			<div class="connect-bg"></div>
+			<section class="nipost-home-container"> <!-- Start first container -->
+				<div id="nipost-home">
+					<h1>CONNECT GA</h1>
 				</div>
-
-				<h3>WEB DESIGN</h3>
-				<div class="first-sketches">
-					<img style="margin-bottom:10em;" src="imgs/connect-ga-website.jpg" alt="Connect Georgia Website">
-					<p>RESPONSIVE DESIGN</p>
-					<img style="margin-bottom:10em;" src="imgs/connect-ga-website-responsive.jpg" alt="Connect Georgia Website" />
-				</div>
-
-				<h3>STATIONARY</h3>
-				<div class="sketches">
-					<img style="margin-bottom:10em;" src="imgs/connect-ga-stationary.jpg" alt="Connect Georgia Stationary" />
-				</div>
-
-				<h3>ADS</h3>
-				<div class="second-sketches">
-					<img src="imgs/connect-ga-ad-1.jpg" alt="Connect GA Ads" />
-					<img style="margin-bottom:10em;" src="imgs/connect-ga-ad-2.jpg" alt="Connect GA Ads" />
-				</div>
-
 			</section> <!-- End first container -->
+
+			<section class="connect-first-container"> <!-- Start first container -->
+				<div class="nipost-holder">
+					<h2>BRANDING/CAMPAIGN DESIGN<hr style="background-color:#f98348;"></h2>
+					<p>Project pushes for legislation to create a more effective public transportation in the state of Georgia</p>
+					<img src="imgs/connect-ga-website-2.jpg" alt="Connect Georgia Website">
+					<h3 style="margin-bottom: 0.5em;">KINETIC TYPOGRAPHY VIDEO</h3>
+					<p>Created this type animation that can serve as an Ad, using Adobe After Effects.<br>(Please watch video in HD).</p>
+					<div class="first-sketches">
+						<iframe width="955" height="593" src="https://www.youtube-nocookie.com/embed/uGrOrXavV3c?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<h3>WEB DESIGN</h3>
+					<img src="imgs/connect-ga-website.jpg" alt="Connect Georgia Website">
+					<h4>RESPONSIVE DESIGN</h4>
+					<img src="imgs/connect-ga-website-responsive.jpg" alt="Connect Georgia Website" />
+					<h3>STATIONARY</h3>
+					<img src="imgs/connect-ga-stationary.jpg" alt="Connect Georgia Stationary" />
+					<h3>ADS</h3>
+					<img src="imgs/connect-ga-ad-1.jpg" alt="Connect GA Ads" />
+					<img src="imgs/connect-ga-ad-2.jpg" alt="Connect GA Ads" />
+				</div>
+			</section>
 
 			<footer class="main-footer"> <!-- Start Main footer -->
 				<p>Copyright &copy; Chuck Obaze, 2015. All Rights Reserved</p>
@@ -99,7 +98,7 @@
 
 				function parallax(){
 				  var scrolled = $(window).scrollTop();
-				  $('.project-bg').css('top',-(scrolled*0.1)+'px');
+				  $('.connect-bg').css('top',-(scrolled*0.1)+'px');
 				}
 			});
 		</script>
