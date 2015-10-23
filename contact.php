@@ -98,7 +98,7 @@ if(isset($_POST['submitted'])) {
 
 			<section id="contact-container"> <!-- Start Contact Container -->
 				<div id="contact">
-					<h2>CONTACT ME<<hr></h2>
+					<h2>CONTACT ME<hr></h2>
 					<p>If you need help, have a question, suggestion or want to hire me for a project, please feel free to contact me. Thanks</p>
 
 					<?php if(isset($emailSent) && $emailSent == true) { ?>

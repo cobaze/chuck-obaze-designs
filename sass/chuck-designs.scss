@@ -23,47 +23,12 @@ $body-font-size: 10px;
 $section-height: 96em;
 $white-font: #ffffff;
 
-%section-values {
-	margin: 0 auto;
-	max-width: 135em;
-	width: 100%;
-	height: $section-height;
-	clear: both;
-	padding-top: 7%;
-	box-sizing: border-box;
-}
-
 %h2-values{
 	text-align: center;
 	margin-bottom:2%;
 	color: $alt-font-color;
 	font-size: 4.5em;
 	font-weight: 300;
-}
-
-%social-values{
-	width: 4em;
-	height: 4em;
-	max-height: 100%;
-	max-width: 100%;
-	display: block;
-	background-size: 6em;
-	background-repeat: no-repeat;
-	float: left;
-	box-sizing: border-box;
-
-}
-
-%listing-style{
-	background-image: url(../imgs/bullet.png);
-	background-repeat: no-repeat;
-	list-style: none;
-	background-position: center left;
-	background-size: 0.9em;
-	font-size: 1.7em;
-	line-height: 1.5em;
-	padding-left: 1.5em;
-
 }
 
 %parrallex-bg{
@@ -85,27 +50,6 @@ $white-font: #ffffff;
     clear: both;
     margin: 0 auto;
     width: 100%;
-}
-
-@mixin transform($radius){
-	transform: $radius;
-	-moz-transform: $radius;
-	-ms-transform: $radius;
-	-webkit-transform:$radius;
-}
-
-@mixin transition($radius){
-		transition-delay:$radius;
-		-webkit-transition-delay: $radius;
-		-moz-transition-delay: $radius;
-		-ms-transition-delay: $radius;
-}
-
-@mixin transition-timing($radius){
-	transition-timing-function: $radius;
-	-webkit-transition-timing-function: $radius;
-	-moz-transition-timing-function: $radius;
-	-ms-transition-timing-function: $radius;
 }
 
 @mixin box-shadow ($radius){
@@ -134,7 +78,6 @@ html{
 
 body{
 	font-size: $body-font-size;
-	/*font-family: $helvetica;*/
 	font-family: 'Exo 2', sans-serif;
 	width: 100%;
 	margin: 0 auto;
@@ -2057,12 +2000,3 @@ section.branding-first-container{
 		padding-top: 5%;
 	}
 }
-
-
-
-
-
-
-
-
-
