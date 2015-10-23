@@ -143,7 +143,7 @@ body{
 
 hr{
 	height: 3px;
-	background-color: #ffffff;
+	background-color: #f98348;
 	margin: 0 auto;
 	width: 2em;;
 	border: 0;
@@ -1006,6 +1006,7 @@ div.port-item{
 div.contact-bg{
 	@extend %parrallex-bg;
 	background-image: url(../imgs/contact-bg-img-2.jpg);
+	background-position: -30em -35em;
 }
 
 section.top-contact-container{
@@ -2026,16 +2027,16 @@ section.branding-first-container{
 }
 
 @media screen
-  and (max-width: 1650px)
+  and (max-width: 1680px)
   and (min-width: 1460px) {
 
 	section.home-container {
-	    height: 78.2em;
+	    height: 95em;
 	}
 
 	div.home-contents{
 		margin-top: 6%;
-		margin-bottom: 10%;
+		margin-bottom: 15%;
 	}
 
 	section.phil-container{
@@ -2056,9 +2057,6 @@ section.branding-first-container{
 		padding-top: 5%;
 	}
 }
-
-
-
 
 
 
