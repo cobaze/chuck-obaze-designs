@@ -359,7 +359,7 @@ div.right-top{
 			color: #ffffff;
 			font-weight: bold;
 			text-decoration: none;
-			z-index: 2;
+			z-index: 1;
 			top: 16em;
 			background-color: $green-color;
 		}
@@ -391,7 +391,7 @@ div.left-bottom-one{
 			color: #ffffff;
 			font-weight: bold;
 			text-decoration: none;
-			z-index: 3;
+			z-index: 1;
 			top: 13.8em;
 			background-color: $green-color;
 		}
@@ -423,7 +423,7 @@ div.left-bottom-two{
 			color: #ffffff;
 			font-weight: bold;
 			text-decoration: none;
-			z-index: 3;
+			z-index: 1;
 			top: 13.8em;
 			background-color: $green-color;
 		}
@@ -454,7 +454,7 @@ div.right-bottom{
 			color: #ffffff;
 			font-weight: bold;
 			text-decoration: none;
-			z-index: 4;
+			z-index: 1;
 			top: 22.9em;
 			background-color: $green-color;
 		}
@@ -1432,8 +1432,6 @@ section.branding-first-container{
 	}
 
 	a.dwn-btn{
-		max-width: 4.5em;
-		height: 4.5em;
 		display: none;
 	}
 
@@ -1675,29 +1673,36 @@ section.branding-first-container{
 
 /* =Start Portfolio Page Style */
 
+	div.portfolio-bg{
+		background-image: url(../imgs/portfolio-img.jpg);
+		background-position: -50em 0em;
+		height: 30em;
+		background-size: 400%;
+	}
+
 	section.top-portfolio-container{
-		height: 63em;
+		height: 30em;
 	}
 
 	div#top-portfolio{
 		padding-top: 0;
-		height: 63em;
+		height: 30em;
 
 		h1{
 			font-size: 7em;
 			line-height: 1.5em;
-			top: 3.5em;
+			top: 1.5em;
 		}
 	}
 
 	section.portfolio-container{
-		height: 383.5em;
+		height: 358.5em;
 	}
 
 	div#portfolio{
 		padding-top: 10%;
 		box-sizing: border-box;
-		height: 383.5em;
+		height: 358.5em;
 
 		p{
 			margin-bottom: 10%;
@@ -1706,7 +1711,9 @@ section.branding-first-container{
 	}
 
 	div.port-item{
-		height: 30em;
+		height: 28em;
+		width: 48em;
+		max-width: 100%;
 	}
 
 /* =End Portfolio Page Style */
@@ -1714,21 +1721,23 @@ section.branding-first-container{
 /* =Start Contact Section Style */
 
 	div.contact-bg{
-		background-position: -102em -32em;
+		background-position: -15em 0em;
+		background-size: 175%;
+		height: 30em;
 	}
 
 	section.top-contact-container{
-		height: 63em;
+		height: 30em;
 	}
 
 	div#top-contact{
 		padding-top: 0;
-		height: 63em;
+		height: 30em;
 
 		h1{
-			font-size: 11em;
+			font-size: 7em;
 			line-height: 0.8em;
-			top: 2.1em;
+			top: 1.9em;
 		}
 	}
 
@@ -1747,8 +1756,241 @@ section.branding-first-container{
 @media only screen
   and (min-device-width: 375px)
   and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2)
+  and (-webkit-min-device-pixel-ratio: 1)
   and (orientation: landscape) {
+
+  nav.main-nav{
+		position:relative;
+		top: 0;
+		padding: 2%;
+	}
+
+	nav.active-nav{
+		display: none;
+	}
+
+	#lines {
+	    border-bottom: 1.7em double $green-color;
+	    border-top: 0.6em solid $green-color;
+	    content:"";
+	    height: 0.5em;
+	    width:3em;
+	    display: inline-block;
+	    float: right;
+	    margin-top: 3%;
+	    margin-right: 2%;
+
+
+	    &:hover/*, &:focus, &:active*/{
+					border-bottom: 1.7em double $orange-color;
+					border-top: 0.6em solid $orange-color;
+				}
+
+	}
+
+	nav.main-nav ul, nav.main-nav:active ul{
+		display: none;
+		clear: both;
+		height: 12em;
+		position: absolute;
+		padding: 20px;
+		background: $green-color;
+		border: 1px solid red;
+		right: 0px;
+		top: 60px;
+		width: 63em;
+
+	}
+
+	/*nav:active ul {
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: transparent;
+		border: 1px solid red;
+		right: 0px;
+		top: 60px;
+		width: 100%;
+
+
+	}*/
+
+	nav li {
+
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+		list-style: none;
+		float: left;
+		margin-right:0;
+		display: inline;
+
+	}
+
+	nav:hover ul {
+
+		display: block;
+
+	}
+
+	a.dwn-btn{
+		display: none;
+	}
+
+	/* =Start Home Section Style */
+
+	div.home-bg {
+	    height: 40em;
+    }
+
+	section.home-container {
+	    height: 40em;
+	}
+
+	div#home{
+		padding-top: 0;
+		height: 40em;
+		clear: both;
+	}
+
+	div.home-contents{
+		margin-top: 0;
+		height: 40em;
+		margin-bottom: 0;
+
+		h1{
+			line-height: 0.8em;
+			font-size: 11em;
+			top: 1.2em;
+		}
+
+		h2{
+			line-height: 8em;
+			font-size: 3em;
+		}
+	}
+
+	a.dwn-btn{
+		display: none;
+	}
+
+/* =End Home Section Style */
+
+/* =Start Home Portfolio Section Style */
+
+	section.home-portfolio-container{
+		height: 138em;
+	}
+
+	div#home-portfolio{
+		padding: 10% 2% 0 2%;
+		height: 138em;
+
+		h2{
+			margin-bottom: 10%;
+		}
+
+	}
+
+	div.left-holder{
+		height: 73em;
+		width: 100%;
+	}
+
+	div.left-top{
+		height: 46.4em;
+
+		a{
+			p{
+				top: 26.9em;
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+
+	div.left-bottom-one{
+		height: 26.7em;
+
+		a{
+			img{
+				width: 112%;
+				bottom: 3.5em;
+			}
+
+			p{
+				top: 14.5em;
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+
+	div.left-bottom-two{
+		height: 26.7em;
+
+		a{
+			img{
+				width: 112%;
+				bottom: 4.5em;
+				right: 1em;
+			}
+
+			p{
+				top: 14.5em;
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+
+	div.right-holder{
+		height: 53.5em;
+		width: 100%;
+	}
+
+	div.right-top{
+		height: 27.5em;
+
+		a{
+			img{
+				bottom: 21em;
+				width: 102%;
+			}
+
+			p{
+				top: 15em;
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+
+	div.right-bottom{
+		height: 95em;
+
+		a{
+			img{
+				bottom: 8.5em;
+				width: 128%;
+				right: 7em;
+			}
+
+			p{
+				top: 29.1em;
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+
+	div.port{
+		position: relative;
+		bottom: 11em;
+	}
+
+/* =End Home Portfolio Section Style */
 
 
 }
@@ -1843,7 +2085,7 @@ section.branding-first-container{
 @media screen
   and (min-width: 1024px)
   and (max-width: 1450px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (-webkit-min-device-pixel-ratio: 1) {
 
 /* START STYLING LAPTOP SIZE INDEX PAGE
 -----------------------------------------------------------------------------*/
@@ -2000,136 +2242,4 @@ section.branding-first-container{
 		padding-top: 5%;
 	}
 }
-
-@media screen
-	and (max-width: 1280px)
-	and (-webkit-min-device-pixel-ratio: 1){
-
-/* =Start Home Section Style */
-
-	div.home-bg {
-	    height: 67.8em;
-    }
-
-	section.home-container {
-	    height: 67.8em;
-	}
-
-	div.home-contents{
-		margin-top: 8%;
-		margin-bottom: 8%;
-	}
-
-	div#home-portfolio{
-		padding-top: 8%;
-	}
-
-/* =End Home Section Style */
-
-	div.grouped{
-		width: 115.5em;
-		height: 38em;
-	}
-
-	div.icon {
-	    margin: 2.22%;
-    }
-
-    div.ex-icon {
-	    height: 20em;
-    }
-
-    div.ex-icon p{
-	    width: 19em;
-    }
-
-    div.left-group-top,
-    div.right-group-top{
-	    margin-right: 3%;
-	    width: 56em;
-	    height: 17em;
-    }
-
-   section.process-container{
-	   	height: 55em;
-    }
-
-    div#process{
-	    padding-top: 5%;
-	    height: 55em;
-    }
-
-    section.phil-container{
-		height: 35em;
-	}
-
-	div#phil{
-		height: 35em;
-		padding-top: 5%;
-	}
-
-	div#expertise{
-		height: 65em;
-		padding-top: 5%;
-	}
-
-	section.expertise-container {
-	    height: 65em;
-	}
-
-    div.left-group-bottom,
-    div.right-group-bottom{
-	    width: 56em;
-	    height: 17em;
-    }
-
-    section.about-container{
-	    height: 75em;
-    }
-
-    div#about{
-		padding-top: 5%;
-		height: 75em;
-	}
-
-    div.port-item{
-		width: 25%;
-		height: 24em;
-	}
-
-	section.portfolio-container{
-		height: 96.7em;
-	}
-
-	div#portfolio{
-		height: 96.7em;
-		padding-top: 5%;
-	}
-
-	section.top-portfolio-container,
-	section.top-contact-container,
-	section.nipost-home-container{
-		height: 40em;
-	}
-
-	div.contact-bg{
-		background-position: -53em -35em;
-	}
-
-	/* NIPOST Page Style */
-
-	section.nipost-first-container, div.nipost-holder{
-		height: 465em;
-	}
-
-
- }
-
-
-
-
-
-
-
-
 
