@@ -2000,3 +2000,136 @@ section.branding-first-container{
 		padding-top: 5%;
 	}
 }
+
+@media screen
+	and (max-width: 1280px)
+	and (-webkit-min-device-pixel-ratio: 1){
+
+/* =Start Home Section Style */
+
+	div.home-bg {
+	    height: 67.8em;
+    }
+
+	section.home-container {
+	    height: 67.8em;
+	}
+
+	div.home-contents{
+		margin-top: 8%;
+		margin-bottom: 8%;
+	}
+
+	div#home-portfolio{
+		padding-top: 8%;
+	}
+
+/* =End Home Section Style */
+
+	div.grouped{
+		width: 115.5em;
+		height: 38em;
+	}
+
+	div.icon {
+	    margin: 2.22%;
+    }
+
+    div.ex-icon {
+	    height: 20em;
+    }
+
+    div.ex-icon p{
+	    width: 19em;
+    }
+
+    div.left-group-top,
+    div.right-group-top{
+	    margin-right: 3%;
+	    width: 56em;
+	    height: 17em;
+    }
+
+   section.process-container{
+	   	height: 55em;
+    }
+
+    div#process{
+	    padding-top: 5%;
+	    height: 55em;
+    }
+
+    section.phil-container{
+		height: 35em;
+	}
+
+	div#phil{
+		height: 35em;
+		padding-top: 5%;
+	}
+
+	div#expertise{
+		height: 65em;
+		padding-top: 5%;
+	}
+
+	section.expertise-container {
+	    height: 65em;
+	}
+
+    div.left-group-bottom,
+    div.right-group-bottom{
+	    width: 56em;
+	    height: 17em;
+    }
+
+    section.about-container{
+	    height: 75em;
+    }
+
+    div#about{
+		padding-top: 5%;
+		height: 75em;
+	}
+
+    div.port-item{
+		width: 25%;
+		height: 24em;
+	}
+
+	section.portfolio-container{
+		height: 96.7em;
+	}
+
+	div#portfolio{
+		height: 96.7em;
+		padding-top: 5%;
+	}
+
+	section.top-portfolio-container,
+	section.top-contact-container,
+	section.nipost-home-container{
+		height: 40em;
+	}
+
+	div.contact-bg{
+		background-position: -53em -35em;
+	}
+
+	/* NIPOST Page Style */
+
+	section.nipost-first-container, div.nipost-holder{
+		height: 465em;
+	}
+
+
+ }
+
+
+
+
+
+
+
+
+

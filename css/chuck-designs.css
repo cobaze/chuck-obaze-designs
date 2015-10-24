@@ -1961,3 +1961,142 @@ section.branding-first-container {
     padding-top: 5%;
   }
 }
+@media screen and (max-width: 1280px) and (-webkit-min-device-pixel-ratio: 1) {
+  /* =Start Home Section Style */
+  /* line 2010, ../sass/chuck-designs.scss */
+  div.home-bg {
+    height: 67.8em;
+  }
+
+  /* line 2014, ../sass/chuck-designs.scss */
+  section.home-container {
+    height: 67.8em;
+  }
+
+  /* line 2018, ../sass/chuck-designs.scss */
+  div.home-contents {
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+
+  /* line 2023, ../sass/chuck-designs.scss */
+  div#home-portfolio {
+    padding-top: 8%;
+  }
+
+  /* =End Home Section Style */
+  /* line 2029, ../sass/chuck-designs.scss */
+  div.grouped {
+    width: 115.5em;
+    height: 38em;
+  }
+
+  /* line 2034, ../sass/chuck-designs.scss */
+  div.icon {
+    margin: 2.22%;
+  }
+
+  /* line 2038, ../sass/chuck-designs.scss */
+  div.ex-icon {
+    height: 20em;
+  }
+
+  /* line 2042, ../sass/chuck-designs.scss */
+  div.ex-icon p {
+    width: 19em;
+  }
+
+  /* line 2047, ../sass/chuck-designs.scss */
+  div.left-group-top,
+  div.right-group-top {
+    margin-right: 3%;
+    width: 56em;
+    height: 17em;
+  }
+
+  /* line 2053, ../sass/chuck-designs.scss */
+  section.process-container {
+    height: 55em;
+  }
+
+  /* line 2057, ../sass/chuck-designs.scss */
+  div#process {
+    padding-top: 5%;
+    height: 55em;
+  }
+
+  /* line 2062, ../sass/chuck-designs.scss */
+  section.phil-container {
+    height: 35em;
+  }
+
+  /* line 2066, ../sass/chuck-designs.scss */
+  div#phil {
+    height: 35em;
+    padding-top: 5%;
+  }
+
+  /* line 2071, ../sass/chuck-designs.scss */
+  div#expertise {
+    height: 65em;
+    padding-top: 5%;
+  }
+
+  /* line 2076, ../sass/chuck-designs.scss */
+  section.expertise-container {
+    height: 65em;
+  }
+
+  /* line 2081, ../sass/chuck-designs.scss */
+  div.left-group-bottom,
+  div.right-group-bottom {
+    width: 56em;
+    height: 17em;
+  }
+
+  /* line 2086, ../sass/chuck-designs.scss */
+  section.about-container {
+    height: 75em;
+  }
+
+  /* line 2090, ../sass/chuck-designs.scss */
+  div#about {
+    padding-top: 5%;
+    height: 75em;
+  }
+
+  /* line 2095, ../sass/chuck-designs.scss */
+  div.port-item {
+    width: 25%;
+    height: 24em;
+  }
+
+  /* line 2100, ../sass/chuck-designs.scss */
+  section.portfolio-container {
+    height: 96.7em;
+  }
+
+  /* line 2104, ../sass/chuck-designs.scss */
+  div#portfolio {
+    height: 96.7em;
+    padding-top: 5%;
+  }
+
+  /* line 2111, ../sass/chuck-designs.scss */
+  section.top-portfolio-container,
+  section.top-contact-container,
+  section.nipost-home-container {
+    height: 40em;
+  }
+
+  /* line 2115, ../sass/chuck-designs.scss */
+  div.contact-bg {
+    background-position: -53em -35em;
+  }
+
+  /* NIPOST Page Style */
+  /* line 2121, ../sass/chuck-designs.scss */
+  section.nipost-first-container, div.nipost-holder {
+    height: 465em;
+  }
+}
