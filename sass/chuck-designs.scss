@@ -1130,7 +1130,7 @@ div#nipost-home{
 	h1{
 		width: 100%;
 		color: #ffffff;
-		font-size: 15em;
+		font-size: 13em;
 		text-align: center;
 		margin: 0 auto;
 		font-weight: bolder;
@@ -1217,9 +1217,9 @@ div.nipost-collateral-holder{
 
 
 div.flyer-bg{
-	background-image: url(../imgs/flyer-bg.jpg);
+	background-image: url(../imgs/flyer-bg-2.jpg);
 	@extend %parrallex-bg;
-	background-position: 0em -50em;
+	background-position: -20em -60em;
 }
 
 section.flyer-first-container{
@@ -1238,7 +1238,7 @@ div#flyer-home{
 	h1{
 	    width: 100%;
 	    color: #ffffff;
-	    font-size: 15em;
+	    font-size: 13em;
 	    text-align: center;
 	    margin: 0 auto;
 	    font-weight: bolder;
@@ -1304,6 +1304,28 @@ div.branding-bg{
 
 section.branding-first-container{
 	height: 145em;
+	@extend %port-container;
+}
+
+div.tradeshow-bg{
+	background-image: url(../imgs/trade-show-bg.jpg);
+	@extend %parrallex-bg;
+	background-position: -105em -86em;
+}
+
+section.tradeshow-first-container{
+	height: 205em;
+	@extend %port-container;
+}
+
+div.rebrand-bg{
+	background-image: url(../imgs/obaze-design-bg.jpg);
+	@extend %parrallex-bg;
+	background-position: 0em -100em;
+}
+
+section.rebrand-first-container{
+	height: 270em;
 	@extend %port-container;
 }
 
