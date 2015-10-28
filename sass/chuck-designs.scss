@@ -1773,6 +1773,8 @@ section.rebrand-first-container{
 
 /* =End Contact Section Style */
 
+
+
 }
 
 @media only screen
@@ -1782,9 +1784,11 @@ section.rebrand-first-container{
   and (orientation: landscape) {
 
   nav.main-nav{
-		position:relative;
 		top: 0;
-		padding: 2%;
+		float: right;
+	    padding-right: 2%;
+	    position: relative;
+	    top: 1.3em;
 	}
 
 	nav.active-nav{
