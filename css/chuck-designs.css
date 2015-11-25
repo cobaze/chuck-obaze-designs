@@ -22,7 +22,7 @@ div#home-portfolio h2, div#process h2, div#phil h2, div#expertise h2, div#about 
 }
 
 /* line 34, ../sass/chuck-designs.scss */
-div.portfolio-bg, div.contact-bg, div.nipost-bg, div.flyer-bg, div.aglow-bg, div.bugout-bg, div.connect-bg, div.wedding-bg, div.branding-bg, div.tradeshow-bg, div.rebrand-bg {
+div.portfolio-bg, div.contact-bg, div.nipost-bg, div.flyer-bg, div.aglow-bg, div.bugout-bg, div.connect-bg, div.wedding-bg, div.branding-bg, div.tradeshow-bg, div.rebrand-bg, div.interconf-bg {
   height: 150em;
   width: 100%;
   position: fixed;
@@ -36,7 +36,7 @@ div.portfolio-bg, div.contact-bg, div.nipost-bg, div.flyer-bg, div.aglow-bg, div
 }
 
 /* line 47, ../sass/chuck-designs.scss */
-section.nipost-first-container, section.flyer-first-container, section.aglow-first-container, section.bugout-first-container, section.connect-first-container, section.wedding-first-container, section.branding-first-container, section.tradeshow-first-container, section.rebrand-first-container {
+section.nipost-first-container, section.flyer-first-container, section.aglow-first-container, section.bugout-first-container, section.connect-first-container, section.wedding-first-container, section.branding-first-container, section.tradeshow-first-container, section.rebrand-first-container, section.interconf-first-container {
   padding-top: 5%;
   background: #ffffff;
   clear: both;
@@ -1236,63 +1236,96 @@ section.bugout-first-container {
   height: 75em;
 }
 
-/* line 1274, ../sass/chuck-designs.scss */
+/* line 1273, ../sass/chuck-designs.scss */
 div.connect-bg {
   background-image: url(../imgs/connect-bg.jpg);
 }
 
-/* line 1279, ../sass/chuck-designs.scss */
+/* line 1278, ../sass/chuck-designs.scss */
 section.connect-first-container {
   height: 515em;
 }
 
-/* line 1284, ../sass/chuck-designs.scss */
+/* line 1283, ../sass/chuck-designs.scss */
 .first-sketches {
   margin-bottom: 5%;
   border: solid gray 2px;
 }
 
-/* line 1289, ../sass/chuck-designs.scss */
+/* line 1288, ../sass/chuck-designs.scss */
 div.wedding-bg {
   background-image: url(../imgs/wedding-bg.jpg);
 }
 
-/* line 1294, ../sass/chuck-designs.scss */
+/* line 1293, ../sass/chuck-designs.scss */
 section.wedding-first-container {
   height: 360em;
 }
 
-/* line 1299, ../sass/chuck-designs.scss */
+/* line 1298, ../sass/chuck-designs.scss */
 div.branding-bg {
   background-image: url(../imgs/branding-bg.jpg);
   background-position: -15em -5em;
 }
 
-/* line 1305, ../sass/chuck-designs.scss */
+/* line 1304, ../sass/chuck-designs.scss */
 section.branding-first-container {
   height: 145em;
 }
 
-/* line 1310, ../sass/chuck-designs.scss */
+/* line 1309, ../sass/chuck-designs.scss */
 div.tradeshow-bg {
   background-image: url(../imgs/trade-show-bg.jpg);
   background-position: -105em -86em;
 }
 
-/* line 1316, ../sass/chuck-designs.scss */
+/* line 1315, ../sass/chuck-designs.scss */
 section.tradeshow-first-container {
   height: 205em;
 }
 
-/* line 1321, ../sass/chuck-designs.scss */
+/* line 1320, ../sass/chuck-designs.scss */
 div.rebrand-bg {
   background-image: url(../imgs/obaze-design-bg.jpg);
   background-position: 0em -100em;
 }
 
-/* line 1327, ../sass/chuck-designs.scss */
+/* line 1326, ../sass/chuck-designs.scss */
 section.rebrand-first-container {
   height: 270em;
+}
+
+/* line 1331, ../sass/chuck-designs.scss */
+div.interconf-bg {
+  background-image: url(../imgs/interconf-bg.jpg);
+  background-position: -45em -61em;
+}
+
+/* line 1337, ../sass/chuck-designs.scss */
+section.interconf-first-container {
+  height: 270em;
+}
+
+/* line 1342, ../sass/chuck-designs.scss */
+div#interconf-home {
+  width: 100%;
+  padding-top: 7%;
+  box-sizing: border-box;
+  height: 96em;
+  margin: 0 auto;
+}
+/* line 1349, ../sass/chuck-designs.scss */
+div#interconf-home h1 {
+  width: 100%;
+  color: #ffffff;
+  font-size: 13em;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bolder;
+  line-height: 0.9em;
+  opacity: 0.7;
+  position: fixed;
+  z-index: -2;
 }
 
 /* START MEDIA QUERIES
@@ -1301,19 +1334,19 @@ section.rebrand-first-container {
 -----------------------------------------------------------------------------*/
 @media only screen and (min-width: 320px) and (max-width: 740px) and (orientation: portrait) {
   /* =Start Nav Style */
-  /* line 1346, ../sass/chuck-designs.scss */
+  /* line 1377, ../sass/chuck-designs.scss */
   nav.main-nav {
     position: relative;
     top: 0;
     padding: 2%;
   }
 
-  /* line 1352, ../sass/chuck-designs.scss */
+  /* line 1383, ../sass/chuck-designs.scss */
   nav.active-nav {
     display: none;
   }
 
-  /* line 1356, ../sass/chuck-designs.scss */
+  /* line 1387, ../sass/chuck-designs.scss */
   #lines {
     border-bottom: 1.7em double #82cec4;
     border-top: 0.6em solid #82cec4;
@@ -1325,13 +1358,13 @@ section.rebrand-first-container {
     margin-top: 3%;
     margin-right: 2%;
   }
-  /* line 1368, ../sass/chuck-designs.scss */
+  /* line 1399, ../sass/chuck-designs.scss */
   #lines:hover {
     border-bottom: 1.7em double #f98348;
     border-top: 0.6em solid #f98348;
   }
 
-  /* line 1375, ../sass/chuck-designs.scss */
+  /* line 1406, ../sass/chuck-designs.scss */
   nav.main-nav ul, nav.main-nav:active ul {
     display: none;
     clear: both;
@@ -1357,7 +1390,7 @@ section.rebrand-first-container {
   
   
   	}*/
-  /* line 1402, ../sass/chuck-designs.scss */
+  /* line 1433, ../sass/chuck-designs.scss */
   nav li {
     text-align: center;
     width: 100%;
@@ -1369,158 +1402,158 @@ section.rebrand-first-container {
     display: inline;
   }
 
-  /* line 1415, ../sass/chuck-designs.scss */
+  /* line 1446, ../sass/chuck-designs.scss */
   nav:hover ul {
     display: block;
   }
 
   /* =End Nav Style */
   /* =Start Home Section Style */
-  /* line 1425, ../sass/chuck-designs.scss */
+  /* line 1456, ../sass/chuck-designs.scss */
   div.home-bg {
     height: 63em;
   }
 
-  /* line 1429, ../sass/chuck-designs.scss */
+  /* line 1460, ../sass/chuck-designs.scss */
   section.home-container {
     height: 63em;
   }
 
-  /* line 1433, ../sass/chuck-designs.scss */
+  /* line 1464, ../sass/chuck-designs.scss */
   div#home {
     padding-top: 0;
     height: 63em;
     clear: both;
   }
 
-  /* line 1439, ../sass/chuck-designs.scss */
+  /* line 1470, ../sass/chuck-designs.scss */
   div.home-contents {
     margin-top: 50%;
     margin-bottom: 45%;
     height: 21em;
   }
-  /* line 1444, ../sass/chuck-designs.scss */
+  /* line 1475, ../sass/chuck-designs.scss */
   div.home-contents h1 {
     line-height: 0.8em;
     font-size: 11em;
     top: 2em;
   }
-  /* line 1450, ../sass/chuck-designs.scss */
+  /* line 1481, ../sass/chuck-designs.scss */
   div.home-contents h2 {
     line-height: 1.1em;
     font-size: 3em;
   }
 
-  /* line 1456, ../sass/chuck-designs.scss */
+  /* line 1487, ../sass/chuck-designs.scss */
   a.dwn-btn {
     display: none;
   }
 
   /* =End Home Section Style */
   /* =Start Home Portfolio Section Style */
-  /* line 1464, ../sass/chuck-designs.scss */
+  /* line 1495, ../sass/chuck-designs.scss */
   section.home-portfolio-container {
     height: 138em;
   }
 
-  /* line 1468, ../sass/chuck-designs.scss */
+  /* line 1499, ../sass/chuck-designs.scss */
   div#home-portfolio {
     padding: 10% 2% 0 2%;
     height: 138em;
   }
-  /* line 1472, ../sass/chuck-designs.scss */
+  /* line 1503, ../sass/chuck-designs.scss */
   div#home-portfolio h2 {
     margin-bottom: 10%;
   }
 
-  /* line 1478, ../sass/chuck-designs.scss */
+  /* line 1509, ../sass/chuck-designs.scss */
   div.left-holder {
     height: 46em;
   }
 
-  /* line 1482, ../sass/chuck-designs.scss */
+  /* line 1513, ../sass/chuck-designs.scss */
   div.left-top {
     height: 27.4em;
   }
-  /* line 1486, ../sass/chuck-designs.scss */
+  /* line 1517, ../sass/chuck-designs.scss */
   div.left-top a p {
     top: 15em;
     width: 100%;
     text-align: center;
   }
 
-  /* line 1494, ../sass/chuck-designs.scss */
+  /* line 1525, ../sass/chuck-designs.scss */
   div.left-bottom-one {
     height: 18.5em;
   }
-  /* line 1498, ../sass/chuck-designs.scss */
+  /* line 1529, ../sass/chuck-designs.scss */
   div.left-bottom-one a img {
     width: 112%;
     bottom: 3.5em;
   }
-  /* line 1503, ../sass/chuck-designs.scss */
+  /* line 1534, ../sass/chuck-designs.scss */
   div.left-bottom-one a p {
     top: 9.4em;
     width: 100%;
     text-align: center;
   }
 
-  /* line 1511, ../sass/chuck-designs.scss */
+  /* line 1542, ../sass/chuck-designs.scss */
   div.left-bottom-two {
     height: 18.5em;
   }
-  /* line 1515, ../sass/chuck-designs.scss */
+  /* line 1546, ../sass/chuck-designs.scss */
   div.left-bottom-two a img {
     width: 112%;
     bottom: 3.5em;
     right: 1em;
   }
-  /* line 1521, ../sass/chuck-designs.scss */
+  /* line 1552, ../sass/chuck-designs.scss */
   div.left-bottom-two a p {
     top: 9.4em;
     width: 100%;
     text-align: center;
   }
 
-  /* line 1529, ../sass/chuck-designs.scss */
+  /* line 1560, ../sass/chuck-designs.scss */
   div.right-holder {
     height: 53.5em;
   }
 
-  /* line 1533, ../sass/chuck-designs.scss */
+  /* line 1564, ../sass/chuck-designs.scss */
   div.right-top {
     height: 24.3em;
   }
-  /* line 1537, ../sass/chuck-designs.scss */
+  /* line 1568, ../sass/chuck-designs.scss */
   div.right-top a img {
     bottom: 10.5em;
     width: 102%;
   }
-  /* line 1542, ../sass/chuck-designs.scss */
+  /* line 1573, ../sass/chuck-designs.scss */
   div.right-top a p {
     top: 13em;
     width: 100%;
     text-align: center;
   }
 
-  /* line 1550, ../sass/chuck-designs.scss */
+  /* line 1581, ../sass/chuck-designs.scss */
   div.right-bottom {
     height: 29em;
   }
-  /* line 1554, ../sass/chuck-designs.scss */
+  /* line 1585, ../sass/chuck-designs.scss */
   div.right-bottom a img {
     bottom: 8.5em;
     width: 128%;
     right: 7em;
   }
-  /* line 1560, ../sass/chuck-designs.scss */
+  /* line 1591, ../sass/chuck-designs.scss */
   div.right-bottom a p {
     top: 15.94em;
     width: 100%;
     text-align: center;
   }
 
-  /* line 1568, ../sass/chuck-designs.scss */
+  /* line 1599, ../sass/chuck-designs.scss */
   div.port {
     position: relative;
     bottom: 11em;
@@ -1528,25 +1561,25 @@ section.rebrand-first-container {
 
   /* =End Home Portfolio Section Style */
   /* =Start Process Section Style */
-  /* line 1577, ../sass/chuck-designs.scss */
+  /* line 1608, ../sass/chuck-designs.scss */
   section.process-container {
     height: 150em;
   }
 
-  /* line 1581, ../sass/chuck-designs.scss */
+  /* line 1612, ../sass/chuck-designs.scss */
   div#process {
     padding: 10% 2% 0 2%;
     height: 150em;
   }
 
-  /* line 1587, ../sass/chuck-designs.scss */
+  /* line 1618, ../sass/chuck-designs.scss */
   div.icon-holder {
     height: 140em;
     width: 100%;
     max-width: 100%;
   }
 
-  /* line 1594, ../sass/chuck-designs.scss */
+  /* line 1625, ../sass/chuck-designs.scss */
   div.icon {
     padding: 10% 14.7% 0 14.7%;
     margin: 0;
@@ -1555,45 +1588,45 @@ section.rebrand-first-container {
 
   /* =End Process Section Style */
   /* =Start Phil Section Style */
-  /* line 1604, ../sass/chuck-designs.scss */
+  /* line 1635, ../sass/chuck-designs.scss */
   section.phil-container {
     height: 43.5em;
   }
 
-  /* line 1608, ../sass/chuck-designs.scss */
+  /* line 1639, ../sass/chuck-designs.scss */
   div#phil {
     padding: 10% 2% 0 2%;
     height: 43.5em;
   }
-  /* line 1612, ../sass/chuck-designs.scss */
+  /* line 1643, ../sass/chuck-designs.scss */
   div#phil h2 {
     margin-bottom: 10%;
   }
 
   /* =End Phil Section Style */
   /* =Start Expertise Section Style */
-  /* line 1621, ../sass/chuck-designs.scss */
+  /* line 1652, ../sass/chuck-designs.scss */
   section.expertise-container {
     height: 150em;
   }
 
-  /* line 1625, ../sass/chuck-designs.scss */
+  /* line 1656, ../sass/chuck-designs.scss */
   div#expertise {
     height: 150em;
     padding: 10% 2% 0 2%;
   }
-  /* line 1629, ../sass/chuck-designs.scss */
+  /* line 1660, ../sass/chuck-designs.scss */
   div#expertise h2 {
     margin-bottom: 10%;
   }
 
-  /* line 1634, ../sass/chuck-designs.scss */
+  /* line 1665, ../sass/chuck-designs.scss */
   div.grouped {
     width: 100%;
     height: 136.8em;
   }
 
-  /* line 1642, ../sass/chuck-designs.scss */
+  /* line 1673, ../sass/chuck-designs.scss */
   div.left-group-top,
   div.left-group-bottom,
   div.right-group-top,
@@ -1603,18 +1636,18 @@ section.rebrand-first-container {
     height: 32em;
   }
 
-  /* line 1648, ../sass/chuck-designs.scss */
+  /* line 1679, ../sass/chuck-designs.scss */
   div.ex-icon {
     height: 32em;
     width: 100%;
   }
-  /* line 1652, ../sass/chuck-designs.scss */
+  /* line 1683, ../sass/chuck-designs.scss */
   div.ex-icon img {
     margin: 0 auto;
     float: none;
     margin-bottom: 5%;
   }
-  /* line 1658, ../sass/chuck-designs.scss */
+  /* line 1689, ../sass/chuck-designs.scss */
   div.ex-icon p {
     text-align: center;
     margin-top: 0;
@@ -1626,34 +1659,34 @@ section.rebrand-first-container {
 
   /* =End Expertise Section Style */
   /* =Start About Section Style */
-  /* line 1672, ../sass/chuck-designs.scss */
+  /* line 1703, ../sass/chuck-designs.scss */
   section.about-container {
     height: 110em;
   }
 
-  /* line 1676, ../sass/chuck-designs.scss */
+  /* line 1707, ../sass/chuck-designs.scss */
   div#about {
     height: 110em;
     padding: 10% 2% 0 2%;
   }
-  /* line 1680, ../sass/chuck-designs.scss */
+  /* line 1711, ../sass/chuck-designs.scss */
   div#about h2 {
     margin-bottom: 10%;
   }
-  /* line 1684, ../sass/chuck-designs.scss */
+  /* line 1715, ../sass/chuck-designs.scss */
   div#about p {
     text-align: center;
     margin-bottom: 10%;
   }
 
-  /* line 1690, ../sass/chuck-designs.scss */
+  /* line 1721, ../sass/chuck-designs.scss */
   div.social-icons {
     margin-top: 8%;
   }
 
   /* =End About Section Style */
   /* =Start Portfolio Page Style */
-  /* line 1698, ../sass/chuck-designs.scss */
+  /* line 1729, ../sass/chuck-designs.scss */
   div.portfolio-bg {
     background-image: url(../imgs/portfolio-img.jpg);
     background-position: -50em 0em;
@@ -1661,40 +1694,40 @@ section.rebrand-first-container {
     background-size: 400%;
   }
 
-  /* line 1705, ../sass/chuck-designs.scss */
+  /* line 1736, ../sass/chuck-designs.scss */
   section.top-portfolio-container {
     height: 30em;
   }
 
-  /* line 1709, ../sass/chuck-designs.scss */
+  /* line 1740, ../sass/chuck-designs.scss */
   div#top-portfolio {
     padding-top: 0;
     height: 30em;
   }
-  /* line 1713, ../sass/chuck-designs.scss */
+  /* line 1744, ../sass/chuck-designs.scss */
   div#top-portfolio h1 {
     font-size: 7em;
     line-height: 1.5em;
     top: 1.5em;
   }
 
-  /* line 1720, ../sass/chuck-designs.scss */
+  /* line 1751, ../sass/chuck-designs.scss */
   section.portfolio-container {
     height: 358.5em;
   }
 
-  /* line 1724, ../sass/chuck-designs.scss */
+  /* line 1755, ../sass/chuck-designs.scss */
   div#portfolio {
     padding-top: 10%;
     box-sizing: border-box;
     height: 358.5em;
   }
-  /* line 1729, ../sass/chuck-designs.scss */
+  /* line 1760, ../sass/chuck-designs.scss */
   div#portfolio p {
     margin-bottom: 10%;
   }
 
-  /* line 1735, ../sass/chuck-designs.scss */
+  /* line 1766, ../sass/chuck-designs.scss */
   div.port-item {
     height: 28em;
     width: 48em;
@@ -1703,35 +1736,35 @@ section.rebrand-first-container {
 
   /* =End Portfolio Page Style */
   /* =Start Contact Section Style */
-  /* line 1745, ../sass/chuck-designs.scss */
+  /* line 1776, ../sass/chuck-designs.scss */
   div.contact-bg {
     background-position: -15em 0em;
     background-size: 175%;
     height: 30em;
   }
 
-  /* line 1751, ../sass/chuck-designs.scss */
+  /* line 1782, ../sass/chuck-designs.scss */
   section.top-contact-container {
     height: 30em;
   }
 
-  /* line 1755, ../sass/chuck-designs.scss */
+  /* line 1786, ../sass/chuck-designs.scss */
   div#top-contact {
     padding-top: 0;
     height: 30em;
   }
-  /* line 1759, ../sass/chuck-designs.scss */
+  /* line 1790, ../sass/chuck-designs.scss */
   div#top-contact h1 {
     font-size: 7em;
     line-height: 0.8em;
     top: 1.9em;
   }
 
-  /* line 1766, ../sass/chuck-designs.scss */
+  /* line 1797, ../sass/chuck-designs.scss */
   div#contact {
     padding: 10% 2% 0 2%;
   }
-  /* line 1769, ../sass/chuck-designs.scss */
+  /* line 1800, ../sass/chuck-designs.scss */
   div#contact h2 {
     margin-bottom: 10%;
   }
@@ -1739,7 +1772,7 @@ section.rebrand-first-container {
   /* =End Contact Section Style */
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape) {
-  /* line 1786, ../sass/chuck-designs.scss */
+  /* line 1817, ../sass/chuck-designs.scss */
   nav.main-nav {
     top: 0;
     float: right;
@@ -1748,12 +1781,12 @@ section.rebrand-first-container {
     top: 1.3em;
   }
 
-  /* line 1794, ../sass/chuck-designs.scss */
+  /* line 1825, ../sass/chuck-designs.scss */
   nav.active-nav {
     display: none;
   }
 
-  /* line 1798, ../sass/chuck-designs.scss */
+  /* line 1829, ../sass/chuck-designs.scss */
   #lines {
     border-bottom: 1.7em double #82cec4;
     border-top: 0.6em solid #82cec4;
@@ -1765,13 +1798,13 @@ section.rebrand-first-container {
     margin-top: 3%;
     margin-right: 2%;
   }
-  /* line 1810, ../sass/chuck-designs.scss */
+  /* line 1841, ../sass/chuck-designs.scss */
   #lines:hover {
     border-bottom: 1.7em double #f98348;
     border-top: 0.6em solid #f98348;
   }
 
-  /* line 1817, ../sass/chuck-designs.scss */
+  /* line 1848, ../sass/chuck-designs.scss */
   nav.main-nav ul, nav.main-nav:active ul {
     display: none;
     clear: both;
@@ -1797,7 +1830,7 @@ section.rebrand-first-container {
   
   
   	}*/
-  /* line 1844, ../sass/chuck-designs.scss */
+  /* line 1875, ../sass/chuck-designs.scss */
   nav li {
     text-align: center;
     width: 100%;
@@ -1809,164 +1842,164 @@ section.rebrand-first-container {
     display: inline;
   }
 
-  /* line 1857, ../sass/chuck-designs.scss */
+  /* line 1888, ../sass/chuck-designs.scss */
   nav:hover ul {
     display: block;
   }
 
-  /* line 1863, ../sass/chuck-designs.scss */
+  /* line 1894, ../sass/chuck-designs.scss */
   a.dwn-btn {
     display: none;
   }
 
   /* =Start Home Section Style */
-  /* line 1869, ../sass/chuck-designs.scss */
+  /* line 1900, ../sass/chuck-designs.scss */
   div.home-bg {
     height: 40em;
   }
 
-  /* line 1873, ../sass/chuck-designs.scss */
+  /* line 1904, ../sass/chuck-designs.scss */
   section.home-container {
     height: 40em;
   }
 
-  /* line 1877, ../sass/chuck-designs.scss */
+  /* line 1908, ../sass/chuck-designs.scss */
   div#home {
     padding-top: 0;
     height: 40em;
     clear: both;
   }
 
-  /* line 1883, ../sass/chuck-designs.scss */
+  /* line 1914, ../sass/chuck-designs.scss */
   div.home-contents {
     margin-top: 0;
     height: 40em;
     margin-bottom: 0;
   }
-  /* line 1888, ../sass/chuck-designs.scss */
+  /* line 1919, ../sass/chuck-designs.scss */
   div.home-contents h1 {
     line-height: 0.8em;
     font-size: 11em;
     top: 1.2em;
   }
-  /* line 1894, ../sass/chuck-designs.scss */
+  /* line 1925, ../sass/chuck-designs.scss */
   div.home-contents h2 {
     line-height: 8em;
     font-size: 3em;
   }
 
-  /* line 1900, ../sass/chuck-designs.scss */
+  /* line 1931, ../sass/chuck-designs.scss */
   a.dwn-btn {
     display: none;
   }
 
   /* =End Home Section Style */
   /* =Start Home Portfolio Section Style */
-  /* line 1908, ../sass/chuck-designs.scss */
+  /* line 1939, ../sass/chuck-designs.scss */
   section.home-portfolio-container {
     height: 138em;
   }
 
-  /* line 1912, ../sass/chuck-designs.scss */
+  /* line 1943, ../sass/chuck-designs.scss */
   div#home-portfolio {
     padding: 10% 2% 0 2%;
     height: 138em;
   }
-  /* line 1916, ../sass/chuck-designs.scss */
+  /* line 1947, ../sass/chuck-designs.scss */
   div#home-portfolio h2 {
     margin-bottom: 10%;
   }
 
-  /* line 1922, ../sass/chuck-designs.scss */
+  /* line 1953, ../sass/chuck-designs.scss */
   div.left-holder {
     height: 73em;
     width: 100%;
   }
 
-  /* line 1927, ../sass/chuck-designs.scss */
+  /* line 1958, ../sass/chuck-designs.scss */
   div.left-top {
     height: 46.4em;
   }
-  /* line 1931, ../sass/chuck-designs.scss */
+  /* line 1962, ../sass/chuck-designs.scss */
   div.left-top a p {
     top: 26.9em;
     width: 100%;
     text-align: center;
   }
 
-  /* line 1939, ../sass/chuck-designs.scss */
+  /* line 1970, ../sass/chuck-designs.scss */
   div.left-bottom-one {
     height: 26.7em;
   }
-  /* line 1943, ../sass/chuck-designs.scss */
+  /* line 1974, ../sass/chuck-designs.scss */
   div.left-bottom-one a img {
     width: 112%;
     bottom: 3.5em;
   }
-  /* line 1948, ../sass/chuck-designs.scss */
+  /* line 1979, ../sass/chuck-designs.scss */
   div.left-bottom-one a p {
     top: 14.5em;
     width: 100%;
     text-align: center;
   }
 
-  /* line 1956, ../sass/chuck-designs.scss */
+  /* line 1987, ../sass/chuck-designs.scss */
   div.left-bottom-two {
     height: 26.7em;
   }
-  /* line 1960, ../sass/chuck-designs.scss */
+  /* line 1991, ../sass/chuck-designs.scss */
   div.left-bottom-two a img {
     width: 112%;
     bottom: 4.5em;
     right: 1em;
   }
-  /* line 1966, ../sass/chuck-designs.scss */
+  /* line 1997, ../sass/chuck-designs.scss */
   div.left-bottom-two a p {
     top: 14.5em;
     width: 100%;
     text-align: center;
   }
 
-  /* line 1974, ../sass/chuck-designs.scss */
+  /* line 2005, ../sass/chuck-designs.scss */
   div.right-holder {
     height: 53.5em;
     width: 100%;
   }
 
-  /* line 1979, ../sass/chuck-designs.scss */
+  /* line 2010, ../sass/chuck-designs.scss */
   div.right-top {
     height: 27.5em;
   }
-  /* line 1983, ../sass/chuck-designs.scss */
+  /* line 2014, ../sass/chuck-designs.scss */
   div.right-top a img {
     bottom: 21em;
     width: 102%;
   }
-  /* line 1988, ../sass/chuck-designs.scss */
+  /* line 2019, ../sass/chuck-designs.scss */
   div.right-top a p {
     top: 15em;
     width: 100%;
     text-align: center;
   }
 
-  /* line 1996, ../sass/chuck-designs.scss */
+  /* line 2027, ../sass/chuck-designs.scss */
   div.right-bottom {
     height: 95em;
   }
-  /* line 2000, ../sass/chuck-designs.scss */
+  /* line 2031, ../sass/chuck-designs.scss */
   div.right-bottom a img {
     bottom: 8.5em;
     width: 128%;
     right: 7em;
   }
-  /* line 2006, ../sass/chuck-designs.scss */
+  /* line 2037, ../sass/chuck-designs.scss */
   div.right-bottom a p {
     top: 29.1em;
     width: 100%;
     text-align: center;
   }
 
-  /* line 2014, ../sass/chuck-designs.scss */
+  /* line 2045, ../sass/chuck-designs.scss */
   div.port {
     position: relative;
     bottom: 11em;
@@ -1977,25 +2010,25 @@ section.rebrand-first-container {
 /* =iPad Media Query
 -----------------------------------------------------------------------------*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 2034, ../sass/chuck-designs.scss */
+  /* line 2065, ../sass/chuck-designs.scss */
   div.home-bg {
     height: 91.8em;
     border: solid 1px red;
   }
 
-  /* line 2039, ../sass/chuck-designs.scss */
+  /* line 2070, ../sass/chuck-designs.scss */
   section.home-container {
     height: 91.8em;
     border: solid 1px red;
   }
 
-  /* line 2044, ../sass/chuck-designs.scss */
+  /* line 2075, ../sass/chuck-designs.scss */
   div#home {
     height: 91em;
     padding-top: 7%;
   }
 
-  /* line 2049, ../sass/chuck-designs.scss */
+  /* line 2080, ../sass/chuck-designs.scss */
   div.home-contents {
     margin-top: 30%;
     margin-bottom: 33%;
@@ -2003,49 +2036,49 @@ section.rebrand-first-container {
     height: 31em;
   }
 
-  /* line 2056, ../sass/chuck-designs.scss */
+  /* line 2087, ../sass/chuck-designs.scss */
   div.home-contents h1 {
     line-height: 0.8em;
     top: 2.1em;
   }
 
-  /* line 2061, ../sass/chuck-designs.scss */
+  /* line 2092, ../sass/chuck-designs.scss */
   section.home-portfolio-container, div#home-portfolio {
     height: 185em;
   }
 
-  /* line 2065, ../sass/chuck-designs.scss */
+  /* line 2096, ../sass/chuck-designs.scss */
   div.left-holder, div.right-holder {
     width: 76.8em;
   }
 
-  /* line 2069, ../sass/chuck-designs.scss */
+  /* line 2100, ../sass/chuck-designs.scss */
   div.left-bottom-one, div.left-bottom-two {
     height: 26.5em;
   }
-  /* line 2073, ../sass/chuck-designs.scss */
+  /* line 2104, ../sass/chuck-designs.scss */
   div.left-bottom-one a p, div.left-bottom-two a p {
     top: 14.4em;
   }
 
-  /* line 2079, ../sass/chuck-designs.scss */
+  /* line 2110, ../sass/chuck-designs.scss */
   div.left-bottom-two a img {
     bottom: 7.5em;
   }
 
-  /* line 2083, ../sass/chuck-designs.scss */
+  /* line 2114, ../sass/chuck-designs.scss */
   div.right-top a img {
     bottom: 26.5em;
   }
 
-  /* line 2087, ../sass/chuck-designs.scss */
+  /* line 2118, ../sass/chuck-designs.scss */
   div.right-bottom a img {
     width: 115%;
     bottom: 15em;
     right: 8.5em;
   }
 
-  /* line 2093, ../sass/chuck-designs.scss */
+  /* line 2124, ../sass/chuck-designs.scss */
   div.port {
     position: relative;
     bottom: 15em;
@@ -2059,50 +2092,50 @@ section.rebrand-first-container {
   /* START STYLING LAPTOP SIZE SECTION HOME AND HOME-CONTAINER STYLES
   -----------------------------------------------------------------------------*/
   /* =Start Home Section Style */
-  /* line 2124, ../sass/chuck-designs.scss */
+  /* line 2155, ../sass/chuck-designs.scss */
   div.home-bg {
     height: 67.8em;
   }
 
-  /* line 2128, ../sass/chuck-designs.scss */
+  /* line 2159, ../sass/chuck-designs.scss */
   section.home-container {
     height: 67.8em;
   }
 
-  /* line 2132, ../sass/chuck-designs.scss */
+  /* line 2163, ../sass/chuck-designs.scss */
   div.home-contents {
     margin-top: 8%;
     margin-bottom: 8%;
   }
 
-  /* line 2137, ../sass/chuck-designs.scss */
+  /* line 2168, ../sass/chuck-designs.scss */
   div#home-portfolio {
     padding-top: 8%;
   }
 
   /* =End Home Section Style */
-  /* line 2143, ../sass/chuck-designs.scss */
+  /* line 2174, ../sass/chuck-designs.scss */
   div.grouped {
     width: 115.5em;
     height: 38em;
   }
 
-  /* line 2148, ../sass/chuck-designs.scss */
+  /* line 2179, ../sass/chuck-designs.scss */
   div.icon {
     margin: 2.22%;
   }
 
-  /* line 2152, ../sass/chuck-designs.scss */
+  /* line 2183, ../sass/chuck-designs.scss */
   div.ex-icon {
     height: 20em;
   }
 
-  /* line 2156, ../sass/chuck-designs.scss */
+  /* line 2187, ../sass/chuck-designs.scss */
   div.ex-icon p {
     width: 19em;
   }
 
-  /* line 2161, ../sass/chuck-designs.scss */
+  /* line 2192, ../sass/chuck-designs.scss */
   div.left-group-top,
   div.right-group-top {
     margin-right: 3%;
@@ -2110,120 +2143,120 @@ section.rebrand-first-container {
     height: 17em;
   }
 
-  /* line 2167, ../sass/chuck-designs.scss */
+  /* line 2198, ../sass/chuck-designs.scss */
   section.process-container {
     height: 55em;
   }
 
-  /* line 2171, ../sass/chuck-designs.scss */
+  /* line 2202, ../sass/chuck-designs.scss */
   div#process {
     padding-top: 5%;
     height: 55em;
   }
 
-  /* line 2176, ../sass/chuck-designs.scss */
+  /* line 2207, ../sass/chuck-designs.scss */
   section.phil-container {
     height: 35em;
   }
 
-  /* line 2180, ../sass/chuck-designs.scss */
+  /* line 2211, ../sass/chuck-designs.scss */
   div#phil {
     height: 35em;
     padding-top: 5%;
   }
 
-  /* line 2185, ../sass/chuck-designs.scss */
+  /* line 2216, ../sass/chuck-designs.scss */
   div#expertise {
     height: 65em;
     padding-top: 5%;
   }
 
-  /* line 2190, ../sass/chuck-designs.scss */
+  /* line 2221, ../sass/chuck-designs.scss */
   section.expertise-container {
     height: 65em;
   }
 
-  /* line 2195, ../sass/chuck-designs.scss */
+  /* line 2226, ../sass/chuck-designs.scss */
   div.left-group-bottom,
   div.right-group-bottom {
     width: 56em;
     height: 17em;
   }
 
-  /* line 2200, ../sass/chuck-designs.scss */
+  /* line 2231, ../sass/chuck-designs.scss */
   section.about-container {
     height: 75em;
   }
 
-  /* line 2204, ../sass/chuck-designs.scss */
+  /* line 2235, ../sass/chuck-designs.scss */
   div#about {
     padding-top: 5%;
     height: 75em;
   }
 
-  /* line 2209, ../sass/chuck-designs.scss */
+  /* line 2240, ../sass/chuck-designs.scss */
   div.port-item {
     width: 25%;
     height: 24em;
   }
 
-  /* line 2214, ../sass/chuck-designs.scss */
+  /* line 2245, ../sass/chuck-designs.scss */
   section.portfolio-container {
     height: 96.7em;
   }
 
-  /* line 2218, ../sass/chuck-designs.scss */
+  /* line 2249, ../sass/chuck-designs.scss */
   div#portfolio {
     height: 96.7em;
     padding-top: 5%;
   }
 
-  /* line 2225, ../sass/chuck-designs.scss */
+  /* line 2256, ../sass/chuck-designs.scss */
   section.top-portfolio-container,
   section.top-contact-container,
   section.nipost-home-container {
     height: 40em;
   }
 
-  /* line 2229, ../sass/chuck-designs.scss */
+  /* line 2260, ../sass/chuck-designs.scss */
   div.contact-bg {
     background-position: -53em -35em;
   }
 
   /* NIPOST Page Style */
-  /* line 2235, ../sass/chuck-designs.scss */
+  /* line 2266, ../sass/chuck-designs.scss */
   section.nipost-first-container, div.nipost-holder {
     height: 465em;
   }
 }
 @media screen and (max-width: 1680px) and (min-width: 1460px) {
-  /* line 2244, ../sass/chuck-designs.scss */
+  /* line 2275, ../sass/chuck-designs.scss */
   section.home-container {
     height: 95em;
   }
 
-  /* line 2248, ../sass/chuck-designs.scss */
+  /* line 2279, ../sass/chuck-designs.scss */
   div.home-contents {
     margin-top: 6%;
     margin-bottom: 10%;
   }
 
-  /* line 2253, ../sass/chuck-designs.scss */
+  /* line 2284, ../sass/chuck-designs.scss */
   section.phil-container {
     height: 37em;
   }
 
-  /* line 2257, ../sass/chuck-designs.scss */
+  /* line 2288, ../sass/chuck-designs.scss */
   div.port-item {
     height: 30em;
   }
 
-  /* line 2262, ../sass/chuck-designs.scss */
+  /* line 2293, ../sass/chuck-designs.scss */
   section.portfolio-container {
     height: 116.5em;
   }
 
-  /* line 2266, ../sass/chuck-designs.scss */
+  /* line 2297, ../sass/chuck-designs.scss */
   div#portfolio {
     height: 116.5em;
     padding-top: 5%;
