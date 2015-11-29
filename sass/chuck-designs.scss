@@ -1360,6 +1360,17 @@ div#interconf-home{
 	}
 }
 
+div.tailored-bg{
+	background-image: url(../imgs/tailored-creation-2.jpg);
+	background-position: 0em 0em;
+	@extend %parrallex-bg;
+}
+
+section.tailored-first-container{
+	height: 285em;
+	@extend %port-container;
+}
+
 /* START MEDIA QUERIES
 -----------------------------------------------------------------------------*/
 
