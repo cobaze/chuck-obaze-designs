@@ -870,13 +870,13 @@ div#top-portfolio h2 {
 /* line 889, ../sass/chuck-designs.scss */
 section.portfolio-container {
   width: 100%;
-  height: 131.1em;
+  height: 97em;
   background-color: #ffffff;
 }
 
 /* line 896, ../sass/chuck-designs.scss */
 div#portfolio {
-  height: 131.1em;
+  height: 97em;
   padding-top: 5%;
   margin: 0 auto;
   width: 100%;
@@ -1724,7 +1724,7 @@ section.tailored-first-container {
 
   /* line 1762, ../sass/chuck-designs.scss */
   section.portfolio-container {
-    height: 358.5em;
+    height: 244em;
   }
 
   /* line 1766, ../sass/chuck-designs.scss */
@@ -2213,12 +2213,12 @@ section.tailored-first-container {
 
   /* line 2256, ../sass/chuck-designs.scss */
   section.portfolio-container {
-    height: 96.7em;
+    height: 72.7em;
   }
 
   /* line 2260, ../sass/chuck-designs.scss */
   div#portfolio {
-    height: 96.7em;
+    height: 72.7em;
     padding-top: 5%;
   }
 
@@ -2264,12 +2264,12 @@ section.tailored-first-container {
 
   /* line 2304, ../sass/chuck-designs.scss */
   section.portfolio-container {
-    height: 116.5em;
+    height: 86.5em;
   }
 
   /* line 2308, ../sass/chuck-designs.scss */
   div#portfolio {
-    height: 116.5em;
+    height: 86.5em;
     padding-top: 5%;
   }
 }
