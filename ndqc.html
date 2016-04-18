@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<meta name="description" content="Graphic and Web Design Portfolio of Chuck Obaze. ">
 		<meta name="keywords" content="Graphic Design, Web Design, Web Development, Logo Design, Brochures, Magazines">
-		<title>NDQC | Chuck Obaze Designs</title>
+		<title>Newsletter Template | Chuck Obaze Designs</title>
 		<link rel="shortcut icon" href="imgs/chuckobaze-favicon16-6.png"/>
 		<link rel="shortcut icon" href="imgs/chuckobaze-favicon32-2.png"/>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -21,7 +21,6 @@
 		<link href='https://fonts.googleapis.com/css?family=Qwigley' rel='stylesheet' type='text/css'>
 		<script src="js/modernizr.js"></script>
 	</head>
-
 	<body class="main-body">
 		<div id="main-container"> <!-- Start Main Container -->
 
@@ -36,10 +35,24 @@
 				</nav>
 			</header> <!-- End Main Header -->
 
+			<div class="bugout-bg"></div>
+			<section class="nipost-home-container"> <!-- Start first container -->
+				<div id="nipost-home">
+					<h1>BUGOUT</h1>
+				</div>
+			</section> <!-- End first container -->
 
+			<section class="bugout-first-container"> <!-- Start first container -->
+				<div class="nipost-holder">
+					<h2>Invitation Design<hr></h2>
+					<p>Quarterly newsletter template.</p>
+					<img src="imgs/invitation-design.jpg" alt="Newsletter Template" />
+					<img src="imgs/invitation-design-2.jpg" alt="Newsletter Template" />
+				</div>
+			</section>
 
 			<footer class="main-footer"> <!-- Start Main footer -->
-				<p>Copyright &copy; Chuck Obaze, 2015. All Rights Reserved</p>
+				<p>Copyright &copy; Chuck Obaze, 2016. All Rights Reserved</p>
 			</footer> <!-- End Main footer -->
 
 		</div> <!-- End Main Container -->
@@ -83,7 +96,7 @@
 
 				function parallax(){
 				  var scrolled = $(window).scrollTop();
-				  $('.project-bg').css('top',-(scrolled*0.1)+'px');
+				  $('.bugout-bg').css('top',-(scrolled*0.1)+'px');
 				}
 			});
 		</script>

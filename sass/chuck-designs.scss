@@ -27,7 +27,7 @@ $white-font: #ffffff;
 	text-align: center;
 	margin-bottom:2%;
 	color: $alt-font-color;
-	font-size: 4.5em;
+	font-size: 3.5em;
 	font-weight: 300;
 }
 
@@ -911,7 +911,7 @@ div#portfolio{
 		font-weight: 200;
 		line-height: 1.5em;
 		color: $alt-font-color;
-		width: 30em;
+		width: 37em;
 		max-width: 100%;
 		margin: 0 auto;
 		text-align: center;
@@ -940,11 +940,8 @@ div.port-item{
 /*---------------------------------------------------------------------------------------------------*/
 
 
-/* START STYLING CONTACT PAGE
+/* START CONTACT PAGE STYLES
 -----------------------------------------------------------------------------*/
-
-/* START STYLING TOP CONTACT SECTION
--------------------------------------------*/
 
 div.contact-bg{
 	@extend %parrallex-bg;
@@ -978,9 +975,6 @@ div#top-contact{
 	}
 
 }
-
-/* START STYLING CONTACT SECTION
--------------------------------------------*/
 
 section#contact-container{
 	width:100%;
@@ -1156,7 +1150,7 @@ div#nipost-home{
 }
 
 section.nipost-first-container{
-	height: auto;
+	height: 525em;
 	@extend %port-container;
 }
 
@@ -1175,7 +1169,7 @@ div.nipost-holder{
 		width: 100%;
 		display: block;
 		margin: 0 auto;
-		margin-bottom:5%;
+		/*margin-bottom:5%;*/
 		border: solid #696969 0.2em;
 	}
 
@@ -1193,15 +1187,15 @@ div.nipost-holder{
 
 	h3{
 		@extend %h2-values;
-		margin-bottom: 1em;
-		font-weight: 200;
+		margin: 5% 0 5% 0;
+		font-weight: 300;
 		color: $alt-font-color;
 	}
 
 	h4{
 		@extend %h2-values;
-		margin-bottom: 5%;
-		font-weight: 300;
+		margin: 5% 0 5% 0;
+		font-weight: 200;
 		color: $alt-font-color;
 	}
 }
@@ -1213,8 +1207,70 @@ div.nipost-collateral-holder{
 
 }
 
-/* START FLYERS PROJECT PAGE STYLES */
+/* START AGLOW PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
 
+div.aglow-bg{
+	background-image: url(../imgs/aglow-bg.jpg);
+	@extend %parrallex-bg;
+}
+
+section.aglow-first-container{
+	height: 284em;
+	@extend %port-container;
+}
+
+/* START CONNECT GA PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+
+div.connect-bg{
+	background-image: url(../imgs/connect-bg.jpg);
+	@extend %parrallex-bg;
+}
+
+section.connect-first-container{
+	height: 510em;
+	@extend %port-container;
+}
+
+.second-last-img{
+	margin-bottom: 5% !important;
+}
+
+.first-sketches{
+	margin-bottom: 5%;
+	border: solid gray 2px;
+}
+
+/* START BUG-OUT PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+
+div.bugout-bg{
+	background-image: url(../imgs/bugout-bg.jpg);
+	@extend %parrallex-bg;
+	background-position: -20em -60em;
+}
+
+section.bugout-first-container{
+	height: 75em;
+	@extend %port-container;
+}
+
+/* START WEDDING MAGAZINE PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+
+div.wedding-bg{
+	background-image: url(../imgs/wedding-bg.jpg);
+	@extend %parrallex-bg;
+}
+
+section.wedding-first-container{
+	height: 354em;
+	@extend %port-container;
+}
+
+/* START FLYERS PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
 
 div.flyer-bg{
 	background-image: url(../imgs/flyer-bg-2.jpg);
@@ -1249,84 +1305,8 @@ div#flyer-home{
     }
 }
 
-div.aglow-bg{
-	background-image: url(../imgs/aglow-bg.jpg);
-	@extend %parrallex-bg;
-}
-
-section.aglow-first-container{
-	height: 285em;
-	@extend %port-container;
-}
-
-div.bugout-bg{
-	background-image: url(../imgs/bugout-bg.jpg);
-	@extend %parrallex-bg;
-	background-position: -20em -60em;
-}
-
-section.bugout-first-container{
-	height: 85em;
-	@extend %port-container;
-}
-
-div.connect-bg{
-	background-image: url(../imgs/connect-bg.jpg);
-	@extend %parrallex-bg;
-}
-
-section.connect-first-container{
-	height: 515em;
-	@extend %port-container;
-}
-
-.first-sketches{
-	margin-bottom: 5%;
-	border: solid gray 2px;
-}
-
-div.wedding-bg{
-	background-image: url(../imgs/wedding-bg.jpg);
-	@extend %parrallex-bg;
-}
-
-section.wedding-first-container{
-	height: 360em;
-	@extend %port-container;
-}
-
-div.branding-bg{
-	background-image: url(../imgs/branding-bg.jpg);
-	@extend %parrallex-bg;
-	background-position: -15em -5em;
-}
-
-section.branding-first-container{
-	height: 145em;
-	@extend %port-container;
-}
-
-div.tradeshow-bg{
-	background-image: url(../imgs/trade-show-bg.jpg);
-	@extend %parrallex-bg;
-	background-position: -105em -86em;
-}
-
-section.tradeshow-first-container{
-	height: 205em;
-	@extend %port-container;
-}
-
-div.rebrand-bg{
-	background-image: url(../imgs/obaze-design-bg.jpg);
-	@extend %parrallex-bg;
-	background-position: 0em -100em;
-}
-
-section.rebrand-first-container{
-	height: 270em;
-	@extend %port-container;
-}
+/* START INTERNET CONFERENCE PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
 
 div.interconf-bg{
 	background-image: url(../imgs/interconf-bg.jpg);
@@ -1335,7 +1315,7 @@ div.interconf-bg{
 }
 
 section.interconf-first-container{
-	height: 80em;
+	height: 75em;
 	@extend %port-container;
 }
 
@@ -1360,6 +1340,9 @@ div#interconf-home{
 	}
 }
 
+/* START TAILORED PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+
 div.tailored-bg{
 	background-image: url(../imgs/tailored-creation-2.jpg);
 	background-position: 0em 0em;
@@ -1367,7 +1350,63 @@ div.tailored-bg{
 }
 
 section.tailored-first-container{
-	height: 425em;
+	height: 421em;
+	@extend %port-container;
+}
+
+/* START REBRAND PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+
+div.rebrand-bg{
+	background-image: url(../imgs/obaze-design-bg.jpg);
+	@extend %parrallex-bg;
+	background-position: 0em -100em;
+}
+
+section.rebrand-first-container{
+	height: 266em;
+	@extend %port-container;
+}
+
+/* START BRANDING PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+
+div.branding-bg{
+	background-image: url(../imgs/branding-bg.jpg);
+	@extend %parrallex-bg;
+	background-position: -15em -5em;
+}
+
+section.branding-first-container{
+	height: 138em;
+	@extend %port-container;
+}
+
+/* START POP-UP BANNER PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+
+div.tradeshow-bg{
+	background-image: url(../imgs/trade-show-bg.jpg);
+	@extend %parrallex-bg;
+	background-position: -105em -86em;
+}
+
+section.tradeshow-first-container{
+	height: 202em;
+	@extend %port-container;
+}
+
+/* START INVITATION PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+
+div.invitation-bg{
+	background-image: url(../imgs/invitation-bg.jpg);
+	@extend %parrallex-bg;
+	background-position: -25em -16em;
+}
+
+section.invitation-first-container{
+	height: 138em;
 	@extend %port-container;
 }
 
