@@ -888,7 +888,7 @@ div#top-portfolio{
 
 section.portfolio-container{
 	width:100%;
-	height: 97em;
+	height: 161em;
 	background-color: #ffffff;
 
 }
@@ -1382,6 +1382,20 @@ section.branding-first-container{
 	@extend %port-container;
 }
 
+/* START NEWSLETTER PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+
+div.newsletter-bg{
+	background-image: url(../imgs/newsletter-bg.jpg);
+	@extend %parrallex-bg;
+	background-position: 0em -60em;
+}
+
+section.newsletter-first-container{
+	height: 138em;
+	@extend %port-container;
+}
+
 /* START POP-UP BANNER PROJECT PAGE STYLES
 -----------------------------------------------------------------------------*/
 
@@ -1407,6 +1421,34 @@ div.invitation-bg{
 
 section.invitation-first-container{
 	height: 138em;
+	@extend %port-container;
+}
+
+/* START VIDEO PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+
+div.video-bg{
+	background-image: url(../imgs/video-bg.jpg);
+	@extend %parrallex-bg;
+	background-position: -40em -40em;
+}
+
+section.video-first-container{
+	height: 208em;
+	@extend %port-container;
+}
+
+/* START LOWPRO PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+
+div.lowpro-bg{
+	background-image: url(../imgs/lowpro-bg.jpg);
+	@extend %parrallex-bg;
+	background-position: -40em -40em;
+}
+
+section.lowpro-first-container{
+	height: 347em;
 	@extend %port-container;
 }
 
